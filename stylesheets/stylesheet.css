@@ -879,3 +879,21 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+/* Students' and their data's styling*/
+body {
+  min-width: 434px;
+}
+.student-image {
+  width: 14rem;
+  border-radius: 100%;
+}
+.student-data {
+  margin-right: 2rem;
+  list-style: none;
+  float:right;
+}
+@media only screen and (max-width: 503px) {
+  .student-image {
+    width: 10rem;
+  }
+}
