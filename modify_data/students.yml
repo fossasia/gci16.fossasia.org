@@ -2,8 +2,10 @@
 
 student:
   name: Aryan
+  age: 16
+  country: India
   email: bhasinaryan@gmail.com
-  blog_link: https://http://aryanbhasin.blogspot.in/
+  blog_link: https://aryanbhasin.blogspot.in/
   github_username: https://github.com/aryanbhasin
   twitter_link: https://twitter.com/aryanbhasin
   facebook_link: https://www.facebook.com/bhasinaryan
