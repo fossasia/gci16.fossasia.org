@@ -5,4 +5,3 @@ instagram: donaldigbine
 twitter: @void_xj
 facebook: https://facebook.com/Donald400
 bio: 16, Nigerian, knows Ruby, Java, Python and Andriod development, Love Music 
-
