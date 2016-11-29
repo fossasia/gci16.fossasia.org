@@ -1,6 +1,8 @@
 name: Donald Igbine 
-github: Donaldxj
 image: donald.jpg
+github: Donaldxj
 instagram: donaldigbine
-bio: 16, Nigerian, coder, Ruby enthusiast 
+twitter: @void_xj
 facebook: https://facebook.com/Donald400
+bio: 16, Nigerian, knows Ruby, Java, Python and Andriod development, Love Music 
+
