@@ -1,7 +1,7 @@
 # GCI Student Data
 
 student: 
-	name: mehant
+  name: mehant
   age: 16
   blog_link: "http://mehant-alphaunitedteam.blogspot.in/"
   country: India
