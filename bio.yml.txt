@@ -1,0 +1,6 @@
+name: Donald Igbine 
+github: Donaldxj
+image: donald.jpg
+instagram: donaldigbine
+bio: 16, Nigerian, coder, Ruby enthusiast 
+facebook: https://facebook.com/Donald400
