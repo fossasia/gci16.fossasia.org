@@ -1,0 +1,26 @@
+.main-content {
+	background-color: #303030;
+}
+
+.white-header {
+	color: white;
+	margin-bottom: 30px;
+}
+
+.social-media {
+	padding: 20px;
+	text-align: center;
+}
+
+.social-media iframe, .g-page {
+	margin-bottom: 30px;
+	-webkit-box-shadow: 3px 3px 5px #151515;
+	-moz-box-shadow: 3px 3px 5px #151515;
+	-o-box-shadow: 3px 3px 5px #151515;
+	box-shadow: 3px 3px 5px #151515;
+}
+.inner a.button  {
+	display: block;
+	width: 202px;
+	height: 80px;
+}
