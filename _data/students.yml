@@ -1,0 +1,27 @@
+## Student Data
+
+
+
+student:
+  
+	name: Haikal Izzuddin
+  
+	age: 16
+  
+	facebook_url: https://facebook.com/haikalizz27
+  
+	github_url: https://github.com/webhaikal
+  
+	instagram_url: https://instagram.com/haikalizz27
+  
+	twitter_url: https://twitter.com/prototypestd
+  
+	email: heywhite69@gmail.com
+  
+	city: Taman Melawati
+  
+	state: Kuala Lumpur
+  
+	country: Malaysia
+  
+	img_url: ../images/haikal.png
