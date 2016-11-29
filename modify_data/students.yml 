@@ -1,0 +1,11 @@
+# GCI Student Data
+
+student: 
+	name: mehant
+  age: 16
+  blog_link: "http://mehant-alphaunitedteam.blogspot.in/"
+  country: India
+  email: kmehant@gmail.com
+  github_username: "https://github.com/kmehant"
+  image_url: ../images/mehant.jpg
+  twitter_link: "https://twitter.com/mehant1"
