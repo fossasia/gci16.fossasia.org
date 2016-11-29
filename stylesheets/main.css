@@ -20,7 +20,7 @@
 	box-shadow: 3px 3px 5px #151515;
 }
 .inner a.button  {
-	display: block;
+	display: inline-block;
 	width: 202px;
 	height: 80px;
 }
