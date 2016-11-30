@@ -24,3 +24,10 @@
 	width: 202px;
 	height: 80px;
 }
+#slider-slide iframe, .g-page {
+	margin-bottom: 30px;
+	-webkit-box-shadow: 3px 3px 5px #151515;
+	-moz-box-shadow: 3px 3px 5px #151515;
+	-o-box-shadow: 3px 3px 5px #151515;
+	box-shadow: 3px 3px 5px #151515;
+}
