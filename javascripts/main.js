@@ -5,7 +5,7 @@ console.log('This would be the main JS file.');
 		method: 'GET',
 		url: 'https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors'
 	}).done(function(response) {
-		const $ul = $('#contributors-section > ul');
+		const $ul = $('#contributors-section ul');
 
 		$.each(response, function(index, contributor) {
 			$ul.append("\
