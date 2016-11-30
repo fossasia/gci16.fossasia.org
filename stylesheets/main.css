@@ -24,3 +24,86 @@
 	width: 202px;
 	height: 80px;
 }
+
+#contributors{
+	margin-top: 50px;	
+}
+
+#contributors-list{
+	width: 1200px;
+	margin: auto; 
+	text-align: center;
+	background-color: #4062BB;
+	padding: 30px;
+	border-radius: 8px;
+}
+
+#contributors h2{
+	background-color: #4062BB;
+	text-align: center;
+	color: white;
+	width: 260px;
+	margin: auto;
+}
+
+#contributors-list div{
+	display: inline-block;
+	margin: 20px;
+	width: 200px;
+	height: 250px;
+	background-color: white;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contributors-list div p{
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	font-size: 18px;
+}
+ 
+#contributors-list div img{
+	width: 200px;
+	height: 200px;
+	transition: opacity 1s;
+}
+
+#contributors-list div a{
+	cursor: pointer;
+	color: black
+}
+
+#contributors-list div .gh-icon{
+	position: absolute;
+	bottom: 8px;
+	left: 12px;
+}
+
+#contributors-list div img:hover{
+	opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+	#contributors-list{
+		width: 1000px;
+	}	
+}
+
+@media (max-width: 1020px) {
+	#contributors-list{
+		width: 800px;
+	}	
+}
+
+@media (max-width: 812px) {
+	#contributors-list{
+		width: 600px;
+	}	
+}
+
+@media (max-width: 610px) {
+	#contributors-list{
+		width: 400px;
+	}	
+}
