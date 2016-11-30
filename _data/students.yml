@@ -57,9 +57,7 @@
   email: davidnagli@gmail.com
   github: davidnagli
   image: ../images/david.jpg
-  websites:
-    -dnagli.com
-    -uslre.com
+  websites: dnagli.com, uslre.com
   bio: Full-Stack JavaScript Developer, Scratch-JS and USLRE.com
 
 - name: Thien Hoang
@@ -76,12 +74,10 @@
   facebook: https://www.facebook.com/themrgeorgeous
   twitter: TheMrGeorgeous
   image: ../images/mrgeorgeous.jpg
-  websites:
-      -mrgeorgeous.ru
-      -mrgeorgeous.com
+  websites: mrgeorgeous.ru, mrgeorgeous.com
   bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
   
-  - name: Shreyas Sanghvi
+- name: Shreyas Sanghvi
   email: Shreyas.sanghvi11@gmail.com
   github: shreyassanghvi
   facebook: https://www.facebook.com/Alpha.Foxtrot11
