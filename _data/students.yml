@@ -52,3 +52,21 @@
   twitter: PolBaladas
   image: ../images/pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
+  
+- name: David Nagli
+  email: davidnagli@gmail.com
+  github: davidnagli
+  image: ../images/david.jpg
+  websites:
+    -dnagli.com
+    -uslre.com
+  bio: Full-Stack JavaScript Developer, Scratch-JS and USLRE.com
+
+- name: Thien Hoang
+  email: thienhoangvan.edu@gmail.com
+  github: hoangvanthien
+  facebook: https://www.facebook.com/hvt99
+  twitter: ThienVHoang
+  image: ../images/thien.jpg
+  bio: 17 years old, Vietnamese, study Computer Science.
+  
