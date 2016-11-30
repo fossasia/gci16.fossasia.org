@@ -26,12 +26,12 @@
 }
 
 #contributors{
-	margin-top: 50px;	
+	margin-top: 50px;
 }
 
 #contributors-list{
 	width: 1200px;
-	margin: auto; 
+	margin: auto;
 	text-align: center;
 	background-color: #4062BB;
 	padding: 30px;
@@ -62,7 +62,7 @@
 	left: 40px;
 	font-size: 18px;
 }
- 
+
 #contributors-list div img{
 	width: 200px;
 	height: 200px;
@@ -87,25 +87,25 @@
 @media (max-width: 1200px) {
 	#contributors-list{
 		width: 1000px;
-	}	
+	}
 }
 
 @media (max-width: 1020px) {
 	#contributors-list{
 		width: 800px;
-	}	
+	}
 }
 
 @media (max-width: 812px) {
 	#contributors-list{
 		width: 600px;
-	}	
+	}
 }
 
 @media (max-width: 610px) {
 	#contributors-list{
 		width: 400px;
-	}	
+	}
 }
 
 .students-section {
@@ -178,7 +178,6 @@ hr{
 .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -241,7 +240,7 @@ figure.effect-gcihover figcaption {
 
 figure.effect-gcihover p {
 	padding: 2.25em 0.5em;
-	font-weight: 600;	
+	font-weight: 600;
 	font-size: 100%;
 	line-height: 1.5;
 	opacity: 0;
