@@ -45,3 +45,12 @@
   facebook: https://www.facebook.com/darshil36
   image: ../images/darshil.jpg
   bio: 16, Computer enthusiast, soccer player, cars, business, startups
+  
+- name: David Nagli
+  email: davidnagli@gmail.com
+  github: davidnagli
+  image: ../images/david.jpg
+  websites:
+    -dnagli.com
+    -uslre.com
+  bio: Full-Stack JavaScript Developer: Scratch-JS and USLRE.com
