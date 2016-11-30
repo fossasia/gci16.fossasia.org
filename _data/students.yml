@@ -52,7 +52,7 @@
   twitter: PolBaladas
   image: ../images/pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
-  
+
 - name: David Nagli
   email: davidnagli@gmail.com
   github: davidnagli
@@ -69,4 +69,11 @@
   twitter: ThienVHoang
   image: ../images/thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
-  
+
+  name: Boh Jie Qi
+    email: boh.jieqi@dhs.sg
+    github: BohJieQi
+    facebook: -
+    twitter: JieQiBoh
+    image: ../images/JQ.png
+    bio: 16 years old, loves GCI and ball is life.
