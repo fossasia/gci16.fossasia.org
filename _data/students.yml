@@ -77,3 +77,22 @@
     twitter: JieQiBoh
     image: ../images/JQ.png
     bio: 16 years old, loves GCI and ball is life.
+
+ - name: George Semenov
+    email: themrgeorgeous@gmail.com
+    github: MrGeorgeous
+    facebook: https://www.facebook.com/themrgeorgeous
+    twitter: TheMrGeorgeous
+    image: ../images/mrgeorgeous.jpg
+    websites:
+        -mrgeorgeous.ru
+        -mrgeorgeous.com
+    bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
+
+  -name: Shreyas Sanghvi
+    email: Shreyas.sanghvi11@gmail.com
+    github: shreyassanghvi
+    facebook: https://www.facebook.com/Alpha.Foxtrot11
+    twitter: Shreyas2101
+    image: ../images/shreyas.jpg
+    bio: 17 years old, Indian, Studying Computer Science
