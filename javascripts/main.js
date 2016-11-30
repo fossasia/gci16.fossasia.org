@@ -1,24 +1,12 @@
-console.log('This would be the main JS file.');
+$(function(){
 
-(function() {
 	$.ajax({
-		method: 'GET',
-		url: 'https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors'
-	}).done(function(response) {
-		const $ul = $('#contributors-section ul');
+		url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors"
+	}).done(function(data){
+		data.forEach(function(contributors){
+			$("#contributors-list").append("<div><img src="+contributors.avatar_url+"><a href="+contributors.html_url+"><i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i></a><p>"+contributors.login+"</p></div>");
 
-		$.each(response, function(index, contributor) {
-			$ul.append("\
-				<li>\
-					<a target='_blank' href='https://github.com/" + contributor.login + "'>\
-						<img src='" + contributor.avatar_url + "' class='profile'>\
-						<div class='content'>\
-							<div class='name'>" + contributor.login + "</div>\
-							<div class='commit-count'>" + contributor.contributions + " commits </div>\
-						</div>\
-					</a>\
-				</li>"
-			);
 		});
 	});
- })();
+	
+});
