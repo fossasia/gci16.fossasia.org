@@ -396,9 +396,6 @@ legend {
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-textarea {
-  overflow: auto;
-}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
@@ -496,7 +493,24 @@ header h2 {
 #main-content img {
   max-width: 100%;
 }
+.slider {
+  background-color: #3343D6;
+  border-style: solid;
+  border-color: #3343D6;
+  border-width: 50px;
+}
+.slide{
+-webkit-filter: grayscale(70%);
+border-radius: 20px;
+border-radius: 5px;
+-webkit-transition : all 7s ease ;  ;
 
+}
+.slide:hover {
+
+  -webkit-filter: grayscale(0%);
+
+}
 aside#sidebar {
   float: right;
   width: 200px;
@@ -878,4 +892,3 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
-
