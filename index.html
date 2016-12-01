@@ -128,9 +128,9 @@
                 <div class="row">
                     {% for blog in site.data.blogs %}
                     <div class="blog_holder col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div {% if blog.blog_img %} style="background: url('images/{{ blog.blog_img }}') no-repeat center left;" {% endif %} class="blog_post">
+                        <div {% if blog.blog_img %} style="background: url('images/{{ blog.blog_img }}') no-repeat center top;" {% endif %} class="blog_post">
                             <div class="blog-title"> Blog of
-                                <a href="{{ blog.blog }}">{{ blog.name }}</a>
+                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
                                 <br/> {% if blog.article %}
                                 <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
                             </div>
