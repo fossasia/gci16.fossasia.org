@@ -356,14 +356,19 @@ html[xmlns] .slides { display: block; }
  
 .flexslider .slides { zoom: 1; }
 
-.flex-caption {
-	width: 100%;
-	padding: 2%;
-	left: 0;
-	top: 0;
-	/*background: rgba(0,0,0,.5);*/
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-	font-size: 142px;
-	/*line-height: 18px;*/
+.slide {
+	height: 550px;
+	overflow: hidden;
+}
+img.image-slide {
+	opacity: 1;
+	transform: translate(0, -100px);
+}
+.slide-caption {
+	height: 0;
+	text-align: left;
+	padding-left: 5%;
+	font-size: 100px;
+	color: white;
+	transform: translate(0, -500px);
 }
