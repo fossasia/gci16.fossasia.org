@@ -26,7 +26,7 @@
 }
 
 #contributors{
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 #contributors-list{
@@ -294,6 +294,49 @@ figure.effect-gcihover:hover figcaption::before {
 	transform: translate3d(0,5em,0) scale3d(1,1,1);
 }
 
+
+
 .black-font{
 	color: black;
 }
+
+header{
+	background-color: #A64942;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+header h2{
+	color: white;
+	display: inline-block;
+}
+
+header #navigation-bar, header a#view-on-github{
+	float: right;
+}
+
+header #navigation-bar a, header a#view-on-github{
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 5px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+header a#view-on-github{
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+header #navigation-bar a.active{
+	border-radius: 5px;
+	background-color: #4062BB;
+}
+
+
