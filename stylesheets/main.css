@@ -8,7 +8,7 @@
 }
 
 .social-media {
-	padding: 20px;
+	padding: 40px;
 	text-align: center;
 }
 
@@ -26,12 +26,12 @@
 }
 
 #contributors{
-	margin-top: 50px;	
+	margin-top: 50px;
 }
 
 #contributors-list{
-	width: 1200px;
-	margin: auto; 
+	width: 100%;
+	margin: auto;
 	text-align: center;
 	background-color: #4062BB;
 	padding: 30px;
@@ -44,6 +44,7 @@
 	color: white;
 	width: 260px;
 	margin: auto;
+	padding: 10px 10px;
 }
 
 #contributors-list div{
@@ -62,7 +63,7 @@
 	left: 40px;
 	font-size: 18px;
 }
- 
+
 #contributors-list div img{
 	width: 200px;
 	height: 200px;
@@ -87,23 +88,212 @@
 @media (max-width: 1200px) {
 	#contributors-list{
 		width: 1000px;
-	}	
+	}
 }
 
 @media (max-width: 1020px) {
 	#contributors-list{
 		width: 800px;
-	}	
+	}
 }
 
 @media (max-width: 812px) {
 	#contributors-list{
 		width: 600px;
-	}	
+	}
 }
 
 @media (max-width: 610px) {
 	#contributors-list{
 		width: 400px;
-	}	
+	}
+}
+
+.students-section {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+    margin-top: 50px;
+    background-color: #A64942;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,1);
+    box-shadow: 0px 0px 10px 0px rgba(50,50,50,1);
+}
+.row .col-lg-3 {
+	width: 33.33%;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+}
+
+.title {
+	padding-top: 30px;
+	text-align: center;
+	color:#ffd700;
+	text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
+				0px 7px 6px rgba(0,0,0,0.1),
+				0px 2px 8px rgba(0,0,0,0.1);
+}
+
+hr{
+	width: 100px;
+	margin-top: 0;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	max-width: 480px;
+	max-height: 360px;
+	/*	width: 48%;*/
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-gcihover {
+	background: #fff;
+	text-align: left;
+}
+
+figure.effect-gcihover img {
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-gcihover figcaption {
+	z-index: 1;
+}
+
+figure.effect-gcihover p {
+	padding: 2.25em 0.5em;
+	font-weight: 600;
+	font-size: 100%;
+	line-height: 1.5;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+}
+
+figure.effect-gcihover p a {
+	margin: 0 0.5em;
+	color: #101010;
+}
+
+figure.effect-gcihover p a:hover,
+figure.effect-gcihover p a:focus {
+	opacity: 0.6;
+}
+
+figure.effect-gcihover figcaption::before {
+	position: absolute;
+	top: 0;
+	right: 2em;
+	left: 2em;
+	z-index: -1;
+	height: 3.5em;
+	background: #fff;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
+	transform: translate3d(0,4em,0) scale3d(1,0.023,1);
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+figure.effect-gcihover:hover img {
+	opacity: 0.5;
+}
+
+figure.effect-gcihover:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-gcihover:hover figcaption::before {
+	opacity: 0.7;
+	-webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
+	transform: translate3d(0,5em,0) scale3d(1,1,1);
+}
+
+.black-font{
+	color: black;
 }
