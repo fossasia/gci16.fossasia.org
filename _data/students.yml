@@ -4,115 +4,124 @@
   github: oanarosca
   image: oanarosca.jpg
   twitter: oanarosca12
-  facebook: https://facebook.com/Rosca.Oanaa
+  facebook: Rosca.Oanaa
   bio: 17, Romanian, coder, geek, science enthusiast :D
 
 - name: Haikal Izzuddin
   github: webhaikal
   image: haikal.png
   twitter: prototypestd
-  facebook: https://facebook.com/haikalizz27
+  facebook: haikalizz27
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog_link: "http://mehant-alphaunitedteam.blogspot.in/"
+  blog: "http://mehant-alphaunitedteam.blogspot.in/"
   email: kmehant@gmail.com
-  github_username: "https://github.com/kmehant"
-  image_url: ../images/mehant.jpg
-  twitter_link: "https://twitter.com/mehant1"
-  bio: I don't play games, I build games! "GameJamTitans finalist" \m/
+  github: "ttps://github.com/hkmehant"
+  image: mehant.jpg
+  twitter: "https://twitter.com/mehant1"
+  bio: "I don't play games, I build games! GameJamTitans finalist"
 
 - name: Alejandro Heredia
   email: alex.heredia.barbosa@gmail.com
   github: Heredroky
-  image: ../images/AlejandroHeredia.jpg
+  image: AlejandroHeredia.jpg
   twitter: Heredroky
-  facebook: https://www.facebook.com/alejandro.heredia.756
+  facebook: alejandro.heredia.756
   bio: Colombian, Coder, technology lover, IoT enthusiast, 14
 
 - name: Aryan Bhasin
   email: bhasinaryan@gmail.com
   github: aryanbhasin
   twitter: aryanbhasin
-  facebook: https://www.facebook.com/bhasinaryan
-  image: ../images/aryan.jpg
+  facebook: bhasinaryan
+  image: aryan.jpg
   bio: 16, Indian, computer science and maths enthusiast
 
 - name: Anastasia Kostiv
   email: kostiv08nastya@gmail.com
   github: nolik2000
   twitter: KostivNastya
-  facebook: https://www.facebook.com/anastasiya.kostiv
-  image: ../images/AKostiv.jpg
+  facebook: anastasiya.kostiv
+  image: AKostiv.jpg
   bio: 16 years, Ukrainian developer
 
 - name: Darshil Patel
   email: darshil-patel@hotmail.com
   github: darshilpatel
   twitter: darshil36
-  facebook: https://www.facebook.com/darshil36
-  image: ../images/darshil.jpg
+  facebook: darshil36
+  image: darshil.jpg
   bio: 16, Computer enthusiast, soccer player, cars, business, startups
 
 - name: Pol Baladas
   email: polbaladasluna@gmail.com
   github: PolBaladas
   twitter: PolBaladas
-  image: ../images/pol.jpg
+  image: pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
 
 - name: David Nagli
   email: davidnagli@gmail.com
   github: davidnagli
-  image: ../images/david.jpg
+  image: david.jpg
   websites: dnagli.com, uslre.com
   bio: Full-Stack JavaScript Developer, Scratch-JS and USLRE.com
 
 - name: Thien Hoang
   email: thienhoangvan.edu@gmail.com
   github: hoangvanthien
-  facebook: https://www.facebook.com/hvt99
+  facebook: hvt99
   twitter: ThienVHoang
-  image: ../images/thien.jpg
+  image: thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
 
 - name: George Semenov
   email: themrgeorgeous@gmail.com
   github: MrGeorgeous
-  facebook: https://www.facebook.com/themrgeorgeous
+  facebook: themrgeorgeous
   twitter: TheMrGeorgeous
-  image: ../images/mrgeorgeous.jpg
+  image: mrgeorgeous.jpg
   websites: mrgeorgeous.ru, mrgeorgeous.com
   bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
 
 - name: Shreyas Sanghvi
   email: Shreyas.sanghvi11@gmail.com
   github: shreyassanghvi
-  facebook: https://www.facebook.com/Alpha.Foxtrot11
+  facebook: Alpha.Foxtrot11
   twitter: Shreyas2101
-  image: ../images/shreyas.jpg
+  image: shreyas.jpg
   bio: 17 years old, Indian, Studying Computer Science
 
 - name: Aditya Singh
   github: S-ulphuric
-  image: ../images/aditya.jpg
+  image: aditya.jpg
   twitter: NxtbigAditya
-  facebook: https://facebook.com/cuteaditya1
+  facebook: cuteaditya1
   email: blusinghaditya@gmail.com
   bio: Programmer & Web Designer, Second year GCI!
 
 - name: Ridhwanul Haque
   github: rhemon
   blog: https://rhemon.github.io/blog
-  blog_img: rhemon-blog.png
+  image: rhemon-blog.png
   
 - name: Victoria Juan
   github: vickyjjj
   email: victoriajuanhpst@gmail.com
-  image: ../images/victoriajuan.jpg
+  image: victoriajuan.jpg
 
 - name: Baidyanath
   github: Baidya99
-  image: ../images/Baidya.jpg
-  facebook: https://www.facebook.com/Baidya99
+  image: Baidya.jpg
+  facebook: Baidya99
   bio: 17, Earthling, coder and computer enthusiast.
+
+- name: Adarsh Kumar
+  github: adarsh-ideal
+  image: adarsh.jpg
+  facebook: AdarshK.Kashyap
+  email: ideal.ak1308@gmail.com
+  blog: https://idealadarsh.wordpress.com
+  twitter: Adarsh_Kashyap1
+  bio: I am a 16 year old student. Love to do programming and coding, geek, I am a science and technology enthusiast.
