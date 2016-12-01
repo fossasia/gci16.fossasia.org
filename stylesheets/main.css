@@ -293,3 +293,41 @@ figure.effect-gcihover:hover figcaption::before {
 	-webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
 	transform: translate3d(0,5em,0) scale3d(1,1,1);
 }
+.blog {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 50px;
+	height: 100%;
+	padding-bottom: 50px;
+}
+.blog h1 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.blog_holder {
+	padding: 20px;
+}
+.blog_post {
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.blog-title {
+	padding: 20px 0;
+	margin: 0;
+	height: 100px;
+	background: #66BB6A;
+	color: #fafafa;
+	font-size: 16px;
+	text-align: center;
+}
+.blog-title a {
+	color: #fafafa;
+}
+.blog-title a:hover, .blog-title a:link, .blog-title a:visited {
+	color: #fafafa;
+}
