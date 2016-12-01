@@ -30,7 +30,7 @@
 }
 
 #contributors-list{
-	width: 1200px;
+	width: 100%;
 	margin: auto;
 	text-align: center;
 	background-color: #4062BB;
@@ -44,6 +44,7 @@
 	color: white;
 	width: 260px;
 	margin: auto;
+	padding: 10px 10px;
 }
 
 #contributors-list div{
@@ -127,10 +128,10 @@
 	padding-bottom: 15px;
 }
 
-.head {
+.title {
 	padding-top: 30px;
 	text-align: center;
-	color:#ffffff;
+	color:#ffd700;
 	text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
 				0px 7px 6px rgba(0,0,0,0.1),
 				0px 2px 8px rgba(0,0,0,0.1);
@@ -160,7 +161,7 @@ hr{
 	margin: 10px 1%;
 	max-width: 480px;
 	max-height: 360px;
-/*	width: 48%;*/
+	/*	width: 48%;*/
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -170,7 +171,7 @@ hr{
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
+	max-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
 }
@@ -291,4 +292,42 @@ figure.effect-gcihover:hover figcaption::before {
 	opacity: 0.7;
 	-webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
 	transform: translate3d(0,5em,0) scale3d(1,1,1);
+}
+.blog {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 50px;
+	height: 100%;
+	padding-bottom: 50px;
+}
+.blog h1 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.blog_holder {
+	padding: 20px;
+}
+.blog_post {
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.blog-title {
+	padding: 20px 0;
+	margin: 0;
+	height: 100px;
+	background: #66BB6A;
+	color: #1B5E20;
+	font-size: 16px;
+	text-align: center;
+}
+.blog-title a {
+	color: #1B5E20;
+}
+.blog-title a:hover, .blog-title a:link, .blog-title a:visited {
+	color: #1B5E20;
 }
