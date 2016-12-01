@@ -16,8 +16,14 @@
 * type: array
 ##### 404 #####
 * description: User not found
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ## /Login ##
 ### Post ###
 * operationId: post_login
@@ -28,8 +34,19 @@
 * $ref: #/definitions/Token
 ##### 401 #####
 * description: Authentication Failed
-* parameters: [{u'schema': {u'$ref': u'#/definitions/Login'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'login']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/Login
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: login
 ## /Events/{Event_Id}/Microlocations ##
 ### Post ###
 * operationId: post_microlocation_list
@@ -53,9 +70,24 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/MicrolocationPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/MicrolocationPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_microlocation_list
 * summary: List all microlocations
@@ -66,8 +98,18 @@
 ###### Items ######
 * $ref: #/definitions/Microlocation
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
 ## /Events/{Event_Id}/Attendees/Check_In_Toggle/{Holder_Identifier}/Check_Out ##
 ### Post ###
 * operationId: post_attendee_check_out
@@ -91,9 +133,23 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'attendees']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'string', u'name': u'holder_identifier', u'in': u'path'}]
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: attendees
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: string
+* name: holder_identifier
+* in: path
 ## /Events/{Event_Id}/Sponsors ##
 ### Post ###
 * operationId: post_sponsor_list
@@ -117,9 +173,24 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SponsorPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SponsorPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_sponsor_list
 * summary: List all sponsors
@@ -130,10 +201,24 @@
 ###### Items ######
 * $ref: #/definitions/Sponsor
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
 ## /Events/{Event_Id}/Sessions/Page ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_session_list_paginated
 * summary: List sessions in a paginated manner
@@ -142,8 +227,44 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/SessionPaginated
-* parameters: [{u'type': u'string', u'name': u'start_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_lt', u'in': u'query'}, {u'description': u'Order by a field, example "start_time.asc" or "end_time.desc"', u'type': u'string', u'name': u'order_by', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_gt', u'in': u'query'}, {u'type': u'string', u'name': u'start_time_gt', u'in': u'query'}, {u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+* type: string
+* name: start_time_lt
+* in: query
+* type: string
+* name: end_time_lt
+* in: query
+* description: Order by a field, example "start_time.asc" or "end_time.desc"
+* type: string
+* name: order_by
+* in: query
+* type: string
+* name: end_time_gt
+* in: query
+* type: string
+* name: start_time_gt
+* in: query
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ## /Users/{User_Id} ##
 ### Put ###
 * operationId: put_user
@@ -165,8 +286,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/UserPut'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/UserPut
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ### Get ###
 * operationId: get_user
 * summary: Fetch a user given its id
@@ -177,9 +309,19 @@
 * $ref: #/definitions/User
 ##### 404 #####
 * description: User not found
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'user_id', u'in': u'path'}]
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
+### Parameters ###
+#### Required ####
+* type: integer
+* name: user_id
+* in: path
 ### Delete ###
 * operationId: delete_user
 * summary: Delete a user given its id
@@ -190,10 +332,20 @@
 * $ref: #/definitions/User
 ##### 404 #####
 * description: User not found
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ## /Events/{Event_Id}/Attendees/ ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_attendees_list
 * summary: Get attendees of the event
@@ -218,10 +370,20 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'attendees']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: attendees
 ## /Events/{Event_Id}/Microlocations/Page ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_microlocation_list_paginated
 * summary: List microlocations in a paginated manner
@@ -230,8 +392,28 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/MicrolocationPaginated
-* parameters: [{u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
+#### Parameters ####
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
 ## /Events/{Event_Id}/Microlocations/{Microlocation_Id} ##
 ### Put ###
 * operationId: put_microlocation
@@ -253,8 +435,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/MicrolocationPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/MicrolocationPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
 ### Get ###
 * operationId: get_microlocation
 * summary: Fetch a microlocation given its id
@@ -271,9 +464,27 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'microlocation_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
+### Parameters ###
+#### Required ####
+* type: integer
+* name: microlocation_id
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_microlocation
 * summary: Delete a microlocation given its id
@@ -290,10 +501,24 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'microlocations']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: microlocations
 ## /Events/{Event_Id}/Orders/{Identifier} ##
-* parameters: [{u'required': True, u'type': u'string', u'name': u'identifier', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: string
+* name: identifier
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_order
 * summary: Get information about a ticket
@@ -316,8 +541,14 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tickets']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tickets
 ## /Events/Page ##
 ### Get ###
 * operationId: get_event_list_paginated
@@ -327,8 +558,69 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/EventPaginated
-* parameters: [{u'type': u'string', u'name': u'start_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'privacy', u'in': u'query'}, {u'description': u'Contains the string in name and description', u'type': u'string', u'name': u'contains', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_gt', u'in': u'query'}, {u'description': u'Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors)', u'type': u'string', u'name': u'include', u'in': u'query'}, {u'type': u'string', u'name': u'type', u'in': u'query'}, {u'type': u'string', u'name': u'location', u'in': u'query'}, {u'type': u'string', u'name': u'time_period', u'in': u'query'}, {u'type': u'string', u'name': u'start_time_gt', u'in': u'query'}, {u'type': u'string', u'name': u'state', u'in': u'query'}, {u'type': u'string', u'name': u'topic', u'in': u'query'}, {u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'type': u'string', u'name': u'sub_topic', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* type: string
+* name: start_time_lt
+* in: query
+* type: string
+* name: end_time_lt
+* in: query
+* type: string
+* name: privacy
+* in: query
+* description: Contains the string in name and description
+* type: string
+* name: contains
+* in: query
+* type: string
+* name: end_time_gt
+* in: query
+* description: Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors)
+* type: string
+* name: include
+* in: query
+* type: string
+* name: type
+* in: query
+* type: string
+* name: location
+* in: query
+* type: string
+* name: time_period
+* in: query
+* type: string
+* name: start_time_gt
+* in: query
+* type: string
+* name: state
+* in: query
+* type: string
+* name: topic
+* in: query
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+* type: string
+* name: sub_topic
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ## /Events/{Event_Id}/Sponsors/{Sponsor_Id} ##
 ### Put ###
 * operationId: put_sponsor
@@ -350,8 +642,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SponsorPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SponsorPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
 ### Get ###
 * operationId: get_sponsor
 * summary: Fetch a sponsor given its id
@@ -368,9 +671,27 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'sponsor_id', u'in': u'path'}]
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: integer
+* name: sponsor_id
+* in: path
 ### Delete ###
 * operationId: delete_sponsor
 * summary: Delete a sponsor given its id
@@ -387,8 +708,14 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
 ## /Events/{Event_Id}/Sessions/Types/{Type_Id} ##
 ### Put ###
 * operationId: put_session_type
@@ -410,9 +737,28 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SessionTypePost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'type_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SessionTypePost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
+### Parameters ###
+#### Required ####
+* type: integer
+* name: type_id
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_session_type
 * summary: Delete a session type given its id
@@ -421,10 +767,20 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/SessionType
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ## /Events/{Event_Id}/Sponsors/Types ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_sponsor_types_list
 * summary: List all sponsor types
@@ -435,10 +791,19 @@
 ###### Items ######
 * type: string
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}]
-* tags: [u'sponsors']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+#### Tags ####
+* 0: sponsors
 ## /Events/{Event_Id}/Speakers/Page ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_speaker_list_paginated
 * summary: List speakers in a paginated manner
@@ -447,8 +812,23 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/SpeakerPaginated
-* parameters: [{u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}]
-* tags: [u'speakers']
+#### Parameters ####
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+#### Tags ####
+* 0: speakers
 ## /Events/{Event_Id}/Tracks ##
 ### Post ###
 * operationId: post_track_list
@@ -472,9 +852,24 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/TrackPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/TrackPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_track_list
 * summary: List all tracks
@@ -485,8 +880,18 @@
 ###### Items ######
 * $ref: #/definitions/Track
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
 ## /Events/{Event_Id}/Attendees/Check_In_Toggle/{Holder_Identifier} ##
 ### Post ###
 * operationId: post_attendee_check_in_toggle
@@ -510,9 +915,23 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'attendees']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'string', u'name': u'holder_identifier', u'in': u'path'}]
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: attendees
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: string
+* name: holder_identifier
+* in: path
 ## /Events/{Event_Id}/Sessions ##
 ### Post ###
 * operationId: post_session_list
@@ -536,9 +955,24 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SessionPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SessionPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_session_list
 * summary: List all sessions
@@ -549,8 +983,34 @@
 ###### Items ######
 * $ref: #/definitions/Session
 * type: array
-* parameters: [{u'type': u'string', u'name': u'start_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_lt', u'in': u'query'}, {u'description': u'Order by a field, example "start_time.asc" or "end_time.desc"', u'type': u'string', u'name': u'order_by', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_gt', u'in': u'query'}, {u'type': u'string', u'name': u'start_time_gt', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+* type: string
+* name: start_time_lt
+* in: query
+* type: string
+* name: end_time_lt
+* in: query
+* description: Order by a field, example "start_time.asc" or "end_time.desc"
+* type: string
+* name: order_by
+* in: query
+* type: string
+* name: end_time_gt
+* in: query
+* type: string
+* name: start_time_gt
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ## /Events/{Event_Id}/Links/{Link_Id} ##
 ### Put ###
 * operationId: put_social_link
@@ -572,9 +1032,28 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SocialLinkPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'link_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SocialLinkPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
+### Parameters ###
+#### Required ####
+* type: integer
+* name: link_id
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_social_link
 * summary: Delete a social link given its id
@@ -583,8 +1062,14 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/SocialLink
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ## /Events/{Event_Id}/Sessions/Types ##
 ### Post ###
 * operationId: post_session_type_list
@@ -608,9 +1093,24 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SessionTypePost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SessionTypePost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_session_type_list
 * summary: List all session types
@@ -621,8 +1121,18 @@
 ###### Items ######
 * $ref: #/definitions/SessionType
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ## /Users ##
 ### Post ###
 * operationId: post_user_list
@@ -638,8 +1148,19 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/UserPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/UserPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ### Get ###
 * operationId: get_user_list
 * summary: List all users
@@ -650,10 +1171,20 @@
 ###### Items ######
 * $ref: #/definitions/User
 * type: array
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ## /Events/{Event_Id}/Tracks/Page ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_track_list_paginated
 * summary: List tracks in a paginated manner
@@ -662,8 +1193,28 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/TrackPaginated
-* parameters: [{u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
+#### Parameters ####
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
 ## /Events ##
 ### Post ###
 * operationId: post_event_list
@@ -687,8 +1238,19 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/EventPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/EventPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ### Get ###
 * operationId: get_event_list
 * summary: List all events
@@ -699,8 +1261,59 @@
 ###### Items ######
 * $ref: #/definitions/EventComplete
 * type: array
-* parameters: [{u'type': u'string', u'name': u'start_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_lt', u'in': u'query'}, {u'type': u'string', u'name': u'privacy', u'in': u'query'}, {u'description': u'Contains the string in name and description', u'type': u'string', u'name': u'contains', u'in': u'query'}, {u'type': u'string', u'name': u'end_time_gt', u'in': u'query'}, {u'description': u'Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors)', u'type': u'string', u'name': u'include', u'in': u'query'}, {u'type': u'string', u'name': u'type', u'in': u'query'}, {u'type': u'string', u'name': u'location', u'in': u'query'}, {u'type': u'string', u'name': u'time_period', u'in': u'query'}, {u'type': u'string', u'name': u'start_time_gt', u'in': u'query'}, {u'type': u'string', u'name': u'state', u'in': u'query'}, {u'type': u'string', u'name': u'sub_topic', u'in': u'query'}, {u'type': u'string', u'name': u'topic', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* type: string
+* name: start_time_lt
+* in: query
+* type: string
+* name: end_time_lt
+* in: query
+* type: string
+* name: privacy
+* in: query
+* description: Contains the string in name and description
+* type: string
+* name: contains
+* in: query
+* type: string
+* name: end_time_gt
+* in: query
+* description: Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors)
+* type: string
+* name: include
+* in: query
+* type: string
+* name: type
+* in: query
+* type: string
+* name: location
+* in: query
+* type: string
+* name: time_period
+* in: query
+* type: string
+* name: start_time_gt
+* in: query
+* type: string
+* name: state
+* in: query
+* type: string
+* name: sub_topic
+* in: query
+* type: string
+* name: topic
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ## /Events/{Event_Id}/Notifications ##
 ### Post ###
 * operationId: post_user_notifications
@@ -724,11 +1337,34 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/NotificationPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'notifications']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/NotificationPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: notifications
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ## /Events/{Event_Id}/Tickets/{Ticket_Id} ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'ticket_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: integer
+* name: ticket_id
+* in: path
 ### Get ###
 * operationId: get_ticket
 * summary: Get information about a ticket
@@ -751,8 +1387,14 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tickets']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tickets
 ## /Events/{Event_Id}/Links ##
 ### Post ###
 * operationId: post_social_link_list
@@ -776,9 +1418,25 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SocialLinkPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
-* parameters: [{u'description': None, u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SocialLinkPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
+### Parameters ###
+#### Description ####
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_social_link_list
 * summary: List all social links
@@ -789,8 +1447,18 @@
 ###### Items ######
 * $ref: #/definitions/SocialLink
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ## /Users/Me ##
 ### Get ###
 * operationId: get_user_self
@@ -802,8 +1470,14 @@
 * $ref: #/definitions/User
 ##### 404 #####
 * description: User not found
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ## /Events/{Event_Id}/Speakers ##
 ### Post ###
 * operationId: post_speaker_list
@@ -827,9 +1501,19 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SpeakerPost'}, u'required': True, u'name': u'payload', u'in': u'body'}]
-* tags: [u'speakers']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SpeakerPost
+##### Required #####
+* name: payload
+* in: body
+#### Tags ####
+* 0: speakers
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_speaker_list
 * summary: List all speakers
@@ -840,8 +1524,13 @@
 ###### Items ######
 * $ref: #/definitions/Speaker
 * type: array
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}]
-* tags: [u'speakers']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+#### Tags ####
+* 0: speakers
 ## /Events/{Event_Id}/Sessions/{Session_Id} ##
 ### Put ###
 * operationId: put_session
@@ -863,8 +1552,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SessionPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SessionPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ### Get ###
 * operationId: get_session
 * summary: Fetch a session given its id
@@ -881,9 +1581,27 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'session_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
+### Parameters ###
+#### Required ####
+* type: integer
+* name: session_id
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_session
 * summary: Delete a session given its id
@@ -900,8 +1618,14 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sessions']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sessions
 ## /Users/Page ##
 ### Get ###
 * operationId: get_user_list_paginated
@@ -911,10 +1635,31 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/UserPaginated
-* parameters: [{u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'users']
+#### Parameters ####
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: users
 ## /Events/{Event_Id}/Event ##
-* parameters: [{u'description': None, u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Description ####
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 #### Responses ####
 ##### 200 #####
@@ -923,8 +1668,18 @@
 * $ref: #/definitions/EventComplete
 ##### 404 #####
 * description: Event not found
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 * description: Alternate endpoint for fetching an event.
 * summary: Fetch an event given its id
 * operationId: get_event_webapp
@@ -949,8 +1704,14 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/SpeakerPost'}, u'required': True, u'name': u'payload', u'in': u'body'}]
-* tags: [u'speakers']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/SpeakerPost
+##### Required #####
+* name: payload
+* in: body
+#### Tags ####
+* 0: speakers
 ### Get ###
 * operationId: get_speaker
 * summary: Fetch a speaker given its id
@@ -967,9 +1728,22 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}]
-* tags: [u'speakers']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'speaker_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+#### Tags ####
+* 0: speakers
+### Parameters ###
+#### Required ####
+* type: integer
+* name: speaker_id
+* in: path
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_speaker
 * summary: Delete a speaker given its id
@@ -986,7 +1760,8 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* tags: [u'speakers']
+#### Tags ####
+* 0: speakers
 ## /Events/{Event_Id}/Tracks/{Track_Id} ##
 ### Put ###
 * operationId: put_track
@@ -1008,8 +1783,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/TrackPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/TrackPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
 ### Get ###
 * operationId: get_track
 * summary: Fetch a track given its id
@@ -1026,9 +1812,27 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'integer', u'name': u'track_id', u'in': u'path'}]
+#### Parameters ####
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: integer
+* name: track_id
+* in: path
 ### Delete ###
 * operationId: delete_track
 * summary: Delete a track given its id
@@ -1045,10 +1849,20 @@
 * description: Service does not belong to event
 ###### Schema ######
 * $ref: #/definitions/InvalidServiceError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tracks']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tracks
 ## /Events/{Event_Id}/Sponsors/Page ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_sponsor_list_paginated
 * summary: List sponsors in a paginated manner
@@ -1057,8 +1871,28 @@
 * description: Success
 ###### Schema ######
 * $ref: #/definitions/SponsorPaginated
-* parameters: [{u'default': 1, u'description': u'Serial number to start from', u'type': u'integer', u'name': u'start', u'in': u'query'}, {u'default': 20, u'description': u'Limit on the number of results', u'type': u'integer', u'name': u'limit', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'sponsors']
+#### Parameters ####
+##### Default #####
+* description: Serial number to start from
+* type: integer
+* name: start
+* in: query
+##### Default #####
+* description: Limit on the number of results
+* type: integer
+* name: limit
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: sponsors
 ## /Events/{Event_Id}/Attendees/Check_In_Toggle/{Holder_Identifier}/Check_In ##
 ### Post ###
 * operationId: post_attendee_check_in
@@ -1082,9 +1916,23 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'attendees']
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}, {u'required': True, u'type': u'string', u'name': u'holder_identifier', u'in': u'path'}]
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: attendees
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
+#### Required ####
+* type: string
+* name: holder_identifier
+* in: path
 ## /Events/{Event_Id} ##
 ### Put ###
 * operationId: put_event
@@ -1106,8 +1954,19 @@
 * description: Validation Error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'schema': {u'$ref': u'#/definitions/EventPost'}, u'required': True, u'name': u'payload', u'in': u'body'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+##### Schema #####
+* $ref: #/definitions/EventPost
+##### Required #####
+* name: payload
+* in: body
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ### Get ###
 * operationId: get_event
 * summary: Fetch an event given its id
@@ -1118,9 +1977,28 @@
 * $ref: #/definitions/EventComplete
 ##### 404 #####
 * description: Event not found
-* parameters: [{u'description': u'Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors,tickets)', u'type': u'string', u'name': u'include', u'in': u'query'}, {u'description': u'ETag saved by client for cached resource', u'type': u'string', u'name': u'If-None-Match', u'in': u'header'}, {u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
-* parameters: [{u'description': None, u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+#### Parameters ####
+* description: Comma separated list of additional fields to load. Supported: sessions,tracks,microlocations,speakers,sponsors,tickets)
+* type: string
+* name: include
+* in: query
+* description: ETag saved by client for cached resource
+* type: string
+* name: If-None-Match
+* in: header
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
+### Parameters ###
+#### Description ####
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Delete ###
 * operationId: delete_event
 * summary: Delete an event given its id
@@ -1131,10 +2009,20 @@
 * $ref: #/definitions/Event
 ##### 404 #####
 * description: Event not found
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'events']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: events
 ## /Events/{Event_Id}/Tickets/ ##
-* parameters: [{u'required': True, u'type': u'integer', u'name': u'event_id', u'in': u'path'}]
+### Parameters ###
+#### Required ####
+* type: integer
+* name: event_id
+* in: path
 ### Get ###
 * operationId: get_tickets_list
 * summary: Get tickets of the event
@@ -1159,8 +2047,14 @@
 * description: Validation error
 ###### Schema ######
 * $ref: #/definitions/ValidationError
-* parameters: [{u'in': u'header', u'type': u'string', u'description': u'An optional fields mask', u'name': u'X-Fields', u'format': u'mask'}]
-* tags: [u'tickets']
+#### Parameters ####
+* in: header
+* type: string
+* description: An optional fields mask
+* name: X-Fields
+* format: mask
+#### Tags ####
+* 0: tickets
 # Responses #
 ## Notauthorizederror ##
 ## Invalidserviceerror ##
@@ -1171,9 +2065,42 @@
 ## Maskerror ##
 * description: When any error occurs on mask
 ## Permissiondeniederror ##
-* tags: [{u'description': u'Default namespace', u'name': u'default'}, {u'description': u'Events', u'name': u'events'}, {u'description': u'Sessions', u'name': u'sessions'}, {u'description': u'Tracks', u'name': u'tracks'}, {u'description': u'Speakers', u'name': u'speakers'}, {u'description': u'Sponsors', u'name': u'sponsors'}, {u'description': u'Microlocations', u'name': u'microlocations'}, {u'description': u'Login', u'name': u'login'}, {u'description': u'Exports', u'name': u'exports'}, {u'description': u'Imports', u'name': u'imports'}, {u'description': u'Users', u'name': u'users'}, {u'description': u'Extras', u'name': u'extras'}, {u'description': u'Notifications', u'name': u'notifications'}, {u'description': u'Error Responses', u'name': u'errors'}, {u'description': u'Attendees', u'name': u'attendees'}, {u'description': u'Tickets', u'name': u'tickets'}]
+# Tags #
+* description: Default namespace
+* name: default
+* description: Events
+* name: events
+* description: Sessions
+* name: sessions
+* description: Tracks
+* name: tracks
+* description: Speakers
+* name: speakers
+* description: Sponsors
+* name: sponsors
+* description: Microlocations
+* name: microlocations
+* description: Login
+* name: login
+* description: Exports
+* name: exports
+* description: Imports
+* name: imports
+* description: Users
+* name: users
+* description: Extras
+* name: extras
+* description: Notifications
+* name: notifications
+* description: Error Responses
+* name: errors
+* description: Attendees
+* name: attendees
+* description: Tickets
+* name: tickets
 * basePath: /api/v2
-* produces: [u'application/json']
+# Produces #
+* 0: application/json
 * host: open-event-dev.herokuapp.com
 # Definitions #
 ## Sessionpaginated ##
@@ -1228,14 +2155,17 @@
 #### Previous ####
 * type: string
 ## Sessionpost ##
-* required: [u'end_time', u'start_time', u'title']
+### Required ###
+* 0: end_time
+* 1: start_time
+* 2: title
 * type: object
 ### Properties ###
 #### Short_Abstract ####
 * type: string
 #### Microlocation_Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Subtitle ####
 * type: string
@@ -1245,7 +2175,7 @@
 #### Speaker_Ids ####
 ##### Items #####
 * type: integer
-* example: 0
+###### Example ######
 * format: int
 * type: array
 #### Start_Time ####
@@ -1256,13 +2186,13 @@
 * type: string
 #### Session_Type_Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Comments ####
 * type: string
 #### Track_Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Slides ####
 * type: string
@@ -1301,7 +2231,7 @@
 * type: string
 #### Code ####
 * type: integer
-* example: 404
+##### Example #####
 ## Eventcfs ##
 * type: object
 ### Properties ###
@@ -1321,7 +2251,11 @@
 * type: string
 * example: public
 ## Speakerpost ##
-* required: [u'country', u'email', u'name', u'organisation']
+### Required ###
+* 0: country
+* 1: email
+* 2: name
+* 3: organisation
 * type: object
 ### Properties ###
 #### Website ####
@@ -1348,7 +2282,7 @@
 * type: string
 #### Featured ####
 * type: boolean
-* example: False
+##### Example #####
 #### Github ####
 * type: string
 #### Facebook ####
@@ -1362,7 +2296,12 @@
 * example: email@domain.com
 * format: email
 ## Speaker ##
-* required: [u'country', u'email', u'id', u'name', u'organisation']
+### Required ###
+* 0: country
+* 1: email
+* 2: id
+* 3: name
+* 4: organisation
 * type: object
 ### Properties ###
 #### Website ####
@@ -1393,11 +2332,11 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Featured ####
 * type: boolean
-* example: False
+##### Example #####
 #### Github ####
 * type: string
 #### Facebook ####
@@ -1411,18 +2350,21 @@
 * example: email@domain.com
 * format: email
 ## Sessiontype ##
-* required: [u'id', u'length', u'name']
+### Required ###
+* 0: id
+* 1: length
+* 2: name
 * type: object
 ### Properties ###
 #### Length ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Name ####
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Invalidserviceerror ##
 * type: object
@@ -1436,7 +2378,7 @@
 * type: string
 #### Code ####
 * type: integer
-* example: 400
+##### Example #####
 ## Trackpaginated ##
 * type: object
 ### Properties ###
@@ -1455,7 +2397,9 @@
 #### Previous ####
 * type: string
 ## Trackpost ##
-* required: [u'color', u'name']
+### Required ###
+* 0: color
+* 1: name
 * type: object
 ### Properties ###
 #### Color ####
@@ -1484,19 +2428,23 @@
 * type: string
 #### Code ####
 * type: integer
-* example: 401
+##### Example #####
 ## Sessionmicrolocation ##
-* required: [u'id']
+### Required ###
+* 0: id
 * type: object
 ### Properties ###
 #### Name ####
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Track ##
-* required: [u'color', u'id', u'name']
+### Required ###
+* 0: color
+* 1: id
+* 2: name
 * type: object
 ### Properties ###
 #### Description ####
@@ -1517,7 +2465,7 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Name ####
 * type: string
@@ -1541,7 +2489,9 @@
 #### Details ####
 * type: string
 ## Sociallinkpost ##
-* required: [u'link', u'name']
+### Required ###
+* 0: link
+* 1: name
 * type: object
 ### Properties ###
 #### Link ####
@@ -1549,17 +2499,19 @@
 #### Name ####
 * type: string
 ## Sessiontrack ##
-* required: [u'id']
+### Required ###
+* 0: id
 * type: object
 ### Properties ###
 #### Name ####
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Sponsorpost ##
-* required: [u'name']
+### Required ###
+* 0: name
 * type: object
 ### Properties ###
 #### Description ####
@@ -1579,24 +2531,28 @@
 #### Name ####
 * type: string
 ## Sessiontypepost ##
-* required: [u'length', u'name']
+### Required ###
+* 0: length
+* 1: name
 * type: object
 ### Properties ###
 #### Length ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Name ####
 * type: string
 ## Notification ##
-* required: [u'email', u'id']
+### Required ###
+* 0: email
+* 1: id
 * type: object
 ### Properties ###
 #### Title ####
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Received_At ####
 * type: string
@@ -1615,22 +2571,23 @@
 * type: string
 #### Price ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Quantity ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Type ####
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Name ####
 * type: string
 ## User ##
-* required: [u'email']
+### Required ###
+* 0: email
 * type: object
 ### Properties ###
 #### Email ####
@@ -1645,14 +2602,16 @@
 * $ref: #/definitions/UserDetail
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Last_Access_Time ####
 * type: string
 * example: 2016-06-06T11:22:33
 * format: date-time
 ## Userpost ##
-* required: [u'email', u'password']
+### Required ###
+* 0: email
+* 1: password
 * type: object
 ### Properties ###
 #### Password ####
@@ -1673,9 +2632,10 @@
 * type: string
 #### Code ####
 * type: integer
-* example: 400
+##### Example #####
 ## Userput ##
-* required: [u'email']
+### Required ###
+* 0: email
 * type: object
 ### Properties ###
 #### User_Detail ####
@@ -1685,31 +2645,34 @@
 * example: email@domain.com
 * format: email
 ## Microlocation ##
-* required: [u'id', u'name']
+### Required ###
+* 0: id
+* 1: name
 * type: object
 ### Properties ###
 #### Room ####
 * type: string
 #### Floor ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Longitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Latitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Name ####
 * type: string
 ## Notificationpost ##
-* required: [u'email']
+### Required ###
+* 0: email
 * type: object
 ### Properties ###
 #### Received_At ####
@@ -1725,7 +2688,10 @@
 #### Title ####
 * type: string
 ## Eventpost ##
-* required: [u'end_time', u'name', u'start_time']
+### Required ###
+* 0: end_time
+* 1: name
+* 2: start_time
 * type: object
 ### Properties ###
 #### Event_Url ####
@@ -1764,7 +2730,7 @@
 * example: Draft
 #### Latitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Organizer_Description ####
 * type: string
@@ -1793,7 +2759,7 @@
 * type: string
 #### Longitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Email ####
 * type: string
@@ -1806,9 +2772,9 @@
 #### Call_For_Papers ####
 * $ref: #/definitions/EventCFS
 #### Has_Session_Speakers ####
-* default: False
+##### Default #####
 * type: boolean
-* example: False
+##### Example #####
 #### Sub_Topic ####
 * type: string
 * example: Air
@@ -1819,7 +2785,8 @@
 #### Code_Of_Conduct ####
 * type: string
 ## Sessionspeaker ##
-* required: [u'id']
+### Required ###
+* 0: id
 * type: object
 ### Properties ###
 #### Organisation ####
@@ -1828,7 +2795,7 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Token ##
 * type: object
@@ -1836,7 +2803,9 @@
 #### Access_Token ####
 * type: string
 ## Sociallink ##
-* required: [u'link', u'name']
+### Required ###
+* 0: link
+* 1: name
 * type: object
 ### Properties ###
 #### Link ####
@@ -1845,10 +2814,14 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Eventcomplete ##
-* required: [u'end_time', u'id', u'name', u'start_time']
+### Required ###
+* 0: end_time
+* 1: id
+* 2: name
+* 3: start_time
 * type: object
 ### Properties ###
 #### Event_Url ####
@@ -1878,7 +2851,7 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Speakers ####
 ##### Items #####
@@ -1899,7 +2872,7 @@
 * $ref: #/definitions/EventVersion
 #### Latitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Organizer_Description ####
 * type: string
@@ -1952,7 +2925,7 @@
 * type: array
 #### Longitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Thumbnail ####
 * type: string
@@ -1965,9 +2938,9 @@
 #### Call_For_Papers ####
 * $ref: #/definitions/EventCFS
 #### Has_Session_Speakers ####
-* default: False
+##### Default #####
 * type: boolean
-* example: False
+##### Example #####
 #### Sub_Topic ####
 * type: string
 * example: Air
@@ -1992,14 +2965,16 @@
 * type: string
 #### Year ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Logo ####
 * type: string
 #### Holder ####
 * type: string
 ## Login ##
-* required: [u'email', u'password']
+### Required ###
+* 0: email
+* 1: password
 * type: object
 ### Properties ###
 #### Password ####
@@ -2021,7 +2996,7 @@
 * format: date-time
 #### Amount ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Payment_Mode ####
 * type: string
@@ -2031,41 +3006,41 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Eventversion ##
 * type: object
 ### Properties ###
 #### Speakers_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Event_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Tracks_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Sessions_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Microlocations_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Sponsors_Ver ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Speakersession ##
 * type: object
 ### Properties ###
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Title ####
 * type: string
@@ -2074,7 +3049,7 @@
 ### Properties ###
 #### Checked_In ####
 * type: boolean
-* example: False
+##### Example #####
 #### Firstname ####
 * type: string
 #### Lastname ####
@@ -2089,7 +3064,7 @@
 * $ref: #/definitions/Order
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Userpaginated ##
 * type: object
@@ -2126,7 +3101,11 @@
 #### Previous ####
 * type: string
 ## Session ##
-* required: [u'end_time', u'id', u'start_time', u'title']
+### Required ###
+* 0: end_time
+* 1: id
+* 2: start_time
+* 3: title
 * type: object
 ### Properties ###
 #### Short_Abstract ####
@@ -2179,12 +3158,14 @@
 * format: uri
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Long_Abstract ####
 * type: string
 ## Sponsor ##
-* required: [u'id', u'name']
+### Required ###
+* 0: id
+* 1: name
 * type: object
 ### Properties ###
 #### Description ####
@@ -2203,17 +3184,18 @@
 * format: uri
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Name ####
 * type: string
 ## Tracksession ##
-* required: [u'id']
+### Required ###
+* 0: id
 * type: object
 ### Properties ###
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Title ####
 * type: string
@@ -2226,7 +3208,7 @@
 * format: email
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 ## Eventpaginated ##
 * type: object
@@ -2246,7 +3228,11 @@
 #### Previous ####
 * type: string
 ## Event ##
-* required: [u'end_time', u'id', u'name', u'start_time']
+### Required ###
+* 0: end_time
+* 1: id
+* 2: name
+* 3: start_time
 * type: object
 ### Properties ###
 #### Event_Url ####
@@ -2272,7 +3258,7 @@
 * type: string
 #### Id ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 #### Background_Image ####
 * type: string
@@ -2293,7 +3279,7 @@
 * $ref: #/definitions/EventVersion
 #### Latitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Organizer_Description ####
 * type: string
@@ -2326,7 +3312,7 @@
 * type: array
 #### Longitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Email ####
 * type: string
@@ -2339,9 +3325,9 @@
 #### Call_For_Papers ####
 * $ref: #/definitions/EventCFS
 #### Has_Session_Speakers ####
-* default: False
+##### Default #####
 * type: boolean
-* example: False
+##### Example #####
 #### Sub_Topic ####
 * type: string
 * example: Air
@@ -2352,12 +3338,13 @@
 #### Code_Of_Conduct ####
 * type: string
 ## Microlocationpost ##
-* required: [u'name']
+### Required ###
+* 0: name
 * type: object
 ### Properties ###
 #### Latitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Name ####
 * type: string
@@ -2365,11 +3352,12 @@
 * type: string
 #### Longitude ####
 * type: number
-* example: 0.0
+##### Example #####
 * format: float
 #### Floor ####
 * type: integer
-* example: 0
+##### Example #####
 * format: int
 * swagger: 2.0
-* consumes: [u'application/json']
+# Consumes #
+* 0: application/json
