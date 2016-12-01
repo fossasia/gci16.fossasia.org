@@ -38,6 +38,14 @@
   image: ../images/aryan.jpg
   bio: 16, Indian, computer science and maths enthusiast
 
+- name: Anastasia Kostiv
+  email: kostiv08nastya@gmail.com
+  github: nolik2000
+  twitter: KostivNastya
+  facebook: https://www.facebook.com/anastasiya.kostiv
+  image: ../images/AKostiv.jpg
+  bio: 16 years, Ukrainian developer
+
 - name: Darshil Patel
   email: darshil-patel@hotmail.com
   github: darshilpatel
@@ -52,7 +60,7 @@
   twitter: PolBaladas
   image: ../images/pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
-  
+
 - name: David Nagli
   email: davidnagli@gmail.com
   github: davidnagli
@@ -67,7 +75,7 @@
   twitter: ThienVHoang
   image: ../images/thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
-  
+
 - name: George Semenov
   email: themrgeorgeous@gmail.com
   github: MrGeorgeous
@@ -76,7 +84,7 @@
   image: ../images/mrgeorgeous.jpg
   websites: mrgeorgeous.ru, mrgeorgeous.com
   bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
-  
+
 - name: Shreyas Sanghvi
   email: Shreyas.sanghvi11@gmail.com
   github: shreyassanghvi
@@ -92,3 +100,41 @@
   facebook: https://facebook.com/cuteaditya1
   email: blusinghaditya@gmail.com
   bio: Programmer & Web Designer, Second year GCI!
+
+- name: Ridhwanul Haque
+  github: rhemon
+  twitter: rhemon19
+  facebook: https://facebook.com/ridhwanul.haque
+  email: rhemon19@gmail.com
+  bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
+
+- name: Victoria Juan
+  github: vickyjjj
+  email: victoriajuanhpst@gmail.com
+  image: ../images/victoriajuan.jpg
+
+  name: Boh JieQi
+  github: BohJieQi
+  email: boh.jieqi@dhs.sg
+  image: ../images/JQ.jpg
+  bio: 16, Student, GCI enthusiast
+
+  name: Baidyanath
+  github: Baidya99
+  image: ../images/Baidya.jpg
+  facebook: https://www.facebook.com/Baidya99
+  bio: 17, Earthling, coder and computer enthusiast
+
+
+- name: Koh Pi Rong
+  github: pipix51
+  email: koh.pirong@dhs.sg
+  image: ../images/KohPR.jpg
+  bio: 14, Student, Interested in Python, C++
+  
+- name: Lee Care Gene
+  github: LeeCareGene
+  image: ../images/leecaregene.jpg
+  twitter: LeeCareGene
+  facebook: https://www.facebook.com/lee.caregene
+  bio: Malaysian, gamer, coder, moving to Singapore next year!
