@@ -116,3 +116,13 @@
   image: ../images/Baidya.jpg
   facebook: https://www.facebook.com/Baidya99
   bio: 17, Earthling, coder and computer enthusiast.
+
+- name: Animesh Singh
+  email: f4.animesh@gmail.com
+  github: animeshsinghweb
+  facebook: https://www.facebook.com/f4.animesh
+  twitter: animesh22singh
+  image: ../images/animeshsinghweb.jpg
+  websites: animeshsingh.in, inmyplanet.com, tekhdecoded.com, about.me/animesh22singh, egurjan.com
+  bio: A 17 yrs tech geek, loves Ruby on Rails, JS, Python, WordPress, blogging, youtubing, Front End Development, FOSS
+
