@@ -105,7 +105,7 @@
   github: rhemon
   blog: https://rhemon.github.io/blog
   blog_img: rhemon-blog.png
-  
+
 - name: Victoria Juan
   github: vickyjjj
   email: victoriajuanhpst@gmail.com
@@ -116,13 +116,13 @@
   email: boh.jieqi@dhs.sg
   image: ../images/JQ.jpg
   bio: 16, Student, GCI enthusiast
-  
+
   name: Baidyanath
   github: Baidya99
   image: ../images/Baidya.jpg
   facebook: https://www.facebook.com/Baidya99
   bio: 17, Earthling, coder and computer enthusiast
-
+  
 - name: Lee Care Gene
   github: LeeCareGene
   image: ../images/leecaregene.jpg
