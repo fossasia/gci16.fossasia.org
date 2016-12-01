@@ -494,23 +494,13 @@ header h2 {
   max-width: 100%;
 }
 .slider {
-  background-color: #3343D6;
+  background-color: #3747D6;
   border-style: solid;
   border-color: #3343D6;
-  border-width: 50px;
+  border-width: 30px;
 }
-.slide{
--webkit-filter: grayscale(70%);
-border-radius: 20px;
-border-radius: 5px;
--webkit-transition : all 7s ease ;  ;
 
-}
-.slide:hover {
 
-  -webkit-filter: grayscale(0%);
-
-}
 aside#sidebar {
   float: right;
   width: 200px;
