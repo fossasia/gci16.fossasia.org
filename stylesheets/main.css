@@ -311,6 +311,7 @@ header{
 header h2{
 	color: white;
 	display: inline-block;
+	width: 460px;
 }
 
 header #navigation-bar, header a#view-on-github{
