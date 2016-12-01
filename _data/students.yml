@@ -119,7 +119,7 @@
 
 - name: Lee Care Gene
   github: LeeCareGene
-  image: leecaregene.jpg
+  image: ../images/leecaregene.jpg
   twitter: LeeCareGene
   facebook: https://www.facebook.com/lee.caregene
   bio: Malaysian, gamer, coder, moving to Singapore next year!
