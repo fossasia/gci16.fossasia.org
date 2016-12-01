@@ -1,0 +1,9 @@
+.sliderCaption {
+	font-size: 300%;
+	color: white;
+}
+
+.sliderCaption:hover {
+	color: #c9ddff;
+	text-decoration: none;
+}
