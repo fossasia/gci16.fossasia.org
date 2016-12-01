@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,59 +36,52 @@
 			            <div id="contributors-list">
             			</div>
         				</section>
-                <div class="students-section">
+		
+		<!---Students-Section--->
+       <div class="students-section">
                     <h1 class="title"><span>Students</span></h1>
                     <hr>
-                    <div class="row">
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+         <div class="row">
+            {% for student in site.data.students %}
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="grid">
                                 <figure class="effect-gcihover">
-                                    <img src="images/aryan.jpg" alt="Aryan Bhasin"/>
+				     {% if student.image %}
+                                    <img src="images/{{ student.image }}" alt="{{ student.name }}"/>
+				     {% else %}
+				    <img src="images/default_student.png" alt="{{ student.name }}"/>
+				     {% endif %}
                                     <figcaption>
-                                        <h2><span>Aryan</span> Bhasin</h2>
+                                        <h2><span>{{ student.name }}</span></h2>
                                         <p>
-                                            <a href="https://www.facebook.com/bhasinaryan" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                            <a href="https://github.com/aryanbhasin" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                            <a href="https://twitter.com/aryanbhasin" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
+						{% if student.facebook %}
+                                            <a href="https://www.facebook.com/{{ student.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
+						{% endif %}
+						{% if student.github %}
+                                            <a href="https://github.com/{{ student.github }}" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
+						{% endif %}
+						{% if student.twitter %}
+                                            <a href="https://twitter.com/{{ student.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
+						{% endif %}
+						{% if student.email %}
+                                            <a href="mailto:{{ student.email }}" target="_blank"><i class="fa fa-envelope" aria-hidden="false"></i></a>
+						{% endif %}
+						{% if student.blog %}
+                                            <a href="{{ student.blog }}" target="_blank"><i class="fa fa-rss" aria-hidden="false"></i></a>
+						{% endif %}
                                         </p>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div>
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/AKostiv.jpg" alt="Anastasia Kostiv"/>
-                                  <figcaption>
-                                      <h2><span>Anastasia</span> Kostiv</h2>
-                                      <p>
-                                          <a href="https://www.facebook.com/anastasiya.kostiv" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/nolik2000" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/KostivNastya" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                              </figure>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/thien.jpg" alt="Thien Hoang"/>
-                                  <figcaption>
-                                      <h2><span>Thien</span> Hoang</h2>
-                                      <p>
-                                          <a href="https://www.facebook.com/hvt99" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/hoangvanthien" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/ThienVHoang" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                              </figure>
-                            </div>
-                        </div>
+			{% endfor %}
                     </div>
+												
                 </div>
+	</div>
+
+
+			<!---Social-Media--->
                 <div class="social-media">
                     <h1 class="white-header">FOSSASIA on social media</h1>
                     <div class="row">
