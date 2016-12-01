@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -31,6 +32,41 @@
 
     <section class="main-content">
         <div class="container">
+        		<section class="mentors">
+        			<h1>MENTORS</h1>
+        			<div class="row mentors-wrapper">
+        			{% for mentor in site.data.mentors %}
+		          	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        					<div class="card">
+        						<div class="avatar">
+        							{% if mentor.image %}
+        								<img src="images/{{mentor.image}}" alt="{{ mentor.name }}">   
+        							{% else %}
+        								<img src="images/member.png" alt="{{ mentor.name }}">   
+        							{% endif %}
+        						  <div class="social">
+        								{% if mentor.github %}
+        									<a href="https://github.com/{{mentor.github}}" target="_blank"><i class="fa fa-github"></i></a>
+        								{% endif %}
+        								{% if mentor.facebook %}
+        									<a href="https://github.com/{{mentor.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
+        								{% endif %}
+        								<br>
+        								{% if mentor.twitter %}
+        									<a href="https://github.com/{{mentor.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+        								{% endif %}
+        								{% if mentor.blog %}
+        									<a href="{{mentor.blog}}" target="_blank"><i class="fa fa-code"></i></a>
+        								{% endif %}
+        							</div>         						
+        							<p>{{mentor.name}}</p>
+        						</div>
+        						
+        					</div>
+        				</div>
+		          {% endfor %}
+		          </div>
+        		</section>
             <section id="contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list">
