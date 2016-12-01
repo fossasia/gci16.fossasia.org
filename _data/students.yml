@@ -38,6 +38,14 @@
   image: ../images/aryan.jpg
   bio: 16, Indian, computer science and maths enthusiast
 
+- name: Anastasia Kostiv
+  email: kostiv08nastya@gmail.com
+  github: nolik2000
+  twitter: KostivNastya
+  facebook: https://www.facebook.com/anastasiya.kostiv
+  image: ../images/AKostiv.jpg
+  bio: 16 years, Ukrainian developer
+
 - name: Darshil Patel
   email: darshil-patel@hotmail.com
   github: darshilpatel
