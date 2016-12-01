@@ -91,7 +91,6 @@
                 </div>
 
                 <div class="row">
-
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
@@ -107,13 +106,27 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/KohPR.jpg" alt="KohPiRong" />
+                                <figcaption>
+                                    <h2 style="color: black;"><span>PiRong</span> Koh</h2>
+                                    <p>
+                                        <a href="https://www.facebook.com/profile.php?id=100010580988557" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="https://github.com/pipix51" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="https://twitter.com/pipix51" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                     {% for blog in site.data.blogs %}
-
                     <div class="blog_holder col-xs-3 col-sm-3 col-md-3 col-lg-3">
                         <div {% if blog.blog_img %} style="background: url('images/{{ blog.blog_img }}') no-repeat center left;" {% endif %} class="blog_post">
                             <div class="blog-title"> Blog of
@@ -182,5 +195,4 @@
     <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 
 </body>
-
 </html>
