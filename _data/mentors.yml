@@ -2,9 +2,9 @@
   github: hpdang
   image: hpdang.jpg
   blog: http://blog.fossasia.org/
-  twitter: 
+  twitter:
   facebook: hpdang
-  bio: 
+  bio:
 
 - name: Mario Behling
   github: mariobehling
@@ -12,4 +12,12 @@
   blog: http://mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
-  bio: 
+  bio:
+
+- name: Saptak Sengupta
+  github: SaptakS
+  image: saptaks.jpg
+  blog: http://blog.fossasia.org/
+  twitter: Saptak013
+  facebook: s4pt4ks
+  bio:
