@@ -1,4 +1,4 @@
-#New members please add your credentials to the bottom of the file.
+﻿#New members please add your credentials to the bottom of the file.
 
 - name: Oana Rosca
   github: oanarosca
@@ -122,6 +122,13 @@
   image: ../images/Baidya.jpg
   facebook: https://www.facebook.com/Baidya99
   bio: 17, Earthling, coder and computer enthusiast
+
+
+- name: Koh Pi Rong
+  github: pipix51
+  email: koh.pirong@dhs.sg
+  image: ../images/KohPR.jpg
+  bio: 14, Student, Interested in Python, C++
   
 - name: Lee Care Gene
   github: LeeCareGene
@@ -129,3 +136,5 @@
   twitter: LeeCareGene
   facebook: https://www.facebook.com/lee.caregene
   bio: Malaysian, gamer, coder, moving to Singapore next year!
+
+
