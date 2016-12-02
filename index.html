@@ -81,141 +81,48 @@
                 <div id="contributors-list">
                 </div>
             </section>
-            <div class="students-section">
-                <h1 class="title"><span>Students</span></h1>
-                <hr>
-                <div class="row">
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/aryan.jpg" alt="Aryan Bhasin">
-                                <figcaption>
-                                    <h2><span>Aryan</span> Bhasin</h2>
-                                    <p>
-                                        <a href="//www.facebook.com/bhasinaryan"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/aryanbhasin"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/aryanbhasin"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
+            <section class="students">
+                <h1>STUDENTS</h1>
+                <div class="row students-wrapper">
+                    {% for student in site.data.students %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if student.image %}
+                                <img src="images/{{student.image}}" alt="{{ student.name }}">
+                                {% else %}
+                                <img src="images/member.png" alt="{{ student.name }}">
+                                {% endif %}
+                                <div class="social">
+                                    {% if student.github %}
+                                    <a href="//github.com/{{student.github}}"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i></a>
+                                    {% endif %}
+                                    {% if student.facebook %}
+                                    <a href="//facebook.com/{{student.facebook}}"
+                                       target="_blank">
+                                        <i class="fa fa-facebook"></i></a>
+                                    {% endif %}
+                                    <br>
+                                    {% if student.twitter %}
+                                    <a href="//twitter.com/{{student.twitter}}"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i></a>
+                                    {% endif %}
+                                    {% if student.blog %}
+                                    <a href="{{student.blog}}"
+                                       target="_blank">
+                                        <i class="fa fa-code"></i></a>
+                                    {% endif %}
+                                </div>
+                                <p>{{student.name}}</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/AKostiv.jpg" alt="Anastasia Kostiv">
-                                <figcaption>
-                                    <h2><span>Anastasia</span> Kostiv</h2>
-                                    <p>
-                                        <a href="//www.facebook.com/anastasiya.kostiv"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/nolik2000"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/KostivNastya"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/JQ.jpg" alt="BohJieQi">
-                                <figcaption>
-                                    <h2><span style="color: black;">JieQi</span> Boh</h2>
-                                    <p>
-                                        <a href="#"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/BohJieQi"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/Boh_Jie_Qi"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
-                <div class="row">
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/thien.jpg" alt="Thien Hoang">
-                                <figcaption>
-                                    <h2><span>Thien</span> Hoang</h2>
-                                    <p>
-                                        <a href="//www.facebook.com/hvt99"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/hoangvanthien"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/ThienVHoang"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/KohPR.jpg" alt="KohPiRong">
-                                <figcaption>
-                                    <h2 style="color: black;"><span>PiRong</span> Koh</h2>
-                                    <p>
-                                        <!-- Ignore LineLengthBear -->
-                                        <a href="//www.facebook.com/profile.php?id=100010580988557"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/pipix51"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/pipix51"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/leecaregene.jpg" alt="Lee Care Gene">
-                                <figcaption>
-                                    <h2><span>Lee</span> Care Gene</h2>
-                                    <p>
-                                        <a href="//www.facebook.com/lee.caregene"
-                                           target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                        <a href="//github.com/LeeCareGene"
-                                           target="_blank">
-                                            <i class="fa fa-github" aria-hidden="false"></i></a>
-                                        <a href="//twitter.com/LeeCareGene"
-                                           target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        </div>
-                </div>
-            </div>
+            </section>
             <div class="blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
