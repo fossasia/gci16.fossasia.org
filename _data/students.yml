@@ -139,9 +139,15 @@
   twitter: LeeCareGene
   facebook: https://www.facebook.com/lee.caregene
   bio: Malaysian, gamer, coder, moving to Singapore next year!
-  
+
 - name: Adarsh Kumar
   github: adarsh-ideal
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+
+- name: Abishek V Ashok
+  github: Abhi2424shek
+  email: abhi2424shekvashok@gmail.com
+  image: ../images/abishek.jpg
+  bio: I believe, "You can't make a person learn something, you can only make it discovered within themselves" - Galileo
