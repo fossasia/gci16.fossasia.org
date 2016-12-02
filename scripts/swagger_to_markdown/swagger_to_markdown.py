@@ -43,7 +43,7 @@ def writeOut(markdown, output_file):
 	f.write(markdown)
 
 input_file = sys.argv[1]
-output_file = input_file[:-4]+'.markdown'
+output_file = input_file[:-4]+'markdown'
 d = loadJSON(input_file)
 parseJSON(d, 1)
 markdown = markdown.replace('#######','######')
