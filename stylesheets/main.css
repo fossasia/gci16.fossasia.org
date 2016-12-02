@@ -35,7 +35,7 @@
     text-align: center;
     background-color: #4062BB;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 #contributors h2{
@@ -47,66 +47,40 @@
     padding: 10px 10px;
 }
 
-#contributors-list div{
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
-    height: 250px;
-    background-color: white;
+#contributors-list div span{
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#contributors-list div p{
-    position: absolute;
-    bottom: 0;
-    left: 40px;
+    margin-top: 60%;
+    left: 30px;
     font-size: 18px;
 }
 
 #contributors-list div img{
     width: 200px;
     height: 200px;
-    transition: opacity 1s;
 }
 
 #contributors-list div a{
+    position: absolute;
+    left: 20px;
+    margin-top: 212px;
+    color: #000;
     cursor: pointer;
-    color: black
 }
 
 #contributors-list div .gh-icon{
     position: absolute;
-    bottom: 8px;
-    left: 12px;
+    top: -3px;
 }
 
-#contributors-list div img:hover{
-    opacity: 0.5;
+#contributors-list .avatar:hover .contribs {
+    opacity: 0.8;
 }
 
-@media (max-width: 1200px) {
-    #contributors-list{
-        width: 1000px;
-    }
-}
-
-@media (max-width: 1020px) {
-    #contributors-list{
-        width: 800px;
-    }
-}
-
-@media (max-width: 812px) {
-    #contributors-list{
-        width: 600px;
-    }
-}
-
-@media (max-width: 610px) {
-    #contributors-list{
-        width: 400px;
-    }
+#contributors-list .contribs p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .students-section {
@@ -344,7 +318,15 @@ figure.effect-gcihover:hover figcaption::before {
     text-align: center;
 }
 
-.mentors .card {
+.mentors .card, #contributors-list .card {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mentors .card, #contributors-list .card {
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -357,7 +339,18 @@ figure.effect-gcihover:hover figcaption::before {
     font-size: 20px;
 }
 
-.mentors .avatar {
+.mentors .avatar, #contributors-list .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.mentors .card p {
+    margin-top: 4.5%;
+    font-size: 20px;
+}
+
+.mentors .avatar, #contributors-list .avatar {
     position: relative;
     width: 200px;
     height: 200px;
@@ -367,20 +360,22 @@ figure.effect-gcihover:hover figcaption::before {
     width: 100%;
 }
 
-.mentors .social {
+.mentors .social, #contributors-list .contribs {
     position: absolute;
-    background: white;
+    background: #fff;
     opacity: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     padding-top: 20%;
 }
 
 .mentors .card .avatar:hover .social{
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 .mentors .social i {
