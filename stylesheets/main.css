@@ -388,3 +388,67 @@ figure.effect-gcihover:hover figcaption::before {
     margin: 10px;
     text-align: center;
 }
+
+.students h1 {
+    margin: 0 auto;
+    padding: 10px;
+    width: 170px;
+    color: white;
+    background: #a64942;
+    text-align: center;
+}
+
+.students .students-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    background: #a64942;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.students .card {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.students .card p {
+    margin-top: 4.5%;
+    font-size: 20px;
+}
+
+.students .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.students .card .avatar img {
+    width: 100%;
+}
+
+.students .social {
+    position: absolute;
+    background: white;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    padding-top: 20%;
+}
+
+.students .card .avatar:hover .social{
+    opacity: 0.75;
+}
+
+.students .social i {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
