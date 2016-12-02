@@ -22,6 +22,7 @@ $(function(){
     });
 });
 
+<<<<<<< HEAD
 $(function(){
     $.ajax({
         url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
