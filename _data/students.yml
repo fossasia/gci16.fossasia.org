@@ -15,11 +15,11 @@
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog_link: "http://mehant-alphaunitedteam.blogspot.in/"
+  blog: http://mehant-alphaunitedteam.blogspot.in/
   email: kmehant@gmail.com
-  github_username: "https://github.com/kmehant"
-  image_url: ../images/mehant.jpg
-  twitter_link: "https://twitter.com/mehant1"
+  github: https://github.com/kmehant"
+  image: ../images/mehant.jpg
+  twitter: https://twitter.com/mehant1
   bio: I don't play games, I build games! "GameJamTitans finalist" \m/
 
 - name: Alejandro Heredia
@@ -115,13 +115,13 @@
   email: victoriajuanhpst@gmail.com
   image: ../images/victoriajuan.jpg
 
-  name: Boh JieQi
+- name: Boh JieQi
   github: BohJieQi
   email: boh.jieqi@dhs.sg
   image: ../images/JQ.jpg
   bio: 16, Student, GCI enthusiast
 
-  name: Baidyanath
+- name: Baidyanath
   github: Baidya99
   image: ../images/Baidya.jpg
   facebook: https://www.facebook.com/Baidya99
@@ -145,3 +145,9 @@
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+
+- name: Abishek V Ashok
+  github: Abhi2424shek
+  email: abhi2424shekvashok@gmail.com
+  image: ../images/students/abishek.jpg
+  bio: 15, Programmger from God's own country.
