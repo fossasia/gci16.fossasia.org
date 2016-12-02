@@ -4,7 +4,20 @@ $(function(){
     }).done(function(data){
         data.forEach(function(contributors){
             // Ignore LineLengthBear
-            $("#contributors-list").append("<div><img src="+contributors.avatar_url+"><a href="+contributors.html_url+"><i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i></a><p>"+contributors.login+"</p></div>");
+            var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
+            html += "<div class='avatar'>";
+            html += "<img src="+contributors.avatar_url+"><div class='contribs'><p>";
+            html += contributors.contributions;
+            if (contributors.contributions === 1) {
+                html += " contribution";
+            }
+            else {
+                html += " contributions";
+            }
+            html += "</p></div><a href="+contributors.html_url+">";
+            html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
+            html += contributors.login+"</span></a></div></div></div>";
+            $("#contributors-list").append(html);
         });
     });
 });
