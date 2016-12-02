@@ -13,3 +13,27 @@
   twitter: mariobehling
   facebook: mariobehling
   bio:
+
+- name: Louis Gagnon
+  github: louisgag
+  image: louisgagnon.jpg
+  blog: http://louisgagnon.com/
+  twitter: louisgagnoncom
+  facebook: 
+  bio:
+
+- name: Saptak Sengupta
+  github: saptaks
+  image: saptaks.jpg
+  blog: http://saptaks.me
+  twitter: Saptak013
+  facebook: s4pt4ks
+  bio:
+
+- name: Hemant Jadon
+  github: hemantjadon
+  image: hemantjadon.jpg
+  blog:
+  twitter: hemantjadonhj
+  facebook: hemant.jadon
+  bio:

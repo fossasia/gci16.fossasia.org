@@ -42,9 +42,9 @@
                         <div class="card">
                             <div class="avatar">
                                 {% if mentor.image %}
-                                <img src="images/{{mentor.image}}" alt="{{ mentor.name }}">
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
                                 {% else %}
-                                <img src="images/member.png" alt="{{ mentor.name }}">
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
                                 {% endif %}
                                 <div class="social">
                                     {% if mentor.github %}
@@ -110,7 +110,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/aryan.jpg" alt="Aryan Bhasin">
+                                <img src="images/students/aryan.jpg" alt="Aryan Bhasin">
                                 <figcaption>
                                     <h2><span>Aryan</span> Bhasin</h2>
                                     <p>
@@ -131,7 +131,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/AKostiv.jpg" alt="Anastasia Kostiv">
+                                <img src="images/students/AKostiv.jpg" alt="Anastasia Kostiv">
                                 <figcaption>
                                     <h2><span>Anastasia</span> Kostiv</h2>
                                     <p>
@@ -152,7 +152,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/JQ.jpg" alt="BohJieQi">
+                                <img src="images/students/JQ.jpg" alt="BohJieQi">
                                 <figcaption>
                                     <h2><span style="color: black;">JieQi</span> Boh</h2>
                                     <p>
@@ -175,7 +175,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/thien.jpg" alt="Thien Hoang">
+                                <img src="images/students/thien.jpg" alt="Thien Hoang">
                                 <figcaption>
                                     <h2><span>Thien</span> Hoang</h2>
                                     <p>
@@ -196,7 +196,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/KohPR.jpg" alt="KohPiRong">
+                                <img src="images/students/KohPR.jpg" alt="KohPiRong">
                                 <figcaption>
                                     <h2 style="color: black;"><span>PiRong</span> Koh</h2>
                                     <p>
@@ -218,7 +218,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                                <img src="images/leecaregene.jpg" alt="Lee Care Gene">
+                                <img src="images/students/leecaregene.jpg" alt="Lee Care Gene">
                                 <figcaption>
                                     <h2><span>Lee</span> Care Gene</h2>
                                     <p>
@@ -236,6 +236,28 @@
                             </figure>
                         </div>
                         </div>
+			<div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/adarsh.jpg" alt="Adarsh Kumar">
+                                <figcaption>
+                                    <h2 style="color: black;"><span>Adarsh</span> Kumar</h2>
+                                    <p>
+                                        <!-- Ignore LineLengthBear -->
+                                        <a href="https://idealadarsh.wordpress.com"
+                                           target="_blank">
+                                            <i class="fa fa-rss" aria-hidden="false"></i></a>
+                                        <a href="https://github.com/adarsh-ideal"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="https://twitter.com/Adarsh_Kashyap1"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="blog" style="background-color: #1B5E20;">
@@ -244,7 +266,7 @@
                     <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-3">
-                        <div {% if blog.blog_img %} style="background: url("images/{{ blog.blog_img }}") no-repeat center top;" {% endif %} class="blog-post">
+                        <div {% if blog.blog_img %} style="background: url("images/blogs/{{ blog.blog_img }}") no-repeat center top;" {% endif %} class="blog-post">
                             <div class="blog-title"> Blog of
                                 <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
                                 <br> {% if blog.article %}
