@@ -8,15 +8,5 @@ $(function(){
 
 		});
 	});
-
-	$('.slide-caption').textillate({ 
-		// selector: '.caption',
-		in: { 
-				effect: 'fadeInLeftBig',
-				callback: function() {
-					// $('.desc').textillate({in: {effect: 'fadeInLeftBig'}})
-				}
-		} }
-	);
 	
 });
