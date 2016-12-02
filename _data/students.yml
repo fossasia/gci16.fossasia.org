@@ -145,3 +145,11 @@
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+
+- name: Minh Chien Ha
+  email: wermarter@gmail.com
+  github: wermarter
+  facebook: fb.com/chien.pip
+  twitter: wermarter
+  image: ../images/chien.jpg
+  bio: I've just lived for 16 years. Love learning about bots, AI but still a newbie (-_-)
