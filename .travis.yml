@@ -9,5 +9,5 @@ script:
   - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
 branches:
   only:
-    - gh-pages
-  
+    - gh-pages  # Must be appear explicitly
+    - /./  # Allows builds for any other branch name
