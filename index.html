@@ -13,15 +13,13 @@
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="ism/css/my-slider.css"/>
     <script src="ism/js/ism-2.2.min.js"></script>
-
-  
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+    <title>Gci16.fossasia.org by fossasia</title>
+</head>
 
-        <title>Gci16.fossasia.org by fossasia</title>
-    </head>
-
+<<<<<<< HEAD
     <body>
         <header>
             <div class="inner">
@@ -51,145 +49,291 @@
             </ol>
           </div>
         </div>
-        <section class="main-content">
-            <div class="container">
-                <section id="contributors">
-                    <h2>CONTRIBUTORS</h2>
-                        <div id="contributors-list">
-                    </div>
-                </section>
-                <div class="students-section">
-                    <h1 class="title"><span>Students</span></h1>
-                    <hr>
-                    <div class="row">
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                                <figure class="effect-gcihover">
-                                    <img src="images/aryan.jpg" alt="Aryan Bhasin"/>
-                                    <figcaption>
-                                        <h2><span>Aryan</span> Bhasin</h2>
-                                        <p>
-                                            <a href="https://www.facebook.com/bhasinaryan" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                            <a href="https://github.com/aryanbhasin" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                            <a href="https://twitter.com/aryanbhasin" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                        </p>
-                                    </figcaption>
-                                </figure>
+    <section class="main-content">
+        <div class="container">
+            <section class="mentors">
+                <h1>MENTORS</h1>
+                <div class="row mentors-wrapper">
+                    {% for mentor in site.data.mentors %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if mentor.image %}
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                {% else %}
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                                {% endif %}
+                                <div class="social">
+                                    {% if mentor.github %}
+                                    <a href="//github.com/{{mentor.github}}"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i></a>
+                                    {% endif %}
+                                    {% if mentor.facebook %}
+                                    <a href="//facebook.com/{{mentor.facebook}}"
+                                       target="_blank">
+                                        <i class="fa fa-facebook"></i></a>
+                                    {% endif %}
+                                    <br>
+                                    {% if mentor.twitter %}
+                                    <a href="//twitter.com/{{mentor.twitter}}"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i></a>
+                                    {% endif %}
+                                    {% if mentor.blog %}
+                                    <a href="{{mentor.blog}}"
+                                       target="_blank">
+                                        <i class="fa fa-code"></i></a>
+                                    {% endif %}
+                                </div>
+                                <p>{{mentor.name}}</p>
                             </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/AKostiv.jpg" alt="Anastasia Kostiv"/>
-                                  <figcaption>
-                                      <h2><span>Anastasia</span> Kostiv</h2>
-                                      <p>
-                                          <a href="https://www.facebook.com/anastasiya.kostiv" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/nolik2000" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/KostivNastya" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                              </figure>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/JQ.jpg" alt="BohJieQi"/>
-                                  <figcaption>
-                                      <h2><span style="color: black;">JieQi</span> Boh</h2>
-                                      <p>
-                                          <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/BohJieQi" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/Boh_Jie_Qi" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                                </figure>
-                              </div>
-                            </div>
-                      </div>
-
-                      <div class="row">
-
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/thien.jpg" alt="Thien Hoang"/>
-                                  <figcaption>
-                                      <h2><span>Thien</span> Hoang</h2>
-                                      <p>
-                                          <a href="https://www.facebook.com/hvt99" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/hoangvanthien" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/ThienVHoang" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                              </figure>
-                            </div>
-                        </div>
-                          
-                        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                            <div class="grid">
-                              <figure class="effect-gcihover">
-                                  <img src="images/KohPR.jpg" alt="KohPiRong"/>
-                                  <figcaption>
-                                      <h2 style="color: black;"><span>PiRong</span> Koh</h2>
-                                      <p>
-                                          <a href="https://www.facebook.com/profile.php?id=100010580988557" target="_blank"><i class="fa fa-facebook" aria-hidden="false"></i></a>
-                                          <a href="https://github.com/pipix51" target="_blank"><i class="fa fa-github" aria-hidden="false"></i></a>
-                                          <a href="https://twitter.com/pipix51" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
-                                      </p>
-                                  </figcaption>
-                                </figure>
-                              </div>
-                            </div>
-                    </div>
-
-                <div class="social-media">
-                    <h1 class="white-header">FOSSASIA on social media</h1>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=450&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="493" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="g-page" data-href="https://plus.google.com/+fossasiaorg" data-width="450"></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <a class="twitter-timeline" data-width="452" data-height="493" href="https://twitter.com/fossasia">Tweets by fossasia</a>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                           <div class="github-widget" data-username="fossasia" style="background:white;margin:auto"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6" style="margin-top: 2em; padding: 1em">
-                          <div style="background: white; display: flex; align-items: center; flex-direction: column;">
-                              <div class="g-ytsubscribe" data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full" data-count="default" style="display:flex; box-shadow: none"></div>
-                              <iframe width="510px" height="310px" src="https://www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5" frameborder="0" allowfullscreen style="margin-top: 1em;"></iframe>
-                          </div>
-                         </div>
-                     </div>
+                    {% endfor %}
                 </div>
-        </section>
-
-        <!--=============================
-        =            Scripts            =
-        ==============================-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        <script src="javascripts/ism-2.2.min.js"></script>
-        <script src="javascripts/main.js"></script>
-        <script src="javascripts/slider.js"></script>
-        <script src="https://use.fontawesome.com/7f8b61349a.js"></script>
-        <!-- Github Cards -->
-        <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-
-    </body>
-
+            </section>
+            <section id="contributors">
+                <h2>CONTRIBUTORS</h2>
+                <div id="contributors-list">
+                </div>
+            </section>
+            <div class="students-section">
+                <h1 class="title"><span>Students</span></h1>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/aryan.jpg" alt="Aryan Bhasin">
+                                <figcaption>
+                                    <h2><span>Aryan</span> Bhasin</h2>
+                                    <p>
+                                        <a href="//www.facebook.com/bhasinaryan"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/aryanbhasin"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/aryanbhasin"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/AKostiv.jpg" alt="Anastasia Kostiv">
+                                <figcaption>
+                                    <h2><span>Anastasia</span> Kostiv</h2>
+                                    <p>
+                                        <a href="//www.facebook.com/anastasiya.kostiv"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/nolik2000"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/KostivNastya"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/JQ.jpg" alt="BohJieQi">
+                                <figcaption>
+                                    <h2><span style="color: black;">JieQi</span> Boh</h2>
+                                    <p>
+                                        <a href="#"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/BohJieQi"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/Boh_Jie_Qi"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/thien.jpg" alt="Thien Hoang">
+                                <figcaption>
+                                    <h2><span>Thien</span> Hoang</h2>
+                                    <p>
+                                        <a href="//www.facebook.com/hvt99"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/hoangvanthien"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/ThienVHoang"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/KohPR.jpg" alt="KohPiRong">
+                                <figcaption>
+                                    <h2 style="color: black;"><span>PiRong</span> Koh</h2>
+                                    <p>
+                                        <!-- Ignore LineLengthBear -->
+                                        <a href="//www.facebook.com/profile.php?id=100010580988557"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/pipix51"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/pipix51"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/leecaregene.jpg" alt="Lee Care Gene">
+                                <figcaption>
+                                    <h2><span>Lee</span> Care Gene</h2>
+                                    <p>
+                                        <a href="//www.facebook.com/lee.caregene"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/LeeCareGene"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/LeeCareGene"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        </div>
+            <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/adarsh.jpg" alt="Adarsh Kumar">
+                                <figcaption>
+                                    <h2 style="color: black;"><span>Adarsh</span> Kumar</h2>
+                                    <p>
+                                        <!-- Ignore LineLengthBear -->
+                                        <a href="//idealadarsh.wordpress.com"
+                                           target="_blank">
+                                            <i class="fa fa-rss" aria-hidden="false"></i></a>
+                                        <a href="//github.com/adarsh-ideal"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/Adarsh_Kashyap1"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog" style="background-color: #1B5E20;">
+                <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
+                <div class="row">
+                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                    {% for blog in site.data.blogs %}
+                    <div class="blog-holder col-xs-3">
+                        <div {% if blog.blog_img %} style="background: url("images/blogs/{{ blog.blog_img }}") no-repeat center top;" {% endif %} class="blog-post">
+                            <div class="blog-title"> Blog of
+                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                <br> {% if blog.article %}
+                                <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!-- Stop ignoring -->
+                </div>
+            </div>
+            <div class="social-media">
+                <h1 class="white-header">FOSSASIA on social media</h1>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <!-- Ignore LineLengthBear -->
+                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=450&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="493"
+                                style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                                allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
+                             data-width="450"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <a class="twitter-timeline" data-width="452" data-height="493"
+                           href="//twitter.com/fossasia">Tweets by fossasia</a>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="github-widget" data-username="fossasia"
+                             style="background:white;margin:auto"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6" style="margin-top: 2em; padding: 1em">
+                        <!-- Ignore LineLengthBear -->
+                        <div style="background: white; display: flex; align-items: center; flex-direction: column;">
+                            <div class="g-ytsubscribe"
+                                 data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full"
+                                 data-count="default" style="display:flex; box-shadow: none"></div>
+                            <!-- Ignore LineLengthBear -->
+                            <iframe width="510px" height="310px" src="//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                                    frameborder="0" allowfullscreen style="margin-top: 1em;">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//apis.google.com/js/platform.js" async defer></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? "http" : "https";
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + "://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/slider.js"></script>
+    <script src="//use.fontawesome.com/7f8b61349a.js"></script>
+    <!-- Github Cards -->
+    <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+</body>
 </html>

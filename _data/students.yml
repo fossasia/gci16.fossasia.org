@@ -1,4 +1,4 @@
-#New members please add your credentials to the bottom of the file.
+# New members please add your credentials to the bottom of the file.
 
 - name: Oana Rosca
   github: oanarosca
@@ -103,6 +103,10 @@
 
 - name: Ridhwanul Haque
   github: rhemon
+  twitter: rhemon19
+  facebook: https://facebook.com/ridhwanul.haque
+  email: rhemon19@gmail.com
+  bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
   blog: https://rhemon.github.io/blog
   blog_img: rhemon-blog.png
 
@@ -128,3 +132,16 @@
   email: koh.pirong@dhs.sg
   image: ../images/KohPR.jpg
   bio: 14, Student, Interested in Python, C++
+
+- name: Lee Care Gene
+  github: LeeCareGene
+  image: ../images/leecaregene.jpg
+  twitter: LeeCareGene
+  facebook: https://www.facebook.com/lee.caregene
+  bio: Malaysian, gamer, coder, moving to Singapore next year!
+
+- name: Adarsh Kumar
+  github: adarsh-ideal
+  image: adarsh.jpg
+  twitter: Adarsh_Kumar1
+  bio: 16, Student Programmer, Web developer, Computer enthusiast
