@@ -7,3 +7,7 @@ install:
 script:
   - bundle exec jekyll build
   - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
+branches:
+  only:
+    - gh-pages
+  
