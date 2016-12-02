@@ -145,3 +145,11 @@
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+
+- name: Yash Kumar Verma
+  github: yashkumarverma
+  image: ../images/yash_kumar_verma.jpg
+  facebook: https://www.facebook.com/yashkumarverma
+  twitter: https://twitter.com/yash_kr_verma
+  blog_link: http://yashkumarverma.net
+  bio: 15, student from India. Loves PHP and JS
