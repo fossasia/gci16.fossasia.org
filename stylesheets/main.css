@@ -331,7 +331,6 @@ figure.effect-gcihover:hover figcaption::before {
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
 	color: #fafafa;
 }
-
 .mentors h1 {
 	margin: 0 auto;
 	padding: 10px;
@@ -341,7 +340,7 @@ figure.effect-gcihover:hover figcaption::before {
 	text-align: center;
 }
 
-.mentors .mentors-wrapper {
+ .mentors .mentors-wrapper {
 	width: 100%;
 	height: 100%;
 	margin: auto;
@@ -351,7 +350,7 @@ figure.effect-gcihover:hover figcaption::before {
 	text-align: center;
 }
 
-.mentors .card {
+.students .card, .mentors .card {
 	width: 200px;
 	height: 250px;
 	margin: 20px;
@@ -359,22 +358,22 @@ figure.effect-gcihover:hover figcaption::before {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mentors .card p {
+.students .card p, .mentors .card p {
 	margin-top: 4.5%;
 	font-size: 20px;
 }
 
-.mentors .avatar {
+.students .avatar, .mentors .avatar {
 	position: relative;
 	width: 200px;
 	height: 200px;
 }
 
-.mentors .card .avatar img {
+.students .card .avatar img, .mentors .card .avatar img {
 	width: 100%;
 }
 
-.mentors .social {
+.students .social, .mentors .social {
 	position: absolute;
 	background: white;
 	opacity: 0;
@@ -386,12 +385,32 @@ figure.effect-gcihover:hover figcaption::before {
     padding-top: 20%;
 }
 
-.mentors .card .avatar:hover .social{
+.students .card .avatar:hover .social, .mentors .card .avatar:hover .social{
 	opacity: 0.75;
 }
 
-.mentors .social i {
+.students .social i, .mentors .social i {
 	font-size: 40px;
 	margin: 10px;
+	text-align: center;
+}
+
+.students h1 {
+	margin: 0 auto;
+	padding: 10px;
+	width: 170px;
+	color: white;
+	background: #553322;
+	text-align: center;
+
+}
+
+.students .students-wrapper {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 30px;
+	background: #553322;
+	border-radius: 5px;
 	text-align: center;
 }
