@@ -31,10 +31,32 @@
                 <small>View project on</small> GitHub</a>
         </div>
     </header>
-
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#collapse" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GCI 2016</a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#contributors">Contributors</a></li>
+                    <li><a href="#students">Students</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section class="main-content">
         <div class="container">
-            <section class="mentors">
+            <section class="mentors" id="mentors" href="#mentors">
                 <h1>MENTORS</h1>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
@@ -76,12 +98,12 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors">
+            <section id="contributors" id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row">
                 </div>
             </section>
-            <div class="students-section">
+            <div class="students-section" id="students" href="#students">
                 <h1 class="title"><span>Students</span></h1>
                 <hr>
                 <div class="row">
@@ -259,7 +281,7 @@
                     </div>
                 </div>
             </div>
-            <div class="blog" style="background-color: #1B5E20;">
+            <div class="blog" id="blog" href="#blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                     <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -278,7 +300,7 @@
                 </div>
             </div>
 
-            <div class="social-media">
+            <div class="social-media" id="social-media" href="#social-media">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">

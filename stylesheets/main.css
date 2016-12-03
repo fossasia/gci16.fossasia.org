@@ -7,6 +7,10 @@
     margin-bottom: 30px;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .social-media {
     padding: 40px;
     text-align: center;
@@ -47,6 +51,16 @@
     padding: 10px 10px;
 }
 
+#contributors-list div{
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #contributors-list div span{
     position: relative;
     margin-top: 60%;
@@ -70,6 +84,46 @@
 #contributors-list div .gh-icon{
     position: absolute;
     top: -3px;
+}
+
+#contributors-list .avatar:hover .contribs {
+    opacity: 0.8;
+}
+#contributors-list .contribs p {
+    margin-top: 18px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 8px;
+    left: 12px;
+}
+
+#contributors-list div img:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    #contributors-list{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1020px) {
+    #contributors-list{
+        width: 800px;
+    }
+}
+
+@media (max-width: 812px) {
+    #contributors-list{
+        width: 600px;
+    }
+}
+
+@media (max-width: 610px) {
+    #contributors-list{
+        width: 400px;
+    }
 }
 
 #contributors-list .avatar:hover .contribs {
