@@ -145,3 +145,10 @@
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+  
+- name: Deepraj Pandey
+  github: DeeprajPandey
+  image: ../images/Pandey,Deepraj.jpg
+  twitter: DeeprajPandey
+  facebook: https://www.facebook.com/deepraj.pandey
+  bio: 17, Indian, High School Senior, Founded a Hackathon
