@@ -123,7 +123,7 @@
 
   name: Baidyanath
   github: Baidya99
-  image: ../images/Baidya.jpg
+  image: ../images/students/Baidya.jpg
   facebook: https://www.facebook.com/Baidya99
   bio: 17, Earthling, coder and computer enthusiast
 
@@ -139,7 +139,7 @@
   twitter: LeeCareGene
   facebook: https://www.facebook.com/lee.caregene
   bio: Malaysian, gamer, coder, moving to Singapore next year!
-  
+
 - name: Adarsh Kumar
   github: adarsh-ideal
   image: adarsh.jpg
