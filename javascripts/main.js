@@ -5,7 +5,7 @@ var issueTemplate = `
     <div class="issue-card">
         <span class="issue-title">$TITLE</span>
         <span class="issue-body">$BODY</span>
-        <span class="issue-link"><a href="$URL">Read More</a></span>
+        <span class="issue-link"><a target="_blank" href="$URL">Read More</a></span>
     </div>
 </div>
 `;
@@ -43,16 +43,16 @@ $(function(){
     $.ajax({
         url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues",
         data: {
-            state: "open",
-            // labels: "feature"
+            state: "open"
         }
     }).done(function(response) {
+        console.log(response);
         var finalHTML = "";
         response.forEach(function(issue) {
             var html = issueTemplate
                 .replace('$TITLE', issue.title.substring(0, 15) + '...')
                 .replace('$BODY', issue.body.length > 0 ? issue.body.substring(0, 200) + '...' : '')
-                .replace('$URL', issue.url);
+                .replace('$URL', "https://github.com/fossasia/gci16.fossasia.org/issues/" + issue.number);
             finalHTML += html;
         });
         if (finalHTML.length > 0) {
