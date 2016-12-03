@@ -117,7 +117,7 @@
                                 {% else %}
                                   <img src="images/mentors/member.png"
                                   width="240" height="240">
-                                {% endif %}                               
+                                {% endif %}
                                 <figcaption>
                                     <h2>{{student.name}}</h2>
                                     <p>
@@ -167,15 +167,14 @@
                             </figure>
                         </div>
                     </div>
-	           </div>
-               {% endfor %}
+                </div>
+                {% endfor %}
             </div>
-          </div>
-           <!-- Stop ignoring -->
+            <!-- Stop ignoring -->
             <div class="blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
-                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-3">
                         <div {% if blog.blog_img %}
