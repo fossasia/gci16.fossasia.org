@@ -42,9 +42,9 @@
                         <div class="card">
                             <div class="avatar">
                                 {% if mentor.image %}
-                                <img src="images/{{mentor.image}}" alt="{{ mentor.name }}">
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
                                 {% else %}
-                                <img src="images/member.png" alt="{{ mentor.name }}">
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
                                 {% endif %}
                                 <div class="social">
                                     {% if mentor.github %}
@@ -139,7 +139,7 @@
                     <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-3">
-                        <div {% if blog.blog_img %} style="background: url("images/{{ blog.blog_img }}") no-repeat center top;" {% endif %} class="blog-post">
+                        <div {% if blog.blog_img %} style="background: url("images/blogs/{{ blog.blog_img }}") no-repeat center top;" {% endif %} class="blog-post">
                             <div class="blog-title"> Blog of
                                 <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
                                 <br> {% if blog.article %}
@@ -234,4 +234,8 @@
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 </body>
 </html>
+<<<<<<< HEAD
 <!-- Stop ignoring -->
+=======
+<!-- Stop ignoring -->
+>>>>>>> 2f37ea5fbf3087b6faf4823158f9dbacef1fd6b0
