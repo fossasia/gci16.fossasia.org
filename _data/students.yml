@@ -1,4 +1,4 @@
-#New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to the bottom of the file.
 
 - name: Oana Rosca
   github: oanarosca
@@ -29,5 +29,127 @@
   facebook : https://www.facebook.com/goshu.jyoti
   image: yogesh.jpg
   bio : Indian, coder, gamer, love to do web designing! 
-  
-  
+
+- name: Alejandro Heredia
+  email: alex.heredia.barbosa@gmail.com
+  github: Heredroky
+  image: ../images/AlejandroHeredia.jpg
+  twitter: Heredroky
+  facebook: https://www.facebook.com/alejandro.heredia.756
+  bio: Colombian, Coder, technology lover, IoT enthusiast, 14
+
+- name: Aryan Bhasin
+  email: bhasinaryan@gmail.com
+  github: aryanbhasin
+  twitter: aryanbhasin
+  facebook: https://www.facebook.com/bhasinaryan
+  image: ../images/aryan.jpg
+  bio: 16, Indian, computer science and maths enthusiast
+
+- name: Anastasia Kostiv
+  email: kostiv08nastya@gmail.com
+  github: nolik2000
+  twitter: KostivNastya
+  facebook: https://www.facebook.com/anastasiya.kostiv
+  image: ../images/AKostiv.jpg
+  bio: 16 years, Ukrainian developer
+
+- name: Darshil Patel
+  email: darshil-patel@hotmail.com
+  github: darshilpatel
+  twitter: darshil36
+  facebook: https://www.facebook.com/darshil36
+  image: ../images/darshil.jpg
+  bio: 16, Computer enthusiast, soccer player, cars, business, startups
+
+- name: Pol Baladas
+  email: polbaladasluna@gmail.com
+  github: PolBaladas
+  twitter: PolBaladas
+  image: ../images/pol.jpg
+  bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
+
+- name: David Nagli
+  email: davidnagli@gmail.com
+  github: davidnagli
+  image: ../images/david.jpg
+  websites: dnagli.com, uslre.com
+  bio: Full-Stack JavaScript Developer, Scratch-JS and USLRE.com
+
+- name: Thien Hoang
+  email: thienhoangvan.edu@gmail.com
+  github: hoangvanthien
+  facebook: https://www.facebook.com/hvt99
+  twitter: ThienVHoang
+  image: ../images/thien.jpg
+  bio: 17 years old, Vietnamese, study Computer Science.
+
+- name: George Semenov
+  email: themrgeorgeous@gmail.com
+  github: MrGeorgeous
+  facebook: https://www.facebook.com/themrgeorgeous
+  twitter: TheMrGeorgeous
+  image: ../images/mrgeorgeous.jpg
+  websites: mrgeorgeous.ru, mrgeorgeous.com
+  bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
+
+- name: Shreyas Sanghvi
+  email: Shreyas.sanghvi11@gmail.com
+  github: shreyassanghvi
+  facebook: https://www.facebook.com/Alpha.Foxtrot11
+  twitter: Shreyas2101
+  image: ../images/shreyas.jpg
+  bio: 17 years old, Indian, Studying Computer Science
+
+- name: Aditya Singh
+  github: S-ulphuric
+  image: ../images/aditya.jpg
+  twitter: NxtbigAditya
+  facebook: https://facebook.com/cuteaditya1
+  email: blusinghaditya@gmail.com
+  bio: Programmer & Web Designer, Second year GCI!
+
+- name: Ridhwanul Haque
+  github: rhemon
+  twitter: rhemon19
+  facebook: https://facebook.com/ridhwanul.haque
+  email: rhemon19@gmail.com
+  bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
+  blog: https://rhemon.github.io/blog
+  blog_img: rhemon-blog.png
+
+- name: Victoria Juan
+  github: vickyjjj
+  email: victoriajuanhpst@gmail.com
+  image: ../images/victoriajuan.jpg
+
+  name: Boh JieQi
+  github: BohJieQi
+  email: boh.jieqi@dhs.sg
+  image: ../images/JQ.jpg
+  bio: 16, Student, GCI enthusiast
+
+  name: Baidyanath
+  github: Baidya99
+  image: ../images/students/Baidya.jpg
+  facebook: https://www.facebook.com/Baidya99
+  bio: 17, Earthling, coder and computer enthusiast
+
+- name: Koh Pi Rong
+  github: pipix51
+  email: koh.pirong@dhs.sg
+  image: ../images/KohPR.jpg
+  bio: 14, Student, Interested in Python, C++
+
+- name: Lee Care Gene
+  github: LeeCareGene
+  image: ../images/leecaregene.jpg
+  twitter: LeeCareGene
+  facebook: https://www.facebook.com/lee.caregene
+  bio: Malaysian, gamer, coder, moving to Singapore next year!
+
+- name: Adarsh Kumar
+  github: adarsh-ideal
+  image: adarsh.jpg
+  twitter: Adarsh_Kumar1
+  bio: 16, Student Programmer, Web developer, Computer enthusiast
