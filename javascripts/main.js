@@ -26,10 +26,15 @@ $(function(){
     $.ajax({
         url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
     }).done(function(data){
-        data.forEach(function(issue, index){
+        var index = 0;
+        data.forEach(function(issue){
             if (index > 9) { // show the 10 latest issues
                 return false;
             }
+            if (issue.hasOwnProperty("pull_request")) {
+                return;
+            }
+            index++;
             var html = "<div class='issue'><span>#"+issue.number+"</span>";
             html += "<a href='"+issue.html_url+"' target='_blank'>"+issue.title+"</a>";
             html += "<p>opened by </p>";
