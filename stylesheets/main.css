@@ -125,7 +125,9 @@ hr{
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 10px 1%;
+    margin:0px 1%;
+	margin-left: 10px;
+	margin-bottom: 30px;
     max-width: 480px;
     max-height: 360px;
     /*  width: 48%;*/
