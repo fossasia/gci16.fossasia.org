@@ -383,3 +383,51 @@ figure.effect-gcihover:hover figcaption::before {
     margin: 10px;
     text-align: center;
 }
+
+.issues {
+    margin-top: 50px;
+}
+
+.issues .issues-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background: orange;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.issue-card {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.issue-card .issue-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+.issue-card .issue-body {
+    font-size: 16px;
+    text-align: left;
+    display: block;
+}
+
+.issue-card .issue-link {
+    text-align: left;
+    display: block;
+}
+
+.issues h1 {
+    margin: 0 auto;
+    padding: 10px;
+    width: 170px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+}
