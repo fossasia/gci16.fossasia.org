@@ -27,12 +27,13 @@ $(function(){
         url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
     }).done(function(data){
         data.forEach(function(issue, index){
-            if (index > 9) // show the 10 latest issues
+            if (index > 9) { // show the 10 latest issues
                 return false;
+            }
             var html = "<div class='issue'><span>#"+issue.number+"</span>";
             html += "<a href='"+issue.html_url+"' target='_blank'>"+issue.title+"</a>";
-            html += "<p>opened by </p>"
-            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'>"
+            html += "<p>opened by </p>";
+            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'>";
             html += issue.user.login+"</a><div class='right-coms'>";
             html += "<a href='"+issue.html_url+"' class='comments' target='_blank'>";
             html += "<i class='fa fa-comment'></i>"+issue.comments;
