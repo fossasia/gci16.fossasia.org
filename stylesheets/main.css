@@ -299,7 +299,7 @@ figure.effect-gcihover:hover figcaption::before {
     color: #fafafa;
 }
 
-.mentors h1 {
+.mentors h2, .latest-issues h2 {
     margin: 0 auto;
     padding: 10px;
     width: 170px;
@@ -382,4 +382,60 @@ figure.effect-gcihover:hover figcaption::before {
     font-size: 40px;
     margin: 10px;
     text-align: center;
+}
+
+.latest-issues {
+    margin-top: 50px;
+}
+
+.latest-issues h2 {
+    background: transparent;
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+.issues-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    background: #fff6f2;
+    border-radius: 5px;
+}
+
+.issue {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 10px;
+}
+
+.issue:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.issues-wrapper span {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.issues-wrapper a {
+    color: #1862db;
+}
+
+.issues-wrapper .user {
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 74px;
+}
+
+.issues-wrapper .right-coms {
+    float: right;
+    text-align: right;
+    margin-top: -55px;
+}
+
+.issues-wrapper i {
+    margin-right: 5px;
 }
