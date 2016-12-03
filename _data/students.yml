@@ -30,7 +30,8 @@
   image: yogesh.jpg
   bio : Indian, coder, gamer, love to do web designing! 
   
-  - name: Alejandro Heredia
+
+- name: Alejandro Heredia
   email: alex.heredia.barbosa@gmail.com
   github: Heredroky
   image: ../images/AlejandroHeredia.jpg
@@ -152,4 +153,5 @@
   github: adarsh-ideal
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
+
   bio: 16, Student Programmer, Web developer, Computer enthusiast
