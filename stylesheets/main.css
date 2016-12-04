@@ -447,12 +447,30 @@ figure.effect-gcihover:hover figcaption::before {
     width: 370px !important;
     height: 459px !important;
     max-height: 459px !important;
+    background:white;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 .social-media .last-one > div{
     float: none;
     margin: 1em auto;
 }
-.last-one iframe {
-    height: 310px !important;
+
+#gyt {
+    background-color: white;
+    height:48px;
+    overflow:hdden;
+    margin: 10px;
+    box-shadow: none;
+    border: none;
+}
+.g-ytsubscribe {
+    background-color: white;
+    display:flex;
+    box-shadow: none;
+    border:none;
+    height:48px;
+    overflow:hdden;
 }

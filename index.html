@@ -157,7 +157,7 @@
                                     </a>
                                     {% endif %}
                                 </div>
-                                <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                                <p><i class="fa fa-code"></i>{{student.name}}</p>
                             </div>
                         </div>
                     </div>
@@ -223,11 +223,6 @@
             <section class="latest-issues">
                 <h2>LATEST ISSUES</h2>
                 <div class="issues-wrapper">
-                  <div class="button">
-                    <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                      See all issues on&nbsp;<i class="fa fa-github"></i>github
-                    </a>
-                  </button>
                 </div>
             </section>
             <div class="social-media">
@@ -254,20 +249,24 @@
                              style="background:white;margin:auto" style="margin:0; padding:0; border:0;"></div>
                     </div>
                 </div>
-                <!-- Note : if you add any other social media, replace last one with row, and the column classes and if last row of the social media has only one add the class last-one -->
+                <!-- Note : if you add any other social media, replace last one
+                with row, and the column classes and if last row of the social
+                media has only one add the class last-one -->
                 <div class="last-one" style="margin-bottom:2em;margin-top: 2em; padding: 1em">
-                    <div style="margin-top: 2em; width:370px; height: 310px;">
+                    <div style="margin-top: 2em;">
                         <!-- Ignore LineLengthBear -->
-                        <div style="background-color: white; height:48px; overflow:hdden; margin: 10px; box-shadow: none; border: none;">
-                        <div class="g-ytsubscribe"
-                             data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full"
-                             data-count="default" style="background-color: white; display:flex; box-shadow: none; border:none; height:48px; overflow:hdden;" height="48px"></div>
+                        <div id="gyt">
+                            <div class="g-ytsubscribe"
+                                 data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full"
+                                 data-count="default"
+                                 height="48px">
+                             </div>
                          </div>
-                        <div style="display: flex; align-items: center; flex-direction: column; overflow: hidden; height:310px;">
-
+                        <div class="embed-responsive embed-responsive-16by9">
                             <!-- Ignore LineLengthBear -->
-                            <iframe width="370px" height="310px" src="//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                    frameborder="0" allowfullscreen style="height: 310px !important; max-height: 310px !important;">
+                            <iframe  class="embed-responsive-item"
+                            src="//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                            frameborder="0" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
