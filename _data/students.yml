@@ -113,7 +113,7 @@
 - name: Victoria Juan
   github: vickyjjj
   email: victoriajuanhpst@gmail.com
-  image: victoriajuan.jpg
+  image: victoriajuan.JPG
 
 - name: Boh JieQi
   github: BohJieQi
@@ -165,3 +165,10 @@
   image: Witus.jpg
   twitter: 13thMyfrom
   bio: 14, Student, self-learning web developer, First time in GCI
+
+- name: Gaeun Kim
+  github: gaeun
+  image: gaeun.jpg
+  twitter: gaeunkim913
+  facebook: gaeunkim913
+  bio: 15, South Korean, High school junior, Machine learning researcher, Frequent traveller
