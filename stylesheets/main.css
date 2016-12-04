@@ -7,6 +7,10 @@
     margin-bottom: 30px;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .social-media {
     padding: 40px;
     text-align: center;
