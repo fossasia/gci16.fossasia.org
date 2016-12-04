@@ -65,9 +65,32 @@
         </ol>
       </div>
     </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#collapse" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GCI 2016</a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#contributors">Contributors</a></li>
+                    <li><a href="#students">Students</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section class="main-content">
         <div class="container">
-            <section class="mentors">
+            <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
@@ -109,12 +132,12 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors">
+            <section id="contributors" id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row">
                 </div>
             </section>
-            <div class="students-section">
+            <div class="students-section" id="students" href="#students">
                 <h1 class="title"><span>Students</span></h1>
                 <hr>
                 <div class="row mentors-wrapper">
@@ -183,11 +206,32 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/students/pol.jpg" alt="Pol Baladas">
+                                <figcaption>
+                                    <h2><span style="color: white;">Pol</span> Baladas</h2>
+                                    <p>
+                                        <a href="//polbaladas.com"
+                                            target="_blank">
+                                             <i class="fa fa-rss" aria-hidden="false"></i></a>
+                                        <a href="//github.com/PolBaladas"
+                                            target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/PolBaladas"
+                                            target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                     </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
                 {% endfor %}
             </div>
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;">
+            <div class="blog" style="background-color: #1B5E20;" id="blog" href="#blog">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -231,9 +275,41 @@
                             <figure class="effect-gcihover">
                               <!-- Ignore HTMLLintBear -->
                               <img src="images/logos/logo.png" alt="Anastasia Kostiv">
+                                <img src="images/students/leecaregene.jpg" alt="Lee Care Gene">
+                                <figcaption>
+                                    <h2><span>Lee</span> Care Gene</h2>
+                                    <p>
+                                        <a href="//www.facebook.com/lee.caregene"
+                                           target="_blank">
+                                            <i class="fa fa-facebook" aria-hidden="false"></i></a>
+                                        <a href="//github.com/LeeCareGene"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/LeeCareGene"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        </div>
+            <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                                <img src="images/adarsh.jpg" alt="Adarsh Kumar">
                                 <figcaption>
                                     <p>
                                         <span style="color: #000000">by Anastasia Kostiv</span>
+                                        <!-- Ignore LineLengthBear -->
+                                        <a href="//idealadarsh.wordpress.com"
+                                           target="_blank">
+                                            <i class="fa fa-rss" aria-hidden="false"></i></a>
+                                        <a href="//github.com/adarsh-ideal"
+                                           target="_blank">
+                                            <i class="fa fa-github" aria-hidden="false"></i></a>
+                                        <a href="//twitter.com/Adarsh_Kashyap1"
+                                           target="_blank">
+                                            <i class="fa fa-twitter" aria-hidden="false"></i></a>
                                     </p>
                                 </figcaption>
                             </figure>
@@ -247,7 +323,7 @@
                 <div class="issues-wrapper">
                 </div>
             </section>
-            <div class="social-media">
+            <div class="social-media" id="social-media" href="#social-media">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
