@@ -440,3 +440,7 @@ figure.effect-gcihover:hover figcaption::before {
 .issues-wrapper i {
     margin-right: 5px;
 }
+
+.flickr_badge_image {margin:0px;display:inline;}
+.flickr_badge_image img {border: 1px solid #666666 !important; padding:1px; margin:2px;}
+#flickr_badge_wrapper {width:420px;text-align:left}
