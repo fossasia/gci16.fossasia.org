@@ -108,8 +108,8 @@ now!</a></div>
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-3">
                         <div if="" style="background: url(" blog.blog_img="" no-repeat="" center="" endif="" class="blog-post">
-                            <div class="blog-title">Blog of <a href="{{%20blog.blog%20}}"><strong>{{ blog.name }}</strong></a>
-                                <br> {% if blog.article %} <a href="{%%20if%20blog.article_link%20%}{{%20blog.article_link%20}}{%%20endif%20%}">
+                            <div class="blog-title">Blog of <a href="{{ 0blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                <br> {% if blog.article %} <a href="{%ifblog.article_link%}{{ blog.article_link}}{%endif%}">
 {{ blog.article }}</a> {% endif %}</div>
                         </div>
                     </div>
