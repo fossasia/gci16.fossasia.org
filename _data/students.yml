@@ -155,7 +155,13 @@
 
 - name: Deepraj Pandey
   github: DeeprajPandey
-  image: Pandey,Deepraj.jpg
+  image: Pandey_Deepraj.jpg
   twitter: DeeprajPandey
   facebook: deepraj.pandey
   bio: 17, Indian, High School Senior, Founded a Hackathon
+
+- name: Wiktor Olejniczak
+  github: Witus13
+  image: Witus.jpg
+  twitter: 13thMyfrom
+  bio: 14, Student, self-learning web developer, First time in GCI
