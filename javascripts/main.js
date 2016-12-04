@@ -37,9 +37,9 @@ $(function(){
             index++;
             var html = "<div class='issue'><span>#"+issue.number+"</span>";
             html += "<a href='"+issue.html_url+"' target='_blank'>"+issue.title+"</a>";
-            html += "<p>Opened by </p>";
-            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'>";
-            html += issue.user.login+"</a><div class='right-coms'>";
+            html += "<p>Opened by</p>";
+            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'";
+            html += " style='white-space:pre'> "+issue.user.login+"</a><div class='right-coms'>";
             html += "<a href='"+issue.html_url+"' class='comments' target='_blank'>";
             html += "<i class='fa fa-comment'></i>"+issue.comments;
             html += "</a></div></a></div>";
