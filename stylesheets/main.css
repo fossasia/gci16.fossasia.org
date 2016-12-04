@@ -444,26 +444,22 @@ figure.effect-gcihover:hover figcaption::before {
   text-decoration: none;
 }
 
-.logos
-{
+.logos {
     background: #ffb300;
     padding: 1.5em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-.logos img
-{
+.logos img {
     padding: 3em .6em;
 }
 
-.yt
-{
+.yt {
     margin-top: 2em; 
     padding: 1em
 }
 
-.students-section
-{
+.students-section {
     padding: 2em;
 }
