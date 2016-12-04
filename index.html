@@ -31,11 +31,33 @@
                 <small>View project on</small> GitHub</a>
         </div>
     </header>
-
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#collapse" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GCI 2016</a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#contributors">Contributors</a></li>
+                    <li><a href="#students">Students</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section class="main-content">
         <div class="container">
-            <section class="mentors">
-                <h2>MENTORS</h2>
+            <section class="mentors" id="mentors" href="#mentors">
+                <h1>MENTORS</h1>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -76,12 +98,12 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors">
+            <section id="contributors" id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row">
                 </div>
             </section>
-            <div class="students-section">
+            <div class="students-section" id="students" href="#students">
                 <h1 class="title"><span>Students</span></h1>
                 <hr>
                 <div class="row mentors-wrapper">
@@ -130,9 +152,7 @@
                     </div>
                 {% endfor %}
             </div>
-          </div>
-           <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;">
+            <div class="blog" id="blog" href="#blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                     <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -152,32 +172,8 @@
                     <!-- Stop ignoring -->
                 </div>
             </div>
-            <!-- Start ignoring SpaceConsistencyBear -->
-            <div class="logos" style="background-color: #ffB903;">
-                <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
-                <div class="row">
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                                <img src="images/Logo2.svg" alt="Lee Care Gene">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Lee Care Gene</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Stop ignoring -->
-            <section class="latest-issues">
-                <h2>LATEST ISSUES</h2>
-                <div class="issues-wrapper">
-                </div>
-            </section>
-            <div class="social-media">
+
+            <div class="social-media" id="social-media" href="#social-media">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
