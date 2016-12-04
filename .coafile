@@ -2,7 +2,7 @@
 bears = SpaceConsistencyBear, LineLengthBear
 files = **.html, **.yml, **.css, **.js, **.md
 ignore = **.min.css, **.min.js, _site/**
-max_line_length = 100
+max_line_length = 300
 use_spaces = True
 
 [html]
