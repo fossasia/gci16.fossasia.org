@@ -300,7 +300,7 @@ figure.effect-gcihover:hover figcaption::before {
     color: #fafafa;
 }
 
-.mentors h2, .latest-issues h2 {
+.mentors h2, .latest-issues h2, .students-sec h2 {
     margin: 0 auto;
     padding: 10px;
     width: 170px;
@@ -309,7 +309,7 @@ figure.effect-gcihover:hover figcaption::before {
     text-align: center;
 }
 
-.mentors .mentors-wrapper {
+.mentors .mentors-wrapper, .students-sec .students-wrapper {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -319,7 +319,7 @@ figure.effect-gcihover:hover figcaption::before {
     text-align: center;
 }
 
-.mentors .card, #contributors-list .card {
+.mentors .card, #contributors-list .card, .students-sec .card {
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -327,41 +327,22 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mentors .card, #contributors-list .card {
-    width: 200px;
-    height: 250px;
-    margin: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.mentors .card p {
+.mentors .card p , .students-sec .card p{
     margin-top: 4.5%;
     font-size: 20px;
 }
 
-.mentors .avatar, #contributors-list .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
 
-.mentors .card p {
-    margin-top: 4.5%;
-    font-size: 20px;
-}
-
-.mentors .avatar, #contributors-list .avatar {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-.mentors .card .avatar img {
+.mentors .card .avatar img ,.students-sec .card .avatar .img {
     width: 100%;
 }
 
-.mentors .social, #contributors-list .contribs {
+.mentors .social, #contributors-list .contribs, .students-sec .social {
     position: absolute;
     background: #fff;
     opacity: 0;
@@ -375,11 +356,11 @@ figure.effect-gcihover:hover figcaption::before {
     padding-top: 20%;
 }
 
-.mentors .card .avatar:hover .social{
+.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social {
     opacity: 0.8;
 }
 
-.mentors .social i {
+.mentors .social i, .students-sec .social i {
     font-size: 40px;
     margin: 10px;
     text-align: center;
