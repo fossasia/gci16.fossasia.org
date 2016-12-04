@@ -126,6 +126,7 @@ hr{
     float: left;
     overflow: hidden;
     margin: 10px 1%;
+    margin-left: 10px;
     max-width: 480px;
     max-height: 360px;
     /*  width: 48%;*/
@@ -207,7 +208,12 @@ figure.effect-gcihover figcaption {
 }
 
 figure.effect-gcihover p {
-    padding: 2.25em 0.5em;
+    position: absolute;
+    top: 8em;
+    right: 2em;
+    left: 2em;
+    z-index: 2;
+    text-align: center;
     font-weight: 600;
     font-size: 100%;
     line-height: 1.5;
@@ -230,7 +236,7 @@ figure.effect-gcihover p a:focus {
 
 figure.effect-gcihover figcaption::before {
     position: absolute;
-    top: 0;
+    top: 2em;
     right: 2em;
     left: 2em;
     z-index: -1;
