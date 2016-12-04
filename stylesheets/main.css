@@ -448,7 +448,8 @@ figure.effect-gcihover:hover figcaption::before {
     height: 459px !important;
     max-height: 459px !important;
     background:white;
-    margin:0;
+    margin:auto;
+    /*margin:0;*/
     padding:0;
     border:0;
 }
@@ -456,6 +457,12 @@ figure.effect-gcihover:hover figcaption::before {
 .social-media .last-one > div{
     float: none;
     margin: 1em auto;
+}
+
+.last-one {
+    margin-bottom: 30px;
+    margin-top: 2em;
+    padding: 1em
 }
 
 #gyt {
@@ -473,4 +480,10 @@ figure.effect-gcihover:hover figcaption::before {
     border:none;
     height:48px;
     overflow:hdden;
+}
+
+.embed-responsive-4by3, .embed-responsive {
+    height: 400px;
+    padding: 0 !important;
+    display: block;
 }

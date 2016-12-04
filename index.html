@@ -2,13 +2,13 @@
 ---
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/print.css" media="print">
@@ -21,6 +21,7 @@
 
     <title>Gci16.fossasia.org by fossasia</title>
 </head>
+
 <body>
     <header>
         <div class="inner">
@@ -31,39 +32,41 @@
         </div>
     </header>
     <div class="slider-container">
-      <div class="ism-slider" data-transition_type="fade" id="my-slider">
-        <ol>
-          <li>
-            <img src="images/image_slider_crowd.jpg">
-            <div class="ism-caption ism-caption-0">FOSSASIA</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                We build a new era of Technology.<br>
-                We connect developers together.<br>
-                We are an open-source community.
-            </div>
-          </li>
-          <li>
-            <img src="images/image_slider_fossasia.jpg">
-            <div class="ism-caption ism-caption-0">Google Code-in 2016</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                Educating and inspiring<br>
-                students by being involved in<br>
-                open-source projects.<br>
-                <a href="//codein.withgoogle.com/organizations/fossasia/">
+        <div class="ism-slider" data-transition_type="fade" id="my-slider">
+            <ol>
+                <li>
+                    <img src="images/image_slider_crowd.jpg">
+                    <div class="ism-caption ism-caption-0">FOSSASIA</div>
+                    <div class="ism-caption ism-caption-1" data-delay="200">
+                        We build a new era of Technology.
+                        <br> We connect developers together.
+                        <br> We are an open-source community.
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image_slider_fossasia.jpg">
+                    <div class="ism-caption ism-caption-0">Google Code-in 2016</div>
+                    <div class="ism-caption ism-caption-1" data-delay="200">
+                        Educating and inspiring
+                        <br> students by being involved in
+                        <br> open-source projects.
+                        <br>
+                        <a href="//codein.withgoogle.com/organizations/fossasia/">
                     Participate now!</a>
-            </div>
-          </li>
-          <li>
-            <img src="images/image_slider_machine.jpg">
-            <div class="ism-caption ism-caption-0">FOSSASIA OpenTechSummit</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                17th - 19th March 2017<br>
-                at the Science Centre Singapore<br>
-                <a href="//2017.fossasia.org">Join us now!</a>
-            </div>
-          </li>
-        </ol>
-      </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image_slider_machine.jpg">
+                    <div class="ism-caption ism-caption-0">FOSSASIA OpenTechSummit</div>
+                    <div class="ism-caption ism-caption-1" data-delay="200">
+                        17th - 19th March 2017
+                        <br> at the Science Centre Singapore
+                        <br>
+                        <a href="//2017.fossasia.org">Join us now!</a>
+                    </div>
+                </li>
+            </ol>
+        </div>
     </div>
     <section class="main-content">
         <div class="container">
@@ -75,30 +78,21 @@
                         <div class="card">
                             <div class="avatar">
                                 {% if mentor.image %}
-                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                {% else %}
-                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
-                                {% endif %}
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}"> {% else %}
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}"> {% endif %}
                                 <div class="social">
                                     {% if mentor.github %}
-                                    <a href="//github.com/{{mentor.github}}"
-                                       target="_blank">
+                                    <a href="//github.com/{{mentor.github}}" target="_blank">
                                         <i class="fa fa-github"></i></a>
-                                    {% endif %}
-                                    {% if mentor.facebook %}
-                                    <a href="//facebook.com/{{mentor.facebook}}"
-                                       target="_blank">
+                                    {% endif %} {% if mentor.facebook %}
+                                    <a href="//facebook.com/{{mentor.facebook}}" target="_blank">
                                         <i class="fa fa-facebook"></i></a>
                                     {% endif %}
-                                    <br>
-                                    {% if mentor.twitter %}
-                                    <a href="//twitter.com/{{mentor.twitter}}"
-                                       target="_blank">
+                                    <br> {% if mentor.twitter %}
+                                    <a href="//twitter.com/{{mentor.twitter}}" target="_blank">
                                         <i class="fa fa-twitter"></i></a>
-                                    {% endif %}
-                                    {% if mentor.blog %}
-                                    <a href="{{mentor.blog}}"
-                                       target="_blank">
+                                    {% endif %} {% if mentor.blog %}
+                                    <a href="{{mentor.blog}}" target="_blank">
                                         <i class="fa fa-code"></i></a>
                                     {% endif %}
                                 </div>
@@ -122,37 +116,24 @@
                         <div class="card">
                             <div class="avatar">
                                 {% if student.image %}
-                                <img src="images/students/{{student.image}}"
-                                alt="{{student.name}}"
-                                width="200px" height="200px">
-                                {% else %}
-                                <img src="images/mentors/member.png"
-                                alt="{{student.name}}"
-                                width="200px" height="200px">
-                                {% endif %}
+                                <img src="images/students/{{student.image}}" alt="{{student.name}}" width="200px" height="200px"> {% else %}
+                                <img src="images/mentors/member.png" alt="{{student.name}}" width="200px" height="200px"> {% endif %}
                                 <div class="social">
                                     {% if student.github %}
-                                    <a href="//github.com/{{student.github}}"
-                                       target="_blank">
+                                    <a href="//github.com/{{student.github}}" target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
-                                    {% endif %}
-                                    {% if student.facebook %}
-                                    <a href="//facebook.com/{{student.facebook}}"
-                                       target="_blank">
+                                    {% endif %} {% if student.facebook %}
+                                    <a href="//facebook.com/{{student.facebook}}" target="_blank">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                     {% endif %}
-                                    <br>
-                                    {% if student.twitter %}
-                                    <a href="//twitter.com/{{student.twitter}}"
-                                       target="_blank">
+                                    <br> {% if student.twitter %}
+                                    <a href="//twitter.com/{{student.twitter}}" target="_blank">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    {% endif %}
-                                    {% if student.blog %}
-                                    <a href="{{mentor.student}}"
-                                       target="_blank">
+                                    {% endif %} {% if student.blog %}
+                                    <a href="{{mentor.student}}" target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
@@ -168,11 +149,10 @@
             <div class="blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
-                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-3">
-                        <div {% if blog.blog_img %}
-                        style="background: url("images/blogs/{{ blog.blog_img }}")
+                        <div {% if blog.blog_img %} style="background: url(" images/blogs/{{ blog.blog_img }} ")
                         no-repeat center top;" {% endif %} class="blog-post">
                             <div class="blog-title"> Blog of
                                 <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
@@ -193,7 +173,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
+                                <!-- Ignore HTMLLintBear -->
                                 <img src="images/logos/Logo2.svg" alt="Lee Care Gene">
                                 <figcaption>
                                     <p>
@@ -207,8 +187,8 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                              <img src="images/logos/logo.png" alt="Anastasia Kostiv">
+                                <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/logo.png" alt="Anastasia Kostiv">
                                 <figcaption>
                                     <p>
                                         <span style="color: #000000">by Anastasia Kostiv</span>
@@ -230,56 +210,52 @@
                 <div class="row">
                     <div class="col-md-6">
                         <!-- Ignore LineLengthBear -->
-                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=370&height=459&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="370" height="459"
-                                style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                                allowTransparency="true"></iframe>
+                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=370&height=459&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="370" height="459" style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     </div>
                     <div class="col-md-6">
-                        <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
-                             data-width="370" data-height="459"></div>
+                        <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370" data-height="459"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <a class="twitter-timeline" data-width="370" data-height="459"
-                           href="//twitter.com/fossasia">Tweets by fossasia</a>
+                        <a class="twitter-timeline" data-width="370" data-height="459" href="//twitter.com/fossasia">Tweets by fossasia</a>
                     </div>
                     <div class="col-md-6">
-                        <div class="github-widget" data-username="fossasia"
-                             style="background:white;margin:auto" style="margin:0; padding:0; border:0;"></div>
+                        <div class="github-widget" data-username="fossasia"></div>
                     </div>
                 </div>
                 <!-- Note : if you add any other social media, replace last one
                 with row, and the column classes and if last row of the social
                 media has only one add the class last-one -->
-                <div class="last-one" style="margin-bottom:2em;margin-top: 2em; padding: 1em">
+                <div class="last-one">
                     <div style="margin-top: 2em;">
-                        <!-- Ignore LineLengthBear -->
                         <div id="gyt">
-                            <div class="g-ytsubscribe"
-                                 data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full"
-                                 data-count="default"
-                                 height="48px">
-                             </div>
-                         </div>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <!-- Ignore LineLengthBear -->
-                            <iframe  class="embed-responsive-item"
-                            src="//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                            frameborder="0" allowfullscreen>
-                            </iframe>
+                            <div class="g-ytsubscribe" data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full" data-count="default" height="48px">
+                            </div>
+                        </div>
+                        <!-- Ignore LineLengthBear -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12" style="margin-bottom:20px;">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="col-xs-12 col-md-12">
+                                        <div id="flickrembed"></div>
+                                        <small style="display: block; text-align: center; margin: 0 auto;">
+                                                <a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
+                                                </small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-<!--Flickr Album-->
-<div class="row">
-<div class="col-xs-12 col-md-12">
-<div id="flickrembed"></div>
-<small style="display: block; text-align: center; margin: 0 auto;">
-<a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
-</small>
-</div>
-</div>
             </div>
         </div>
     </section>
@@ -303,9 +279,9 @@
     <script src="//use.fontawesome.com/7f8b61349a.js"></script>
     <!-- Github Cards -->
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-<!--Flickr album js-->
-<script src="//flickrembed.com/embed_v2.js.php?source=flickr
-&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
-&theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
+    <!--Flickr album js-->
+    <script src="//flickrembed.com/embed_v2.js.php?source=flickr
+    &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
+    &theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
 </body>
 </html>
