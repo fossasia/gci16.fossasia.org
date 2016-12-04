@@ -380,16 +380,18 @@ figure.effect-gcihover:hover figcaption::before {
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 30px;
-    background: #fff6f2;
+    padding: 20px;
+    background: #eee;
     border-radius: 5px;
 }
 
 .issue {
     width: 100%;
-    height: 50px;
+    height: 80px;
+    padding:18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
+    background:#FFF;
 }
 
 .issue:last-child {
@@ -420,4 +422,23 @@ figure.effect-gcihover:hover figcaption::before {
 
 .issues-wrapper i {
     margin-right: 5px;
+}
+
+.button {
+  background: #FFF;
+  text-align: center;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom:20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.button a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
 }
