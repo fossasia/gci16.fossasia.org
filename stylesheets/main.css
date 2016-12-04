@@ -1,17 +1,13 @@
 .main-content {
     background-color: #303030;
 }
-
 .white-header {
     color: white;
     margin-bottom: 30px;
 }
-
 .social-media {
-    padding: 40px;
     text-align: center;
 }
-
 .social-media iframe, .g-page {
     margin-bottom: 30px;
     -webkit-box-shadow: 3px 3px 5px #151515;
@@ -19,17 +15,15 @@
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
 }
-.inner a.button  {
+.inner a.button {
     display: inline-block;
     width: 202px;
     height: 80px;
 }
-
-#contributors{
+#contributors {
     margin-top: 50px;
 }
-
-#contributors-list{
+#contributors-list {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -37,8 +31,7 @@
     padding: 30px;
     border-radius: 5px;
 }
-
-#contributors h2{
+#contributors h2 {
     background-color: #4062BB;
     text-align: center;
     color: white;
@@ -46,43 +39,36 @@
     margin: auto;
     padding: 10px 10px;
 }
-
-#contributors-list div span{
+#contributors-list div span {
     position: relative;
     margin-top: 60%;
     left: 30px;
     font-size: 18px;
 }
-
-#contributors-list div img{
+#contributors-list div img {
     width: 200px;
     height: 200px;
 }
-
-#contributors-list div a{
+#contributors-list div a {
     position: absolute;
     left: 20px;
     margin-top: 212px;
     color: #000;
     cursor: pointer;
 }
-
-#contributors-list div .gh-icon{
+#contributors-list div .gh-icon {
     position: absolute;
     top: -3px;
 }
-
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
-
 #contributors-list .contribs p {
     margin-top: 18px;
     color: #333;
     font-size: 28px;
     font-weight: bold;
 }
-
 .students-section {
     display: block;
     width: 100%;
@@ -91,26 +77,23 @@
     margin-top: 50px;
     background-color: #A64942;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,1);
-    box-shadow: 0px 0px 10px 0px rgba(50,50,50,1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
-
 .title {
     padding-top: 30px;
     text-align: center;
-    color:#ffd700;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
-    0px 7px 6px rgba(0,0,0,0.1),
-    0px 2px 8px rgba(0,0,0,0.1);
+    color: #ffd700;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4),
+    0px 7px 6px rgba(0, 0, 0, 0.1),
+    0px 2px 8px rgba(0, 0, 0, 0.1);
 }
-
-hr{
+hr {
     width: 100px;
     margin-top: 0;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 }
-
 .grid {
     position: relative;
     clear: both;
@@ -120,7 +103,6 @@ hr{
     list-style: none;
     text-align: center;
 }
-
 .grid figure {
     position: relative;
     float: left;
@@ -135,7 +117,6 @@ hr{
     cursor: pointer;
     border-radius: 10px;
 }
-
 .grid figure img {
     position: relative;
     display: block;
@@ -143,7 +124,6 @@ hr{
     max-width: 100%;
     opacity: 0.8;
 }
-
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
@@ -151,62 +131,48 @@ hr{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.grid figure figcaption::before, .grid figure figcaption::after {
     pointer-events: none;
 }
-
-.grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption, .grid figure figcaption>a {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
-.grid figure figcaption > a {
+.grid figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
     opacity: 0;
 }
-
 .grid figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
 }
-
 .grid figure h2 span {
     font-weight: 800;
 }
-
-.grid figure h2,
-.grid figure p {
+.grid figure h2, .grid figure p {
     margin: 0;
 }
-
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
-
 figure.effect-gcihover {
     background: #fff;
     text-align: left;
 }
-
 figure.effect-gcihover img {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
-
 figure.effect-gcihover figcaption {
     z-index: 1;
 }
-
 figure.effect-gcihover p {
     padding: 2.25em 0.5em;
     font-weight: 600;
@@ -215,20 +181,16 @@ figure.effect-gcihover p {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
 }
-
 figure.effect-gcihover p a {
     margin: 0 0.5em;
     color: #101010;
 }
-
-figure.effect-gcihover p a:hover,
-figure.effect-gcihover p a:focus {
+figure.effect-gcihover p a:hover, figure.effect-gcihover p a:focus {
     opacity: 0.6;
 }
-
 figure.effect-gcihover figcaption::before {
     position: absolute;
     top: 0;
@@ -240,26 +202,23 @@ figure.effect-gcihover figcaption::before {
     content: '';
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
-    transform: translate3d(0,4em,0) scale3d(1,0.023,1);
+    -webkit-transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
+    transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
 }
-
 figure.effect-gcihover:hover img {
     opacity: 0.5;
 }
-
 figure.effect-gcihover:hover p {
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
-
 figure.effect-gcihover:hover figcaption::before {
     opacity: 0.7;
-    -webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
-    transform: translate3d(0,5em,0) scale3d(1,1,1);
+    -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
 .blog {
     padding-left: 100px;
@@ -299,7 +258,6 @@ figure.effect-gcihover:hover figcaption::before {
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
     color: #fafafa;
 }
-
 .mentors h2, .latest-issues h2, .students-sec h2 {
     margin: 0 auto;
     padding: 10px;
@@ -308,7 +266,6 @@ figure.effect-gcihover:hover figcaption::before {
     background: #27ae60;
     text-align: center;
 }
-
 .mentors .mentors-wrapper, .students-sec .students-wrapper {
     width: 100%;
     height: 100%;
@@ -318,7 +275,6 @@ figure.effect-gcihover:hover figcaption::before {
     border-radius: 5px;
     text-align: center;
 }
-
 .mentors .card, #contributors-list .card, .students-sec .card {
     width: 200px;
     height: 250px;
@@ -326,22 +282,18 @@ figure.effect-gcihover:hover figcaption::before {
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.mentors .card p , .students-sec .card p{
+.mentors .card p, .students-sec .card p {
     margin-top: 4.5%;
     font-size: 20px;
 }
-
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
-
-.mentors .card .avatar img ,.students-sec .card .avatar .img {
+.mentors .card .avatar img, .students-sec .card .avatar .img {
     width: 100%;
 }
-
 .mentors .social, #contributors-list .contribs, .students-sec .social {
     position: absolute;
     background: #fff;
@@ -355,27 +307,22 @@ figure.effect-gcihover:hover figcaption::before {
     transition: all 0.5s;
     padding-top: 20%;
 }
-
 .mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social {
     opacity: 0.8;
 }
-
 .mentors .social i, .students-sec .social i {
     font-size: 40px;
     margin: 10px;
     text-align: center;
 }
-
 .latest-issues {
     margin-top: 50px;
 }
-
 .latest-issues h2 {
     background: transparent;
     width: 260px;
     margin-bottom: 10px;
 }
-
 .issues-wrapper {
     width: 100%;
     height: 100%;
@@ -384,61 +331,94 @@ figure.effect-gcihover:hover figcaption::before {
     background: #eee;
     border-radius: 5px;
 }
-
 .issue {
     width: 100%;
     height: 80px;
-    padding:18px;
+    padding: 18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
-    background:#FFF;
+    background: #FFF;
 }
-
 .issue:last-child {
     border-bottom: none;
     margin-bottom: 0;
 }
-
 .issues-wrapper span {
     margin-right: 5px;
     font-weight: bold;
 }
-
 .issues-wrapper a {
     color: #1862db;
 }
-
 .issues-wrapper .user {
     position: absolute;
     margin-top: -42px;
     margin-left: 74px;
 }
-
 .issues-wrapper .right-coms {
     float: right;
     text-align: right;
     margin-top: -55px;
 }
-
 .issues-wrapper i {
     margin-right: 5px;
 }
-
 .button {
-  background: #FFF;
-  text-align: center;
-  height: 40px;
-  width: 300px;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-  padding: 5px;
-  margin-bottom:20px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #FFF;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .button a {
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.github-widget {
+    max-width: 370px !important;
+    width: 370px !important;
+    height: 459px !important;
+    max-height: 459px !important;
+    background: white;
+    margin: auto;
+    /*margin:0;*/
+    padding: 0;
+    border: 0;
+}
+.social-media .last-one>div {
+    float: none;
+    margin: 1em auto;
+}
+.last-one {
+    margin-bottom: 30px;
+    margin-top: 2em;
+    padding: 1em
+}
+#gyt {
+    background-color: white;
+    height: 48px;
+    overflow: hdden;
+    margin: 10px;
+    box-shadow: none;
+    border: none;
+}
+.g-ytsubscribe {
+    background-color: white;
+    display: flex;
+    box-shadow: none;
+    border: none;
+    height: 48px;
+    overflow: hdden;
+}
+.embed-responsive-4by3, .embed-responsive {
+    height: 400px;
+    padding: 0 !important;
+    display: block;
 }
