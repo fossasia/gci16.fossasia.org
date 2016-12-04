@@ -8,7 +8,6 @@
 }
 
 .social-media {
-    padding: 40px;
     text-align: center;
 }
 
@@ -18,6 +17,7 @@
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+    height: 459px !important;
 }
 .inner a.button  {
     display: inline-block;
@@ -441,4 +441,36 @@ figure.effect-gcihover:hover figcaption::before {
   font-size: 20px;
   color: #000;
   text-decoration: none;
+}
+.github-widget {
+    max-width: 370px !important;
+    width: 370px !important;
+    height: 459px !important;
+    max-height: 459px !important;
+    background:white;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.social-media .last-one > div{
+    float: none;
+    margin: 1em auto;
+}
+
+#gyt {
+    background-color: white;
+    height:48px;
+    overflow:hdden;
+    margin: 10px;
+    box-shadow: none;
+    border: none;
+}
+.g-ytsubscribe {
+    background-color: white;
+    display:flex;
+    box-shadow: none;
+    border:none;
+    height:48px;
+    overflow:hdden;
 }
