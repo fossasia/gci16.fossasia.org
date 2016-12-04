@@ -29,6 +29,15 @@
             <a href="//github.com/fossasia/gci16.fossasia.org" class="button">
                 <small>View project on</small> GitHub</a>
         </div>
+        <div class="sec1">
+            <a class="sec2" href="gci16.fossasia.org/#mentors">Mentors</a>
+            <a class="sec2" href="gci16.fossasia.org/#contributers">Contributers</a>
+            <a class="sec2" href="gci16.fossasia.org/#student-sec">Students</a>
+            <a class="sec2" href="gci16.fossasia.org/#blog">Blog</a>
+            <a class="sec2" href="gci16.fossasia.org/#MBDyn">Logos</a>
+            <a class="sec2" href="gci16.fossasia.org/#issues">Issues</a>
+            <a class="sec2" href="gci16.fossasia.org/#soc-med">Social</a>
+        </div>
     </header>
     <div class="slider-container">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
@@ -67,7 +76,7 @@
     </div>
     <section class="main-content">
         <div class="container">
-            <section class="mentors">
+            <section class="mentors" id="mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
@@ -114,7 +123,7 @@
                 <div id="contributors-list" class="row">
                 </div>
             </section>
-            <section class="students-sec">
+            <section class="students-sec" id="students-sec">
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
                     {% for student in site.data.students %}
@@ -165,7 +174,7 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;">
+            <div class="blog" id="blog" style="background-color: #1B5E20;">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -187,7 +196,7 @@
             </div>
 
             <!-- Start ignoring SpaceConsistencyBear -->
-            <div class="logos" style="background-color: #ffB903;">
+            <div class="logos" id="MBDyn" style="background-color: #ffB903;">
                 <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
                 <div class="row">
                     <div class="col-xs-4 col-sm-3">
@@ -273,7 +282,7 @@
                  </div>
             </div>
             <!-- Stop ignoring -->
-            <section class="latest-issues">
+            <section class="latest-issues" id="issues">
                 <h2>LATEST ISSUES</h2>
                 <div class="issues-wrapper">
                   <div class="button">
@@ -283,7 +292,7 @@
                   </button>
                 </div>
             </section>
-            <div class="social-media">
+            <div class="social-media" id="soc-med">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
