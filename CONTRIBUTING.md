@@ -5,6 +5,8 @@
 Please help us follow the best practice to make it easy for the reviewer as well as the contributor.
 We want to focus on the code quality more than on managing pull request ethics.
 
+* [People before code](http://hintjens.com/blog:95): If any of the following rules are violated, the pull-requests must not be rejected. This is to create an easy and joyful onboarding process for new programmers and first-time contributors.
+
 * Single commit per pull request, Name it to something meaningful such as `Adding <-your-name-> in students/mentors/blogs section`.
 
 * Reference the issue numbers in the commit message if it resolves an open issue. Follow the pattern ``` Fixes #<issue number> <commit message>```
@@ -13,7 +15,7 @@ We want to focus on the code quality more than on managing pull request ethics.
 
 * The PR should also include a link to the Google Code-In Task instance (if applicable) to fasten the review process both sides.
 
-* The pull request will not get merged until and unless the commits are squashed. In case there are multiple commits on the PR, the commit author needs to squash them and not the maintainers cherrypicking and merging squashes.
+* In case there are multiple commits on the PR, the commit author should squash them.
 
 * Pull Request older than 4 days with no response from the contributor shall be marked closed.
 
