@@ -46,44 +46,6 @@
   facebook: jigyasa.grover.14
   bio:
 
-- name: Phu Nguyen
-  github: nghoangphu
-  image: nghoangphu.jpg
-  blog:
-  twitter:
-  facebook: nghoangphu
-  bio:
-
-- name: Shubham Padia
-  github: shubham-padia
-  image: shubham-padia.jpg
-  twitter: shubham_p98
-  facebook: padiashubham
-  bio:
-
-- name: Dishant Khanna
-  github: DishantK1807
-  image: dishantkhanna.jpg
-  twitter: dishantkhanna
-  facebook: dishant.khanna.1807
-  bio:
-
-- name: Damini Satya
-  github: daminisatya
-  image: daminisatya.jpg
-  blog:
-  twitter: Daminisatya
-  facebook:
-  bio:
-
-- name: Nicco Kunzmann
-  github: niccokunzmann
-  image: niccokunzmann.jpg
-  blog: niccokunzmann.github.io
-  twitter: dannhaltohneson
-  facebook:
-  bio:
-
 - name: Robby O'Connor
   github: robbyoconnor
   image: robert.jpg
