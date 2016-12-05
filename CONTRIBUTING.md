@@ -38,7 +38,7 @@ if your pull-request goes unnoticed. They may have time.
 * [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
 
 ### Merge Commits
-* [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4) 
+* [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4)
 
 ### Squash Commits
 * [Git Rebase (squash last commit)](https://www.youtube.com/watch?v=qh9KtjfjzCU)
