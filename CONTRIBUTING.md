@@ -23,3 +23,9 @@ We want to focus on the code quality more than on managing pull request ethics.
 
 For further discussions & communications, please join us on FOSSASIA Slack at #gci channel, link: https://fossasia.slack.com/messages/gci.
 You can get an invite [here](http://fossasia-slack.herokuapp.com/).
+
+
+## Git/Github Tutorials
+
+* [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4) 
+* [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
