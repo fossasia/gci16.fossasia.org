@@ -29,3 +29,4 @@ You can get an invite [here](http://fossasia-slack.herokuapp.com/).
 
 * [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4) 
 * [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
+* [Git Guide](http://rogerdudler.github.io/git-guide/)
