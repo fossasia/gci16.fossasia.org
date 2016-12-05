@@ -7,7 +7,7 @@ We want to focus on the code quality more than on managing pull request ethics.
 
 * [People before code](http://hintjens.com/blog:95): If any of the following rules are violated, the pull-requests must not be rejected. This is to create an easy and joyful onboarding process for new programmers and first-time contributors.
 
-* Single commit per pull request, Name it to something meaningful such as `Adding <-your-name-> in students/mentors/blogs section`.
+* Single commit per pull request and name the commit as something meaningful, example: `Adding <-your-name-> in students/mentors/blogs section`.
 
 * Reference the issue numbers in the commit message if it resolves an open issue. Follow the pattern ``` Fixes #<issue number> <commit message>```
 
