@@ -4,6 +4,9 @@
 
 The student site for GCI 2016 Students.
 
+# Contributing
+Read thoroughly our [contributing guide](https://github.com/fossasia/gci16.fossasia.org/blob/gh-pages/CONTRIBUTING.md) before sending in your Pull Requests. Happy Contributing !
+
 # Blog Post
 
 To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the
