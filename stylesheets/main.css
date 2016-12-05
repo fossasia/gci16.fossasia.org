@@ -5,6 +5,24 @@
     color: white;
     margin-bottom: 30px;
 }
+
+.sec1{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sec2{
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
 .social-media {
     text-align: center;
 }
