@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/print.css" media="print">
@@ -17,20 +16,41 @@
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <![endif]-->
 
     <title>Gci16.fossasia.org by fossasia</title>
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <h1>Gci16.fossasia.org</h1>
-            <h2>GCI Website 2016</h2>
-            <a href="//github.com/fossasia/gci16.fossasia.org" class="button">
-                <small>View project on</small> GitHub</a>
+    <a href="//github.com/fossasia/gci16.fossasia.org">
+      <img class="ribbon" src="./images/ribbon.png">
+    </a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="">
+            <img src="./images/fossasia-dark.png">
+          </a>
         </div>
-    </header>
-    <div class="slider-container">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+            <li><a href="#students">Students</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#blog-post">Blog posts</a></li>
+                <li><a href="#designs">MBDyn Logo Designs</a></li>
+                <li><a href="#issues">Latest Issues</a></li>
+              </ul>
+            </li>
+            <li><a href="#social-media">Social media</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
           <li>
@@ -67,7 +87,7 @@
     </div>
     <section class="main-content">
         <div class="container">
-            <section class="mentors">
+            <section class="mentors" id="mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
@@ -114,7 +134,7 @@
                 <div id="contributors-list" class="row">
                 </div>
             </section>
-            <section class="students-sec">
+            <section class="students-sec" id="students">
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
                     {% for student in site.data.students %}
@@ -165,7 +185,7 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;">
+            <div class="blog" style="background-color: #1B5E20;" id="blog-post">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -187,7 +207,7 @@
             </div>
 
             <!-- Start ignoring SpaceConsistencyBear -->
-            <div class="logos" style="background-color: #ffB903;">
+            <div class="logos" style="background-color: #ffB903;" id="designs">
                 <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
                 <div class="row">
                     <div class="col-xs-4 col-sm-3">
@@ -273,7 +293,7 @@
                  </div>
             </div>
             <!-- Stop ignoring -->
-            <section class="latest-issues">
+            <section class="latest-issues" id="issues">
                 <h2>LATEST ISSUES</h2>
                 <div class="issues-wrapper">
                   <div class="button">
@@ -283,7 +303,7 @@
                   </button>
                 </div>
             </section>
-            <div class="social-media">
+            <div class="social-media" id="social-media">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-md-6">
@@ -419,5 +439,6 @@
 <script src="//flickrembed.com/embed_v2.js.php?source=flickr
 &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
 &theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
