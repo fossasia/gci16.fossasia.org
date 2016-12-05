@@ -376,6 +376,7 @@ figure.effect-gcihover:hover figcaption::before {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .button a {
     font-size: 20px;
     color: #000;
@@ -458,4 +459,24 @@ figure.effect-gcihover:hover figcaption::before {
     font-size: 18px;
     color: #888;
     margin-right: 8px;
+}
+
+.logos {
+    background: #ffb300;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.logos img {
+    padding: 3em .6em;
+}
+
+.yt {
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.students-section {
+    padding: 2em;
 }
