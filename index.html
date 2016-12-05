@@ -1,5 +1,9 @@
 ---
 ---
+<!-- 
+    Github issues loader src: http://tobiasahlin.com/spinkit/
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,16 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
+            rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/loader.css" media="screen">
     <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+
+    <script type="text/javascript" src="javascripts/githubIssues.js"></script>
 
     <title>Gci16.fossasia.org by fossasia</title>
 </head>
@@ -31,9 +38,9 @@
         </div>
     </header>
     <div class="slider-container">
-      <div class="ism-slider" data-transition_type="fade" id="my-slider">
+        <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
-          <li>
+            <li>
             <img src="images/image_slider_crowd.jpg">
             <div class="ism-caption ism-caption-0">FOSSASIA</div>
             <div class="ism-caption ism-caption-1" data-delay="200">
@@ -41,8 +48,8 @@
                 We connect developers together.<br>
                 We are an open-source community.
             </div>
-          </li>
-          <li>
+            </li>
+            <li>
             <img src="images/image_slider_fossasia.jpg">
             <div class="ism-caption ism-caption-0">Google Code-in 2016</div>
             <div class="ism-caption ism-caption-1" data-delay="200">
@@ -52,8 +59,8 @@
                 <a href="//codein.withgoogle.com/organizations/fossasia/">
                     Participate now!</a>
             </div>
-          </li>
-          <li>
+            </li>
+            <li>
             <img src="images/image_slider_machine.jpg">
             <div class="ism-caption ism-caption-0">FOSSASIA OpenTechSummit</div>
             <div class="ism-caption ism-caption-1" data-delay="200">
@@ -61,9 +68,9 @@
                 at the Science Centre Singapore<br>
                 <a href="//2017.fossasia.org">Join us now!</a>
             </div>
-          </li>
+            </li>
         </ol>
-      </div>
+        </div>
     </div>
     <section class="main-content">
         <div class="container">
@@ -82,23 +89,23 @@
                                 <div class="social">
                                     {% if mentor.github %}
                                     <a href="//github.com/{{mentor.github}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-github"></i></a>
                                     {% endif %}
                                     {% if mentor.facebook %}
                                     <a href="//facebook.com/{{mentor.facebook}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-facebook"></i></a>
                                     {% endif %}
                                     <br>
                                     {% if mentor.twitter %}
                                     <a href="//twitter.com/{{mentor.twitter}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-twitter"></i></a>
                                     {% endif %}
                                     {% if mentor.blog %}
                                     <a href="{{mentor.blog}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-code"></i></a>
                                     {% endif %}
                                 </div>
@@ -133,26 +140,26 @@
                                 <div class="social">
                                     {% if student.github %}
                                     <a href="//github.com/{{student.github}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
                                     {% endif %}
                                     {% if student.facebook %}
                                     <a href="//facebook.com/{{student.facebook}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                     {% endif %}
                                     <br>
                                     {% if student.twitter %}
                                     <a href="//twitter.com/{{student.twitter}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                     {% endif %}
                                     {% if student.blog %}
                                     <a href="{{mentor.student}}"
-                                       target="_blank">
+                                         target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
@@ -193,7 +200,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
+                                <!-- Ignore HTMLLintBear -->
                                 <img src="images/logos/Logo2.svg" alt="Lee Care Gene">
                                 <figcaption>
                                     <p>
@@ -206,7 +213,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
+                                <!-- Ignore HTMLLintBear -->
                                 <img src="images/logos/MBDyn1.png" alt="Logo by Baidyanath">
                                 <figcaption>
                                     <p>
@@ -232,8 +239,8 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                              <img src="images/logos/logo.png" alt="Anastasia Kostiv">
+                                <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/logo.png" alt="Anastasia Kostiv">
                                 <figcaption>
                                     <p>
                                         <span style="color: #000000">by Anastasia Kostiv</span>
@@ -247,7 +254,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
+                                <!-- Ignore HTMLLintBear -->
                                 <img src="images/logos/MBDyn2.png" alt="Logo by Baidyanath">
                                 <figcaption>
                                     <p>
@@ -260,7 +267,7 @@
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
+                                <!-- Ignore HTMLLintBear -->
                                 <img src="images/logos/MBDyn3.png" alt="Logo by Baidyanath">
                                 <figcaption>
                                     <p>
@@ -276,11 +283,13 @@
             <section class="latest-issues">
                 <h2>LATEST ISSUES</h2>
                 <div class="issues-wrapper">
-                  <div class="button">
-                    <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                      See all issues on&nbsp;<i class="fa fa-github"></i>github
-                    </a>
-                  </button>
+                    <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
                 </div>
             </section>
             <div class="social-media">
