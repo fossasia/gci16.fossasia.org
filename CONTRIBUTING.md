@@ -24,6 +24,8 @@ We want to focus on the code quality more than on managing pull request ethics.
 For further discussions & communications, please join us on FOSSASIA Slack at #gci channel, link: https://fossasia.slack.com/messages/gci.
 You can get an invite [here](http://fossasia-slack.herokuapp.com/).
 
+Also, we have a [team of maintainers](maintainers.md) to whom you can write with `@fossasia/gci16-maintainers`
+if your pull-request goes unnoticed. They may have time.
 
 ## Git/Github Tutorials
 ### Git: Introduction
