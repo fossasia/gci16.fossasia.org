@@ -17,7 +17,7 @@ Not a responsibilty of a maintainer
 -----------------------------------
 
 - review pull-requests: Anyone can do this, it does not need a maintainer.
-- reject pull-requests: 
+- reject pull-requests:
   - Just do not merge them if you do not like them.
   - If they get old, they are closed.
   - Merge them and revert them to make the requester to a contributor in the future.
