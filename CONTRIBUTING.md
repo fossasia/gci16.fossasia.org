@@ -20,3 +20,4 @@ We want to focus on the code quality more than on managing pull request ethics.
 * Avoid duplicate PRs, if need be comment on the older PR with the PR number of the follow-up (new PR) and close the obsolete PR yourself.
 
 For further discussions & communications, please join us on FOSSASIA Slack at #gci channel, link: https://fossasia.slack.com/messages/gci.
+You can get an invite [here](http://fossasia-slack.herokuapp.com/).
