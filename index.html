@@ -33,35 +33,20 @@
     <div class="slider-container">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
+          {% for slide in site.data.slides %}
           <li>
-            <img src="images/image_slider_crowd.jpg">
-            <div class="ism-caption ism-caption-0">FOSSASIA</div>
+            <img src="images/{{slide.img}}">
+            <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
             <div class="ism-caption ism-caption-1" data-delay="200">
-                We build a new era of Technology.<br>
-                We connect developers together.<br>
-                We are an open-source community.
+                {{slide.exp-1}}<br>
+                {{slide.exp-2}}<br>
+                {{slide.exp-3}}
+                {% if slide.action %}
+                    <a href="{{slide.actionURL}}">{{slide.action}}</a>
+                {% endif %}
             </div>
           </li>
-          <li>
-            <img src="images/image_slider_fossasia.jpg">
-            <div class="ism-caption ism-caption-0">Google Code-in 2016</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                Educating and inspiring<br>
-                students by being involved in<br>
-                open-source projects.<br>
-                <a href="//codein.withgoogle.com/organizations/fossasia/">
-                    Participate now!</a>
-            </div>
-          </li>
-          <li>
-            <img src="images/image_slider_machine.jpg">
-            <div class="ism-caption ism-caption-0">FOSSASIA OpenTechSummit</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                17th - 19th March 2017<br>
-                at the Science Centre Singapore<br>
-                <a href="//2017.fossasia.org">Join us now!</a>
-            </div>
-          </li>
+          {% endfor %}
         </ol>
       </div>
     </div>
@@ -111,8 +96,7 @@
             </section>
             <section id="contributors">
                 <h2>CONTRIBUTORS</h2>
-                <div id="contributors-list" class="row">
-                </div>
+                <div id="contributors-list" class="row"></div>
             </section>
             <section class="students-sec">
                 <h2>STUDENTS</h2>
@@ -192,86 +176,21 @@
             <div class="logos" style="background-color: #ffB903;">
                 <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
                 <div class="row">
+                    {% for logo in site.data.logos %}
                     <div class="col-xs-4 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
                               <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/Logo2.svg" alt="Lee Care Gene">
+                                <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
                                 <figcaption>
                                     <p>
-                                        <span style="color: #000000">by Lee Care Gene</span>
+                                        <span style="color: #000000">by {{logo.author}}</span>
                                     </p>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/MBDyn1.png" alt="Logo by Baidyanath">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Baidyanath</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                                <img src="images/logos/adarshMBDyn.png"
-                                     alt="Logo by Adarsh Kumar">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Adarsh Kumar</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                              <img src="images/logos/logo.png" alt="Anastasia Kostiv">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Anastasia Kostiv</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/MBDyn2.png" alt="Logo by Baidyanath">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Baidyanath</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/MBDyn3.png" alt="Logo by Baidyanath">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by Baidyanath</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
+                    {% endfor %}
                  </div>
             </div>
             <!-- Stop ignoring -->
