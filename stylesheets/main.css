@@ -352,7 +352,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .issues-wrapper .user {
     position: absolute;
-    margin-top: -42px;
+    margin-top: -30px;
     margin-left: 74px;
 }
 .issues-wrapper .right-coms {
