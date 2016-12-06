@@ -24,7 +24,7 @@ $(function(){
 
 $(function(){
     $.ajax({
-        url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
+        url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open&label=feature"
     }).done(function(data){
         var index = 0;
         data.forEach(function(issue){
