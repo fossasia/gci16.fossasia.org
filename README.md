@@ -23,3 +23,6 @@ following format to enter your blog in this website.
 **Important: The image should be added in images folder, and `your_image` should be the file's
 name, for example 'mypost.png'**
 Also adding article and article_link is optional, unless your task recommends it.
+
+**Important: All images must be optimized before uploaded to the repo via commit or PR,
+you may use any image optimizer of your choice. Also the images should be 240x240 pixels
