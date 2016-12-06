@@ -11,7 +11,6 @@ Responsibilities of Maintainers
 - Be empathic: Better a bad PR with follow-up PRs than a closed PR and a rejected person.
 - Merge pull-requests.
 - Make sure people understand that you can not accept their GCI task.
-- Close old pull-requests, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Not a responsibilty of a maintainer
 -----------------------------------
@@ -21,6 +20,12 @@ Not a responsibilty of a maintainer
   - Just do not merge them if you do not like them.
   - If they get old, they are closed.
   - Merge them and revert them to make the requester to a contributor in the future.
+
+Abilities of Maintainers
+------------------------
+
+- Close old pull-requests, see [CONTRIBUTING.md](CONTRIBUTING.md)
+- Remove merged branches.
 
 Further Reading
 ---------------
