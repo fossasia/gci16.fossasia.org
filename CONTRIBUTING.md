@@ -27,7 +27,7 @@ You can get an invite [here](http://fossasia-slack.herokuapp.com/).
 Also, we have a [team of maintainers](maintainers.md) to whom you can write with `@fossasia/gci16-maintainers`
 if your pull-request goes unnoticed. They may have time.
 
-##Tutorials
+## Tutorials
 ### Command Line Tutorials
 * [OpenHatch Missions](https://openhatch.org/missions/)
 
