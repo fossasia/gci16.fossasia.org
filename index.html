@@ -165,26 +165,28 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;">
-                <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
+            <section id="blog-posts">
+                <h2>BLOG POSTS</h2>
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-3">
-                        <div {% if blog.blog_img %}
-                        style="background: url("images/blogs/{{ blog.blog_img }}")
-                        no-repeat center top;" {% endif %} class="blog-post">
-                            <div class="blog-title"> Blog of
-                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
-                                <br> {% if blog.article %}
-                                <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="{{ blog.article_link }}" target="_blank">
+                            <div class="blog-holder">
+                                <div style="background-image: url({% if blog.blog_img %}images/blogs/{{ blog.blog_img }}{% else %}
+                                            https://placehold.it/300x200/aed581/FFFFFF?text=blog{% endif %});"
+                                     class="blog-post-img"></div>
+                                <div class="blog-post">
+                                   <h1>{{ blog.article }}</h1>
+                                    <p>by {{ blog.name }}</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     {% endfor %}
                     <!-- Stop ignoring -->
                 </div>
-            </div>
+            </section>
 
             <!-- Start ignoring SpaceConsistencyBear -->
             <div class="logos" style="background-color: #ffB903;">
