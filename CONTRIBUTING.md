@@ -27,19 +27,23 @@ You can get an invite [here](http://fossasia-slack.herokuapp.com/).
 Also, we have a [team of maintainers](maintainers.md) to whom you can write with `@fossasia/gci16-maintainers`
 if your pull-request goes unnoticed. They may have time.
 
-## Git/Github Tutorials
+##Tutorials
+### Command Line Tutorials
+* [OpenHatch Missions](https://openhatch.org/missions/)
+
+### Git/Github Tutorials
 ### Git: Introduction
 * [Git - the simple guide (awesome)](http://rogerdudler.github.io/git-guide/)
 * [An Intro to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
-### Github: Introduction
+#### Github: Introduction
 * [An Intro to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 * [Github Hello World](https://guides.github.com/activities/hello-world/)
 * [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
 
-### Merge Commits
+#### Merge Commits
 * [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4)
 
-### Squash Commits
+#### Squash Commits
 * [Git Rebase (squash last commit)](https://www.youtube.com/watch?v=qh9KtjfjzCU)
 * [Squash Commits with Git](https://davidwalsh.name/squash-commits-git)
