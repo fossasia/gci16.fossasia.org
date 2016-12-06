@@ -2,9 +2,7 @@
   github: hpdang
   image: hpdang.jpg
   blog: http://blog.fossasia.org/
-  twitter:
   facebook: hpdang
-  bio:
 
 - name: Mario Behling
   github: mariobehling
@@ -12,15 +10,12 @@
   blog: http://mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
-  bio:
 
 - name: Louis Gagnon
   github: louisgag
   image: louisgagnon.jpg
   blog: http://louisgagnon.com/
   twitter: louisgagnoncom
-  facebook:
-  bio:
 
 - name: Saptak Sengupta
   github: saptaks
@@ -28,53 +23,39 @@
   blog: http://saptaks.me
   twitter: Saptak013
   facebook: s4pt4ks
-  bio:
 
 - name: Hemant Jadon
   github: hemantjadon
   image: hemantjadon.jpg
-  blog:
   twitter: hemantjadonhj
   facebook: hemant.jadon
-  bio:
 
 - name: Jigyasa Grover
-  github:
   image: jgrover.jpg
-  blog:
   twitter: jigyasa_grover
   facebook: jigyasa.grover.14
-  bio:
 
 - name: Phu Nguyen
   github: nghoangphu
   image: nghoangphu.jpg
-  blog:
-  twitter:
   facebook: nghoangphu
-  bio:
 
 - name: Shubham Padia
   github: shubham-padia
   image: shubham-padia.jpg
   twitter: shubham_p98
   facebook: padiashubham
-  bio:
 
 - name: Dishant Khanna
   github: DishantK1807
   image: dishantkhanna.jpg
   twitter: dishantkhanna
   facebook: dishant.khanna.1807
-  bio:
 
 - name: Damini Satya
   github: daminisatya
   image: daminisatya.jpg
-  blog:
   twitter: Daminisatya
-  facebook:
-  bio:
 
 - name: Nicco Kunzmann
   github: niccokunzmann
@@ -89,14 +70,9 @@
   image: robert.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
-  facebook: 
-  bio:
   
 - name: Ajinkya Wavare
   github: ajinkya007
   image: ajinkya.jpg
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
-  facebook: 
-  bio:
-
