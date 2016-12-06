@@ -47,3 +47,12 @@ $(function(){
         });
     });
 });
+
+function popupstd(name, github, fb, twitter){
+    document.getElementById("std_name").innerHTML = name;
+    var image = "//github.com/"+github+".png?size=240";
+    $("#std_image").attr("img", image);
+    $("#std_fb").attr("href", "//www.github.com/"+github);
+    $("#std_github").attr("href", "//www.facebook.com/"+fb);
+    $("#std_twitter").attr("href", "//www.twitter.com/"+twitter);
+}

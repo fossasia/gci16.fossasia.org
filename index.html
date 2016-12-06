@@ -135,8 +135,11 @@
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
                     {% for student in site.data.students %}
+                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card cursor-pointer"
+                        onclick="popupstd('{{student.name}}','{{student.github}}','{{student.facebook}}','{{student.twitter}}')"
+                        data-toggle="modal" data-target="#modal01">
                             <div class="avatar">
                                 {% if student.image %}
                                 <img src="images/students/{{student.image}}"
@@ -178,6 +181,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Stop ignoring -->
                     {% endfor %}
                 </div>
             </section>
@@ -412,6 +416,36 @@
         <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
         <i class="fa fa-heart"></i> for Google Code-In</p>
     </section>
+    <div id="model01" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                    data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="std_name">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                      <img src="" id="std_image" width="240" height="240">
+                      <a href="" target="_blank" id="std_fb">
+                          <img src="images/icons/facebook.png">
+                      </a>
+                      <a href="" target="_blank" id="std_twitter">
+                          <img src="images/icons/twitter.png">
+                      </a>
+                      <a href="" target="_blank" id="std_github">
+                          <img src="images/icons/github.png">
+                      </a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                    data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
