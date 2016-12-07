@@ -23,12 +23,20 @@
     </a>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-        <div class="navbar-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#collapse"
+            aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="">
             <img src="./images/fossasia-dark.png">
           </a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="collapse">
           <ul class="nav navbar-nav">
             <li><a href="#welcome">Welcome</a></li>
             <li><a href="#mentors">Mentors</a></li>
@@ -69,7 +77,7 @@
     </div>
     <section class="main-content">
         <div class="container">
-            <section class="mentors" id="mentors">
+            <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
                     {% for mentor in site.data.mentors %}
@@ -111,11 +119,11 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors">
+            <section id="contributors" id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row"></div>
             </section>
-            <section class="students-sec" id="students">
+            <section class="students-sec" id="students" href="#students">
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
                     {% for student in site.data.students %}
@@ -166,7 +174,7 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;" id="blog-post">
+            <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
                 <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
@@ -219,7 +227,7 @@
                   </button>
                 </div>
             </section>
-            <div class="social-media" id="social-media">
+            <div class="social-media" id="social-media" href="#social-media">
                 <h1 class="white-header">FOSSASIA on social media</h1>
                 <div class="row">
                     <div class="col-md-6">
