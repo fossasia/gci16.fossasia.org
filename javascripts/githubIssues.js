@@ -35,7 +35,7 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
-                            div.innerHTML += issue.title;
+                            div.innerHTML += '<a href="' + issue.html_url + '">' + issue.title + '</a>';
                         }
 
                         document.querySelector('.issues-wrapper').appendChild(div);
