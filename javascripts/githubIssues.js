@@ -19,8 +19,6 @@ fetch(url).then(function (response) {
             document.querySelector('.issues-wrapper').innerHTML = '';
             responseJson.forEach(function (issue, key) {
                 issue.labels.forEach(function (object, key) {
-                    console.log(object, issue);
-
                     // Check if the label is called 'feature'
                     if (object.name.toLowerCase() === 'feature') {
                         issues.push(issue);
@@ -37,7 +35,7 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
-                            div.innerHTML += issue.body;
+                            div.innerHTML += issue.title;
                         }
 
                         document.querySelector('.issues-wrapper').appendChild(div);
