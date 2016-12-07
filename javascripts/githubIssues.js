@@ -41,6 +41,7 @@ fetch(url).then(function (response) {
 
                         // Check if issue has a label
                         if (object.length > 0) {
+                            console.log(object);
                             labels.innerHTML += '<span>' + object + '</span>';
                         }
 
