@@ -352,7 +352,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .issues-wrapper .user {
     position: absolute;
-    margin-top: -42px;
+    margin-top: -30px;
     margin-left: 74px;
 }
 .issues-wrapper .right-coms {
@@ -456,17 +456,25 @@ figure.effect-gcihover:hover figcaption::before {
 .logos {
     background: #ffb300;
     padding: 1.5em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0.5em;
 }
 .logos img {
-    padding: 3em .6em;
+    padding: 3em 0.6em;
 }
 .yt {
-    margin-top: 2em;
-    margin-bottom: 1.2em;
+    margin: 2em 0 1.2em 0;
     padding: 1em;
 }
 .students-section {
     padding: 2em;
+}
+.navbar-brand {
+    margin-top: -7px;
+}
+.ribbon {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border: 0;
+    z-index: 1000;
 }
