@@ -39,8 +39,8 @@ fetch(url).then(function (response) {
                             div.innerHTML = issue.body;
                         }
 
-                        a.appendChild(div);
-                        document.querySelector('.issues-wrapper').appendChild(a);
+                        div.appendChild(a);
+                        document.querySelector('.issues-wrapper').appendChild(div);
                     }
                 });
             });
