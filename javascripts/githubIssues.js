@@ -43,7 +43,7 @@ fetch(url).then(function (response) {
                             labels.innerHTML += '<span>' + object + '</span>';
                         }
 
-                        div.appendChild(lables);
+                        div.appendChild(labels);
                         document.querySelector('.issues-wrapper').appendChild(div);
                     }
                 });
