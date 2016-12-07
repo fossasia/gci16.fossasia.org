@@ -55,7 +55,9 @@ fetch(url).then(function (response) {
     }
 
     return response;
-}).then(function () {
+}).then(function (response) {
+    console.log(response.status);
+
     if (response.type === 'opaque') {
         console.log('Received a response, but it\'s opaque so can\'t examine it');
         document.querySelector('.issues-wrapper').innerHTML = '<h3>Received a response, but it\'s opaque so can\'t examine it</h3>';
