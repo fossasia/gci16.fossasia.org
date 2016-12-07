@@ -41,7 +41,7 @@ if your pull-request goes unnoticed. They may have time.
 * [Github Hello World](https://guides.github.com/activities/hello-world/)
 * [Changing a commit message](https://help.github.com/articles/changing-a-commit-message/)
 
-#### Merge Commits
+### Merge Commits
 * [How To Manually Fix Git Merge Conflicts (video)](https://www.youtube.com/watch?v=g8BRcB9NLp4)
 
 #### Squash Commits
