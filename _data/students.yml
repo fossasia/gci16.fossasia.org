@@ -203,6 +203,7 @@
 
 - name: Ha Minh Chien
   github: wermarter
+  image: hmc.jpg
   image: chien.jpg
   twitter: wermarter
   bio: 16, love pigeons...
@@ -213,3 +214,19 @@
   image: dwij.png
   facebook: jha.dwij
   bio: 14,Indian,Sudent Programmer
+
+- name: Miguel Piedrafita
+  github: m1guelpf
+  facebook: m1guelpiedrafita
+  twitter: m1guelpf
+  image: m1guelpiedrafita.png
+  blog: blog.miguelpiedrafita.com
+  bio: An spanish coder that loves open source.
+
+- name: Nguyen Chanh Dai
+  github: nguyenchanhdai
+  facebook: ncd.vkn
+  twitter: nguyenchanhdai9
+  image: ncdai.jpg
+  blog: ncdai.blogspot.com
+  bio: 17, student, web developer
