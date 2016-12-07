@@ -56,7 +56,7 @@ fetch(url).then(function (response) {
 
     return response;
 }).then(function (response) {
-    console.log(response.status);
+    console.log(response, response.status);
 
     if (response.type === 'opaque') {
         console.log('Received a response, but it\'s opaque so can\'t examine it');
