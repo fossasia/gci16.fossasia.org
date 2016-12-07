@@ -27,7 +27,7 @@ fetch(url).then(function (response) {
                         var div = document.createElement('div');
 
                         a.id = 'issue';
-                        a.class = 'issue';
+                        a.className += 'issue';
                         a.href = issue.html_url;
 
                         div.title = 'Click to view more';
@@ -52,7 +52,7 @@ fetch(url).then(function (response) {
         if (issues.length < 1) {
             document.querySelector('.issues-wrapper').innerHTML = '<h3>There are no open issues that are labled \'feature\'.</h3>';
         }
-    }, 100);
+    }, 2000);
 }).catch(function (err) {
     console.error('An error occurred', err);
 });
