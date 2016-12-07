@@ -40,7 +40,7 @@ fetch(url).then(function (response) {
 
                         // Check if issue has a label
                         if (object.length > 0) {
-                            lables += '<span>' + object + '</span>';
+                            labels.innerHTML += '<span>' + object + '</span>';
                         }
 
                         div.appendChild(lables);
