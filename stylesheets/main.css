@@ -1,3 +1,6 @@
+.hidden {
+  display: none;
+}
 .main-content {
     background-color: #303030;
 }
@@ -470,4 +473,9 @@ figure.effect-gcihover:hover figcaption::before {
     right: 0;
     border: 0;
     z-index: 1000;
+}
+.avatar p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
