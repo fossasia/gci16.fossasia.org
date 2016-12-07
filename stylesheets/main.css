@@ -369,6 +369,16 @@ figure.effect-gcihover:hover figcaption::before {
     margin-right: 5px;
     position: absolute;
 }
+.issues-wrapper .labels {
+    left: 5px;
+    bottom: 5px;
+    font-size: 60%;
+    position: absolute;
+}
+.issues-wrapper .label {
+    padding: 10px;
+    background-color: lightgray;
+}
 .button {
     background: #FFF;
     text-align: center;

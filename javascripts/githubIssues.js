@@ -42,7 +42,7 @@ fetch(url).then(function (response) {
                         // Check if issue has a label
                         if (issue.labels.length > 0) {
                             issue.labels.forEach(function (object, key) {
-                                labels.innerHTML += '<span>' + object.name + '</span>';
+                                labels.innerHTML += '<span class="label">' + object.name + '</span>';
                             });
                         }
 
