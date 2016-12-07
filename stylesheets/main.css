@@ -471,3 +471,26 @@ figure.effect-gcihover:hover figcaption::before {
     border: 0;
     z-index: 1000;
 }
+.logos
+{
+    background: #ffb300;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.logos img
+{
+    padding: 3em .6em;
+}
+
+.yt
+{
+    margin: 2em 0.1em; 
+    padding: 1em;
+}
+
+.students-section
+{
+    padding: 2em;
+}
