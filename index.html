@@ -1,0 +1,450 @@
+---
+---
+<!--
+    Github issues loader src: http://tobiasahlin.com/spinkit/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="javascripts/githubIssues.js"></script>
+
+    <title>Gci16.fossasia.org by fossasia</title>
+</head>
+<body>
+    <a href="//github.com/fossasia/gci16.fossasia.org">
+      <img class="ribbon" src="./images/ribbon.png">
+    </a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#collapse"
+            aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">
+            <img src="./images/fossasia-dark.png">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+            <li><a href="#students">Students</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#blog-post">Blog posts</a></li>
+                <li><a href="#designs">MBDyn Logo Designs</a></li>
+                <li><a href="#issues">Latest Issues</a></li>
+              </ul>
+            </li>
+            <li><a href="#social-media">Social media</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="slider-container" id="welcome">
+      <div class="ism-slider" data-transition_type="fade" id="my-slider">
+        <ol>
+          {% for slide in site.data.slides %}
+          <li>
+            <img src="images/{{slide.img}}">
+            <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
+            <div class="ism-caption ism-caption-1" data-delay="200">
+                {{slide.exp-1}}<br>
+                {{slide.exp-2}}<br>
+                {{slide.exp-3}}
+                {% if slide.action %}
+                    <a href="{{slide.actionURL}}">{{slide.action}}</a>
+                {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+    <section class="main-content">
+        <div class="container">
+            <section class="mentors" id="mentors" href="#mentors">
+                <h2>MENTORS</h2>
+                <div class="row mentors-wrapper">
+                    {% for mentor in site.data.mentors %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if mentor.image %}
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                {% else %}
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                                {% endif %}
+                                <div class="social">
+                                    {% if mentor.github %}
+                                    <a href="//github.com/{{mentor.github}}"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i></a>
+                                    {% endif %}
+                                    {% if mentor.facebook %}
+                                    <a href="//facebook.com/{{mentor.facebook}}"
+                                       target="_blank">
+                                        <i class="fa fa-facebook"></i></a>
+                                    {% endif %}
+                                    <br>
+                                    {% if mentor.twitter %}
+                                    <a href="//twitter.com/{{mentor.twitter}}"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i></a>
+                                    {% endif %}
+                                    {% if mentor.blog %}
+                                    <a href="{{mentor.blog}}"
+                                       target="_blank">
+                                        <i class="fa fa-code"></i></a>
+                                    {% endif %}
+                                </div>
+                                <p>{{mentor.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <section id="contributors" id="contributors" href="#contributors">
+                <h2>CONTRIBUTORS</h2>
+                <div id="contributors-list" class="row"></div>
+            </section>
+            <section class="students-sec" id="students" href="#students">
+                <h2>STUDENTS</h2>
+                <div class="row students-wrapper">
+                    {% for student in site.data.students %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if student.image %}
+                                <img src="images/students/{{student.image}}"
+                                alt="{{student.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/mentors/member.png"
+                                alt="{{student.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="social">
+                                    {% if student.github %}
+                                    <a href="//github.com/{{student.github}}"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                    {% endif %}
+                                    {% if student.facebook %}
+                                    <a href="//facebook.com/{{student.facebook}}"
+                                       target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    {% endif %}
+                                    <br>
+                                    {% if student.twitter %}
+                                    <a href="//twitter.com/{{student.twitter}}"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    {% endif %}
+                                    {% if student.blog %}
+                                    <a href="{{mentor.student}}"
+                                       target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                    {% endif %}
+                                </div>
+                                <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- Stop ignoring -->
+            <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
+                <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
+                <div class="row">
+                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                    {% for blog in site.data.blogs %}
+                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div {% if blog.blog_img %}
+                        style="background: url("images/blogs/{{ blog.blog_img }}")
+                        no-repeat center top;" {% endif %} class="blog-post">
+                            <div class="blog-title"> Blog of
+                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                <br> {% if blog.article %}
+                                <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!-- Stop ignoring -->
+                </div>
+            </div>
+
+            <!-- Start ignoring SpaceConsistencyBear -->
+            <div class="logos" id="designs">
+                <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
+                <div class="row">
+                    {% for logo in site.data.logos %}
+                    <div class="col-xs-4 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                              <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
+                                <figcaption>
+                                    <p>
+                                        <span style="color: #000000">by {{logo.author}}</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    {% endfor %}
+                 </div>
+            </div>
+            <!-- Stop ignoring -->
+            <section class="latest-issues" id="issues">
+                <h2>LATEST ISSUES</h2>
+                <div class="issues-wrapper">
+                    <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="social-media" id="social-media" href="#social-media">
+                <h1 class="white-header">FOSSASIA on social media</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Ignore LineLengthBear -->
+                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                        width="370" height="459" style="border:none;overflow:hidden"
+                        scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
+                    data-width="370" data-height="459"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="twitter-timeline" data-width="370" data-height="459"
+                        href="//twitter.com/fossasia">Tweets by fossasia</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="github-widget" data-username="fossasia"></div>
+                        </div>
+                </div>
+                <div class="last-one">
+                    <div style="margin-top: 2em;">
+                        <!-- Ignore LineLengthBear -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 col-md-offset-3 yt">
+                                    <div id="gyt">
+                                        <div class="g-ytsubscribe"
+                                        data-channelid="UCQprMsG-raCIMlBudm20iLQ"
+                                        data-layout="full"
+                                        data-count="default" height="48px"></div>
+                                    </div>
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                    src="//www.youtube.com/embed/videoseries\
+                                    ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                                    frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div id="flickrembed"></div><small style="display: block;
+                                    text-align: center; margin: 0 auto;">
+                                    <a href="//www.flickr.com/photos/fossasia">
+                                    Fossasia's flickralbum</a></small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--Flickr Album-->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div id="flickrembed"></div>
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
+</small>
+</div>
+</div>
+            </div>
+        </div>
+    </section>
+    <section class="footer container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 social">
+                <h2>Social Media</h2>
+                <a href="//facebook.com/fossasia" target="_blank">
+                    <img src="images/icons/facebook.png">
+                </a>
+                <a href="//twitter.com/fossasia" target="_blank">
+                    <img src="images/icons/twitter.png">
+                </a>
+                <a href="//plus.google.com/108920596016838318216" target="_blank">
+                    <img src="images/icons/googleplus.png">
+                </a>
+                <a href="//www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
+                    <img src="images/icons/linkedin.png">
+                </a>
+                <br>
+                <a href="//github.com/fossasia" target="_blank">
+                    <img src="images/icons/github.png">
+                </a>
+                <a href="//flickr.com/photos/fossasia" target="_blank">
+                    <img src="images/icons/flickr.png">
+                </a>
+                <a href="//www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
+                    <img src="images/icons/youtube.png">
+                </a>
+                <a href="//en.wikipedia.org/wiki/FOSSASIA" target="_blank">
+                    <img src="images/icons/wiki.png">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h2>About FOSSASIA</h2>
+                <p>FOSSASIA is an open source technology organization in Asia that aims to
+                bring together an inspiring community across borders and ages to form a better
+                future with Open Technologies and ICT.
+                </p>
+                <p>FOSSASIA is involved in Google Code-In, which serves as a great introduction
+                to the world of open source collaboration and an excellent mediator to involve
+                the next generation of digital collaborators.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h2>FOSSASIA Links</h2>
+                <ul>
+                    <li><a href="//fossasia.org"><i class="fa fa-link"></i>Main site</a></li>
+                    <li><a href="//blog.fossasia.org"><i class="fa fa-link"></i>Blog</a></li>
+                    <li><a href="//codein.withgoogle.com/organizations/fossasia/">
+                            <i class="fa fa-link"></i>Google Code-In Page
+                        </a>
+                    </li>
+                    <li><a href="//blog.fossasia.org/events"><i class="fa fa-link"></i>Events</a></li>
+                    <li><a href="//2016.fossasia.org">
+                            <i class="fa fa-link"></i>FOSSASIA 2016
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-link"></i>Top of the page</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
+        <i class="fa fa-heart"></i> for Google Code-In</p>
+    </section>
+    <section class="footer container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 social">
+                <h2>Social Media</h2>
+                <a href="//facebook.com/fossasia" target="_blank">
+                    <img src="images/icons/facebook.png">
+                </a>
+                <a href="//twitter.com/fossasia" target="_blank">
+                    <img src="images/icons/twitter.png">
+                </a>
+                <a href="//plus.google.com/108920596016838318216" target="_blank">
+                    <img src="images/icons/googleplus.png">
+                </a>
+                <a href="//www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
+                    <img src="images/icons/linkedin.png">
+                </a>
+                <br>
+                <a href="//github.com/fossasia" target="_blank">
+                    <img src="images/icons/github.png">
+                </a>
+                <a href="//flickr.com/photos/fossasia" target="_blank">
+                    <img src="images/icons/flickr.png">
+                </a>
+                <a href="//www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
+                    <img src="images/icons/youtube.png">
+                </a>
+                <a href="//en.wikipedia.org/wiki/FOSSASIA" target="_blank">
+                    <img src="images/icons/wiki.png">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h2>About FOSSASIA</h2>
+                <p>FOSSASIA is an open source technology organization in Asia that aims to
+                bring together an inspiring community across borders and ages to form a better
+                future with Open Technologies and ICT.
+                </p>
+                <p>FOSSASIA is involved in Google Code-In, which serves as a great introduction
+                to the world of open source collaboration and an excellent mediator to involve
+                the next generation of digital collaborators.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h2>FOSSASIA Links</h2>
+                <ul>
+                    <li><a href="//fossasia.org"><i class="fa fa-link"></i>Main site</a></li>
+                    <li><a href="//blog.fossasia.org"><i class="fa fa-link"></i>Blog</a></li>
+                    <li><a href="//codein.withgoogle.com/organizations/fossasia/">
+                            <i class="fa fa-link"></i>Google Code-In Page
+                        </a>
+                    </li>
+                    <li><a href="//blog.fossasia.org/events"><i class="fa fa-link"></i>Events</a></li>
+                    <li><a href="//2016.fossasia.org">
+                            <i class="fa fa-link"></i>FOSSASIA 2016
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-link"></i>Top of the page</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
+        <i class="fa fa-heart"></i> for Google Code-In</p>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//apis.google.com/js/platform.js" async defer></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? "http" : "https";
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + "://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+    <script src="javascripts/main.js"></script>
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <script src="//use.fontawesome.com/7f8b61349a.js"></script>
+    <!-- Github Cards -->
+    <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+<!--Flickr album js-->
+<script src="//flickrembed.com/embed_v2.js.php?source=flickr
+&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
+&theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
