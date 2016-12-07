@@ -330,7 +330,7 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 20px;
     background: #eee;
     border-radius: 5px;
-    position: inherit;
+    position: relative;
 }
 .issue {
     width: 100%;
@@ -362,9 +362,10 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: -55px;
 }
 .issues-wrapper i {
-    right: 0
+    right: 0;
     bottom: 0;
     padding: 2px;
+    font-size: 85%;
     margin-right: 5px;
     position: absolute;
 }
