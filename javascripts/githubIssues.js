@@ -7,7 +7,7 @@ var issues = [];
 
 // Get all the open issues
 fetch(url).then(function (response) {
-    // Examine the response 
+    // Examine the response
     if (response.type === 'opaque') {
         console.log('Received a response, but it\'s opaque so can\'t examine it');
         return;
@@ -19,7 +19,7 @@ fetch(url).then(function (response) {
             responseJson.forEach(function (issue, key) {
                 issue.labels.forEach(function (object, key) {
                     // Check if the label is called 'feature'
-                    if (object.name.toLowerCase() == 'feature') {
+                    if (object.name.toLowerCase() === 'feature') {
                         issues.push(issue);
 
                         var a = document.createElement('a');
@@ -31,7 +31,7 @@ fetch(url).then(function (response) {
                         div.title = 'Click to view more';
 
                         // Check if empty
-                        if (issue.body == '') {
+                        if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
                             div.innerHTML = issue.body;
