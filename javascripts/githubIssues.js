@@ -25,6 +25,7 @@ fetch(url).then(function (response) {
 
                         div.id = 'issue';
                         div.className += 'issue';
+                        labels.className += 'labels';
                         // a.href = issue.html_url;
 
                         div.title = 'Click to view more';
@@ -33,7 +34,7 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
-                            div.innerHTML += '<b>' + issue.number + '</b>';
+                            div.innerHTML += '<b>' + issue.number + '&nbsp;</b>';
                             div.innerHTML += '<a href="' + issue.html_url + '">' + issue.title + '</a>';
                             div.innerHTML += '<i>Updated: ' + issue.updated_at + '</i>';
                         }
