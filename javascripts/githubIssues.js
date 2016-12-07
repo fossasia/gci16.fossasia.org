@@ -56,9 +56,9 @@ fetch(url).then(function (response) {
 
     return response;
 }).then(function (response) {
-    console.log(response, response.status);
+    console.log(response);
 
-    if (response.type === 'opaque') {
+    /*if (response.type === 'opaque') {
         console.log('Received a response, but it\'s opaque so can\'t examine it');
         document.querySelector('.issues-wrapper').innerHTML = '<h3>Received a response, but it\'s opaque so can\'t examine it</h3>';
         return;
@@ -73,7 +73,7 @@ fetch(url).then(function (response) {
                 document.querySelector('.issues-wrapper').innerHTML = '<h3>There are no open issues that are labled \'feature\'.</h3>';
             }
         }, 2000);
-    }
+    }*/
 }).catch(function (err) {
     console.error('An error occurred', err);
 });
