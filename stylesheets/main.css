@@ -335,6 +335,7 @@ figure.effect-gcihover:hover figcaption::before {
     width: 100%;
     height: 80px;
     padding: 18px;
+    min-height: 100px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
     background: #FFF;
@@ -371,12 +372,12 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .issues-wrapper .labels {
     left: 5px;
-    bottom: 5px;
-    font-size: 60%;
+    bottom: 10px;
+    font-size: 80%;
     position: absolute;
 }
 .issues-wrapper .label {
-    padding: 10px;
+    padding: 5px;
     background-color: lightgray;
 }
 .button {
