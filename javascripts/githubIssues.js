@@ -23,12 +23,11 @@ fetch(url).then(function (response) {
                     if (object.name.toLowerCase() === 'feature') {
                         issues.push(issue);
 
-                        var a = document.createElement('a');
                         var div = document.createElement('div');
 
-                        a.id = 'issue';
-                        a.className += 'issue';
-                        a.href = issue.html_url;
+                        div.id = 'issue';
+                        div.className += 'issue';
+                        // a.href = issue.html_url;
 
                         div.title = 'Click to view more';
 
@@ -36,10 +35,9 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
-                            div.innerHTML = issue.body;
+                            div.innerHTML += issue.body;
                         }
 
-                        div.appendChild(a);
                         document.querySelector('.issues-wrapper').appendChild(div);
                     }
                 });
