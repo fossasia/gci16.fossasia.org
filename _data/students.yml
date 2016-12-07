@@ -201,6 +201,13 @@
   bio: 16, high school senior, coder and game designer
   facebook: gillarious
 
+- name: Ha Minh Chien
+  github: wermarter
+  image: chien.jpg
+  twitter: wermarter
+  bio: 16, love pigeons...
+  facebook: chien.pip
+
 - name: Dwij Jha
   github: codein-dwij
   image: dwij.png
