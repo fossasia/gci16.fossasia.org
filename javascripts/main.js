@@ -23,7 +23,7 @@ $(function(){
 });
 
 $(function(){
-    $.ajax({
+    /*$.ajax({
         url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
     }).done(function(data){
         var index = 0;
@@ -45,5 +45,5 @@ $(function(){
             html += "</a></div></a></div>";
             $(".issues-wrapper").append(html);
         });
-    });
+    });*/
 });
