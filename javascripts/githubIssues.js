@@ -16,6 +16,7 @@ fetch(url).then(function (response) {
         return;
     } else {
         response.json().then(function (responseJson) {
+            document.querySelector('.issues-wrapper').innerHTML = '';
             responseJson.forEach(function (issue, key) {
                 issue.labels.forEach(function (object, key) {
                     // Check if the label is called 'feature'
@@ -26,6 +27,7 @@ fetch(url).then(function (response) {
                         var div = document.createElement('div');
 
                         a.id = 'issue';
+                        a.class = 'issue';
                         a.href = issue.html_url;
 
                         div.title = 'Click to view more';
