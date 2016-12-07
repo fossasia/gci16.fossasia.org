@@ -246,16 +246,16 @@ figure.effect-gcihover:hover figcaption::before {
     margin: 0 auto 40px auto;
 }
 .blog-post-img {
-	position: absolute;
-	top: 0;
+    position: absolute;
+    top: 0;
     width: 300px;
     height: 200px;
     background-size: cover;
 }
 .blog-post {
-	position: absolute;
-	bottom: 0;
-	background-color: #4caf50;
+    position: absolute;
+    bottom: 0;
+    background-color: #4caf50;
     height: 100px;
     width: 300px;
     color: white;
