@@ -35,6 +35,7 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
+                            console.log(issue);
                             div.innerHTML += issue.body;
                         }
 
