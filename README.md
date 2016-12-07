@@ -89,3 +89,32 @@ in the `_data` folder and maintain the following format to enter a new slide.
 uploaded to the repo via commit or PR, you may use any image optimizer of your choice. Adding action and
 actionURL are not needed but you may provide it and never provide empty fileds like `action: `. Only provide
 action and actionURL together.**
+
+# Finding Support
+
+Probably the easiest way is to comment in the Task page for any kind of help,
+but as you should understand that it is not easy for mentors to stay available
+24/7 to reply to every comments. Therefore they have have managed various
+chatrooms for us to take part in. This doesn't only make contacting mentors
+easier but also allows us students to help each other. Here are few links to
+chatrooms where you could join for support.
+
+1. Slack
+  * Visit [here](http://fossasia-slack.herokuapp.com/) to get invitation to join the chatrooms of FOSSASIA in slack.
+  * Once you get the invitations in your mail, sign into the [slack](http://fossasia.slack.com)
+  and join the [#gci](https://fossasia.slack.com/messages/gci/) chatroom.
+  * And now you can share your queries with all the mentors and students of FOSSASIA
+2. Gitter
+  * Visit [here](https://gitter.im/) and sign in with your GitHub account.
+  * After thats it simply joining the chatrooms by clicking on **Join Room**
+  * Here are some links to some of project's chatroom:
+      * [Open Event](https://gitter.im/fossasia/open-event)
+      * [Open Event WebApp](https://gitter.im/fossasia/open-event-webapp)
+      * [Open Event Android](https://gitter.im/fossasia/open-event-android)
+      * [loklak](https://gitter.im/loklak/loklak)
+3. Google Groups
+  * Visit [here](https://groups.google.com/forum/#!forum/fossasia) and join the
+    mailing list.
+
+You can find more information about different mailing lists and chatrooms for
+different projects (here)[http://labs.fossasia.org/#projects]
