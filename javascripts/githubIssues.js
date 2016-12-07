@@ -53,13 +53,25 @@ fetch(url).then(function (response) {
             });
         });
     }
+
+    return response;
 }).then(function () {
-    // For some strange reason you have to wait ¯\_(ツ)_/¯
-    setTimeout(function () {
-        if (issues.length < 1) {
-            document.querySelector('.issues-wrapper').innerHTML = '<h3>There are no open issues that are labled \'feature\'.</h3>';
-        }
-    }, 2000);
+    if (response.type === 'opaque') {
+        console.log('Received a response, but it\'s opaque so can\'t examine it');
+        document.querySelector('.issues-wrapper').innerHTML = '<h3>Received a response, but it\'s opaque so can\'t examine it</h3>';
+        return;
+    } else if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' + response.status);
+        document.querySelector('.issues-wrapper').innerHTML = '<h3>Looks like there was a problem. Status Code: ' + response.status + '</h3>';
+        return;
+    } else {
+        // For some strange reason you have to wait ¯\_(ツ)_/¯
+        setTimeout(function () {
+            if (issues.length < 1) {
+                document.querySelector('.issues-wrapper').innerHTML = '<h3>There are no open issues that are labled \'feature\'.</h3>';
+            }
+        }, 2000);
+    }
 }).catch(function (err) {
     console.error('An error occurred', err);
 });
