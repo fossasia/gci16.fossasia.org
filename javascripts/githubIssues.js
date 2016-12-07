@@ -1,7 +1,4 @@
-'use strict';
-
 var url = 'https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open';
-// var url = 'https://api.github.com/repos/bogaziciswe/b.w.a.t/issues?state=open';
 
 var issues = [];
 
@@ -24,6 +21,7 @@ fetch(url).then(function (response) {
                         issues.push(issue);
 
                         var div = document.createElement('div');
+                        var labels = document.createElement('div');
 
                         div.id = 'issue';
                         div.className += 'issue';
@@ -35,9 +33,17 @@ fetch(url).then(function (response) {
                         if (issue.body === '') {
                             div.innerHTML = '<i>There was no text</i>';
                         } else {
+                            div.innerHTML += '<b>' + issue.number + '</b>';
                             div.innerHTML += '<a href="' + issue.html_url + '">' + issue.title + '</a>';
+                            div.innerHTML += '<i>Updated: ' + issue.updated_at + '</i>';
                         }
 
+                        // Check if issue has a label
+                        if (object.length > 0) {
+                            lables += '<span>' + object + '</span>';
+                        }
+
+                        div.appendChild(lables);
                         document.querySelector('.issues-wrapper').appendChild(div);
                     }
                 });
