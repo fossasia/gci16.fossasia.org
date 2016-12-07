@@ -42,8 +42,10 @@ fetch(url).then(function (response) {
                         console.log(object);
 
                         // Check if issue has a label
-                        if (object.length > 0) {
-                            labels.innerHTML += '<span>' + object + '</span>';
+                        if (issue.labels.length > 0) {
+                            issue.labels.forEach(function (object, key) {
+                                labels.innerHTML += '<span>' + object.name + '</span>';
+                            });
                         }
 
                         div.appendChild(labels);
