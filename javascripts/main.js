@@ -57,7 +57,26 @@ $(function () {
             html += "<a href='" + issue.html_url + "' class='comments' target='_blank'>";
             html += "<i class='fa fa-comment'></i>" + issue.comments;
             html += "</a></div></a></div>";
-            $(".issues-wrapper").append(html);
+            $("#issues-wrapper").append(html);
         });
     });
+});
+
+$(function () {
+    $.ajax({
+        url: "http://api.loklak.org/api/search.json?q=fossasia,gci"
+    }).done(function (data) {
+      data.forEach(function (tweet) {
+          var html = "<div class='issue'>";
+          html += "<a href='" + tweet.link + "' target='_blank'>" + tweet.text + "</a>";
+          html += "<p>Opened by</p>";
+          html += "<a href='https://www.twitter.com/" + tweet.screen_name +
+          "' target='_blank' class='user'>";
+          html += tweet.screen_name + "</a><div class='right-coms'>";
+          html += "<a href='" + tweet.link + "' class='comments' target='_blank'>";
+          html += tweet.created_at;
+          html += "</div></a></div>";
+          $("#tweets-wrapper-loklak").append(html);
+      });
+  });
 });
