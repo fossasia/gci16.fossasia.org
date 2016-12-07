@@ -1,4 +1,4 @@
-# New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to the bottom of the file.
 
 - name: Oana Rosca
   github: oanarosca
@@ -21,6 +21,14 @@
   image: mehant.jpg
   twitter: mehant1
   bio: I don't play games, I build games! "GameJamTitans finalist" \m/
+
+- name: Yogesh Aggarwal
+  github: github.com/yogeshpro01
+  email : yogeshpro01@gmail.com
+  twitter : https://twitter.com/_iNaZaMi
+  facebook : https://www.facebook.com/goshu.jyoti
+  image: yogesh.jpg
+  bio : Indian, coder, gamer, love to do web designing!
 
 - name: Alejandro Heredia
   email: alex.heredia.barbosa@gmail.com
