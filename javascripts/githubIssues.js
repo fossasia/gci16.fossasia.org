@@ -39,8 +39,6 @@ fetch(url).then(function (response) {
                             div.innerHTML += '<i>Updated: ' + issue.updated_at + '</i>';
                         }
 
-                        console.log(object);
-
                         // Check if issue has a label
                         if (issue.labels.length > 0) {
                             issue.labels.forEach(function (object, key) {
