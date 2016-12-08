@@ -15,9 +15,17 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="javascripts/tweets.js"></script>
+    <script src="javascripts/loklak-fetcher.js"></script>
+    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+    <script src="http://loklak.org/api/search.json?callback=loklakFetcher.handleData&amp;q=fossasia%20%23gci&amp;count=50&amp;source=cache&amp;fields=&amp;limit=&amp;timezoneOffset=0&amp;minified=true"></script>
+    <!-- Stop ignoring -->
+
     <title>Gci16.fossasia.org by fossasia</title>
 </head>
-<body>
+<body onload="datafetcher()">
     <a href="//github.com/fossasia/gci16.fossasia.org">
       <img class="ribbon" src="./images/ribbon.png">
     </a>
@@ -218,11 +226,29 @@
             </div>
             <!-- Stop ignoring -->
 
-            <section class="latest-issues full-width" id="loklakTweets">
+            <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+            <section class="latest-issues full-width" id="loklak-tweets-fetcher">
                 <h2>Twitter feed with Loklak</h2>
                 <div class="issues-wrapper" id="#tweets-wrapper-loklak">
+                    <a class="twitter-logo" data-toggle="modal" href="#myModal"><i class="icon social_twitter text-white"></i></a>
+                    <div class="twitter-feed">
+                        <div class="tweets-feed" id="tweets" data-count=50 data-query="fossasia #gci">
+                            <div class="arrow-up"></div>
+                            <p id="tweet" class="tweet">Loading...</p>
+                            <div class="panel-footer">
+                                <span id="tweet-info">Fetching tweets...</span>
+                            </div>
+                        </div>
+                        <div class="btn" id="previous"onclick="lastTweet()">
+                            &#8592; &nbsp; Previous Tweet!
+                        </div>
+                        <div class="btn" id="next"onclick="nextTweet()">
+                            Next Tweet! &nbsp; &#8594;
+                        </div>
+                    </div>
 						    </div>
             </section>
+            <!-- Stop ignoring -->
 
             <section class="latest-issues" id="issues">
                 <h2>LATEST ISSUES</h2>
@@ -350,8 +376,7 @@
         <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
         <i class="fa fa-heart"></i> for Google Code-In</p>
     </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="//apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
         ! function(d, s, id) {
@@ -374,6 +399,67 @@
 <script src="//flickrembed.com/embed_v2.js.php?source=flickr
 &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
 &theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Loklak Settings</h4>
+       </div>
+       <div class="modal-body">
+         <div class="form-group">
+             <label for="query">Query:</label>
+             <input class="form-control" value="fossasia #gci" id="query">
+           </div>
+           <div class="form-group">
+             <label for="result-count">Results Count:</label>
+             <input class="form-control" value="50" id="result-count">
+           </div>
+           <div class="form-group">
+             <label for="tweet-from">Tweets From:</label>
+             <input class="form-control" value="" id="tweet-from">
+           </div>
+           <div class="form-group">
+             <label for="tweet-from-date">Tweet From Date:</label>
+             <input class="form-control" value="2016-01-01" type="date" id="tweet-from-date">
+           </div>
+           <div class="form-group">
+             <label for="tweet-to-date">Tweet To Date:</label>
+             <input class="form-control" value="2016-01-18" type="date" id="tweet-to-date">
+           </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" id="submit-btn" class="btn btn-default" data-dismiss="modal">Submit</button>
+       </div>
+     </div>
+
+   </div>
+ </div>
+ <script>
+   $('#submit-btn').click(function(e){
+       var from = $('#tweet-from-date');
+       var to = $('#tweet-to-date');
+       var date1 = new Date(from[0].value);
+       var date2 = new Date(to[0].value);
+       var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+       var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+       if (diffDays < 5){
+           alert('Please provide a difference of more than 4 days')
+       } else {
+           $('#tweets').attr('data-query', $('#query')[0].value);
+           $('#tweets').attr('data-start', $('#tweet-from-date')[0].value);
+           $('#tweets').attr('data-end', $('#tweet-to-date')[0].value);
+           $('#tweets').attr('data-from', $('#tweet-from')[0].value);
+           console.log($('#tweets').data());
+           clearInterval(interval_id);
+           $('#tweet')[0].innerHTML = 'Loading...';
+           $('#tweet-info')[0].innerHTML = 'Fetching tweets...';
+           datafetcher();
+       }
+   })
+ </script>
 </body>
 </html>
