@@ -1,0 +1,21 @@
+- caption: FOSSASIA
+  img: image_slider_crowd.jpg
+  exp-1: We build a new era of Technology.
+  exp-2: We connect developers together.
+  exp-3: We are an open-source community.
+
+- caption: Google Code-in 2016
+  img: image_slider_fossasia.jpg
+  exp-1: Educating and inspiring
+  exp-2: students by being involved in
+  exp-3: open-source projects.
+  action: Participate now!
+  actionURL: //codein.withgoogle.com/organizations/fossasia/
+
+- caption: FOSSASIA OpenTechSummit
+  img: image_slider_machine.jpg
+  exp-1: 17th - 19th March 2017
+  exp-2: at the Science Centre Singapore
+  exp-3: for programmers who love code.
+  action: Join us now!
+  actionURL: //2017.fossasia.org
