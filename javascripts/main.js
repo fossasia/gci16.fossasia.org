@@ -61,3 +61,28 @@ $(function () {
         });
     });
 });
+
+$(document).ready(function() {
+    $(document).on("scroll", onScroll);
+});
+
+function onScroll() {
+    var scrollPos = $(document).scrollTop();
+    $('a.menu-item').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        console.log("currLink: ");
+        console.log(currLink);
+        console.log("refElement: ");
+        console.log(refElement);
+        if (typeof(refElement.position()) === 'undefined') {
+            refElement = $("#projects");
+        }
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('a.menu-item').removeClass("active");
+            currLink.addClass("active");
+        } else {
+            currLink.removeClass("active");
+        }
+    });
+}
