@@ -179,7 +179,7 @@
                 <div class="row">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-3">
+                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div {% if blog.blog_img %}
                         style="background: url("images/blogs/{{ blog.blog_img }}")
                         no-repeat center top;" {% endif %} class="blog-post">
@@ -278,6 +278,15 @@
                         </div>
                     </div>
                 </div>
+<!--Flickr Album-->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div id="flickrembed"></div>
+<small style="display: block; text-align: center; margin: 0 auto;">
+<a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
+</small>
+</div>
+</div>
             </div>
         </div>
     </section>

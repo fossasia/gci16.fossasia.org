@@ -244,9 +244,9 @@ figure.effect-gcihover:hover figcaption::before {
     background-size: cover;
 }
 .blog-title {
-    padding: 20px 0;
+    padding: 25% 0;
     margin: 0;
-    height: 100px;
+    height: 100%;
     background: #66BB6A;
     color: #fafafa;
     font-size: 16px;
@@ -450,7 +450,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .footer .row a i {
     font-size: 18px;
-    color: #888;
+    color: #000;
     margin-right: 8px;
 }
 
@@ -480,7 +480,7 @@ figure.effect-gcihover:hover figcaption::before {
 
 .yt
 {
-    margin: 2em 0.1em; 
+    margin: 2em 0.1em;
     padding: 1em;
 }
 
