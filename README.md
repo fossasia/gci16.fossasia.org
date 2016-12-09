@@ -67,6 +67,8 @@ to enter a mentor:
   image: mentor's_image
   twitter: Mentor's twitter id
   facebook: Mentor's facebook id
+  lat: Mentor's latitude
+  lng: Mentor's longitude
 ```
 **Important: All images must be optimized before uploaded to the repo via commit or PR,
 you may use any image optimizer of your choice. Also the images should be 240x240 pixels
