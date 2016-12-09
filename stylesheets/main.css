@@ -234,6 +234,7 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 50px;
     height: 100%;
     padding-bottom: 50px;
+    border-radius: 5px;
 }
 .blog h1 {
     padding-top: 50px;
@@ -490,6 +491,7 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 1.5em;
     margin-top: 50px;
     margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 .logos img {
