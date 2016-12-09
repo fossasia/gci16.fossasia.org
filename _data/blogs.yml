@@ -1,4 +1,5 @@
-- name: Animesh Singh
+
+=- name: Animesh Singh
   blog: http://blog.animeshsingh.in
   blog_img: animeshsinghweb.jpg
   article: Coming Soon
@@ -55,3 +56,9 @@
   blog: https://wordpress.com/posts/jerry2001.school.blog
   article: GCI experience
   article_link: https://wordpress.com/post/jerry2001.school.blog/131
+
+- name: Hillary Moutou
+  blog : http://hillamu2.edublogs.org/
+  blog img :blogpost.png
+  article : GCI and FOSSASIA
+  article_link : http://hillamu2.edublogs.org/
