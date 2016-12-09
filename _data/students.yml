@@ -22,7 +22,7 @@
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog: http://mehant-alphaunitedteam.blogspot.in/
+  blog: mehant-alphaunitedteam.blogspot.in/
   email: kmehant@gmail.com
   github: kmehant
   image: mehant.jpg
@@ -114,7 +114,7 @@
   facebook: ridhwanul.haque
   email: rhemon19@gmail.com
   bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
-  blog: https://rhemon.github.io/blog
+  blog: rhemon.github.io/blog
   blog_img: rhemon-blog.png
 
 - name: Victoria Juan
@@ -221,6 +221,8 @@
   image: m1guelpiedrafita.png
   blog: blog.miguelpiedrafita.com
   bio: An spanish coder that loves open source.
+  lat: 43.360233099999995
+  lng: -5.8469849
 
 - name: Nguyen Chanh Dai
   github: nguyenchanhdai
@@ -248,3 +250,25 @@
   image: will.jpg
   bio: 13, student, video editor, web developer
   twitter: willkaye3
+
+- name: Ankit R Gadiya
+  github: ankitrgadiya
+  facebook: ankit.r.gadia
+  twitter: ankit4922
+  image: ankit.jpg
+  blog: blog.ankitrgadiya.me
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
+
+- name: Zenon
+  github: zehata
+  facebook: Zehata Taneka
+  twitter: Zenon
+  image: zehata.jpg
+  bio: 15, Full stack web dev. Loves making game engines.
+
+- name: Sanchit Mishra
+  github: sanchittechnogeek
+  image: sanchit.jpg
+  twitter: s_technogeek
+  facebook: sanchit.technogeek
+  bio: 17, amateur Nodejs dev, roboticist, linux guru.

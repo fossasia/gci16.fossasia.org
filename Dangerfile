@@ -4,11 +4,13 @@ message "Hi @#{github.pr_author} thank you for your submission at Fossasia's GCI
 can_merge = github.pr_json["mergeable"]
 warn("This PR appears to have merge errors. Please check Contribuiting.md for help solving that.", sticky: false) unless can_merge
 # Check for PR description
-fail 'Please provide a summary in the Pull Request description, containing, at less, your live link.' if github.pr_body.length < 5
+warn 'Please provide a summary in the Pull Request description, containing, at less, your live link.' if github.pr_body.length < 5
 # Warn if there is [WIP] in the title
 warn "PR is classed as Work in Progress" if github.pr_title.include? "[WIP]"
-# Check if user is a member of the FOSSASIA github org
-unless github.api.organization_member?('FOSSASIA', github.pr_author)
-  message "@#{github.pr_author} you don't appear to be in the FOSSASIA organization, you must fill in [this form](http://fossasia.org/apply-pupils) to be added."
+warn 'Please add your live link to the PR body.' if !github.pr_body.include? 'http'
+# Notify the user if he's trying to add him statically
+if !github.pr_body.include? "<!-- Safe Edit -->"
+  if git.modified_files.include? "index.html"
+    fail "You're modifying the index.html file. If you're trying to add a student/blog/mentor, you're doing it wrong. If you did this intentionally, please contact a mentor, as index.html is a core file."
+  end
 end
-fail 'Please add your live link to the PR body.' if !github.pr_body.include? 'http'
