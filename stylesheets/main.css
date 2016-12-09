@@ -488,4 +488,10 @@ figure.effect-gcihover:hover figcaption::before {
 .logos img {
   width: 400px;
   height: 220px;
+
+}
+#map {
+    width: 100%;
+    height: 500px;
+
 }
