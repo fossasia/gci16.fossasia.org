@@ -3,10 +3,10 @@ services: docker
 rvm:
   - 2.3.3
 install:
-  - bundle install
   - gem install danger
-script:
   - danger --verbose
+  - bundle install
+script:
   - bundle exec jekyll build
   - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
 branches:
