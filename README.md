@@ -56,6 +56,9 @@ maintain the following format to enter your logo in this website:
 
 and place your logo in `/images/logos` folder and `your_image` should be the name of your file.
 
+**Please resize your image to 400px x 220px (w x h) OR in the relative proportion before uploading.
+We don't want image of high dimensions or of big file size for logo.**
+
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format
