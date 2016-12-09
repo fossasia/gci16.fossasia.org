@@ -221,6 +221,8 @@
   image: m1guelpiedrafita.png
   blog: blog.miguelpiedrafita.com
   bio: An spanish coder that loves open source.
+  lat: 43.360233099999995
+  lng: -5.8469849
 
 - name: Nguyen Chanh Dai
   github: nguyenchanhdai
