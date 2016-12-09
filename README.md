@@ -1,4 +1,6 @@
 # gci16.fossasia.org
+
+[![Join the chat at https://gitter.im/fossasia/gci16.fossasia.org](https://badges.gitter.im/fossasia/gci16.fossasia.org.svg)](https://gitter.im/fossasia/gci16.fossasia.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/gci16.fossasia.org.svg)]
 (https://travis-ci.org/fossasia/gci16.fossasia.org)
 

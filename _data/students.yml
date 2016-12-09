@@ -237,3 +237,24 @@
   twitter: TinhDao3
   bio: 17, student, competitive programmer, interested in games
   facebook: dcongtinh
+
+- name: Mehmet Cagri Ari
+  github: hesapadim
+  image: cagriari_avatar.jpg
+  bio: I am 15, I know 6 programming languages and I want to become a software engineer :)
+  facebook: sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa
+
+- name: Will Kaye
+  github: will747
+  image: will.jpg
+  bio: 13, student, video editor, web developer
+  twitter: willkaye3
+
+- name: Ankit R Gadiya
+  github: ankitrgadiya
+  facebook: ankit.r.gadia
+  twitter: ankit4922
+  image: ankit.jpg
+  blog: blog.ankitrgadiya.me
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
+

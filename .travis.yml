@@ -4,9 +4,11 @@ rvm:
   - 2.3.3
 install:
   - bundle install
+  - gem install danger
 script:
   - bundle exec jekyll build
   - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
+  - danger --verbose
 branches:
   only:
     - gh-pages  # Must be appear explicitly
