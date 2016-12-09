@@ -7,8 +7,4 @@ warn("This PR appears to have merge errors. Please check Contribuiting.md for he
 warn 'Please provide a summary in the Pull Request description, containing, at less, your live link.' if github.pr_body.length < 5
 # Warn if there is [WIP] in the title
 warn "PR is classed as Work in Progress" if github.pr_title.include? "[WIP]"
-# Check if user is a member of the FOSSASIA github org
-unless github.api.organization_member?('FOSSASIA', github.pr_author)
-  message "@#{github.pr_author} you don't appear to be in the FOSSASIA organization, you must fill in [this form](http://fossasia.org/apply-pupils) to be added."
-end
 warn 'Please add your live link to the PR body.' if !github.pr_body.include? 'http'
