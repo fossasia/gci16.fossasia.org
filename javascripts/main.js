@@ -1,4 +1,5 @@
 // Add your function at the end. First function is of highest priority.
+// Start ignoring JSHintBear, LineLengthBear
 var mentors;
 $.get('./_data/mentors.yml', function(data) {
   var f = data;
@@ -249,7 +250,7 @@ window.initMap = function() {
     })(marker, content, infowindow));
   });
 };
-
+// Stop ignoring
 $(function() {
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors"
