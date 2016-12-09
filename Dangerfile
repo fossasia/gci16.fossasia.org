@@ -12,5 +12,3 @@ unless github.api.organization_member?('FOSSASIA', github.pr_author)
   message "@#{github.pr_author} you don't appear to be in the FOSSASIA organization, you must fill in [this form](http://fossasia.org/apply-pupils) to be added."
 end
 warn 'Please add your live link to the PR body.' if !github.pr_body.include? 'http'
-# Check if there is more than one commit and warn the user for squashing.
-fail "You have to squash all your commits. Check contribuiting.md for help." if git.commits > 1
