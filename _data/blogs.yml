@@ -1,3 +1,4 @@
+
 - name: Animesh Singh
   blog: http://blog.animeshsingh.in
   blog_img: animeshsinghweb.jpg
@@ -51,7 +52,19 @@
   blog_img:
   article: GCI 2016
   article_link: http://dcongtinh.blogspot.com/2016/12/google-code-in-2016-google-code-in.html
+
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
   article: GCI experience
   article_link: https://wordpress.com/post/jerry2001.school.blog/131
+
+- name: Dwij Jha
+  blog: https://dwijjha.wordpress.com
+  blog_img: blog_dwij.png
+  aricle: Open Source and Fossasia
+  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
+- name: Hillary Moutou
+  blog: http://hillamu2.edublogs.org/
+  blog_img: blogpost.png
+  article: GCI and FOSSASIA
+  article_link: http://hillamu2.edublogs.org/
