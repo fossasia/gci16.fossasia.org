@@ -7,7 +7,7 @@ warn("This PR appears to have merge errors. Please check Contribuiting.md for he
 warn 'Please provide a summary in the Pull Request description, containing, at less, your live link.' if github.pr_body.length < 5
 # Warn if there is [WIP] in the title
 warn "PR is classed as Work in Progress" if github.pr_title.include? "[WIP]"
-warn 'Please add your live link to the PR body.' if !github.pr_body.include? 'http' && !github.pr_body.include? '!['
+warn 'Please add your live link or a preview screenshot to the PR body.' if !github.pr_body.include? 'http' && !github.pr_body.include? '!['
 # Notify the user if he's trying to add him statically
 if !github.pr_body.include? "<!-- Safe Edit -->"
   if git.modified_files.include? "index.html"
