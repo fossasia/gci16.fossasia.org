@@ -495,3 +495,8 @@ figure.effect-gcihover:hover figcaption::before {
 .active {
     background: #eee;
 }
+
+#map {
+    width: 100%;
+    height: 500px;
+}
