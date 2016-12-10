@@ -275,7 +275,7 @@ figure.effect-gcihover:hover figcaption::before {
 .mentors h2, .latest-issues h2, .students-sec h2 {
     margin: 0 auto;
     padding: 10px;
-    width: 170px;
+    width: 180px;
     color: white;
     background: #27ae60;
     text-align: center;
