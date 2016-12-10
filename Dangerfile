@@ -7,4 +7,10 @@ warn("This PR appears to have merge errors. Please check Contribuiting.md for he
 warn 'Please provide a summary in the Pull Request description, containing, at less, your live link.' if github.pr_body.length < 5
 # Warn if there is [WIP] in the title
 warn "PR is classed as Work in Progress" if github.pr_title.include? "[WIP]"
-warn 'Please add your live link to the PR body.' if !github.pr_body.include? 'http'
+warn 'Please add your live link or a preview screenshot to the PR body.' if !github.pr_body.include? 'http'
+# Notify the user if he's trying to add him statically
+if !github.pr_body.include? "<!-- Safe Edit -->"
+  if git.modified_files.include? "index.html"
+    fail "You're modifying the index.html file. If you're trying to add a student/blog/mentor, you're doing it wrong. If you did this intentionally, please contact a mentor, as index.html is a core file."
+  end
+end
