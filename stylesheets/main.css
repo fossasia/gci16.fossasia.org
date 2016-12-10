@@ -7,6 +7,7 @@
 }
 .social-media {
     text-align: center;
+    margin-top: 50px;
 }
 .social-media iframe, .g-page {
     margin-bottom: 30px;
@@ -79,7 +80,14 @@
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+    margin-top: 50px;
+    padding: 2em;
 }
+
+.students-sec {
+  margin-top: 50px;
+}
+
 .title {
     padding-top: 30px;
     text-align: center;
@@ -226,6 +234,7 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 50px;
     height: 100%;
     padding-bottom: 50px;
+    border-radius: 5px;
 }
 .blog h1 {
     padding-top: 50px;
@@ -258,10 +267,15 @@ figure.effect-gcihover:hover figcaption::before {
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
     color: #fafafa;
 }
+
+.mentors {
+  margin-top: 50px;
+}
+
 .mentors h2, .latest-issues h2, .students-sec h2 {
     margin: 0 auto;
     padding: 10px;
-    width: 170px;
+    width: 180px;
     color: white;
     background: #27ae60;
     text-align: center;
@@ -319,9 +333,9 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 50px;
 }
 .latest-issues h2 {
-    background: transparent;
+    background: #eeeeee;
     width: 260px;
-    margin-bottom: 10px;
+    color: black;
 }
 .issues-wrapper {
     width: 100%;
@@ -426,7 +440,7 @@ figure.effect-gcihover:hover figcaption::before {
 .footer {
     width: 100%;
     height: auto;
-    padding: 30px 50px 0 50px;
+    padding: 10px 50px 10px 50px;
     background: #e12b00;
     color: white;
 }
@@ -475,8 +489,9 @@ figure.effect-gcihover:hover figcaption::before {
 .logos {
     background: #ffb300;
     padding: 1.5em;
-    margin-top: 2em;
+    margin-top: 50px;
     margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 .logos img {
@@ -486,10 +501,6 @@ figure.effect-gcihover:hover figcaption::before {
 .yt {
     margin: 2em 0.1em;
     padding: 1em;
-}
-
-.students-section {
-    padding: 2em;
 }
 
 .active {
