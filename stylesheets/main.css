@@ -517,8 +517,10 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 #map {
+	margin-top: 30px;
     width: 100%;
     height: 500px;
+	border-radius: 5px;
 }
 
 h2 {
