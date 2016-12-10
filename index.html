@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="20x20" href="images/icons/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
@@ -15,7 +16,7 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Gci16.fossasia.org by fossasia</title>
+    <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
     <a href="//github.com/fossasia/gci16.fossasia.org">
@@ -45,6 +46,7 @@
             <li class="dropdown">
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="#stprojects">Student projects</a></li>
                 <li><a href="#blog-post">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
@@ -75,7 +77,11 @@
         </ol>
       </div>
     </div>
+
     <section class="main-content">
+		<div class="container">
+	    	<div id="map"></div>
+		</div>
         <div class="container">
             <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
@@ -160,13 +166,44 @@
                                     </a>
                                     {% endif %}
                                     {% if student.blog %}
-                                    <a href="{{mentor.student}}"
+                                    <a href="//{{student.blog}}"
                                        target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
                                 </div>
                                 <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <section class="projects-sec" id="stprojects" href="#stprojects">
+                <h2>STUDENT PROJECTS</h2>
+                <div class="row projects-wrapper">
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                </div>
+                                <p>{{project.name}} by {{project.owner}}</p>
                             </div>
                         </div>
                     </div>
@@ -332,7 +369,7 @@
                             <i class="fa fa-link"></i>Google Code-In Page
                         </a>
                     </li>
-                    <li><a href="//blog.fossasia.org/events"><i class="fa fa-link"></i>Events</a></li>
+                    <li><a href="//events.fossasia.org"><i class="fa fa-link"></i>Events</a></li>
                     <li><a href="//2016.fossasia.org">
                             <i class="fa fa-link"></i>FOSSASIA 2016
                         </a>
@@ -359,7 +396,9 @@
             }
         }(document, "script", "twitter-wjs");
     </script>
+    <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js"></script>
     <!-- Github Cards -->

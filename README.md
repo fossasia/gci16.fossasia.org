@@ -1,4 +1,6 @@
 # gci16.fossasia.org
+
+[![Join the chat at https://gitter.im/fossasia/gci16.fossasia.org](https://badges.gitter.im/fossasia/gci16.fossasia.org.svg)](https://gitter.im/fossasia/gci16.fossasia.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/gci16.fossasia.org.svg)]
 (https://travis-ci.org/fossasia/gci16.fossasia.org)
 
@@ -65,6 +67,8 @@ to enter a mentor:
   image: mentor's_image
   twitter: Mentor's twitter id
   facebook: Mentor's facebook id
+  lat: Mentor's latitude
+  lng: Mentor's longitude
 ```
 **Important: All images must be optimized before uploaded to the repo via commit or PR,
 you may use any image optimizer of your choice. Also the images should be 240x240 pixels
