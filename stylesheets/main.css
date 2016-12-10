@@ -333,9 +333,9 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 50px;
 }
 .latest-issues h2 {
-    background: transparent;
+    background: #eeeeee;
     width: 260px;
-    margin-bottom: 10px;
+    color: black;
 }
 .issues-wrapper {
     width: 100%;
