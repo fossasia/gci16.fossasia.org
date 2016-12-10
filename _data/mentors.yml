@@ -34,6 +34,10 @@
   image: jgrover.jpg
   twitter: jigyasa_grover
   facebook: jigyasa.grover.14
+  github: jig08
+  blog: https://jigyasagrover.wordpress.com/
+  lat: 28.644800
+  lng: 77.216721
 
 - name: Phu Nguyen
   github: nghoangphu
@@ -78,3 +82,20 @@
 - name: Agata Kowalska
   github: agwisniewska
   image: agatakowalska.jpg
+
+- name: Princu7
+  github: Princu7
+  image: princu7.jpg
+  twitter: princu7
+  facebook: abhishek.rastogi.58
+
+- name: Sreeja Kamishetty
+  github: kamishettysreeja25
+  image: kamishettysreeja.jpg
+  twitter: sreeja_k5
+
+- name: Harsh Vardhan
+  github: royalharsh
+  image: harshvardhan.jpg
+  blog: http://thehvardhan.me/
+  twitter: https://twitter.com/royalharsh95
