@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="20x20" href="images/icons/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
@@ -15,7 +16,7 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Gci16.fossasia.org by fossasia</title>
+    <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
     <a href="//github.com/fossasia/gci16.fossasia.org">
@@ -23,8 +24,8 @@
     </a>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
             data-toggle="collapse" data-target="#collapse"
             aria-expanded="false">
             <span class="sr-only"></span>
@@ -37,20 +38,21 @@
           </a>
         </div>
         <div class="collapse navbar-collapse" id="collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#welcome">Welcome</a></li>
-            <li><a href="#mentors">Mentors</a></li>
-            <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#students">Students</a></li>
+          <ul class="nav navbar-nav" id="menu">
+            <li><a class="menu-item" href="#welcome">Welcome</a></li>
+            <li><a class="menu-item" href="#mentors">Mentors</a></li>
+            <li><a class="menu-item" href="#contributors">Contributors</a></li>
+            <li><a class="menu-item" href="#students">Students</a></li>
+            <li><a class="menu-item" href="#stProjects">Projects</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#blog-post">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
               </ul>
             </li>
-            <li><a href="#social-media">Social media</a></li>
+            <li><a class="menu-item" href="#social-media">Social media</a></li>
           </ul>
         </div>
       </div>
@@ -75,6 +77,7 @@
         </ol>
       </div>
     </div>
+    <div id="map"></div>
     <section class="main-content">
         <div class="container">
             <section class="mentors" id="mentors" href="#mentors">
@@ -160,7 +163,7 @@
                                     </a>
                                     {% endif %}
                                     {% if student.blog %}
-                                    <a href="{{mentor.student}}"
+                                    <a href="//{{student.blog}}"
                                        target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
@@ -173,121 +176,144 @@
                     {% endfor %}
                 </div>
             </section>
-            <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
-                <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
-                <div class="row">
-                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
-                    {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div {% if blog.blog_img %}
-                        style="background: url("images/blogs/{{ blog.blog_img }}")
-                        no-repeat center top;" {% endif %} class="blog-post">
-                            <div class="blog-title"> Blog of
-                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
-                                <br> {% if blog.article %}
-                                <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+            <section class="projects-sec" id="stProjects" href="#stProjects">
+                <h2>STUDENT PROJECTS</h2>
+                <div class="row projects-wrapper">
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                </div>
+                                <p>{{project.name}} by {{project.owner}}</p>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
-                    <!-- Stop ignoring -->
-                </div>
-            </div>
-
-            <!-- Start ignoring SpaceConsistencyBear -->
-            <div class="logos" id="designs">
-                <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
-                <div class="row">
-                    {% for logo in site.data.logos %}
-                    <div class="col-xs-4 col-sm-3">
-                        <div class="grid">
-                            <figure class="effect-gcihover">
-                              <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
-                                <figcaption>
-                                    <p>
-                                        <span style="color: #000000">by {{logo.author}}</span>
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    {% endfor %}
-                 </div>
-            </div>
-            <!-- Stop ignoring -->
-            <section class="latest-issues" id="issues">
-                <h2>LATEST ISSUES</h2>
-                <div class="issues-wrapper">
-                  <div class="button">
-                    <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                      See all issues on&nbsp;<i class="fa fa-github"></i>github
-                    </a>
-                  </button>
                 </div>
             </section>
-            <div class="social-media" id="social-media" href="#social-media">
-                <h1 class="white-header">FOSSASIA on social media</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Ignore LineLengthBear -->
-                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                        width="370" height="459" style="border:none;overflow:hidden"
-                        scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                    </div>
-                    <div class="col-md-6">
-                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
-                    data-width="370" data-height="459"></div>
+            <!-- Stop ignoring -->
+            <section id="projects" href="#projects">
+                <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
+                    <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
+                    <div class="row">
+                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                        {% for blog in site.data.blogs %}
+                        <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div {% if blog.blog_img %}
+                            style="background: url("images/blogs/{{ blog.blog_img }}")
+                            no-repeat center top;" {% endif %} class="blog-post">
+                                <div class="blog-title"> Blog of
+                                    <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                    <br> {% if blog.article %}
+                                    <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <!-- Stop ignoring -->
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="twitter-timeline" data-width="370" data-height="459"
-                        href="//twitter.com/fossasia">Tweets by fossasia</a>
+                <!-- Start ignoring SpaceConsistencyBear -->
+                <div class="logos" id="designs">
+                    <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
+                    <div class="row">
+                        {% for logo in site.data.logos %}
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="grid">
+                                <figure class="effect-gcihover">
+                                  <!-- Ignore HTMLLintBear -->
+                                    <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
+                                    <figcaption>
+                                        <p>
+                                            <span style="color: #000000">by {{logo.author}}</span>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        {% endfor %}
+                     </div>
+                </div>
+                <!-- Stop ignoring -->
+                <section class="latest-issues" id="issues">
+                    <h2>LATEST ISSUES</h2>
+                    <div class="issues-wrapper">
+                      <div class="button">
+                        <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                          See all issues on&nbsp;<i class="fa fa-github"></i>github
+                        </a>
+                      </button>
+                    </div>
+                </section>
+                <div class="social-media" id="social-media" href="#social-media">
+                    <h1 class="white-header">FOSSASIA on social media</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Ignore LineLengthBear -->
+                            <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                            width="370" height="459" style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0" allowtransparency="true"></iframe>
                         </div>
                         <div class="col-md-6">
-                            <div class="github-widget" data-username="fossasia"></div>
+                        <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
+                        data-width="370" data-height="459"></div>
                         </div>
-                </div>
-                <div class="last-one">
-                    <div style="margin-top: 2em;">
-                        <!-- Ignore LineLengthBear -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6 col-md-offset-3 yt">
-                                    <div id="gyt">
-                                        <div class="g-ytsubscribe"
-                                        data-channelid="UCQprMsG-raCIMlBudm20iLQ"
-                                        data-layout="full"
-                                        data-count="default" height="48px"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="twitter-timeline" data-width="370" data-height="459"
+                            href="//twitter.com/fossasia">Tweets by fossasia</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="github-widget" data-username="fossasia"></div>
+                            </div>
+                    </div>
+                    <div class="last-one">
+                        <div style="margin-top: 2em;">
+                            <!-- Ignore LineLengthBear -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3 yt">
+                                        <div id="gyt">
+                                            <div class="g-ytsubscribe"
+                                            data-channelid="UCQprMsG-raCIMlBudm20iLQ"
+                                            data-layout="full"
+                                            data-count="default" height="48px"></div>
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item"
+                                        src="//www.youtube.com/embed/videoseries\
+                                        ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                                        frameborder="0" allowfullscreen></iframe>
+                                        </div>
                                     </div>
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item"
-                                    src="//www.youtube.com/embed/videoseries\
-                                    ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                    frameborder="0" allowfullscreen></iframe>
-                                    </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <div id="flickrembed"></div><small style="display: block;
+                                        text-align: center; margin: 0 auto;">
+                                        <a href="//www.flickr.com/photos/fossasia">
+                                        Fossasia's flickralbum</a></small></div>
                                 </div>
-                                <div class="col-xs-12 col-md-12">
-                                    <div id="flickrembed"></div><small style="display: block;
-                                    text-align: center; margin: 0 auto;">
-                                    <a href="//www.flickr.com/photos/fossasia">
-                                    Fossasia's flickralbum</a></small></div>
                             </div>
                         </div>
                     </div>
                 </div>
-<!--Flickr Album-->
-<div class="row">
-<div class="col-xs-12 col-md-12">
-<div id="flickrembed"></div>
-<small style="display: block; text-align: center; margin: 0 auto;">
-<a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
-</small>
-</div>
-</div>
-            </div>
+            </section>
         </div>
     </section>
     <section class="footer container">
@@ -340,7 +366,7 @@
                             <i class="fa fa-link"></i>Google Code-In Page
                         </a>
                     </li>
-                    <li><a href="//blog.fossasia.org/events"><i class="fa fa-link"></i>Events</a></li>
+                    <li><a href="//events.fossasia.org"><i class="fa fa-link"></i>Events</a></li>
                     <li><a href="//2016.fossasia.org">
                             <i class="fa fa-link"></i>FOSSASIA 2016
                         </a>
@@ -367,7 +393,9 @@
             }
         }(document, "script", "twitter-wjs");
     </script>
+    <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js"></script>
     <!-- Github Cards -->
