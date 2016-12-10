@@ -43,6 +43,7 @@
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#contributors">Contributors</a></li>
             <li><a class="menu-item" href="#students">Students</a></li>
+            <li><a class="menu-item" href="#stProjects">Projects</a></li>
             <li class="dropdown">
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -175,6 +176,40 @@
                     {% endfor %}
                 </div>
             </section>
+<<<<<<< HEAD
+            <section class="projects-sec" id="stProjects" href="#stProjects">
+                <h2>STUDENT PROJECTS</h2>
+                <div class="row projects-wrapper">
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+								<div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                </div>
+                                <p>{{project.name}} by {{project.owner}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+=======
+>>>>>>> parent of 4d27f6b... test
             <!-- Stop ignoring -->
             <section id="projects" href="#projects">
                 <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
