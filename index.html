@@ -46,6 +46,7 @@
             <li class="dropdown">
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="#stProjects">Student projects</a></li>
                 <li><a href="#blog-post">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
@@ -162,13 +163,44 @@
                                     </a>
                                     {% endif %}
                                     {% if student.blog %}
-                                    <a href="http://{{student.blog}}"
+                                    <a href="//{{student.blog}}"
                                        target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
                                 </div>
                                 <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <section class="projects-sec" id="stProjects" href="#stProjects">
+                <h2>STUDENT PROJECTS</h2>
+                <div class="row projects-wrapper">
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                </div>
+                                <p>{{project.name}} by {{project.owner}}</p>
                             </div>
                         </div>
                     </div>

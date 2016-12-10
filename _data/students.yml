@@ -1,4 +1,4 @@
-# New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to the bottom of the file.
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -214,6 +214,13 @@
   facebook: jha.dwij
   bio: 14,Indian,Sudent Programmer
 
+- name: Abhijeet Manohar
+  github: abhijeetmanohar
+  image: abhijeet.jpg
+  twitter: jeet_manohar
+  facebook: abhijeetmanohar66
+  bio: 16,Indian,Programmer,App Developer,tech-geek
+
 - name: Miguel Piedrafita
   github: m1guelpf
   facebook: m1guelpiedrafita
@@ -272,3 +279,9 @@
   twitter: s_technogeek
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
+
+- name: Nikhil Chandak
+  github: nikhilchandak
+  image: nikhil_chandak.jpg
+  twitter: nikhilchandak29
+  bio: 15, Interested in competetive programming and open source projects
