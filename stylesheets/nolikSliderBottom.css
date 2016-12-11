@@ -1,0 +1,150 @@
+/*
+essential styles:
+these make the slideshow work
+*/
+body{
+  margin: 0px;
+}
+
+#slides{
+    position: relative;;
+    height: 580px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-size: cover;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background-image: url("images/imgSlider/first.jpg");
+    background-size: cover;
+    -webkit-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+    box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+}
+.slide:nth-of-type(2){
+  background-image: url("images/imgSlider/second.jpg");
+  background-size: cover;
+  -webkit-box-shadow: inset 167px -109px 234px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 167px -109px 234px 5px rgba(0,0,0,0.3);
+  box-shadow: inset 167px -109px 234px 5px rgba(0,0,0,0.3);
+}
+.slide:nth-of-type(3){
+  background-image: url("images/imgSlider/third.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.slide:nth-of-type(4){
+  background-image: url("images/imgSlider/fourth.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+  box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+}
+.slide:nth-of-type(5){
+  background-image: url("images/imgSlider/fifth.jpg");
+  background-size: cover;
+  background-position: bottom;
+  -webkit-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+  box-shadow: inset 200px 200px 143px 20px rgba(0,0,0,0.3);
+}
+
+
+ .decoration{
+   display: inline;
+   position: relative;
+   font: 150px Helvetica, Sans-Serif;
+   letter-spacing: -5px;
+   color: #FCFCFC;
+ }
+
+.decoration:after{
+  content: "Hello!";
+  position: absolute; left: 10px; top: 5px;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+#slideSecond{
+  font-size: 100px;
+  color: rgba(250,250,250,.78);
+}
+
+#slideSecond:after{
+  content: "That is Open Source Organization";
+  color: rgba(228,157,49,.63);
+  position: absolute; left: 8px; top: 4px;
+  font-size: 100px;
+}
+
+#slideThird{
+  color: rgba(250,250,250,.79);
+  font-size: 120px;
+
+}
+
+#slideThird:after{
+  content: "FOSSASIA";
+  color: rgba(255, 0, 0, 0.5);
+  font-size: 120px;
+  position: absolute; left: 8px; top: 4px;
+}
+
+#slideFourth{
+  font-size: 120px;
+  color: rgba(250,250,250,.79);
+}
+
+#slideFourth:after{
+  content: "New era of technology";
+  color: rgba(255,69,0,.65);
+  position: absolute; left: 8px; top: 3px;
+  font-size: 120px;
+}
+
+#slideFifth{
+  font-size:110px;
+}
+
+#slideFifth:after{
+  content:"We connect developers together";
+  position: absolute; left: 7px; top: 3px;
+  color: rgba(10,223,82,.73);
+  font-size:110px;
+}
