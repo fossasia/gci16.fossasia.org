@@ -27,6 +27,11 @@ Abilities of Maintainers
 - Close old pull-requests, see [CONTRIBUTING.md](CONTRIBUTING.md)
 - Remove merged branches.
 
+Notes for Mantainers
+--------------------
+
+- If a PR edits index.html, it will fail for security. To remove that error, add ```<!-- Safe Edit -->``` somewhere in the PR body.
+
 Further Reading
 ---------------
 
