@@ -1,5 +1,5 @@
 .main-content {
-    background-color: #303030;
+    background-color: white;
 }
 .white-header {
     color: white;
@@ -36,12 +36,14 @@
     width: 260px;
     margin: auto;
     padding: 10px 10px;
+    box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
     position: relative;
     margin-top: 60%;
     left: 30px;
     font-size: 18px;
+    box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div img {
     width: 200px;
@@ -67,28 +69,98 @@
     font-size: 28px;
     font-weight: bold;
 }
-.students-section {
+.students-section, .projects-section, .blog-section, .design-section, .mentors-section {
     display: block;
     width: 100%;
     box-sizing: border-box;
     margin: auto;
-    background-color: #A64942;
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
-
-.projects-section {
-    display: block;
+.mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2, .designs-sec h2 {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;;
+    box-shadow: 1px 5px 20px #888888;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper {
     width: 100%;
-    box-sizing: border-box;
+    height: 100%;
     margin: auto;
-    background-color: #d9ff25;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 1px 5px 20px #888888;
 }
-
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mentors .card p, .students-sec .card p, .projects-sec .card p {
+    margin-top: 4.5%;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 5px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img {
+    width: 100%;
+}
+.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links {
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-top: 20%;
+}
+.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links {
+    opacity: 0.8;
+}
+.mentors .social i, .students-sec .social i, .projects-sec .links i {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+.mentors .mentors-wrapper {
+    background: #72FE95;
+}
+.students-sec .students-wrapper {
+    background: #63E9FC;
+}
+.projects-sec .projects-wrapper {
+    background: #2897B7;
+}
+.designs-sec .designs-wrapper {
+    background: #d9ff25;
+}
+.blogs-sec .blogs-wrapper {
+    background: #4AE371;
+}
+.designs-sec .designs-wrapper {
+    background: #FFC8E3;
+}
 .title {
     padding-top: 30px;
     text-align: center;
@@ -237,10 +309,8 @@ figure.effect-gcihover:hover figcaption::before {
     border-radius: 5px;
     background-color: #1B5E20;
     background-position: center;
-}
-.blog h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    box-shadow: 1px 5px 20px #888888;
+    margin-top: 10px;
 }
 .blog-holder {
     padding: 20px;
@@ -270,83 +340,6 @@ p.blog-title {
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
     color: #fafafa;
 }
-
-
-.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 {
-    margin: auto;
-    padding: 10px;
-    width: 180px;
-    color: white;
-    background: #27ae60;
-    text-align: center;
-}
-.blog h2 {
-    background: #1B5E20;
-    color: white;
-    width: 350px;
-}
-.projects-sec h2 {
-    background: #d9ff25;
-    color: black;
-    width: 350px;
-}
-.mentors .mentors-wrapper, .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 30px;
-    background: #27ae60;
-    border-radius: 5px;
-    text-align: center;
-}
-.projects-sec .projects-wrapper {
-    background: #d9ff25;
-}
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card {
-    width: 200px;
-    height: 250px;
-    margin: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.mentors .card p, .students-sec .card p, .projects-sec .card p {
-    margin-top: 4.5%;
-    font-size: 20px;
-    white-space: nowrap;
-    padding: 5px;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-}
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img {
-    width: 100%;
-}
-.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links {
-    position: absolute;
-    background: #fff;
-    opacity: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    padding-top: 20%;
-}
-.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links {
-    opacity: 0.8;
-}
-.mentors .social i, .students-sec .social i, .projects-sec .links i {
-    font-size: 40px;
-    margin: 10px;
-    text-align: center;
-}
-
 .latest-issues h2 {
     background: #eeeeee;
     width: 260px;
@@ -360,13 +353,46 @@ p.blog-title {
     background: #eee;
     border-radius: 5px;
 }
+#issues-categories-wrapper {
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.issues-category {
+    width: 45%;
+    margin: 1em;
+    padding-top: 1em;
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    /*justify-content: center;*/
+    -ms-align-items: center;
+    align-items: center;
+}
 .issue {
     width: 100%;
-    height: 80px;
     padding: 18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
     background: #FFF;
+
 }
 .issue:last-child {
     border-bottom: none;
@@ -456,7 +482,7 @@ p.blog-title {
     width: 100%;
     height: auto;
     padding: 10px 50px 10px 50px;
-    background-color: #e12b00;
+    background-color: #FF4848;
     color: white;
 }
 
@@ -501,14 +527,14 @@ p.blog-title {
     z-index: 1000;
 }
 
-.logos {
+.designs {
     background: #ffb300;
     padding: 1.5em;
     margin-bottom: 2em;
     border-radius: 5px;
 }
 
-.logos img {
+.designs img {
     padding: 3em .6em;
 }
 
@@ -533,12 +559,9 @@ p.blog-title {
     margin-top: 30px;
     width: 100%;
     height: 500px;
-    border-radius: 5px;
+    box-shadow: 1px 5px 20px #888888;
 }
 
-h2 {
-    border-radius: 5px 5px 0px 0px;
-}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

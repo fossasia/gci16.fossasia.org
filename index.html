@@ -19,9 +19,12 @@
     <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
+<!-- Github Ribbon -->
     <a href="//github.com/fossasia/gci16.fossasia.org">
       <img class="ribbon" src="./images/ribbon.png">
     </a>
+
+<!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -58,6 +61,9 @@
         </div>
       </div>
     </nav>
+<!-- End of Navigation Bar -->
+
+<!-- Slider -->
     <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
@@ -78,12 +84,16 @@
         </ol>
       </div>
     </div>
+<!-- End of Slider -->
 
+<!-- Main Content -->
     <section class="main-content">
     <div class="container">
         <div id="map"></div>
     </div>
         <div class="container">
+
+            <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
@@ -126,10 +136,16 @@
                     {% endfor %}
                 </div>
             </section>
+            <!-- End of Mentor Section -->
+
+            <!-- Contributor Section -->
             <section id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row"></div>
             </section>
+            <!-- End of Contributor Section -->
+
+            <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
@@ -186,6 +202,9 @@
                     {% endfor %}
                 </div>
             </section>
+            <!-- End of Student Section -->
+
+            <!-- Student Projects Section -->
             <section class="projects-sec" id="stprojects" href="#stprojects">
                 <h2>STUDENT PROJECTS</h2>
                 <div class="row projects-wrapper">
@@ -221,10 +240,13 @@
                     {% endfor %}
                 </div>
             </section>
+            <!-- End of Student Projects Section -->
             <!-- Stop ignoring -->
-            <section id="blogs" href="#blogs" class="blog">
+
+            <!-- Blog Posts Section -->
+            <section id="blogs" href="#blogs" class="blogs-sec">
                 <h2>BLOG POSTS</h2>
-                <div class="row">
+                <div class="row blogs-wrapper">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -249,10 +271,13 @@
                     <!-- Stop ignoring -->
                 </div>
             </section>
+            <!-- End of Blog Posts Section -->
+
+            <!-- Designs Section -->
+            <section id="designs" href="#designs" class="designs-sec">
+                <h2>MBDyn Logo Designs</h2>
                 <!-- Start ignoring SpaceConsistencyBear -->
-                 <div class="logos" id="designs" href="#designs">
-                    <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
-                    <div class="row">
+                    <div class="row designs-wrapper">
                         {% for logo in site.data.logos %}
                         <div class="col-xs-4 col-sm-3">
                             <div class="grid">
@@ -271,16 +296,26 @@
                      </div>
                 </div>
                 <!-- Stop ignoring -->
+            </section>
+            <!-- End of Designs Section -->
+
+            <!-- Latest Issues Section -->
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
-                      <div class="button">
-                        <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                          See all issues on&nbsp;<i class="fa fa-github"></i>github
-                        </a>
+                        <div class="button">
+                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                                See all issues on&nbsp;<i class="fa fa-github"></i>github
+                            </a>
+                        </div>
+                        <div id="issues-categories-wrapper">
+                            <div class="issues-category" id="unlabeled-category">
+                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </section>
+            <!-- End of Latest Issues Section -->
 
             <!-- Loklak API -->
             <section class="latest-issues" id="loklak" href="#loklak">
@@ -308,6 +343,8 @@
                     </div>
                 </div>
             </section>
+            <!-- End of Loklak API -->
+
 
                 <div class="social-media" id="social-media" href="#social-media">
                     <h1 class="white-header">FOSSASIA on social media</h1>
@@ -364,6 +401,9 @@
             </section>
         </div>
     </section>
+<!-- End of Main Content -->
+
+<!-- Footer -->
     <section class="footer container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 social">
@@ -426,6 +466,9 @@
         <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
         <i class="fa fa-heart"></i> for Google Code-In</p>
     </section>
+<!-- End of Footer -->
+
+<!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -448,12 +491,13 @@
     <script src="//use.fontawesome.com/7f8b61349a.js"></script>
     <!-- Github Cards -->
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-<!--Flickr album js-->
-<script src="//flickrembed.com/embed_v2.js.php?source=flickr
-&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
-&theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="./javascripts/loklak-fetcher.js"></script>
-<script src="./javascripts/tweet.js"></script>
+    <!--Flickr album js-->
+    <script src="//flickrembed.com/embed_v2.js.php?source=flickr
+    &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
+    &theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./javascripts/loklak-fetcher.js"></script>
+    <script src="./javascripts/tweet.js"></script>
+<!-- End of Scripts -->
 </body>
 </html>
