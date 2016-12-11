@@ -172,7 +172,13 @@
                                     </a>
                                     {% endif %}
                                 </div>
-                                <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                                <p>
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span title="{{student.name}}">
+                                        {{student.name}}
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -203,7 +209,11 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                 </div>
-                                <p>{{project.name}} by {{project.owner}}</p>
+                                <p>
+                                    <span title="{{project.name}} by {{project.owner}}">
+                                        {{project.name}} by {{project.owner}}
+                                    </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
