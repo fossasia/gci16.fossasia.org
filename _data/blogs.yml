@@ -48,8 +48,6 @@
   article: Exploring Google Code In
   article_link: http://abhijeetmanohar.blogspot.in/2016/12/hi-friends-long-time-of-splashing-codes.html
 
-<<<<<<< HEAD
-=======
 - name: Adarsh Kumar
   blog: https://abhijeetmanohar.blogspot.com
   blog_img: adarsh-blog2.png
@@ -62,7 +60,6 @@
   article: My experience joining FOSSASIA
   article_link: https://mylittleblog03.wordpress.com/2016/12/07/my-experience-joining-fossasia/
 
->>>>>>> upstream/gh-pages
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
   article: Article title
