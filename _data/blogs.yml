@@ -1,3 +1,11 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+- name: Apurv Jain
+  blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
+  blog_img: apurv_blog.png.png
+  article: What is GCI16,ABOUT ME
+  article_link: http://apurvjain123.edublogs.org/2016/12/05/what-is-gci-2016/
 
 - name: Animesh Singh
   blog: http://blog.animeshsingh.in
@@ -19,13 +27,12 @@
 
 - name: Hoang Van Thien
   blog: https://hoangvanthien.edublogs.org/
-  blog_img:
   article: Participating in Google Code-in 2016
   article_link: https://hoangvanthien.edublogs.org/2016/11/30/participating-in-google-code-in-2016/
 
 - name: Anastasia Kostiv
   blog: https://nolik2000.wordpress.com
-  blog_img: KostivBLOG.png
+  blog_img: kostivBLOG.png
   article: My experience in joining FOSSASIA
   article_link: https://nolik2000.wordpress.com/blog/
 
@@ -47,24 +54,85 @@
   article: What I learned after participating in GCI
   article_link: https://idealadarsh.wordpress.com/2016/12/08/what-i-learned-after-participating-in-google-code-in/
 
+- name: Denisa Pirlea
+  blog: https://mylittleblog03.wordpress.com/
+  blog_img:
+  article: My experience joining FOSSASIA
+  article_link: https://mylittleblog03.wordpress.com/2016/12/07/my-experience-joining-fossasia/
+
+- name: Ngo Hong Phuc
+  blog: https://wordpress.com/posts/jerry2001.school.blog
+  article: Article title
+  article_link: https://wordpress.com/post/jerry2001.school.blog/131
+
 - name: Tinh Dao
   blog: http://dcongtinh.blogspot.com/
-  blog_img:
   article: GCI 2016
   article_link: http://dcongtinh.blogspot.com/2016/12/google-code-in-2016-google-code-in.html
+
+- name: Kunal Srivastav
+  blog: https://gciblog719.wordpress.com/
+  article: My first step in the Open tech community with FOSSASISA and GCI...
+  article_link: https://gciblog719.wordpress.com/blog
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
   article: GCI experience
   article_link: https://wordpress.com/post/jerry2001.school.blog/131
 
+- name: Hillary Moutou
+  blog: http://hillamu2.edublogs.org/
+  article: GCI and FOSSASIA
+  article_link: http://hillamu2.edublogs.org/
+
+- name: Manraj Juneja
+  blog: https://www.blogger.com/blogger.g?blogID=3436867633936758241#editor/target=post;postID=1961075658112278688;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=0;src=postname
+  article: GCI 2016
+  article_link: https://wordpress.com/read/feeds/57811189
+
+- name: Hesham Burawi
+  blog: https://heshamburawi19.wordpress.com/
+  blog_img: burawi19-logo.png
+  article: Why I started GCI
+  article_link: https://heshamburawi19.wordpress.com/2016/12/03/why-i-started-gci/
+
+- name: Zenon
+  blog: https://zehatablog.wordpress.com/
+  article: Why I participated in GCI 2016
+  article_link: https://zehatablog.wordpress.com/2016/12/10/why-i-participated-in-google-code-in-2016/
+
+- name: Ainesh Sootha
+  blog: https://aineshsootha.wordpress.com/
+  blog_img: aineshsoothablog.png
+  article: Google Code-in and the Open Tech community.
+  article_link: https://aineshsootha.wordpress.com/2016/12/10/google-code-in-and-the-open-tech-community/
+
+- name: Pranav Sharma
+  blog: http://eccentric-pedantic.tech.blog
+  blog_img: pranavblog.jpg
+  article: My Journey in Google Code-In 2016
+  article_link: https://eccentric-pedantic.tech.blog/2016/12/08/my-journey-in-google-code-in-2016/
+
+- name: Prabhdeep Singh
+  blog: https://prabh29.edublogs.org
+  blog_img: Blog.png
+  article: My connection with FOSSASIA
+  article_link: http://prabh29.edublogs.org/2016/12/10/my-connection-to-fossasia-and-gci/
+  
 - name: Dwij Jha
   blog: https://dwijjha.wordpress.com
   blog_img: blog_dwij.png
   aricle: Open Source and Fossasia
   article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
-- name: Hillary Moutou
-  blog: http://hillamu2.edublogs.org/
-  blog_img: blogpost.png
-  article: GCI and FOSSASIA
-  article_link: http://hillamu2.edublogs.org/
+
+- name: Ankit R Gadiya
+  blog: http://blog.ankitrgadiya.me
+  blog_img: ankit.jpg
+  article: FOSSASIA and GCI Posts
+  article_link: http://blog.ankitrgadiya.me/tag/fossasia/
+
+- name: Sanchit Mishra
+  blog: https://sanchittechnogeek.github.io
+  blog_img: sanchit.jpg
+  article: My experience with Fossasia
+  article_link: https://sanchittechnogeek.github.io/articles/1/
