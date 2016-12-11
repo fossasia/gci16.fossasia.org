@@ -8,6 +8,7 @@ $.get('./_data/mentors.yml', function(data) {
 window.initMap = function() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
+    scrollwheel: false,
     center: {
       lat: 0,
       lng: 0
