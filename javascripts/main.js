@@ -293,18 +293,18 @@ $(function() {
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
   }).done(function(data) {
-    var labels = []
-    var labelNames = []
+    var labels = [];
+    var labelNames = [];
     var mainWrapper = $("#issues-categories-wrapper");
     for (var i = 0; i < data.length; i++) {
-      if (data[i].hasOwnProperty("pull_request") || data[i].closed_at != null) {
-        data.splice(i, 1)
+      if (data[i].hasOwnProperty("pull_request") || data[i].closed_at !== null) {
+        data.splice(i, 1);
         i--;
         continue;
       }
     }
-    for (var i = 0; i < data.length; i++) {
-      if (data[i].labels.length == 0) {
+    for (i = 0; i < data.length; i++) {
+      if (data[i].labels.length === 0) {
         var issueElement = $('<div class="issue"></div>')
                 .append($("<span></span>").append(data[i].number))
                 .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
@@ -316,10 +316,10 @@ $(function() {
                     .append($("<i class='fa fa-comment'></i>"))
                     .append(data[i].comments))
                 );
-        issueElement.appendTo($("#unlabeled-category"))
+        issueElement.appendTo($("#unlabeled-category"));
       }
       for (var j = 0; j < data[i].labels.length; j++) {
-        if ($.inArray(data[i].labels[j].name, labelNames) == -1) {
+        if ($.inArray(data[i].labels[j].name, labelNames) === -1) {
           labelNames.push(data[i].labels[j].name);
           labels.push(data[i].labels[j]);
         }
@@ -330,13 +330,13 @@ $(function() {
       var titleButton = $('<div class="button"></div>')
           .append($('<a></a>').append(labels[i].name).attr("href", labels[i].html_url))
           .css("background", "#" + labels[i].color);
-      categoryElement.append(titleButton)
-      for (var j = data.length - 1; j >= 0; j--) {
+      categoryElement.append(titleButton);
+      for (j = data.length - 1; j >= 0; j--) {
         for (var k = data[j].labels.length - 1; k >= 0; k--) {
-          if (data[j].labels[k].name == labels[i].name) {
+          if (data[j].labels[k].name === labels[i].name) {
             // all hail .append()
             // build the issue element
-            var issueElement = $('<div class="issue"></div>')
+            issueElement = $('<div class="issue"></div>')
                 .append($("<span></span>").append(data[j].number))
                 .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
                 .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
@@ -347,12 +347,11 @@ $(function() {
                     .append($("<i class='fa fa-comment'></i>"))
                     .append(data[j].comments))
                 );
-            console.log(issueElement)
-            categoryElement.append(issueElement)
+            categoryElement.append(issueElement);
             }
         }
       }
-      mainWrapper.append(categoryElement)
+      mainWrapper.append(categoryElement);
     }
   });
 });

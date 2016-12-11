@@ -7,7 +7,6 @@
  ******************************************************************************/
 
 window.loklakFetcher = (function() {
-  var script = null;
 
   var loklakFetcher = {
     /**
