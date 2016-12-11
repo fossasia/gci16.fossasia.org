@@ -1,6 +1,12 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Apurv Jain
+  blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
+  blog_img: apurv_blog.png.png
+  article: What is GCI16,ABOUT ME
+  article_link: http://apurvjain123.edublogs.org/2016/12/05/what-is-gci-2016/
+
 - name: Animesh Singh
   blog: http://blog.animeshsingh.in
   blog_img: animeshsinghweb.jpg
@@ -41,6 +47,18 @@
   blog_img: abhijeet.jpg
   article: Exploring Google Code In
   article_link: http://abhijeetmanohar.blogspot.in/2016/12/hi-friends-long-time-of-splashing-codes.html
+
+- name: Adarsh Kumar
+  blog: https://abhijeetmanohar.blogspot.com
+  blog_img: adarsh-blog2.png
+  article: What I learned after participating in GCI
+  article_link: https://idealadarsh.wordpress.com/2016/12/08/what-i-learned-after-participating-in-google-code-in/
+
+- name: Denisa Pirlea
+  blog: https://mylittleblog03.wordpress.com/
+  blog_img:
+  article: My experience joining FOSSASIA
+  article_link: https://mylittleblog03.wordpress.com/2016/12/07/my-experience-joining-fossasia/
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
