@@ -1,4 +1,6 @@
-# New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to a random position in the file.
+# This is to remove conflicts with other people adding their credentials.
+
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -214,6 +216,19 @@
   facebook: jha.dwij
   bio: 14,Indian,Sudent Programmer
 
+- name: Riley Kovacev
+  github: Rbkovacev
+  image: rileykova.png
+  twitter: RileyKovacev
+  bio: Java & Python, amenities of life
+
+- name: Abhijeet Manohar
+  github: abhijeetmanohar
+  image: Abhijeet.jpg
+  twitter: jeet_manohar
+  facebook: abhijeetmanohar66
+  bio: 16,Indian,Programmer,App Developer,tech-geek
+
 - name: Miguel Piedrafita
   github: m1guelpf
   facebook: m1guelpiedrafita
@@ -223,6 +238,13 @@
   bio: An spanish coder that loves open source.
   lat: 43.360233099999995
   lng: -5.8469849
+
+- name: Adelina Todorova
+  github: adikrasimirowa
+  facebook: adelina.todorov
+  twitter: 4x2young
+  image: aditodorova.jpg
+  bio: A girl that loves to explore and try new things.
 
 - name: Nguyen Chanh Dai
   github: nguyenchanhdai
@@ -239,11 +261,26 @@
   bio: 17, student, competitive programmer, interested in games
   facebook: dcongtinh
 
+- name: Nadun Yashmika
+  github: yashNadun
+  image: nadunyashmika.jpg
+  twitter: NadunYashmika
+  bio: 17, student, web developer
+  facebook: nadun.yashmika.9
+
 - name: Mehmet Cagri Ari
   github: hesapadim
   image: cagriari_avatar.jpg
   bio: I am 15, I know 6 programming languages and I want to become a software engineer :)
   facebook: sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa
+
+- name: Tan Ngo Minh
+  email: nmtan2001ct@gmail.com
+  github: nmtan2001
+  facebook: tan.ngominh.73
+  twitter: nmtan2001ct
+  image: TanNgoMinh.jpg
+  bio: 15 years old, Vietnamese, study Computer Science, interested in developed games.
 
 - name: Will Kaye
   github: will747
@@ -278,3 +315,22 @@
   image: nikhil_chandak.jpg
   twitter: nikhilchandak29
   bio: 15, Interested in competetive programming and open source projects
+
+- name: Pranav Sharma
+  github: sharma-p
+  image: pranav1.jpg
+  twitter: eccentric_pra
+  bio: 17, Loves to code.
+
+- name: Prabhdeep Singh
+  github: prabhdeep29
+  image: Prabhdeep.jpg
+  twitter: singhprabh2929
+  facebook: Prabhdeep Singh
+  bio: 14, Programmer in every way
+
+- name: Saurabh Singh
+  github: AlexTurning
+  image: Sa.jpg
+  facebook: meetsaurabh.s
+  bio: 16,Indian,keen learner
