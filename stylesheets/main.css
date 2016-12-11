@@ -303,6 +303,9 @@ figure.effect-gcihover:hover figcaption::before {
 .mentors .card p, .students-sec .card p, .projects-sec .card p {
     margin-top: 4.5%;
     font-size: 20px;
+    white-space: nowrap;
+    padding: 5px;
+    overflow-x: scroll;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
