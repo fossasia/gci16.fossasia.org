@@ -1,8 +1,11 @@
 language: ruby
+cache: bundler
 services: docker
 rvm:
   - 2.3.3
 install:
+  - gem install danger
+  - danger --verbose
   - bundle install
 script:
   - bundle exec jekyll build

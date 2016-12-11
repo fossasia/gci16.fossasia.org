@@ -1,4 +1,13 @@
-# New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to a random position in the file.
+# This is to remove conflicts with other people adding their credentials.
+
+- name: Animesh Singh
+  github: animeshsinghweb
+  facebook: f4.animeshsinghweb
+  twitter: animesh22singh
+  image: animeshsinghweb.jpg
+  blog: blog.animeshsingh.in
+  bio: A 17 yr old techygeek, loves coding & FOSS.
 
 - name: Oana Rosca
   github: oanarosca
@@ -15,7 +24,7 @@
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog: http://mehant-alphaunitedteam.blogspot.in/
+  blog: mehant-alphaunitedteam.blogspot.in/
   email: kmehant@gmail.com
   github: kmehant
   image: mehant.jpg
@@ -107,13 +116,13 @@
   facebook: ridhwanul.haque
   email: rhemon19@gmail.com
   bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
-  blog: https://rhemon.github.io/blog
+  blog: rhemon.github.io/blog
   blog_img: rhemon-blog.png
 
 - name: Victoria Juan
   github: vickyjjj
   email: victoriajuanhpst@gmail.com
-  image: victoriajuan.jpg
+  image: victoriajuan.JPG
 
 - name: Boh JieQi
   github: BohJieQi
@@ -146,6 +155,13 @@
   twitter: Adarsh_Kumar1
   bio: 16, Student Programmer, Web developer, Computer enthusiast
 
+- name: Ainesh Sootha
+  github: champforevaa
+  image: ainesh.jpg
+  twitter: ainesh_sootha
+  facebook: ainesh.sootha
+  bio: 15, Web developer, Game developer. Programmer, Indian
+
 - name: Abishek V Ashok
   github: Abhi2424shek
   image: abishek.jpg
@@ -155,7 +171,166 @@
 
 - name: Deepraj Pandey
   github: DeeprajPandey
-  image: Pandey,Deepraj.jpg
+  image: Pandey_Deepraj.jpg
   twitter: DeeprajPandey
   facebook: deepraj.pandey
   bio: 17, Indian, High School Senior, Founded a Hackathon
+
+- name: Wiktor Olejniczak
+  github: Witus13
+  image: Witus.jpg
+  twitter: 13thMyfrom
+  bio: 14, Student, self-learning web developer, First time in GCI
+
+- name: Gaeun Kim
+  github: gaeun
+  image: gaeun.jpg
+  twitter: gaeunkim913
+  facebook: gaeunkim913
+  bio: 15, South Korean, High school junior, Machine learning researcher, Frequent traveller
+
+- name: Nguyen Diep Xuan Quang
+  github: xuanquang1999
+  image: xuanquang.png
+  twitter: NgDipXunQuang1
+  bio: 17, student, competitive programmer, interested in games
+  facebook: xuanquang1999
+
+- name: Isabella Berry
+  github: gillarious
+  image: isabellaberry.png
+  twitter: gillarious
+  bio: 16, high school senior, coder and game designer
+  facebook: gillarious
+
+- name: Ha Minh Chien
+  github: wermarter
+  image: hmc.jpg
+  twitter: wermarter
+  bio: 16, love pigeons...
+  facebook: chien.pip
+
+- name: Dwij Jha
+  github: codein-dwij
+  image: dwij.png
+  facebook: jha.dwij
+  bio: 14,Indian,Sudent Programmer
+
+- name: Riley Kovacev
+  github: Rbkovacev
+  image: rileykova.png
+  twitter: RileyKovacev
+  bio: Java & Python, amenities of life
+
+- name: Abhijeet Manohar
+  github: abhijeetmanohar
+  image: Abhijeet.jpg
+  twitter: jeet_manohar
+  facebook: abhijeetmanohar66
+  bio: 16,Indian,Programmer,App Developer,tech-geek
+
+- name: Miguel Piedrafita
+  github: m1guelpf
+  facebook: m1guelpiedrafita
+  twitter: m1guelpf
+  image: m1guelpiedrafita.png
+  blog: blog.miguelpiedrafita.com
+  bio: An spanish coder that loves open source.
+  lat: 43.360233099999995
+  lng: -5.8469849
+
+- name: Adelina Todorova
+  github: adikrasimirowa
+  facebook: adelina.todorov
+  twitter: 4x2young
+  image: aditodorova.jpg
+  bio: A girl that loves to explore and try new things.
+
+- name: Nguyen Chanh Dai
+  github: nguyenchanhdai
+  facebook: ncd.vkn
+  twitter: nguyenchanhdai9
+  image: ncdai.jpg
+  blog: ncdai.blogspot.com
+  bio: 17, student, web developer
+
+- name: Tinh Dao
+  github: dcongtinh
+  image: tinhdao.jpg
+  twitter: TinhDao3
+  bio: 17, student, competitive programmer, interested in games
+  facebook: dcongtinh
+
+- name: Nadun Yashmika
+  github: yashNadun
+  image: nadunyashmika.jpg
+  twitter: NadunYashmika
+  bio: 17, student, web developer
+  facebook: nadun.yashmika.9
+
+- name: Mehmet Cagri Ari
+  github: hesapadim
+  image: cagriari_avatar.jpg
+  bio: I am 15, I know 6 programming languages and I want to become a software engineer :)
+  facebook: sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa
+
+- name: Tan Ngo Minh
+  email: nmtan2001ct@gmail.com
+  github: nmtan2001
+  facebook: tan.ngominh.73
+  twitter: nmtan2001ct
+  image: TanNgoMinh.jpg
+  bio: 15 years old, Vietnamese, study Computer Science, interested in developed games.
+
+- name: Will Kaye
+  github: will747
+  image: will.jpg
+  bio: 13, student, video editor, web developer
+  twitter: willkaye3
+
+- name: Ankit R Gadiya
+  github: ankitrgadiya
+  facebook: ankit.r.gadia
+  twitter: ankit4922
+  image: ankit.jpg
+  blog: blog.ankitrgadiya.me
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
+
+- name: Zenon
+  github: zehata
+  facebook: Zehata Taneka
+  twitter: Zenon
+  image: zehata.jpg
+  bio: 15, Full stack web dev. Loves making game engines.
+
+- name: Sanchit Mishra
+  github: sanchittechnogeek
+  image: sanchit.jpg
+  twitter: s_technogeek
+  facebook: sanchit.technogeek
+  bio: 17, amateur Nodejs dev, roboticist, linux guru.
+
+- name: Nikhil Chandak
+  github: nikhilchandak
+  image: nikhil_chandak.jpg
+  twitter: nikhilchandak29
+  bio: 15, Interested in competetive programming and open source projects
+
+- name: Pranav Sharma
+  github: sharma-p
+  image: pranav1.jpg
+  twitter: eccentric_pra
+  bio: 17, Loves to code.
+
+- name: Prabhdeep Singh
+  github: prabhdeep29
+  image: Prabhdeep.jpg
+  twitter: singhprabh2929
+  facebook: Prabhdeep Singh
+  bio: 14, Programmer in every way
+
+- name: Saurabh Singh
+  github: AlexTurning
+  image: Sa.jpg
+  facebook: meetsaurabh.s
+  bio: 16,Indian,keen learner

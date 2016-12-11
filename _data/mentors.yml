@@ -1,10 +1,11 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
   blog: http://blog.fossasia.org/
-  twitter:
   facebook: hpdang
-  bio:
 
 - name: Mario Behling
   github: mariobehling
@@ -12,15 +13,12 @@
   blog: http://mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
-  bio:
 
 - name: Louis Gagnon
   github: louisgag
   image: louisgagnon.jpg
   blog: http://louisgagnon.com/
   twitter: louisgagnoncom
-  facebook:
-  bio:
 
 - name: Saptak Sengupta
   github: saptaks
@@ -28,20 +26,85 @@
   blog: http://saptaks.me
   twitter: Saptak013
   facebook: s4pt4ks
-  bio:
 
 - name: Hemant Jadon
   github: hemantjadon
   image: hemantjadon.jpg
-  blog:
   twitter: hemantjadonhj
   facebook: hemant.jadon
-  bio:
 
 - name: Jigyasa Grover
-  github:
   image: jgrover.jpg
-  blog:
   twitter: jigyasa_grover
   facebook: jigyasa.grover.14
-  bio:
+  github: jig08
+  blog: https://jigyasagrover.wordpress.com/
+  lat: 28.644800
+  lng: 77.216721
+
+- name: Phu Nguyen
+  github: nghoangphu
+  image: nghoangphu.jpg
+  facebook: nghoangphu
+
+- name: Shubham Padia
+  github: shubham-padia
+  image: shubham-padia.jpg
+  twitter: shubham_p98
+  facebook: padiashubham
+
+- name: Dishant Khanna
+  github: DishantK1807
+  image: dishantkhanna.jpg
+  twitter: dishantkhanna
+  facebook: dishant.khanna.1807
+
+- name: Damini Satya
+  github: daminisatya
+  image: daminisatya.jpg
+  twitter: Daminisatya
+
+- name: Nicco Kunzmann
+  github: niccokunzmann
+  image: niccokunzmann.jpg
+  blog: niccokunzmann.github.io
+  twitter: dannhaltohneson
+
+- name: Robby O'Connor
+  github: robbyoconnor
+  image: robby.jpg
+  blog: http://robby.oconnor.ninja/
+  twitter: robbyoconnor
+
+- name: Ajinkya Wavare
+  github: ajinkya007
+  image: ajinkya.jpg
+  blog: http://ajinkya007.in/
+  twitter: wavare_ajinkya
+
+- name: Agata Kowalska
+  github: agwisniewska
+  image: agatakowalska.jpg
+
+- name: Princu7
+  github: Princu7
+  image: princu7.jpg
+  twitter: princu7
+  facebook: abhishek.rastogi.58
+
+- name: Sreeja Kamishetty
+  github: kamishettysreeja25
+  image: kamishettysreeja.jpg
+  twitter: sreeja_k5
+
+- name: Harsh Vardhan
+  github: royalharsh
+  image: harshvardhan.jpg
+  blog: http://thehvardhan.me/
+  twitter: https://twitter.com/royalharsh95
+
+- name: Shiven Mian
+  github: shivenmian
+  image: shiven.jpg
+  facebook: shiven.iiitd
+  twitter: shiven_mian
