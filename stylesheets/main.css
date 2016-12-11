@@ -509,7 +509,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .active {
@@ -517,16 +517,16 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 #map {
-	margin-top: 30px;
+    margin-top: 30px;
     width: 100%;
     height: 500px;
-	border-radius: 5px;
+    border-radius: 5px;
 }
 
 h2 {
-  border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
