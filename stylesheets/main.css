@@ -101,7 +101,7 @@ hr {
     width: 100px;
     margin-top: 0;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .grid {
     position: relative;
@@ -420,7 +420,7 @@ figure.effect-gcihover:hover figcaption::before {
 #gyt {
     background-color: white;
     height: 48px;
-    overflow: hdden;
+    overflow: hidden;
     margin: 10px;
     box-shadow: none;
     border: none;
@@ -431,7 +431,7 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: none;
     border: none;
     height: 48px;
-    overflow: hdden;
+    overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
     height: 400px;
