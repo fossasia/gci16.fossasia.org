@@ -259,9 +259,9 @@ p.blog-title {
     color: #fafafa;
     font-size: 16px;
     background: #00000022;
-    position: absolute; 
-    top: 100px; 
-    text-align: center; 
+    position: absolute;
+    top: 100px;
+    text-align: center;
     width: 100%;
 }
 .blog-title a {
@@ -360,13 +360,46 @@ p.blog-title {
     background: #eee;
     border-radius: 5px;
 }
+#issues-categories-wrapper {
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.issues-category {
+    width: 45%;
+    margin: 1em;
+    padding-top: 1em;
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    /*justify-content: center;*/
+    -ms-align-items: center;
+    align-items: center;
+}
 .issue {
     width: 100%;
-    height: 80px;
     padding: 18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
     background: #FFF;
+
 }
 .issue:last-child {
     border-bottom: none;
@@ -392,6 +425,7 @@ p.blog-title {
 .issues-wrapper i {
     margin-right: 5px;
 }
+
 .button {
     background: #FFF;
     text-align: center;

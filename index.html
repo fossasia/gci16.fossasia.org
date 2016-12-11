@@ -274,12 +274,18 @@
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
-                      <div class="button">
-                        <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                          See all issues on&nbsp;<i class="fa fa-github"></i>github
-                        </a>
+                        <div class="button">
+                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                                See all issues on&nbsp;<i class="fa fa-github"></i>github
+                            </a>
+                        </div>
+
+                        <div id="issues-categories-wrapper">
+                            <div class="issues-category" id="unlabeled-category">
+                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </section>
 
             <!-- Loklak API -->
@@ -288,8 +294,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
                         <div class="twitter-feed">
-                            <i class="icon social_twitter text-white"></i>
-                            <div class="tweets-feed" id="tweets" data-count=50 data-query="fossasia #gci">
+                            <i class="icon social-twitter text-white"></i>
+                            <div class="tweets-feed panel" id="tweets" data-count=50 data-query="fossasia #gci">
                                 <div class="arrow-up"></div>
                                 <p id="tweet" class="tweet">
                                     Loading...
@@ -298,12 +304,12 @@
                                   <span id="tweet-info">Fetching tweets...</span>
                                 </div>
                             </div>
-                            <div class="btn" id="previous"onclick="lastTweet()">
-                                &#8592; &nbsp; Previous Tweet!
-                            </div>
-                            <div class="btn" id="next"onclick="nextTweet()">
-                                Next Tweet! &nbsp; &#8594;
-                            </div>
+                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
+                                ← &nbsp; Previous Tweet!
+                            </button>
+                            <button type="button" class="btn" id="next"onclick="nextTweet()">
+                                Next Tweet! &nbsp; →
+                            </button>
                         </div>
                     </div>
                 </div>
