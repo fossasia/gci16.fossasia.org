@@ -229,12 +229,14 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
-/*.blog {
+.blog {
     padding-left: 100px;
     padding-right: 100px;
     height: 100%;
     padding-bottom: 50px;
     border-radius: 5px;
+    background-color: #1B5E20;
+    background-position: center;
 }
 .blog h1 {
     padding-top: 50px;
@@ -242,69 +244,35 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .blog-holder {
     padding: 20px;
+    margin-top: 30px;
 }
 .blog-post {
     padding: 0;
     margin: 0;
     height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    position: relative;
 }
-.blog-title {
-    padding: 25% 0;
-    margin: 0;
-    height: 100%;
-    background: #66BB6A;
+img.blog_img {
+    position: relative;
+}
+p.blog-title {
     color: #fafafa;
     font-size: 16px;
-    text-align: center;
+    background: #00000022;
+    position: absolute; 
+    top: 100px; 
+    text-align: center; 
+    width: 100%;
 }
 .blog-title a {
     color: #fafafa;
 }
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
     color: #fafafa;
-}*/
-.blog .card {
-    height: 250px;
-    margin: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black !important;
 }
-.blog h2 {
-    background-color: #1B5E20;
-}
-.blog .card {
-    display: flex;
-    flex-direction: row;
-}
-.blog .card div {
-    width: 220px;
-}
-.blog .card .img {
-    background-size: cover;
-}
-.blog .card .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.blog .card .content h3 {
-    font-size: 20px;
-    margin: 5px;
-}
-.blog .card .content a {
-    font-style: oblique;
-    color: black !important;
-}
-.blogs-wrapper {
-    background-color: #1B5E20;
-}
-.mentors h2, .blog h2, .latest-issues h2, .students-sec h2, .projects-sec h2 {
+
+
+.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 {
     margin: auto;
     padding: 10px;
     width: 180px;
@@ -312,7 +280,11 @@ figure.effect-gcihover:hover figcaption::before {
     background: #27ae60;
     text-align: center;
 }
-
+.blog h2 {
+    background: #1B5E20;
+    color: white;
+    width: 350px;
+}
 .projects-sec h2 {
     background: #d9ff25;
     color: black;
