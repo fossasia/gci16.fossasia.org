@@ -72,8 +72,9 @@
 
 - name: Kunal Srivastav
   blog: https://gciblog719.wordpress.com/
-  article: My first step in the Open tech community with FOSSASISA and GCI...
-  article_link: https://gciblog719.wordpress.com/blog
+  blog_img: Kunal_blog.png
+  article: My first step in the Open tech community with FOSSASIA and GCI
+  article_link: https://gciblog719.wordpress.com/blog/
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
@@ -136,3 +137,4 @@
   blog_img: sanchit.jpg
   article: My experience with Fossasia
   article_link: https://sanchittechnogeek.github.io/articles/1/
+  
