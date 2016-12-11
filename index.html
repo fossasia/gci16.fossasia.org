@@ -47,7 +47,7 @@
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#stprojects">Student projects</a></li>
-                <li><a href="#blog-post">Blog posts</a></li>
+                <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
               </ul>
@@ -125,7 +125,7 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors" id="contributors" href="#contributors">
+            <section id="contributors" href="#contributors">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row"></div>
             </section>
@@ -211,6 +211,30 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
+
+            <section id="blogs" href="#blogs" class="blog">
+                <h2>BLOG POSTS</h2>
+                <div class="row">
+                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                    {% for blog in site.data.blogs %}
+                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="blog-post">
+                                {% if blog.blog_img %}
+                                <img src="images/blogs/{{blog.blog_img}}"
+                                alt="{{blog.name}}"
+                                width="200px" height="200px" class="blog_img">
+                                {% else %}
+                                <img src="images/blogs/default.jpg"
+                                alt="{{blog.name}}"
+                                width="200px" height="200px" class="blog_img">
+                                {% endif %}
+                                <p class="blog-title"> Blog of
+                                    <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                    <br> {% if blog.article %}
+                                    <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                                </p>
+                        </div>
+
             <section id="blogs" href="#blog-post">
                 <div class="blog" id="blog-post" href="#blog-post">
                     <h2>BLOG POSTS</h2>
@@ -235,9 +259,12 @@
                         {% endfor %}
                         <!-- Stop ignoring -->
                     </div>
+                    {% endfor %}
+                    <!-- Stop ignoring -->
                 </div>
+            </section>
                 <!-- Start ignoring SpaceConsistencyBear -->
-                <div class="logos" id="designs">
+                 <div class="logos" id="designs" href="#designs">
                     <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
                     <div class="row">
                         {% for logo in site.data.logos %}

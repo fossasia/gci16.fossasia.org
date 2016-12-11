@@ -32,7 +32,7 @@
 
 - name: Anastasia Kostiv
   blog: https://nolik2000.wordpress.com
-  blog_img: KostivBLOG.png
+  blog_img: kostivBLOG.png
   article: My experience in joining FOSSASIA
   article_link: https://nolik2000.wordpress.com/blog/
 
@@ -80,15 +80,8 @@
   article: GCI experience
   article_link: https://wordpress.com/post/jerry2001.school.blog/131
 
-- name: Dwij Jha
-  blog: https://dwijjha.wordpress.com
-  blog_img: blog_dwij.png
-  aricle: Open Source and Fossasia
-  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
-
 - name: Hillary Moutou
   blog: http://hillamu2.edublogs.org/
-  blog_img: blogpost.png
   article: GCI and FOSSASIA
   article_link: http://hillamu2.edublogs.org/
 
@@ -134,6 +127,6 @@
 
 - name: Sanchit Mishra
   blog: https://sanchittechnogeek.github.io
-  blog_img: sanchit.png
+  blog_img: sanchit.jpg
   article: My experience with Fossasia
   article_link: https://sanchittechnogeek.github.io/articles/1/
