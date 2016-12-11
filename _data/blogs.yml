@@ -1,12 +1,19 @@
+
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
+
+- name: Apurv Jain
+  blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
+  blog_img: apurv_blog.png.png
+  article: What is GCI16,ABOUT ME
+  article_link: http://apurvjain123.edublogs.org/2016/12/05/what-is-gci-2016/
 
 - name: Animesh Singh
   blog: http://blog.animeshsingh.in
   blog_img: animeshsinghweb.jpg
   article: Coming Soon
   article_link: http://animeshsingh.in
-
+  
 - name: Ridhwanul Haque
   blog: https://rhemon.github.io/blog
   blog_img: rhemon-blog.png
