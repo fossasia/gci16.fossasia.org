@@ -325,13 +325,13 @@ $(function() {
         }
       }
     }
-    for (var i = 0; i < labels.length; i++) {
+    for (i = 0; i < labels.length; i++) {
       var categoryElement = $('<div class="issues-category"></div>');
       var titleButton = $('<div class="button"></div>')
           .append($('<a></a>').append(labels[i].name).attr("href", labels[i].html_url))
           .css("background", "#" + labels[i].color);
       categoryElement.append(titleButton);
-      for (j = data.length - 1; j >= 0; j--) {
+      for (var j = data.length - 1; j >= 0; j--) {
         for (var k = data[j].labels.length - 1; k >= 0; k--) {
           if (data[j].labels[k].name === labels[i].name) {
             // all hail .append()
@@ -348,7 +348,7 @@ $(function() {
                     .append(data[j].comments))
                 );
             categoryElement.append(issueElement);
-            }
+          }
         }
       }
       mainWrapper.append(categoryElement);

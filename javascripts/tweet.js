@@ -1,4 +1,5 @@
 var interval_id = null;
+var stuff;
 
 function interval() {
     if (interval_id !== null){
@@ -14,7 +15,7 @@ function datafetcher() {
 }
 
 function datahandler(raw) {
-    var stuff = raw;   // Makes the data available globally.
+    stuff = raw;   // Makes the data available globally.
     parser(stuff);
     interval();
 }
