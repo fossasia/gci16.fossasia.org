@@ -235,6 +235,8 @@ figure.effect-gcihover:hover figcaption::before {
     height: 100%;
     padding-bottom: 50px;
     border-radius: 5px;
+    background-color: #1B5E20;
+    background-position: center;
 }
 .blog h1 {
     padding-top: 50px;
@@ -242,24 +244,25 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .blog-holder {
     padding: 20px;
+    margin-top: 30px;
 }
 .blog-post {
     padding: 0;
     margin: 0;
     height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
+    position: relative;
 }
-.blog-title {
-    padding: 25% 0;
-    margin: 0;
-    height: 100%;
+img.blog_img {
+    position: relative;
+}
+p.blog-title {
     color: #fafafa;
     font-size: 16px;
-    text-align: center;
+    background: #00000022;
+    position: absolute; 
+    top: 100px; 
+    text-align: center; 
+    width: 100%;
 }
 .blog-title a {
     color: #fafafa;
@@ -267,7 +270,8 @@ figure.effect-gcihover:hover figcaption::before {
 .blog-title a:hover, .blog-title a:link, .blog-title a:visited {
     color: #fafafa;
 }
-.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2 {
+
+.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 {
     margin: auto;
     padding: 10px;
     width: 180px;
@@ -275,7 +279,11 @@ figure.effect-gcihover:hover figcaption::before {
     background: #27ae60;
     text-align: center;
 }
-
+.blog h2 {
+    background: #1B5E20;
+    color: white;
+    width: 350px;
+}
 .projects-sec h2 {
     background: #d9ff25;
     color: black;
