@@ -1,4 +1,4 @@
-﻿# New members please add your credentials to a random position in the file.
+# New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
 - name: Animesh Singh
@@ -309,6 +309,13 @@
   twitter: s_technogeek
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
+
+- name: Tran Bao Nguyen
+  github: bnguyenltt
+  image: bnguyenltt.jpg
+  twitter: bnguyenltt
+  bio: 16, student, competitive programmer, interested in games and manga
+  facebook: bnguyenltt
 
 - name: Nikhil Chandak
   github: nikhilchandak

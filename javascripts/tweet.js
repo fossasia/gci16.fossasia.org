@@ -1,4 +1,5 @@
-interval_id = null;
+var interval_id = null;
+var stuff;
 
 function interval() {
     if (interval_id !== null){
@@ -29,7 +30,7 @@ function nextTweet() {
     tweetNum += 1;
     var tweetsEl = document.getElementById('tweets');
     //go back to the first tweet if it's greater than the amount of tweets available
-    if(tweetNum == tweetsEl.dataset.count) {
+    if(tweetNum === tweetsEl.dataset.count) {
         tweetNum = 0;
     }
     interval();
