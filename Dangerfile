@@ -15,6 +15,6 @@ if !github.pr_body.include? "<!-- Safe Edit -->"
   end
 end
 # Warn the user to squash his commits
-if !git.commits.size == 1
+if if git.commits.size > 1
   warn("You have more than one commit! Please squash them. If you need help, check contribuiting file. Mentor note: If you're going to merge this, use the Github 'squash and merge' function (check mantainers.md).")
 end
