@@ -305,7 +305,7 @@ figure.effect-gcihover:hover figcaption::before {
     font-size: 20px;
     white-space: nowrap;
     padding: 5px;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
@@ -536,4 +536,8 @@ body {
 .logos img {
   width: 400px;
   height: 220px;
+}
+abbr
+{
+    text-overflow: ellipsis;
 }
