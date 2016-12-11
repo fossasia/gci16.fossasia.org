@@ -494,6 +494,11 @@ p.blog-title {
     color: white;
 }
 
+.footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
 .footer p {
     margin-top: 10px;
 }
@@ -519,7 +524,7 @@ p.blog-title {
 
 .footer .row a i {
     font-size: 18px;
-    color: #000;
+    color: #fff;
     margin-right: 8px;
 }
 
