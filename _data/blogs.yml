@@ -26,7 +26,7 @@
 
 - name: Anastasia Kostiv
   blog: https://nolik2000.wordpress.com
-  blog_img: KostivBLOG.png
+  blog_img: kostivBLOG.png
   article: My experience in joining FOSSASIA
   article_link: https://nolik2000.wordpress.com/blog/
 
@@ -41,12 +41,6 @@
   blog_img: abhijeet.jpg
   article: Exploring Google Code In
   article_link: http://abhijeetmanohar.blogspot.in/2016/12/hi-friends-long-time-of-splashing-codes.html
-
-- name: Adarsh Kumar
-  blog: https://abhijeetmanohar.blogspot.com
-  blog_img: adarsh-blog2.png
-  article: What I learned after participating in GCI
-  article_link: https://idealadarsh.wordpress.com/2016/12/08/what-i-learned-after-participating-in-google-code-in/
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
@@ -76,7 +70,6 @@
 
 - name: Hillary Moutou
   blog: http://hillamu2.edublogs.org/
-  blog_img: blogpost.png
   article: GCI and FOSSASIA
   article_link: http://hillamu2.edublogs.org/
 
@@ -98,7 +91,7 @@
 
 - name: Ainesh Sootha
   blog: https://aineshsootha.wordpress.com/
-  blog_img: aineshsoothablog.png
+  blog_img: ainehssoothablog.png
   article: Google Code-in and the Open Tech community.
   article_link: https://aineshsootha.wordpress.com/2016/12/10/google-code-in-and-the-open-tech-community/
 
@@ -122,6 +115,6 @@
 
 - name: Sanchit Mishra
   blog: https://sanchittechnogeek.github.io
-  blog_img: sanchit.png
+  blog_img: sanchit.jpg
   article: My experience with Fossasia
   article_link: https://sanchittechnogeek.github.io/articles/1/
