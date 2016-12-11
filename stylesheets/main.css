@@ -235,8 +235,6 @@ figure.effect-gcihover:hover figcaption::before {
     height: 100%;
     padding-bottom: 50px;
     border-radius: 5px;
-    background-color: #1B5E20;
-    background-position: center;
 }
 .blog h1 {
     padding-top: 50px;
@@ -244,25 +242,24 @@ figure.effect-gcihover:hover figcaption::before {
 }
 .blog-holder {
     padding: 20px;
-    margin-top: 30px;
 }
 .blog-post {
     padding: 0;
     margin: 0;
     height: 200px;
-    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-img.blog_img {
-    position: relative;
-}
-p.blog-title {
+.blog-title {
+    padding: 25% 0;
+    margin: 0;
+    height: 100%;
+    background: #66BB6A;
     color: #fafafa;
     font-size: 16px;
-    background: #00000022;
-    position: absolute; 
-    top: 100px; 
-    text-align: center; 
-    width: 100%;
+    text-align: center;
 }
 .blog-title a {
     color: #fafafa;
@@ -296,9 +293,6 @@ p.blog-title {
     justify-content: center;
     align-items: center;
 }
-
-.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 {
-
 .blog .card .content h3 {
     font-size: 20px;
     margin: 5px;
@@ -318,11 +312,7 @@ p.blog-title {
     background: #27ae60;
     text-align: center;
 }
-.blog h2 {
-    background: #1B5E20;
-    color: white;
-    width: 350px;
-}
+
 .projects-sec h2 {
     background: #d9ff25;
     color: black;
