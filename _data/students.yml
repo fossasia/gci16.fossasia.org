@@ -1,4 +1,6 @@
-﻿# New members please add your credentials to the bottom of the file.
+﻿# New members please add your credentials to a random position in the file.
+# This is to remove conflicts with other people adding their credentials.
+
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -271,7 +273,7 @@
   image: cagriari_avatar.jpg
   bio: I am 15, I know 6 programming languages and I want to become a software engineer :)
   facebook: sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa
-  
+
 - name: Tan Ngo Minh
   email: nmtan2001ct@gmail.com
   github: nmtan2001
@@ -319,7 +321,7 @@
   image: pranav1.jpg
   twitter: eccentric_pra
   bio: 17, Loves to code.
-  
+
 - name: Prabhdeep Singh
   github: prabhdeep29
   image: Prabhdeep.jpg
