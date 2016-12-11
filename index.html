@@ -172,7 +172,13 @@
                                     </a>
                                     {% endif %}
                                 </div>
-                                <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                                <p>
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span title="{{student.name}}">
+                                        {{student.name}}
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -203,7 +209,11 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                 </div>
-                                <p>{{project.name}} by {{project.owner}}</p>
+                                <p>
+                                    <span title="{{project.name}} by {{project.owner}}">
+                                        {{project.name}} by {{project.owner}}
+                                    </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -267,9 +277,37 @@
                         <a href="//github.com/fossasia/gci16.fossasia.org/issues">
                           See all issues on&nbsp;<i class="fa fa-github"></i>github
                         </a>
-                      </button>
                     </div>
+                  </div>
                 </section>
+
+            <!-- Loklak API -->
+            <section class="latest-issues" id="loklak" href="#loklak">
+                <h2>Loklak API Tweets</h2>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <div class="twitter-feed">
+                            <i class="icon social_twitter text-white"></i>
+                            <div class="tweets-feed" id="tweets" data-count=50 data-query="fossasia #gci">
+                                <div class="arrow-up"></div>
+                                <p id="tweet" class="tweet">
+                                    Loading...
+                                </p>
+                                <div class="panel-footer">
+                                  <span id="tweet-info">Fetching tweets...</span>
+                                </div>
+                            </div>
+                            <div class="btn" id="previous"onclick="lastTweet()">
+                                &#8592; &nbsp; Previous Tweet!
+                            </div>
+                            <div class="btn" id="next"onclick="nextTweet()">
+                                Next Tweet! &nbsp; &#8594;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
                 <div class="social-media" id="social-media" href="#social-media">
                     <h1 class="white-header">FOSSASIA on social media</h1>
                     <div class="row">
@@ -414,5 +452,7 @@
 &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
 &theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./javascripts/loklak-fetcher.js"></script>
+<script src="./javascripts/tweet.js"></script>
 </body>
 </html>
