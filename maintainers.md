@@ -30,7 +30,7 @@ Abilities of Maintainers
 Notes for Mantainers
 --------------------
 
-- If a PR edits index.html, it will fail for security. To remove that error, add ```<!-- Safe Edit -->``` somewhere in the PR body.
+- If a PR edits index.html, it will fail for security. To remove that error, add ```<!-- Safe Edit -->``` somewhere in the PR body. See #349 for more info.
 
 Further Reading
 ---------------
