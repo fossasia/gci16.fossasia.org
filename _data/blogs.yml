@@ -118,6 +118,12 @@
   blog_img: Blog.png
   article: My connection with FOSSASIA
   article_link: http://prabh29.edublogs.org/2016/12/10/my-connection-to-fossasia-and-gci/
+  
+- name: Dwij Jha
+  blog: https://dwijjha.wordpress.com
+  blog_img: blog_dwij.png
+  aricle: Open Source and Fossasia
+  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
 
 - name: Ankit R Gadiya
   blog: http://blog.ankitrgadiya.me
