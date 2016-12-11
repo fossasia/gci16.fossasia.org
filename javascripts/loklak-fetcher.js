@@ -1,8 +1,8 @@
 /*******************************************************************************
  * loklak-fetcher-client
- * 	by Yago González (C) 2016 - Under MIT license
- * 	Bugs? Questions? Don't know what's the meaning of life?
- * 	Take a look at: github.com/YagoGG/loklak-fetcher-client
+ *  by Yago González (C) 2016 - Under MIT license
+ *  Bugs? Questions? Don't know what's the meaning of life?
+ *  Take a look at: github.com/YagoGG/loklak-fetcher-client
  *  Please, keep this header if you want to use this code. Thank you ;)
  ******************************************************************************/
 
@@ -71,9 +71,9 @@ window.loklakFetcher = (function() {
       }
 
       // Create the URL with all the parameters
-      var url = 'http://loklak.org/api/search.json' +
-        //'?callback=loklakFetcher.handleData' +
-        '?q=' + query +
+      var url = 'https://loklak.quelltext.eu/api/search.json' +
+        '?callback=loklakFetcher.handleData' +
+        '&q=' + query +
         '&count=' + options.count +
         '&source=' + options.source +
         '&fields=' + options.fields +
@@ -81,11 +81,13 @@ window.loklakFetcher = (function() {
         '&timezoneOffset=' + options.tzOffset +
         '&minified=' + options.minified;
 
-	  $.ajax({
-		url: url
-	  }).done(function (data) {
-		callback(data);
-      });
+    $.ajax({
+      url: url,
+      dataType: 'jsonp',
+      success: function(data) {
+        callback(data);
+      }
+    });
       // If the script element for JSONP already exists, remove it
       //if(script !== null) {
       //  document.head.removeChild(script);
