@@ -183,7 +183,7 @@ figure.effect-gcihover figcaption {
     z-index: 1;
 }
 figure.effect-gcihover p {
-    padding: 2.25em 0.5em;
+    padding: 3.35em 0.5em;
     font-weight: 600;
     font-size: 100%;
     line-height: 1.5;
@@ -271,6 +271,7 @@ p.blog-title {
     color: #fafafa;
 }
 
+
 .mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 {
     margin: auto;
     padding: 10px;
@@ -289,7 +290,7 @@ p.blog-title {
     color: black;
     width: 350px;
 }
-.mentors .mentors-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
+.mentors .mentors-wrapper, .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -311,6 +312,9 @@ p.blog-title {
 .mentors .card p, .students-sec .card p, .projects-sec .card p {
     margin-top: 4.5%;
     font-size: 20px;
+    white-space: nowrap;
+    padding: 5px;
+    overflow-x: scroll;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
@@ -537,4 +541,8 @@ h2 {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.logos img {
+  width: 400px;
+  height: 220px;
 }
