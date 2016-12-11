@@ -1,3 +1,6 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
@@ -34,6 +37,10 @@
   image: jgrover.jpg
   twitter: jigyasa_grover
   facebook: jigyasa.grover.14
+  github: jig08
+  blog: https://jigyasagrover.wordpress.com/
+  lat: 28.644800
+  lng: 77.216721
 
 - name: Phu Nguyen
   github: nghoangphu
@@ -85,4 +92,25 @@
   twitter: princu7
   facebook: abhishek.rastogi.58
 
+- name: Sreeja Kamishetty
+  github: kamishettysreeja25
+  image: kamishettysreeja.jpg
+  twitter: sreeja_k5
 
+- name: Harsh Vardhan
+  github: royalharsh
+  image: harshvardhan.jpg
+  blog: http://thehvardhan.me/
+  twitter: https://twitter.com/royalharsh95
+
+- name: Yathannsh Kulshrestha
+  facebook: yathannsh
+  github: Yathannsh
+  image: yathannsh.jpg
+  twitter: yathannsh
+
+- name: Shiven Mian
+  github: shivenmian
+  image: shiven.jpg
+  facebook: shiven.iiitd
+  twitter: shiven_mian
