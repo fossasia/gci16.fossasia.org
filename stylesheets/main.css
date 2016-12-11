@@ -251,12 +251,12 @@ figure.effect-gcihover:hover figcaption::before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
 }
 .blog-title {
     padding: 25% 0;
     margin: 0;
     height: 100%;
-    background: #66BB6A;
     color: #fafafa;
     font-size: 16px;
     text-align: center;
