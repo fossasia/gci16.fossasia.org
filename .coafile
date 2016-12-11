@@ -1,0 +1,29 @@
+[default]
+bears = SpaceConsistencyBear, LineLengthBear
+files = **.html, **.yml, **.css, **.js, **.md
+ignore = **.min.css, **.min.js, _site/**
+max_line_length = 300
+use_spaces = True
+
+[html]
+bears = HTMLLintBear, BootLintBear
+files = **.html
+ignore = _site/**
+htmllint_ignore = indentation, optional_tag, concerns_separation, capitalization
+
+[yaml]
+bears = YAMLLintBear
+files = **.yml
+yamllint_config = .yamllint
+
+[css]
+bears = PHPCodeSnifferBear
+files = **.css
+ignore = **.min.css, _site/**
+
+[js]
+bears = JSHintBear
+files = **.js
+ignore = **.min.js, _site/**
+environment_jquery = True
+javascript_strictness = implied

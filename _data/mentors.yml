@@ -1,0 +1,101 @@
+- name: Hong Phuc Dang
+  github: hpdang
+  image: hpdang.jpg
+  blog: http://blog.fossasia.org/
+  facebook: hpdang
+
+- name: Mario Behling
+  github: mariobehling
+  image: mariobehling.jpg
+  blog: http://mariobehling.de/
+  twitter: mariobehling
+  facebook: mariobehling
+
+- name: Louis Gagnon
+  github: louisgag
+  image: louisgagnon.jpg
+  blog: http://louisgagnon.com/
+  twitter: louisgagnoncom
+
+- name: Saptak Sengupta
+  github: saptaks
+  image: saptaks.jpg
+  blog: http://saptaks.me
+  twitter: Saptak013
+  facebook: s4pt4ks
+
+- name: Hemant Jadon
+  github: hemantjadon
+  image: hemantjadon.jpg
+  twitter: hemantjadonhj
+  facebook: hemant.jadon
+
+- name: Jigyasa Grover
+  image: jgrover.jpg
+  twitter: jigyasa_grover
+  facebook: jigyasa.grover.14
+  github: jig08
+  blog: https://jigyasagrover.wordpress.com/
+  lat: 28.644800
+  lng: 77.216721
+
+- name: Phu Nguyen
+  github: nghoangphu
+  image: nghoangphu.jpg
+  facebook: nghoangphu
+
+- name: Shubham Padia
+  github: shubham-padia
+  image: shubham-padia.jpg
+  twitter: shubham_p98
+  facebook: padiashubham
+
+- name: Dishant Khanna
+  github: DishantK1807
+  image: dishantkhanna.jpg
+  twitter: dishantkhanna
+  facebook: dishant.khanna.1807
+
+- name: Damini Satya
+  github: daminisatya
+  image: daminisatya.jpg
+  twitter: Daminisatya
+
+- name: Nicco Kunzmann
+  github: niccokunzmann
+  image: niccokunzmann.jpg
+  blog: niccokunzmann.github.io
+  twitter: dannhaltohneson
+
+- name: Robby O'Connor
+  github: robbyoconnor
+  image: robby.jpg
+  blog: http://robby.oconnor.ninja/
+  twitter: robbyoconnor
+
+- name: Ajinkya Wavare
+  github: ajinkya007
+  image: ajinkya.jpg
+  blog: http://ajinkya007.in/
+  twitter: wavare_ajinkya
+
+- name: Agata Kowalska
+  github: agwisniewska
+  image: agatakowalska.jpg
+
+- name: Princu7
+  github: Princu7
+  image: princu7.jpg
+  twitter: princu7
+  facebook: abhishek.rastogi.58
+
+- name: Sreeja Kamishetty
+  github: kamishettysreeja25
+  image: kamishettysreeja.jpg
+  twitter: sreeja_k5
+
+- name: Harsh Vardhan
+  github: royalharsh
+  image: harshvardhan.jpg
+  blog: http://thehvardhan.me/
+  twitter: https://twitter.com/royalharsh95
