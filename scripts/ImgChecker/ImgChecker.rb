@@ -8,12 +8,12 @@ require 'fastimage'
 puts "Starting Image Checker, authored by Abishek V Ashok for FOSSASIA with love"
 
 # Initializing the directories into variables
-studentsImgFiles = File.join("**", "./images/students", "*.jpg")
-projectsImgFiles = File.join("**", "./images/projects", "*.png")
-mentorsImgFiles = File.join("**", "./images/mentors", "*.jpg")
-iconsImgFiles = File.join("**", "./images/icons", "*.png")
-logosImgFiles = File.join("**", "./images/logos", "*.jpg")
-blogsImgFiles = File.join("**", "./images/blogs", "*.jpg")
+studentsImgFiles = Dir["./images/students/**/*.jpg"]
+projectsImgFiles = Dir["./images/projects/**/*.png"]
+mentorsImgFiles = Dir["./images/mentors/**/*.jpg"]
+iconsImgFiles = Dir["./images/icons/**/*.png"]
+logosImgFiles = Dir["./images/logos/**/*.jpg"]
+blogsImgFiles = Dir["./images/blogs/**/*.jpg"]
 
 # Defines the standard maximum dimensions for images in each section
 studentsImgSize = 240
