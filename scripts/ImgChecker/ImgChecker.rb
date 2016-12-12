@@ -28,8 +28,8 @@ logosImgHeight = 220
 for studentImage in studentsImgFiles
     size = FastImage.size(studentImage)
     if size[0] > studentsImgSize or size[1] > studentsImgSize
-        return 1
         puts "Image size is bigger"
+        1
         abort(studentImage)
     end
 end
@@ -38,8 +38,8 @@ end
 for mentorImage in mentorsImgFiles
     size = FastImage.size(mentorImage)
     if size[0] > mentorsImgSize or size[1] > mentorsImgSize
-        return 1
         puts "Image size is bigger"
+        1
         abort(mentorImage)
     end
 end
@@ -48,8 +48,8 @@ end
 for projectImage in projectsImgFiles
     size = FastImage.size(projectImage)
     if size[0] > projectsImgSize or size[1] > projectsImgSize
-        return 1
         puts "Image size is bigger"
+        1
         abort(projectImage)
     end
 end
@@ -58,8 +58,8 @@ end
 for iconImage in iconsImgFiles
     size = FastImage.size(iconImage)
     if size[0] > iconsImgSize or size[1] > iconsImgSize
-        return 1
         puts "Image size is bigger"
+        1
         abort(iconImage)
     end
 end
@@ -68,8 +68,8 @@ end
 for logoImage in logosImgFiles
     size = FastImage.size(logoImage)
     if size[0] > logosImgWidth or size[1] > logosImgHeight
-        return 1
         puts "Image size is bigger"
+        1
         abort(logoImage)
     end
 end
@@ -78,8 +78,8 @@ end
 for blogImage in blogsImgFiles
     size = FastImage.size(blogImage)
     if size[0] > blogsImgSize or size[1] > blogsImgSize
-        return 1
         puts "Image size is bigger"
+        1
         abort(blogImage)
     end
 end
