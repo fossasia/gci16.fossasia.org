@@ -29,6 +29,12 @@
     padding: 30px;
     text-align: center;
     background: #3f51b5;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#contributors-list:hover {
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors h2 {
@@ -43,7 +49,6 @@
     margin-top: 60%;
     left: 30px;
     font-size: 18px;
-    box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div img {
     width: 200px;
@@ -88,16 +93,33 @@
     margin-top: 10px;
     padding: 30px;
     text-align: center;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card {
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .cards {
     width: 200px;
     height: 250px;
     margin: 20px;
     background: #fff;
+    text-align: center;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.blogs-sec .cards {
+    width: 500px;
+    height: 400px;
+}
+.mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.mentors .card p, .students-sec .card p, .projects-sec .card p {
+.mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
     font-size: 20px;
     white-space: nowrap;
@@ -105,15 +127,21 @@
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .blogs-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
-.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img {
+.blogs-sec .avatar {
+    width: 500px;
+    height: 400px;
+    background: white;
+}
+.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img, .blogs-sec .card .avatar .img {
     width: 100%;
 }
-.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links {
+
+.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links, .blogs-sec .links {
     position: absolute;
     background: #fff;
     opacity: 0;
@@ -126,10 +154,10 @@
     transition: all 0.5s;
     padding-top: 20%;
 }
-.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links {
+.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
 }
-.mentors .social i, .students-sec .social i, .projects-sec .links i {
+.mentors .social i, .students-sec .social i, .projects-sec .links i, .blogs-sec .links i {
     font-size: 40px;
     margin: 10px;
     text-align: center;
@@ -137,6 +165,7 @@
 .mentors .mentors-wrapper {
     background: #009688;
 }
+
 .students-sec .students-wrapper {
     background: #2196f3;
 }
@@ -289,59 +318,9 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
-.blog {
-    padding-left: 100px;
-    padding-right: 100px;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 50px;
-    border-radius: 5px;
-    background-color: #1B5E20;
-    background-position: center;
-    box-shadow: 1px 5px 20px #888888;
-    margin-top: 10px;
-}
 .blog-holder {
     padding: 20px;
     margin-top: 30px;
-}
-.blog-post {
-    padding: 0;
-    margin: 0;
-    height: 200px;
-    position: relative;
-}
-.span_2_of_4 {
-    width: 49.2%;
-}
-.blog-card{
-	box-shadow: 1px 5px 20px #888888;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-top: 10px;
-}
-img.blog-img{
-	width: 100%;
-	margin-top: -5px;
-	margin-bottom: -10px;
-}
-/*img.blog_img {
-    position: relative;
-}*/
-p.blog-title {
-    color: #fafafa;
-    font-size: 16px;
-    background: #00000022;
-    position: absolute;
-    top: 100px;
-    text-align: center;
-    width: 100%;
-}
-.blog-title a {
-    color: #fafafa;
-}
-.blog-title a:hover, .blog-title a:link, .blog-title a:visited {
-    color: #fafafa;
 }
 .latest-issues h2 {
     background: #eeeeee;
