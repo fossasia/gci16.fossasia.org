@@ -8,6 +8,7 @@ install:
   - danger --verbose
   - bundle install
   - docker build -f Dockerfile -t coala-docker-tag
+  - docker images
 script:
   - bundle exec jekyll build
   - percy snapshot _site/
