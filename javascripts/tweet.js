@@ -11,6 +11,7 @@ function interval() {
 }
 
 function datafetcher() {
+    // Ignore JSHintBear
     loklakFetcher.getTweets({}, datahandler);
 }
 
