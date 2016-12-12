@@ -190,6 +190,7 @@
                 <h2>STUDENT PROJECTS</h2>
                 <div class="row projects-wrapper">
                     {% for project in site.data.projects %}
+
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="avatar">
@@ -222,9 +223,9 @@
                 </div>
             </section>
             <!-- Stop ignoring -->
-            <section id="blogs" href="#blogs" class="blog">
+            <section class="blog" id="blogs" href="#blogs">
                 <h2>BLOG POSTS</h2>
-                <div class="row">
+                <div class="row blogs-wrapper">
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -250,8 +251,8 @@
                 </div>
             </section>
                 <!-- Start ignoring SpaceConsistencyBear -->
-                 <div class="logos" id="designs" href="#designs">
-                    <h2 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h2>
+            <section class="logos" id="designs" href="#designs">
+                    <h2>MBDyn Logo Designs</h2>
                     <div class="row">
                         {% for logo in site.data.logos %}
                         <div class="col-xs-4 col-sm-3">
@@ -270,6 +271,7 @@
                         {% endfor %}
                      </div>
                 </div>
+            </section>
                 <!-- Stop ignoring -->
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
