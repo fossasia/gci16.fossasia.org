@@ -44,8 +44,8 @@ following format to enter your blog in this website.
   article_link: https://yourarticlelink.com
 ```
 
-**Important: The image should be added in images folder, and `your_image` should be the file's
-name, for example 'mypost.png'**
+**Important: The image should be added inside blogs folder which is in the images folder, and `your_image` should be the file's
+name, for example 'mypost.png'. Make sure that the images are not larger than 240x240 px.**
 Also adding article and article_link is optional, unless your task recommends it.
 
 # Adding Logos
