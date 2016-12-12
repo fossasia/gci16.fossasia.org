@@ -7,7 +7,7 @@ install:
   - gem install danger
   - danger --verbose
   - bundle install
-  - docker build -f Dockerfile -t coala-docker-tag .
+  - docker build -f Dockerfile -t coala-docker-tag
 script:
   - bundle exec jekyll build
   - percy snapshot _site/
