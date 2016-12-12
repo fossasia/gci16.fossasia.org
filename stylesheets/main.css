@@ -345,6 +345,7 @@ p.blog-title {
 .mentors .social i, .students-sec .social i, .projects-sec .links i {
     font-size: 40px;
     margin: 10px;
+    margin-top: -10px;
     text-align: center;
 }
 
