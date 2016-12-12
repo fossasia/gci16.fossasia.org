@@ -253,7 +253,7 @@
                 <!-- Start ignoring SpaceConsistencyBear -->
             <section class="logos" id="designs" href="#designs">
                     <h2>MBDyn Logo Designs</h2>
-                    <div class="row">
+                    <div class="row logos-wrapper">
                         {% for logo in site.data.logos %}
                         <div class="col-xs-4 col-sm-3">
                             <div class="grid">
@@ -276,16 +276,15 @@
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
-                        <div class="button">
-                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                                See all issues on&nbsp;<i class="fa fa-github"></i>github
-                            </a>
-                        </div>
-
                         <div id="issues-categories-wrapper">
                             <div class="issues-category" id="unlabeled-category">
                                 <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
                             </div>
+                        </div>
+                        <div class="button">
+                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                                See all issues on&nbsp;<i class="fa fa-github"></i>github
+                            </a>
                         </div>
                     </div>
                 </section>

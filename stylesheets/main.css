@@ -274,7 +274,7 @@ p.blog-title {
     width: 250px;
 }
 .logos h2{
-    background: #ffb300; 
+    background:  #ffb300; 
     color: black;
     width: 350px;
 }
@@ -283,7 +283,7 @@ p.blog-title {
     color: black;
     width: 350px;
 }
-.mentors .mentors-wrapper, .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
+.mentors .mentors-wrapper,.logos-wrapper, .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -430,7 +430,7 @@ p.blog-title {
     font-size: 20px;
     color: #000;
     text-decoration: none;
-    padding: 5px;
+    
     margin-bottom: 20px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
@@ -531,7 +531,7 @@ p.blog-title {
     z-index: 1000;
 }
 
-.logos {
+.logos-wrapper {
     background: #ffb300;
     padding: 1.5em;
     margin-bottom: 2em;
