@@ -8,11 +8,12 @@ install:
   - gem install fastimage
   - danger --verbose
   - bundle install
-script:
-  - bundle exec jekyll build
-  - percy snapshot _site/
-  - ruby ./scripts/ImgChecker/ImgChecker.rb
-  - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
+env:
+  - TEST=bundle exec jekyll build
+  - TEST=percy snapshot _site/
+  - TEST=ruby ./scripts/ImgChecker/ImgChecker.rb
+  - TEST=docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
+script: "$TEST"
 branches:
   only:
     - gh-pages  # Must be appear explicitly
