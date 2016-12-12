@@ -293,6 +293,7 @@ figure.effect-gcihover:hover figcaption::before {
     padding-left: 100px;
     padding-right: 100px;
     height: 100%;
+    width: 100%;
     padding-bottom: 50px;
     border-radius: 5px;
     background-color: #1B5E20;

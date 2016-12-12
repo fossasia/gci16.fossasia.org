@@ -11,6 +11,7 @@ function interval() {
 }
 
 function datafetcher() {
+    // Ignore JSHintBear
     loklakFetcher.getTweets({}, datahandler);
 }
 
@@ -36,7 +37,8 @@ function nextTweet() {
     interval();
     window.setTimeout(parseFunc, 560);
 }
-
+/**
+function was never used. remove comment tags only if itcauses errors.
 function lastTweet() {
     if (tweetNum > 0) {
         tweetNum -= 1;
@@ -44,7 +46,7 @@ function lastTweet() {
         window.setTimeout(parseFunc, 560);
     }
 }
-
+*/
 function parser(data) {
     var parsed = "";
     var tweet = data.statuses[tweetNum].text;
