@@ -289,7 +289,9 @@ $(function() {
     }
   });
 });
+// Start ignoring JSHintBear
 $(function() {
+  var issueElement;
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/issues?state=open"
   }).done(function(data) {
@@ -305,7 +307,7 @@ $(function() {
     }
     for (i = 0; i < data.length; i++) {
       if (data[i].labels.length === 0) {
-        var issueElement = $('<div class="issue"></div>')
+        issueElement = $('<div class="issue"></div>')
                 .append($("<span></span>").append(data[i].number))
                 .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
                 .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
@@ -331,7 +333,7 @@ $(function() {
           .append($('<a></a>').append(labels[i].name).attr("href", labels[i].html_url))
           .css("background", "#" + labels[i].color);
       categoryElement.append(titleButton);
-      for (var j = data.length - 1; j >= 0; j--) {
+      for (j = data.length - 1; j >= 0; j--) {
         for (var k = data[j].labels.length - 1; k >= 0; k--) {
           if (data[j].labels[k].name === labels[i].name) {
             // all hail .append()
@@ -358,7 +360,7 @@ $(function() {
 $(document).ready(function() {
   $(document).on("scroll", onScroll);
 });
-
+// Stop ignoring
 function onScroll() {
   var scrollPos = $(document).scrollTop();
   $('a.menu-item').each(function() {
