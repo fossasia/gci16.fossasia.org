@@ -26,6 +26,7 @@ Abilities of Maintainers
 
 - Close old pull-requests, see [CONTRIBUTING.md](CONTRIBUTING.md)
 - Remove merged branches.
+- Maintainers can merge their own pull-requests only if they waited for one day.
 
 Notes for Mantainers
 --------------------
