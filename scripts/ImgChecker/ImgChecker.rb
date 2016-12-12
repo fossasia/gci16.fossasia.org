@@ -26,7 +26,7 @@ logosImgHeight = 220
 
 # Checking images in students section
 for studentImage in studentsImgFiles
-    size = FastImage(studentImage)
+    size = FastImage.size(studentImage)
     if size[0] > studentsImgSize or size[1] > studentsImgSize
         return 1
         puts "Image size is bigger"
@@ -36,7 +36,7 @@ end
 
 # Checking images in mentors section
 for mentorImage in mentorsImgFiles
-    size = FastImage(mentorImage)
+    size = FastImage.size(mentorImage)
     if size[0] > mentorsImgSize or size[1] > mentorsImgSize
         return 1
         puts "Image size is bigger"
@@ -46,7 +46,7 @@ end
 
 # Checking images in projects section
 for projectImage in projectsImgFiles
-    size = FastImage(projectImage)
+    size = FastImage.size(projectImage)
     if size[0] > projectsImgSize or size[1] > projectsImgSize
         return 1
         puts "Image size is bigger"
@@ -56,7 +56,7 @@ end
 
 # Checking images in icons section
 for iconImage in iconsImgFiles
-    size = FastImage(iconImage)
+    size = FastImage.size(iconImage)
     if size[0] > iconsImgSize or size[1] > iconsImgSize
         return 1
         puts "Image size is bigger"
@@ -66,7 +66,7 @@ end
 
 # Checking images in logos section
 for logoImage in logosImgFiles
-    size = FastImage(logoImage)
+    size = FastImage.size(logoImage)
     if size[0] > logosImgWidth or size[1] > logosImgHeight
         return 1
         puts "Image size is bigger"
@@ -76,7 +76,7 @@ end
 
 # Checking images in icon section
 for blogImage in blogsImgFiles
-    size = FastImage(blogImage)
+    size = FastImage.size(blogImage)
     if size[0] > blogsImgSize or size[1] > blogsImgSize
         return 1
         puts "Image size is bigger"
