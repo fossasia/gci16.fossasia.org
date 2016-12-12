@@ -331,12 +331,12 @@ $(function() {
           .append($('<a></a>').append(labels[i].name).attr("href", labels[i].html_url))
           .css("background", "#" + labels[i].color);
       categoryElement.append(titleButton);
-      for (var j = data.length - 1; j >= 0; j--) {
+      for (j = data.length - 1; j >= 0; j--) {
         for (var k = data[j].labels.length - 1; k >= 0; k--) {
           if (data[j].labels[k].name === labels[i].name) {
             // all hail .append()
             // build the issue element
-            issueElement = $('<div class="issue"></div>')
+            var issueElement = $('<div class="issue"></div>')
                 .append($("<span></span>").append(data[j].number))
                 .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
                 .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
