@@ -1,19 +1,19 @@
-# Image checker, checks for big images and reports back to Travis abandoning the
-# build. Made with love for FOSSASIA.
+# ImgChecker, checks for big images and reports back to Travis making the
+# build fail. Made with love for FOSSASIA.
 
 # Dependencies
 require 'fastimage'
 
 # Program start message
-puts "Starting Image Checker, authored by Abishek V Ashok for FOSSASIA with love"
+puts "Starting ImgChecker, authored by Abishek V Ashok for FOSSASIA with love"
 
 # Initializing the directories into variables
-studentsImgFiles = Dir["./images/students/**/*.jpg"]
-projectsImgFiles = Dir["./images/projects/**/*.png"]
-mentorsImgFiles = Dir["./images/mentors/**/*.jpg"]
+studentsImgFiles = Dir["./images/students/**/*.*"]
+projectsImgFiles = Dir["./images/projects/**/*.*"]
+mentorsImgFiles = Dir["./images/mentors/**/*.*"]
 iconsImgFiles = Dir["./images/icons/**/*.png"]
-logosImgFiles = Dir["./images/logos/**/*.jpg"]
-blogsImgFiles = Dir["./images/blogs/**/*.jpg"]
+logosImgFiles = Dir["./images/logos/**/*.png"]
+blogsImgFiles = Dir["./images/blogs/**/*.*"]
 
 # Defines the standard maximum dimensions for images in each section
 studentsImgSize = 240
@@ -24,13 +24,15 @@ blogsImgSize = 240
 logosImgWidth = 400
 logosImgHeight = 220
 
+# abortStatus stores status of tests
+abortStatus = 0
+
 # Checking images in students section
 for studentImage in studentsImgFiles
     size = FastImage.size(studentImage)
     if size[0] > studentsImgSize or size[1] > studentsImgSize
-        puts "Image size is bigger"
-        1
-        abort(studentImage)
+        puts "The image #{studentImage} is larger than #{studentsImgSize}px x #{studentsImgSize}px [w x h]"
+        abortStatus = 1
     end
 end
 
@@ -38,9 +40,8 @@ end
 for mentorImage in mentorsImgFiles
     size = FastImage.size(mentorImage)
     if size[0] > mentorsImgSize or size[1] > mentorsImgSize
-        puts "Image size is bigger"
-        1
-        abort(mentorImage)
+        puts "The image #{mentorImage} is larger than #{mentorsImgSize}px x #{mentorsImgSize}px [w x h]"
+        abortStatus = 1
     end
 end
 
@@ -48,9 +49,8 @@ end
 for projectImage in projectsImgFiles
     size = FastImage.size(projectImage)
     if size[0] > projectsImgSize or size[1] > projectsImgSize
-        puts "Image size is bigger"
-        1
-        abort(projectImage)
+        puts "The image #{projectImage} is larger than #{projectsImgSize}px x #{projectsImgSize}px [w x h]"
+        abortStatus = 1
     end
 end
 
@@ -58,9 +58,8 @@ end
 for iconImage in iconsImgFiles
     size = FastImage.size(iconImage)
     if size[0] > iconsImgSize or size[1] > iconsImgSize
-        puts "Image size is bigger"
-        1
-        abort(iconImage)
+        puts "The image #{iconImage} is larger than #{iconsImgSize}px x #{iconsImgSize}px [w x h]"
+        abortStatus = 1
     end
 end
 
@@ -68,9 +67,8 @@ end
 for logoImage in logosImgFiles
     size = FastImage.size(logoImage)
     if size[0] > logosImgWidth or size[1] > logosImgHeight
-        puts "Image size is bigger"
-        1
-        abort(logoImage)
+        puts "The image #{logoImage} is larger than #{logosImgWidth}px x #{logosImgHeight}px [w x h]"
+        abortStatus = 1
     end
 end
 
@@ -78,12 +76,17 @@ end
 for blogImage in blogsImgFiles
     size = FastImage.size(blogImage)
     if size[0] > blogsImgSize or size[1] > blogsImgSize
-        puts "Image size is bigger"
-        1
-        abort(blogImage)
+        puts "The image #{blogImage} is larger than #{blogsImgSize}px x #{blogsImgSize}px [w x h]"
+        abortStatus = 1
     end
 end
 
-# Since all these tests never exited the program we are lucky the tests won
-puts "All images are ok... Hurray!"
-return 0
+# Now checking if tests are passed or not
+if abortStatus == 1
+    puts "ImgChecker: There are images which exceed the expected dimensions as specified above"
+    1
+    abort("Please resize them sir... Happy coding")
+else
+    puts "All images are ok... Hurray!"
+    0
+end
