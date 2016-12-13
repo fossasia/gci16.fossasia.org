@@ -361,9 +361,14 @@
   image: Phuc.jpg
   facebook: phuc.ngohong.2001
   bio: 15,Vietnamese,Sudent Programmer, Guitar
-  
+
+- name: Tushar Kumar
+  github: meets2tushar
+  image: tushar.jpg
+  facebook: meets2tushar
+  bio: 15, Indian, Love HTML/CSS
+
 - name: Yashvardhan Sharma
   github: yvsja
   image: yashvardhan_sharma.jpg
   facebook: yash.vardhan.18062
-  
