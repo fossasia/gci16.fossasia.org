@@ -7,6 +7,9 @@
 }
 .social-media {
     text-align: center;
+    background: #344146;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
     margin-bottom: 30px;
@@ -179,12 +182,13 @@
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
 }
-.blog-sec img {
+.blogs-sec img {
     width:500px;
     height: 300px;
 }
-.blog-sec img:hover {
+.blogs-sec img:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 .designs-sec .designs-wrapper {
     background: #00bcd4;

@@ -260,13 +260,13 @@
                         <div class="card">
                             <div class="avatar">
                                 {% if blog.blog_img %}
-                                <img src="images/blogs/{{blog.blog_img}}"
-                                alt="{{blog.name}}"
-                                width="500px" height="300px">
+                                <a href="{{blog.article_link}}">
+                                    <img src="images/blogs/{{blog.blog_img}}" alt="{{blog.name}}">
+                                </a>
                                 {% else %}
-                                <img src="images/blogs/default.jpg"
-                                alt="{{blog.name}}"
-                                width="500px" height="300px">
+                                <a href="#">
+                                    <img src="images/blogs/default.jpg" alt="{{blog.name}}">
+                                </a>
                                 {% endif %}
                                 <p>
                                     Blog of <a href="{{blog.article_link}}">{{blog.name}}</a><br />
@@ -309,8 +309,8 @@
 
             <!-- Latest Issues Section -->
                 <section class="latest-issues" id="issues">
-                    <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
+                        <h2>LATEST ISSUES</h2>
                         <a class="btn btn-success btn-lg"
                         style="margin-left: 47%; color: #fff;"
                         href="//github.com/fossasia/gci16.fossasia.org/issues">
