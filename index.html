@@ -19,9 +19,12 @@
     <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
+<!-- Github Ribbon -->
     <a href="//github.com/fossasia/gci16.fossasia.org">
       <img class="ribbon" src="./images/ribbon.png">
     </a>
+
+<!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -59,6 +62,9 @@
         </div>
       </div>
     </nav>
+<!-- End of Navigation Bar -->
+
+<!-- Slider -->
     <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
@@ -79,10 +85,16 @@
         </ol>
       </div>
     </div>
+<!-- End of Slider -->
 
+<!-- Main Content -->
     <section class="main-content">
         <div class="container">
-            <div id="map" href="#map"></div>
+        <div id="map"></div>
+    </div>
+        <div class="container">
+
+            <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
@@ -125,10 +137,16 @@
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors" href="#contributors">
+            <!-- End of Mentor Section -->
+
+            <!-- Contributor Section -->
+            <section id="contributors" href="#contributors" class="contributors-sec">
                 <h2>CONTRIBUTORS</h2>
                 <div id="contributors-list" class="row"></div>
             </section>
+            <!-- End of Contributor Section -->
+
+            <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
@@ -190,80 +208,89 @@
                     {% endfor %}
                 </div>
             </section>
-            <div id="projects" href="#projects">
-                <section class="projects-sec" id="stprojects" href="#stprojects">
-                    <h2>STUDENT PROJECTS</h2>
-                    <div class="row projects-wrapper">
-                        {% for project in site.data.projects %}
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <div class="avatar">
-                                    {% if project.image %}
-                                    <img src="images/projects/{{project.image}}"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% else %}
-                                    <img src="images/projects/default.png"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% endif %}
-                                    <div class="links">
-                                        <a href="{{project.link}}" target="_blank">
-                                            <i class="fa fa-link"></i>
-                                        </a>
-                                        <a href="{{project.source}}" target="_blank">
-                                            <i class="fa fa-code"></i>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <span title="{{project.name}} by {{project.owner}}">
-                                            {{project.name}} by {{project.owner}}
-                                        </span>
-                                        </p>
+            <!-- End of Student Section -->
+
+            <!-- Student Projects Section -->
+            <section class="projects-sec" id="stprojects" href="#stprojects">
+                <h2>STUDENT PROJECTS</h2>
+                <div class="row projects-wrapper">
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <!-- Stop ignoring -->
-                <section id="blogs" href="#blogs" class="blog">
-                    <h2>BLOG POSTS</h2>
-                    <div class="row blogs-wrapper">
-                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
-                        {% for blog in site.data.blogs %}
-                        <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="blog-post">
-                                    {% if blog.blog_img %}
-                                    <img src="images/blogs/{{blog.blog_img}}"
-                                    alt="{{blog.name}}"
-                                    width="200px" height="200px" class="blog_img">
-                                    {% else %}
-                                    <img src="images/blogs/default.jpg"
-                                    alt="{{blog.name}}"
-                                    width="200px" height="200px" class="blog_img">
-                                    {% endif %}
-                                    <p class="blog-title"> Blog of
-                                        <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
-                                        <br> {% if blog.article %}
-                                        <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                                <p>
+                                    <span title="{{project.name}} by {{project.owner}}">
+                                        {{project.name}} by {{project.owner}}
+                                    </span>
                                     </p>
                             </div>
                         </div>
-                        {% endfor %}
-                        <!-- Stop ignoring -->
                     </div>
-                </section>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End of Student Projects Section -->
+            <!-- Stop ignoring -->
+
+            <!-- Blog Posts Section -->
+            <section id="blogs" href="#blogs" class="blogs-sec">
+                <h2>BLOG POSTS</h2>
+                <div class="row blogs-wrapper">
+                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                    {% for blog in site.data.blogs %}
+                    <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if blog.blog_img %}
+                                <img src="images/blogs/{{blog.blog_img}}"
+                                alt="{{blog.name}}"
+                                width="500px" height="300px">
+                                {% else %}
+                                <img src="images/blogs/default.jpg"
+                                alt="{{blog.name}}"
+                                width="500px" height="300px">
+                                {% endif %}
+                                <p>
+                                    Blog of <a href="{{blog.article_link}}">{{blog.name}}</a><br />
+                                    {% if blog.article %}{{blog.article}}{% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!-- Stop ignoring -->
+                </div>
+            </section>
+            <!-- End of Blog Posts Section -->
+
+            <!-- Designs Section -->
+            <section id="designs" href="#designs" class="designs-sec">
+                <h2>MBDyn Logo Designs</h2>
                 <!-- Start ignoring SpaceConsistencyBear -->
-                 <div class="logos" id="designs" href="#designs">
-                    <h2>MBDyn Logo Designs</h2>
-                    <div class="row logos-wrapper">
+                    <div class="row designs-wrapper">
                         {% for logo in site.data.logos %}
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="grid">
                                 <figure class="effect-gcihover">
                                   <!-- Ignore HTMLLintBear -->
-                                    <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
+                                    <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
                                     <figcaption>
                                         <p>
                                             <span style="color: #000000">by {{logo.author}}</span>
@@ -275,52 +302,61 @@
                         {% endfor %}
                      </div>
                 </div>
-            </section>
                 <!-- Stop ignoring -->
+            </section>
+            <!-- End of Designs Section -->
+
+            <!-- Latest Issues Section -->
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
-                        <div id="issues-categories-wrapper">
-                            <div class="issues-category" id="unlabeled-category">
-                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
-                            </div>
-                        </div>
                         <div class="button">
                             <a href="//github.com/fossasia/gci16.fossasia.org/issues">
                                 See all issues on&nbsp;<i class="fa fa-github"></i>github
                             </a>
                         </div>
-                    </div>
-                </section>
-                <!-- Loklak API -->
-                <section class="latest-issues" id="loklak" href="#loklak">
-                    <h2>Loklak API Tweets</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                            <div class="twitter-feed">
-                                <i class="icon social-twitter text-white"></i>
-                                <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
-                                    <div class="arrow-up"></div>
-                                    <p id="tweet" class="tweet">
-                                        Loading...
-                                    </p>
-                                    <div class="panel-footer">
-                                      <span id="tweet-info">Fetching tweets...</span>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn" id="previous"onclick="lastTweet()">
-                                    ← &nbsp; Previous Tweet!
-                                </button>
-                                <button type="button" class="btn" id="next"onclick="nextTweet()">
-                                    Next Tweet! &nbsp; →
-                                </button>
+                        <div id="issues-categories-wrapper">
+                            <div class="issues-category" id="unlabeled-category">
+                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
+            <!-- End of Latest Issues Section -->
+
+            <!-- Loklak API -->
+            <section class="latest-issues" id="loklak" href="#loklak">
+                <h2>Loklak API Tweets</h2>
+                <!-- Start ignoring BootLintBear -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <div class="twitter-feed">
+                            <i class="icon social-twitter text-white"></i>
+                            <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
+                                <div class="arrow-up"></div>
+                                <p id="tweet" class="tweet">
+                                    Loading...
+                                </p>
+                                <div class="panel-footer">
+                                  <span id="tweet-info">Fetching tweets...</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
+                                ← &nbsp; Previous Tweet!
+                            </button>
+                            <button type="button" class="btn" id="next"onclick="nextTweet()">
+                                Next Tweet! &nbsp; →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Loklak API -->
+
                 <div class="social-media" id="social-media" href="#social-media">
                     <h2 class="white-header">FOSSASIA on social media</h2>
+                    <!-- Start ignoring BootLintBear -->
                     <div class="row">
                         <div class="col-md-6">
                             <!-- Ignore LineLengthBear -->
@@ -333,6 +369,8 @@
                         data-width="370" data-height="459"></div>
                         </div>
                     </div>
+                    <!-- Stop ignoring -->
+                    <!-- Start ignoring BootLintBear -->
                     <div class="row">
                         <div class="col-md-6">
                             <a class="twitter-timeline" data-width="370" data-height="459"
@@ -342,6 +380,7 @@
                                 <div class="github-widget" data-username="fossasia"></div>
                             </div>
                     </div>
+                    <!-- Stop ignoring -->
                     <div class="last-one">
                         <div style="margin-top: 2em;">
                             <!-- Ignore LineLengthBear -->
@@ -374,6 +413,9 @@
             </section>
         </div>
     </section>
+<!-- End of Main Content -->
+
+<!-- Footer -->
     <section class="footer container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 social">
@@ -436,6 +478,9 @@
         <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
         <i class="fa fa-heart"></i> for Google Code-In</p>
     </section>
+<!-- End of Footer -->
+
+<!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -458,12 +503,13 @@
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <!-- Github Cards -->
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js" async></script>
-<!--Flickr album js-->
-<script src="//flickrembed.com/embed_v2.js.php?source=flickr
-&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
-&theme=default&scale=fit&skin=default&id=5843ed99c6db7" async></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
-<script src="./javascripts/loklak-fetcher.js"></script>
-<script src="./javascripts/tweet.js"></script>
+
+    <!--Flickr album js-->
+    <script src="//flickrembed.com/embed_v2.js.php?source=flickr
+    &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
+    &theme=default&scale=fit&skin=default&id=5843ed99c6db7" async></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="./javascripts/loklak-fetcher.js" async></script>
+    <script src="./javascripts/tweet.js"></script>
 </body>
 </html>
