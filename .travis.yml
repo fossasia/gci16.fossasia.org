@@ -5,7 +5,6 @@ rvm:
   - 2.3.3
 install:
   - gem install danger
-  - gem install fastimage
   - danger --verbose
   - bundle install
 script:
