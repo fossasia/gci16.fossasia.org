@@ -210,7 +210,9 @@
                 </div>
             </section>
             <!-- End of Student Section -->
-
+            
+            <!-- Projects (including student projects, blog, logo, issues, loklak) -->
+            <div id="projects" href="#projects">
             <!-- Student Projects Section -->
             <section class="projects-sec" id="stprojects" href="#stprojects">
                 <div class="row projects-wrapper">
@@ -284,45 +286,44 @@
             <!-- Designs Section -->
             <section id="designs" href="#designs" class="designs-sec">
                 <!-- Start ignoring SpaceConsistencyBear -->
-                    <div class="row designs-wrapper">
-                        <h2>MBDyn Logo Designs</h2>
-                        {% for logo in site.data.logos %}
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="grid">
-                                <figure class="effect-gcihover">
-                                  <!-- Ignore HTMLLintBear -->
-                                    <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
-                                    <figcaption>
-                                        <p>
-                                            <span style="color: #000000">by {{logo.author}}</span>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                <div class="row designs-wrapper">
+                    <h2>MBDyn Logo Designs</h2>
+                    {% for logo in site.data.logos %}
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                              <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
+                                <figcaption>
+                                    <p>
+                                        <span style="color: #000000">by {{logo.author}}</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
                         </div>
-                        {% endfor %}
-                     </div>
-                </div>
+                    </div>
+                    {% endfor %}
+                 </div>
                 <!-- Stop ignoring -->
             </section>
             <!-- End of Designs Section -->
 
             <!-- Latest Issues Section -->
-                <section class="latest-issues" id="issues">
-                    <div class="issues-wrapper">
-                        <h2>LATEST ISSUES</h2>
-                        <a class="btn btn-success btn-lg"
-                        style="margin-left: 47%; color: #fff;"
-                        href="//github.com/fossasia/gci16.fossasia.org/issues">
-                            See all issues on &nbsp;<i class="fa fa-github"></i>
-                        </a>
-                        <div id="issues-categories-wrapper">
-                            <div class="issues-category" id="unlabeled-category">
-                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
-                            </div>
+            <section class="latest-issues" id="issues">
+                <div class="issues-wrapper">
+                    <h2>LATEST ISSUES</h2>
+                    <a class="btn btn-success btn-lg"
+                    style="margin-left: 47%; color: #fff;"
+                    href="//github.com/fossasia/gci16.fossasia.org/issues">
+                        See all issues on &nbsp;<i class="fa fa-github"></i>
+                    </a>
+                    <div id="issues-categories-wrapper">
+                        <div class="issues-category" id="unlabeled-category">
+                            <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
             <!-- End of Latest Issues Section -->
 
             <!-- Loklak API -->
@@ -354,7 +355,8 @@
                 <!-- Stop ignoring -->
             </section>
             <!-- End of Loklak API -->
-
+            </div>
+            <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
                 <div class="social-media" id="social-media" href="#social-media">
                     <!-- Start ignoring BootLintBear -->
                     <div class="row">
