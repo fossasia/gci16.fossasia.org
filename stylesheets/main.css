@@ -179,6 +179,13 @@
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
 }
+.blog-sec img {
+    width:500px;
+    height: 300px;
+}
+.blog-sec img:hover {
+    opacity: 0.8;
+}
 .designs-sec .designs-wrapper {
     background: #00bcd4;
 }
