@@ -252,10 +252,13 @@ window.initMap = function() {
   });
 };
 // Stop ignoring
-$(function() {
+var getContributors = function(page) {
   $.ajax({
-    url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors"
+    url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
   }).done(function(data) {
+    if (data.length === 0) {
+      return;
+    }
     data.forEach(function(contributors) {
       // Ignore LineLengthBear
       var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
@@ -272,8 +275,11 @@ $(function() {
       html += contributors.login + "</span></a></div></div></div>";
       $("#contributors-list").append(html);
     });
+    getContributors(page+1);
   });
-});
+};
+
+$(getContributors(1));
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
