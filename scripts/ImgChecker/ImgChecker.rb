@@ -20,9 +20,10 @@ studentsImgSize = 240
 projectsImgSize = 240
 mentorsImgSize = 240
 iconsImgSize = 50
-blogsImgSize = 240
-logosImgWidth = 400
-logosImgHeight = 220
+blogsImgWidth = 1920
+blogsImgHeight = 1080
+logosImgWidth = 600
+logosImgHeight = 600
 
 # abortStatus stores status of tests
 abortStatus = 0
@@ -75,8 +76,8 @@ end
 # Checking images in icon section
 for blogImage in blogsImgFiles
     size = FastImage.size(blogImage)
-    if size[0] > blogsImgSize or size[1] > blogsImgSize
-        puts "The image #{blogImage} is larger than #{blogsImgSize}px x #{blogsImgSize}px [w x h]"
+    if size[0] > blogsImgWidth or size[1] > blogsImgHeight
+        puts "The image #{blogImage} is larger than #{blogsImgWidth}px x #{blogsImgHeight}px [w x h]"
         abortStatus = 1
     end
 end
