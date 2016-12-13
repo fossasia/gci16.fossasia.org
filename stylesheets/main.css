@@ -7,6 +7,9 @@
 }
 .social-media {
     text-align: center;
+    background: #344146;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
     margin-bottom: 30px;
@@ -74,17 +77,21 @@
     font-size: 28px;
     font-weight: bold;
 }
-.mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2, .designs-sec h2, .contributors h2 {
-    background-color: white;
+.mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
+.designs-sec h2, .latest-issues h2, .social-media h2,
+.white-header, .contributors-sec h2 {
+    background-color: rgba(255,255,255,0.7);
     margin: 0 auto;
     margin-top: 30px;
-    width: 100%;;
+    margin-bottom: 0.8em;
+    width: 70% !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
     text-align: center;
     color: black;
-    box-shadow: 1px 5px 20px #888888;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 20px rgba(33,35,23,.51);
 }
 .mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors {
     width: 100%;
@@ -174,6 +181,14 @@
 }
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
+}
+.blogs-sec img {
+    width:500px;
+    height: 300px;
+}
+.blogs-sec img:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 .designs-sec .designs-wrapper {
     background: #00bcd4;
@@ -446,10 +461,11 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 1em
 }
 #gyt {
-    background-color: white;
-    height: 48px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*height: 48px;*/
     overflow: hidden;
     margin: 10px;
+    padding: 10px;
     box-shadow: none;
     border: none;
 }
@@ -458,10 +474,12 @@ figure.effect-gcihover:hover figcaption::before {
     display: flex;
     box-shadow: none;
     border: none;
-    height: 48px;
+    /*height: 48px;*/
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     height: 400px;
     padding: 0 !important;
     display: block;
@@ -528,7 +546,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
-    margin: 2em 0.1em;
+    margin-top: 3em;
     padding: 1em;
 }
 
