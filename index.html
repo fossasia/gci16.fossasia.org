@@ -96,8 +96,8 @@
 
             <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
-                <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
+                    <h2>MENTORS</h2>
                     {% for mentor in site.data.mentors %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -141,15 +141,16 @@
 
             <!-- Contributor Section -->
             <section id="contributors" href="#contributors" class="contributors-sec">
-                <h2>CONTRIBUTORS</h2>
-                <div id="contributors-list" class="row"></div>
+                <div id="contributors-list" class="row">
+                    <h2>CONTRIBUTORS</h2>
+                </div>
             </section>
             <!-- End of Contributor Section -->
 
             <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
-                <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
+                    <h2>STUDENTS</h2>
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -212,8 +213,8 @@
 
             <!-- Student Projects Section -->
             <section class="projects-sec" id="stprojects" href="#stprojects">
-                <h2>STUDENT PROJECTS</h2>
                 <div class="row projects-wrapper">
+                    <h2>STUDENT PROJECTS</h2>
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -251,8 +252,8 @@
 
             <!-- Blog Posts Section -->
             <section id="blogs" href="#blogs" class="blogs-sec">
-                <h2>BLOG POSTS</h2>
                 <div class="row blogs-wrapper">
+                    <h2>BLOG POSTS</h2>
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
@@ -282,9 +283,9 @@
 
             <!-- Designs Section -->
             <section id="designs" href="#designs" class="designs-sec">
-                <h2>MBDyn Logo Designs</h2>
                 <!-- Start ignoring SpaceConsistencyBear -->
                     <div class="row designs-wrapper">
+                        <h2>MBDyn Logo Designs</h2>
                         {% for logo in site.data.logos %}
                         <div class="col-xs-6 col-sm-3">
                             <div class="grid">
@@ -310,11 +311,11 @@
                 <section class="latest-issues" id="issues">
                     <h2>LATEST ISSUES</h2>
                     <div class="issues-wrapper">
-                        <div class="button">
-                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                                See all issues on&nbsp;<i class="fa fa-github"></i>github
-                            </a>
-                        </div>
+                        <a class="btn btn-success btn-lg"
+                        style="margin-left: 47%; color: #fff;"
+                        href="//github.com/fossasia/gci16.fossasia.org/issues">
+                            See all issues on &nbsp;<i class="fa fa-github"></i>
+                        </a>
                         <div id="issues-categories-wrapper">
                             <div class="issues-category" id="unlabeled-category">
                                 <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
@@ -326,9 +327,9 @@
 
             <!-- Loklak API -->
             <section class="latest-issues" id="loklak" href="#loklak">
-                <h2>Loklak API Tweets</h2>
                 <!-- Start ignoring BootLintBear -->
                 <div class="row">
+                    <h2>Loklak API Tweets</h2>
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
                         <div class="twitter-feed">
                             <i class="icon social-twitter text-white"></i>
@@ -386,19 +387,21 @@
                             <!-- Ignore LineLengthBear -->
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6 col-md-offset-3 yt">
+                                    <div class="col-xs-12 col-md-8 col-md-offset-2 yt">
                                         <div id="gyt">
                                             <div class="g-ytsubscribe"
                                             data-channelid="UCQprMsG-raCIMlBudm20iLQ"
                                             data-layout="full"
-                                            data-count="default" height="48px"></div>
+                                            data-count="default"
+                                            height="52px"></div>
                                         </div>
-                                        <div class="embed-responsive embed-responsive-4by3">
-                                        <iframe class="embed-responsive-item"
-                                        src="//www.youtube.com/embed/videoseries\
-                                        ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                        frameborder="0" allowfullscreen></iframe>
-                                        </div>
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item"
+                                            src="//www.youtube.com/embed/videoseries\
+                                            ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                                            frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
                                     </div>
                                     <div class="col-xs-12 col-md-12">
                                         <div id="flickrembed"></div><small style="display: block;
