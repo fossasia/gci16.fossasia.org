@@ -40,6 +40,7 @@
         <div class="collapse navbar-collapse" id="collapse">
           <ul class="nav navbar-nav" id="menu">
             <li><a class="menu-item" href="#welcome">Welcome</a></li>
+            <li><a class="menu-item" href="#map">Map</a></li>
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#contributors">Contributors</a></li>
             <li><a class="menu-item" href="#students">Students</a></li>
@@ -80,10 +81,8 @@
     </div>
 
     <section class="main-content">
-    <div class="container">
-        <div id="map"></div>
-    </div>
         <div class="container">
+            <div id="map" href="#map"></div>
             <section class="mentors" id="mentors" href="#mentors">
                 <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
@@ -172,6 +171,11 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
+                                    {% if student.bio %}
+                                    <div>
+                                        {{student.bio}}
+                                    </div>
+                                    {% endif %}
                                 </div>
                                 <p>
                                     <i class="fa fa-code"></i>
@@ -186,76 +190,76 @@
                     {% endfor %}
                 </div>
             </section>
-            <section class="projects-sec" id="stprojects" href="#stprojects">
-                <h2>STUDENT PROJECTS</h2>
-                <div class="row projects-wrapper">
-                    {% for project in site.data.projects %}
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="avatar">
-                                {% if project.image %}
-                                <img src="images/projects/{{project.image}}"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% else %}
-                                <img src="images/projects/default.png"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% endif %}
-                                <div class="links">
-                                    <a href="{{project.link}}" target="_blank">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                    <a href="{{project.source}}" target="_blank">
-                                        <i class="fa fa-code"></i>
-                                    </a>
+            <div id="projects" href="#projects">
+                <section class="projects-sec" id="stprojects" href="#stprojects">
+                    <h2>STUDENT PROJECTS</h2>
+                    <div class="row projects-wrapper">
+                        {% for project in site.data.projects %}
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="avatar">
+                                    {% if project.image %}
+                                    <img src="images/projects/{{project.image}}"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% else %}
+                                    <img src="images/projects/default.png"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% endif %}
+                                    <div class="links">
+                                        <a href="{{project.link}}" target="_blank">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="{{project.source}}" target="_blank">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                    </div>
+                                    <p>
+                                        <span title="{{project.name}} by {{project.owner}}">
+                                            {{project.name}} by {{project.owner}}
+                                        </span>
+                                        </p>
                                 </div>
-                                <p>
-                                    <span title="{{project.name}} by {{project.owner}}">
-                                        {{project.name}} by {{project.owner}}
-                                    </span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <!-- Stop ignoring -->
+                <section id="blogs" href="#blogs" class="blog">
+                    <h2>BLOG POSTS</h2>
+                    <div class="row">
+                    <!-- Start ignoring LineLengthBear, HTMLLintBear -->
+                        {% for blog in site.data.blogs %}
+                        <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="blog-post">
+                                    {% if blog.blog_img %}
+                                    <img src="images/blogs/{{blog.blog_img}}"
+                                    alt="{{blog.name}}"
+                                    width="200px" height="200px" class="blog_img">
+                                    {% else %}
+                                    <img src="images/blogs/default.jpg"
+                                    alt="{{blog.name}}"
+                                    width="200px" height="200px" class="blog_img">
+                                    {% endif %}
+                                    <p class="blog-title"> Blog of
+                                        <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
+                                        <br> {% if blog.article %}
+                                        <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
                                     </p>
                             </div>
                         </div>
+                        {% endfor %}
+                        <!-- Stop ignoring -->
                     </div>
-                    {% endfor %}
-                </div>
-            </section>
-            <!-- Stop ignoring -->
-            <section class="blog" id="blogs" href="#blogs">
-                <h2>BLOG POSTS</h2>
-                <div class="row blogs-wrapper">
-                <!-- Start ignoring LineLengthBear, HTMLLintBear -->
-                    {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="blog-post">
-                                {% if blog.blog_img %}
-                                <img src="images/blogs/{{blog.blog_img}}"
-                                alt="{{blog.name}}"
-                                width="200px" height="200px" class="blog_img">
-                                {% else %}
-                                <img src="images/blogs/default.jpg"
-                                alt="{{blog.name}}"
-                                width="200px" height="200px" class="blog_img">
-                                {% endif %}
-                                <p class="blog-title"> Blog of
-                                    <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
-                                    <br> {% if blog.article %}
-                                    <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
-                                </p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                    <!-- Stop ignoring -->
-                </div>
-            </section>
+                </section>
                 <!-- Start ignoring SpaceConsistencyBear -->
-            <section class="logos" id="designs" href="#designs">
-                    <h2>MBDyn Logo Designs</h2>
-                    <div class="row logos-wrapper">
+                 <div class="logos" id="designs" href="#designs">
+                    <h2 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h2>
+                    <div class="row">
                         {% for logo in site.data.logos %}
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="grid">
                                 <figure class="effect-gcihover">
                                   <!-- Ignore HTMLLintBear -->
@@ -288,34 +292,33 @@
                         </div>
                     </div>
                 </section>
-
-            <!-- Loklak API -->
-            <section class="latest-issues" id="loklak" href="#loklak">
-                <h2>Loklak API Tweets</h2>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                        <div class="twitter-feed">
-                            <i class="icon social-twitter text-white"></i>
-                            <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
-                                <div class="arrow-up"></div>
-                                <p id="tweet" class="tweet">
-                                    Loading...
-                                </p>
-                                <div class="panel-footer">
-                                  <span id="tweet-info">Fetching tweets...</span>
+                <!-- Loklak API -->
+                <section class="latest-issues" id="loklak" href="#loklak">
+                    <h2>Loklak API Tweets</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <div class="twitter-feed">
+                                <i class="icon social-twitter text-white"></i>
+                                <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
+                                    <div class="arrow-up"></div>
+                                    <p id="tweet" class="tweet">
+                                        Loading...
+                                    </p>
+                                    <div class="panel-footer">
+                                      <span id="tweet-info">Fetching tweets...</span>
+                                    </div>
                                 </div>
+                                <button type="button" class="btn" id="previous"onclick="lastTweet()">
+                                    ← &nbsp; Previous Tweet!
+                                </button>
+                                <button type="button" class="btn" id="next"onclick="nextTweet()">
+                                    Next Tweet! &nbsp; →
+                                </button>
                             </div>
-                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
-                                ← &nbsp; Previous Tweet!
-                            </button>
-                            <button type="button" class="btn" id="next"onclick="nextTweet()">
-                                Next Tweet! &nbsp; →
-                            </button>
                         </div>
                     </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
                 <div class="social-media" id="social-media" href="#social-media">
                     <h2 class="white-header">FOSSASIA on social media</h2>
                     <div class="row">
@@ -460,7 +463,7 @@
 &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
 &theme=default&scale=fit&skin=default&id=5843ed99c6db7" async></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
-<script src="./javascripts/loklak-fetcher.js" async></script>
-<script src="./javascripts/tweet.js" async></script>
+<script src="./javascripts/loklak-fetcher.js"></script>
+<script src="./javascripts/tweet.js"></script>
 </body>
 </html>
