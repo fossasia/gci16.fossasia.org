@@ -79,7 +79,7 @@
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
 .designs-sec h2, .latest-issues h2, .social-media h2,
-.contributors-sec h2 {
+.white-header, .contributors-sec h2 {
     background-color: rgba(255,255,255,0.7);
     margin: 0 auto;
     margin-top: 30px;
