@@ -1,4 +1,5 @@
-interval_id = null;
+var interval_id = null;
+var stuff;
 
 function interval() {
     if (interval_id !== null){
@@ -10,6 +11,7 @@ function interval() {
 }
 
 function datafetcher() {
+    // Ignore JSHintBear
     loklakFetcher.getTweets({}, datahandler);
 }
 
@@ -29,13 +31,14 @@ function nextTweet() {
     tweetNum += 1;
     var tweetsEl = document.getElementById('tweets');
     //go back to the first tweet if it's greater than the amount of tweets available
-    if(tweetNum == tweetsEl.dataset.count) {
+    if(tweetNum === tweetsEl.dataset.count) {
         tweetNum = 0;
     }
     interval();
     window.setTimeout(parseFunc, 560);
 }
-
+/**
+function was never used. remove comment tags only if itcauses errors.
 function lastTweet() {
     if (tweetNum > 0) {
         tweetNum -= 1;
@@ -43,7 +46,7 @@ function lastTweet() {
         window.setTimeout(parseFunc, 560);
     }
 }
-
+*/
 function parser(data) {
     var parsed = "";
     var tweet = data.statuses[tweetNum].text;

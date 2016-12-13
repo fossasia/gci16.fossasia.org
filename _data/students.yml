@@ -1,4 +1,4 @@
-﻿# New members please add your credentials to a random position in the file.
+# New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
 - name: Animesh Singh
@@ -8,6 +8,13 @@
   image: animeshsinghweb.jpg
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
+
+- name: Simon Narang
+  github: simonnarang
+  image: Simon_Narang.jpg
+  twitter: simnrn
+  facebook: simnrn
+  bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
 
 - name: Oana Rosca
   github: oanarosca
@@ -310,6 +317,13 @@
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
 
+- name: Tran Bao Nguyen
+  github: bnguyenltt
+  image: bnguyenltt.jpg
+  twitter: bnguyenltt
+  bio: 16, student, competitive programmer, interested in games and manga
+  facebook: bnguyenltt
+
 - name: Nikhil Chandak
   github: nikhilchandak
   image: nikhil_chandak.jpg
@@ -329,8 +343,32 @@
   facebook: Prabhdeep Singh
   bio: 14, Programmer in every way
 
+- name: Manraj Juneja
+  github: manrajjuneja
+  image: manraj.jpg
+  twitter: manrajuneja2003
+  facebook: manraj.juneja
+  bio: 13, I have skills.
+
 - name: Saurabh Singh
   github: AlexTurning
   image: Sa.jpg
   facebook: meetsaurabh.s
   bio: 16,Indian,keen learner
+
+- name: Ngo Hong Phuc
+  github: Jerry2001
+  image: Phuc.jpg
+  facebook: phuc.ngohong.2001
+  bio: 15,Vietnamese,Sudent Programmer, Guitar
+
+- name: Tushar Kumar
+  github: meets2tushar
+  image: tushar.jpg
+  facebook: meets2tushar
+  bio: 15, Indian, Love HTML/CSS
+
+- name: Yashvardhan Sharma
+  github: yvsja
+  image: yashvardhan_sharma.jpg
+  facebook: yash.vardhan.18062

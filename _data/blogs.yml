@@ -32,7 +32,7 @@
 
 - name: Anastasia Kostiv
   blog: https://nolik2000.wordpress.com
-  blog_img: KostivBLOG.png
+  blog_img: kostivBLOG.png
   article: My experience in joining FOSSASIA
   article_link: https://nolik2000.wordpress.com/blog/
 
@@ -60,11 +60,6 @@
   article: My experience joining FOSSASIA
   article_link: https://mylittleblog03.wordpress.com/2016/12/07/my-experience-joining-fossasia/
 
-- name: Ngo Hong Phuc
-  blog: https://wordpress.com/posts/jerry2001.school.blog
-  article: Article title
-  article_link: https://wordpress.com/post/jerry2001.school.blog/131
-
 - name: Tinh Dao
   blog: http://dcongtinh.blogspot.com/
   article: GCI 2016
@@ -72,23 +67,17 @@
 
 - name: Kunal Srivastav
   blog: https://gciblog719.wordpress.com/
-  article: My first step in the Open tech community with FOSSASISA and GCI...
-  article_link: https://gciblog719.wordpress.com/blog
+  blog_img: Kunal_blog.png
+  article: My first step in the Open tech community with FOSSASIA and GCI
+  article_link: https://gciblog719.wordpress.com/blog/
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
   article: GCI experience
   article_link: https://wordpress.com/post/jerry2001.school.blog/131
 
-- name: Dwij Jha
-  blog: https://dwijjha.wordpress.com
-  blog_img: blog_dwij.png
-  aricle: Open Source and Fossasia
-  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
-
 - name: Hillary Moutou
   blog: http://hillamu2.edublogs.org/
-  blog_img: blogpost.png
   article: GCI and FOSSASIA
   article_link: http://hillamu2.edublogs.org/
 
@@ -126,6 +115,12 @@
   article: My connection with FOSSASIA
   article_link: http://prabh29.edublogs.org/2016/12/10/my-connection-to-fossasia-and-gci/
 
+- name: Dwij Jha
+  blog: https://dwijjha.wordpress.com
+  blog_img: blog_dwij.png
+  aricle: Open Source and Fossasia
+  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
+
 - name: Ankit R Gadiya
   blog: http://blog.ankitrgadiya.me
   blog_img: ankit.jpg
@@ -134,6 +129,12 @@
 
 - name: Sanchit Mishra
   blog: https://sanchittechnogeek.github.io
-  blog_img: sanchit.png
+  blog_img: sanchit.jpg
   article: My experience with Fossasia
   article_link: https://sanchittechnogeek.github.io/articles/1/
+
+- name: Prabhdeep Singh
+  blog: https://prabh29.edublogs.org
+  blog_img: Blog.png
+  article: My interests in FOSSASIA
+  article_link: http://prabh29.edublogs.org/2016/12/11/my-interests-in-the-fossasia-community/
