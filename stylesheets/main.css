@@ -74,17 +74,21 @@
     font-size: 28px;
     font-weight: bold;
 }
-.mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2, .designs-sec h2, .contributors h2 {
-    background-color: white;
+.mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
+.designs-sec h2, .latest-issues h2,
+.contributors-sec h2 {
+    background-color: rgba(255,255,255,0.7);
     margin: 0 auto;
     margin-top: 30px;
-    width: 100%;;
+    margin-bottom: 0.8em;
+    width: 70% !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
     text-align: center;
     color: black;
-    box-shadow: 1px 5px 20px #888888;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 20px rgba(33,35,23,.51);
 }
 .mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors {
     width: 100%;
@@ -528,7 +532,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
-    margin: 2em 0.1em;
+    margin-top: 3em;
     padding: 1em;
 }
 
