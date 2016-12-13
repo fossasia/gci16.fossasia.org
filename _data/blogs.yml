@@ -144,3 +144,8 @@
   blog_img: Blog.png
   article: My interests in FOSSASIA
   article_link: http://prabh29.edublogs.org/2016/12/11/my-interests-in-the-fossasia-community/
+
+- name: Oana Rosca
+  blog: https://oanarosca.github.io/blog
+  article: Google Code-In and the Open Source community
+  article_link: https://oanarosca.github.io/blog/gci/2016/12/12/gci-and-open-source
