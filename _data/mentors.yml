@@ -1,3 +1,6 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
@@ -72,6 +75,8 @@
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
+  lat: 41.4731364
+  lng: -74.0364419
 
 - name: Ajinkya Wavare
   github: ajinkya007
@@ -88,6 +93,8 @@
   image: princu7.jpg
   twitter: princu7
   facebook: abhishek.rastogi.58
+  lat: 20
+  lng: 77
 
 - name: Sreeja Kamishetty
   github: kamishettysreeja25
@@ -99,3 +106,22 @@
   image: harshvardhan.jpg
   blog: http://thehvardhan.me/
   twitter: https://twitter.com/royalharsh95
+
+- name: Yathannsh Kulshrestha
+  facebook: yathannsh
+  github: Yathannsh
+  image: yathannsh.jpg
+  twitter: yathannsh
+
+- name: Shiven Mian
+  github: shivenmian
+  image: shiven.jpg
+  facebook: shiven.iiitd
+  twitter: shiven_mian
+  lat: 28.704898200000002
+  lng: 77.1405305
+
+- name: Avi Aryan
+  github: aviaryan
+  image: aviaryan.jpg
+  twitter: aviaryan123
