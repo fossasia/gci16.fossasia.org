@@ -75,6 +75,8 @@
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
+  lat: 41.4731364
+  lng: -74.0364419
 
 - name: Ajinkya Wavare
   github: ajinkya007
