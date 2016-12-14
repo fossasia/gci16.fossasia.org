@@ -171,6 +171,7 @@
 }
 .mentors .mentors-wrapper {
     background: #009688;
+
 }
 
 .students-sec .students-wrapper {
@@ -339,6 +340,7 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
+
 .blog-holder {
     padding: 20px;
     margin-top: 30px;
@@ -548,6 +550,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .designs {
+
     background: #ffb300;
     padding: 1.5em;
     margin-bottom: 2em;
