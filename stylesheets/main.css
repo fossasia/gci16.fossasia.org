@@ -130,7 +130,8 @@
     margin-top: 4.5%;
     font-size: 20px;
     white-space: nowrap;
-    padding: 5px;
+    padding-left:4px;
+    padding-right:4px;
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
