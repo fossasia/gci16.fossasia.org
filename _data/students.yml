@@ -343,6 +343,13 @@
   facebook: Prabhdeep Singh
   bio: 14, Programmer in every way
 
+- name: Manraj Juneja
+  github: manrajjuneja
+  image: manraj.jpg
+  twitter: manrajuneja2003
+  facebook: manraj.juneja
+  bio: 13, I have skills.
+
 - name: Saurabh Singh
   github: AlexTurning
   image: Sa.jpg
@@ -354,3 +361,16 @@
   image: Phuc.jpg
   facebook: phuc.ngohong.2001
   bio: 15,Vietnamese,Sudent Programmer, Guitar
+
+- name: Tushar Kumar
+  github: meets2tushar
+  image: tushar.jpg
+  facebook: meets2tushar
+  twitter: meets2tushar
+  blog: meets2tushar.wordpress.com
+  bio: 15, Indian, Love HTML/CSS, FOSS
+
+- name: Yashvardhan Sharma
+  github: yvsja
+  image: yashvardhan_sharma.jpg
+  facebook: yash.vardhan.18062
