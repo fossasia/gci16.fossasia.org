@@ -272,11 +272,11 @@
                             <div class="avatar">
                                 {% if blog.blog_img %}
                                 <a href="{{blog.article_link}}">
-                                    <img src="images/blogs/{{blog.blog_img}}" alt="{{blog.name}}">
+                                    <div class="img" style="background-image:url(images/blogs/{{blog.blog_img}});"></div>
                                 </a>
                                 {% else %}
                                 <a href="#">
-                                    <img src="images/blogs/default.jpg" alt="{{blog.name}}">
+                                    <div class="img" style="background-image:url(images/blogs/default.jpg);"></div>
                                 </a>
                                 {% endif %}
                                 <p>
