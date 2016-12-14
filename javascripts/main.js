@@ -119,10 +119,6 @@ function onScroll() {
   $('a.menu-item').each(function() {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
-    console.log("currLink: ");
-    console.log(currLink);
-    console.log("refElement: ");
-    console.log(refElement);
     if (typeof(refElement.position()) === 'undefined') {
       refElement = $("#projects");
     }
