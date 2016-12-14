@@ -45,7 +45,11 @@ following format to enter your blog in this website.
 ```
 
 **Important: The image should be added inside blogs folder which is in the images folder, and `your_image` should be the file's
+<<<<<<< HEAD
 name, for example 'mypost.png'. Make sure that the images are in 16:9 aspect ratio.**
+=======
+name, for example 'mypost.png'. Make sure that the images are not larger than 240x240 px.**
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 Also adding article and article_link is optional, unless your task recommends it.
 
 # Adding Logos
@@ -60,6 +64,7 @@ maintain the following format to enter your logo in this website:
 
 and place your logo in `/images/logos` folder and `your_image` should be the name of your file.
 
+<<<<<<< HEAD
 **Please resize your image to 400px x 400px (w x h) OR in relative proportion
 before uploading.
 We don't want image of high dimensions or of big file size for logo.**
@@ -67,6 +72,11 @@ The students uploading the images of dimensions below those mentioned above, wou
 aceepted as they would disturb the UX of the site. Please make the logo in the proportion to
 the dimensions mentioned above, and crop/resize using any preferred softwares or online tool and
 then upload and do PR.
+=======
+**Please resize your image to 400px x 220px (w x h) OR in relative proportion
+before uploading.
+We don't want image of high dimensions or of big file size for logo.**
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 
 # Adding a mentor
 

@@ -1,5 +1,9 @@
 .main-content {
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-color: #303030;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 .white-header {
     color: white;
@@ -7,9 +11,12 @@
 }
 .social-media {
     text-align: center;
+<<<<<<< HEAD
     background: #344146;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
+=======
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 .social-media iframe, .g-page {
     margin-bottom: 30px;
@@ -26,6 +33,7 @@
 
 #contributors-list {
     width: 100%;
+<<<<<<< HEAD
     height: 100%;
     margin: auto;
     margin-top: 10px;
@@ -46,6 +54,21 @@
     margin: auto;
     padding: 10px 10px;
     box-shadow: 1px 5px 20px #888888;
+=======
+    margin: auto;
+    text-align: center;
+    background-color: #4062BB;
+    padding: 30px;
+    border-radius: 5px;
+}
+#contributors h2 {
+    background-color: #4062BB;
+    text-align: center;
+    color: white;
+    width: 260px;
+    margin: auto;
+    padding: 10px 10px;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 #contributors-list div span {
     position: relative;
@@ -77,6 +100,7 @@
     font-size: 28px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
 .designs-sec h2, .latest-issues h2, .social-media h2,
 .white-header, .contributors-sec h2 {
@@ -193,6 +217,30 @@
 .designs-sec .designs-wrapper {
     background: #00bcd4;
 }
+=======
+.students-section {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #A64942;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+
+.projects-section {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #d9ff25;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 .title {
     padding-top: 30px;
     text-align: center;
@@ -228,6 +276,10 @@ hr {
     background: #3085a3;
     text-align: center;
     cursor: pointer;
+<<<<<<< HEAD
+=======
+    border-radius: 10px;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 .grid figure img {
     position: relative;
@@ -277,6 +329,7 @@ hr {
 figure.effect-gcihover {
     background: #fff;
     text-align: left;
+<<<<<<< HEAD
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -284,6 +337,8 @@ figure.effect-gcihover {
 }
 figure.effect-gcihover:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+=======
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 figure.effect-gcihover img {
     -webkit-transition: opacity 0.35s;
@@ -339,10 +394,127 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 .blog-holder {
     padding: 20px;
     margin-top: 30px;
 }
+<<<<<<< HEAD
+=======
+.blog-post {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    position: relative;
+}
+img.blog_img {
+    position: relative;
+}
+p.blog-title {
+    color: #fafafa;
+    font-size: 16px;
+    background: #00000022;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+}
+.blog-title a {
+    color: #fafafa;
+}
+.blog-title a:hover, .blog-title a:link, .blog-title a:visited {
+    color: #fafafa;
+}
+
+
+.mentors h2, .latest-issues h2, .students-sec h2, .projects-sec h2, .blog h2 ,.logos h2{
+    margin: auto;
+    padding: 10px;
+    width: 180px;
+    color: white;
+    background: #27ae60;
+    text-align: center;
+}
+.blog h2 {
+    background: #1B5E20;
+    color: white;
+    width: 250px;
+}
+.logos h2{
+    background:  #ffb300; 
+    color: black;
+    width: 350px;
+}
+.projects-sec h2 {
+    background: #d9ff25;
+    color: black;
+    width: 350px;
+}
+.mentors .mentors-wrapper,.logos-wrapper, .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    background: #27ae60;
+    border-radius: 5px;
+    text-align: center;
+}
+.projects-sec .projects-wrapper {
+    background: #d9ff25;
+}
+.blogs-wrapper{
+    background: #1B5E20;   
+}
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mentors .card p, .students-sec .card p, .projects-sec .card p {
+    margin-top: 4.5%;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 5px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img {
+    width: 100%;
+}
+.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links {
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-top: 20%;
+}
+.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links {
+    opacity: 0.8;
+}
+.mentors .social i, .students-sec .social i, .projects-sec .links i {
+    font-size: 40px;
+    margin: 10px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 .latest-issues h2 {
     background: #eeeeee;
     width: 260px;
@@ -461,11 +633,18 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 1em
 }
 #gyt {
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0.8);
     /*height: 48px;*/
     overflow: hidden;
     margin: 10px;
     padding: 10px;
+=======
+    background-color: white;
+    height: 48px;
+    overflow: hidden;
+    margin: 10px;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
     box-shadow: none;
     border: none;
 }
@@ -474,12 +653,19 @@ figure.effect-gcihover:hover figcaption::before {
     display: flex;
     box-shadow: none;
     border: none;
+<<<<<<< HEAD
     /*height: 48px;*/
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+=======
+    height: 48px;
+    overflow: hidden;
+}
+.embed-responsive-4by3, .embed-responsive {
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
     height: 400px;
     padding: 0 !important;
     display: block;
@@ -489,7 +675,11 @@ figure.effect-gcihover:hover figcaption::before {
     width: 100%;
     height: auto;
     padding: 10px 50px 10px 50px;
+<<<<<<< HEAD
     background-color: #f44336;
+=======
+    background-color: #e12b00;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
     color: white;
 }
 
@@ -534,19 +724,43 @@ figure.effect-gcihover:hover figcaption::before {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
 .designs {
+=======
+.logos-wrapper {
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
     background: #ffb300;
     padding: 1.5em;
     margin-bottom: 2em;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .designs img {
     padding: 3em .6em;
 }
 
 .yt {
     margin-top: 3em;
+=======
+.logos img {
+	padding:3em .6em;
+	max-width:100%;
+	max-height: 100%;
+	margin:auto;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logos figure {
+	width:250px;
+	height:200px;
+}
+
+.yt {
+    margin: 2em 0.1em;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
     padding: 1em;
 }
 
@@ -566,6 +780,7 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 30px;
     width: 100%;
     height: 500px;
+<<<<<<< HEAD
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
@@ -573,15 +788,25 @@ figure.effect-gcihover:hover figcaption::before {
 }
 #map:hover {
     box-shadow: 1px 5px 20px #888888;
+=======
+    border-radius: 5px;
+}
+
+h2 {
+    border-radius: 5px 5px 0px 0px;
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+<<<<<<< HEAD
 .logos img {
   width: 400px;
   height: 220px;
 }
+=======
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 
 #tweets:after {
     content: '';

@@ -5,7 +5,11 @@
   img: MBDyn-animeshsinghweb.png
 
 - author: Lee Care Gene
+<<<<<<< HEAD
   img: Logo2.jpg
+=======
+  img: Logo2.svg
+>>>>>>> 93734dc392ac92fb9d9ef1ae8a1439ddd661d358
 
 - author: Baidyanath
   img: MBDyn1.png
