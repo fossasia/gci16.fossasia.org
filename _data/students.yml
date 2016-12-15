@@ -318,7 +318,7 @@
   twitter: s_technogeek
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
- 
+
 - name: Mukund choudhary
   github: mukundch28
   image: mukund.jpg
@@ -383,7 +383,7 @@
   twitter: kart_singh08
   facebook: kartikeya.singh23
   bio: 13, Indian, Cuber, Amazingly Awesome! ^_^
-  
+
 - name: Tushar Kumar
   github: meets2tushar
   image: tushar.jpg
@@ -402,3 +402,11 @@
   image: zahari.jpg
   facebook: zari.asparuhov
   bio: 17, Bulgaria, web developing and web servers with NodeJS
+
+  name: Arpna kumari
+  github: arpnakumari
+  facebook: arpna kumari
+  twitter: arpna07
+  image: arpna.jpg
+  blog: arpnablog.wordpress.com
+  bio: A 16 yr old from INDIA ,wants to pursue medical field.
