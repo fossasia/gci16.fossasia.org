@@ -11,6 +11,11 @@
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
+.social{
+    font-size:13px;
+    padding-right: 1.5px;
+    padding-right:1.5px;
+}
 .social-media iframe, .g-page {
     margin-bottom: 30px;
     -webkit-box-shadow: 3px 3px 5px #151515;
