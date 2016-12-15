@@ -1,18 +1,21 @@
-language: ruby
-cache: bundler
-services: docker
-rvm:
-  - 2.3.3
-install:
-  - gem install danger
-  - danger --verbose
-  - bundle install
-script:
-  - bundle exec jekyll build
-  - percy snapshot _site/
-  - ruby ./scripts/ImgChecker/ImgChecker.rb
-  - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
-branches:
-  only:
-    - gh-pages  # Must be appear explicitly
-    - /./  # Allows builds for any other branch name
+{
+  "language": "ruby",
+  "cache": "bundler",
+  "services": "docker",
+  "rvm": "2.3.3",
+  "install": [
+    "gem install danger",
+    "gem install fastimage",
+    "danger --verbose",
+    "bundle install"
+  ],
+  "script": [
+    "bundle exec jekyll build",
+    "percy snapshot _site/",
+    "ruby ./scripts/ImgChecker/ImgChecker.rb",
+    "docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C"
+  ],
+  "group": "stable",
+  "dist": "trusty",
+  "os": "linux"
+}

@@ -97,7 +97,9 @@
             <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <div class="row mentors-wrapper">
+                    <!-- Start ignoring BootLintBear -->
                     <h2>MENTORS</h2>
+                    <!-- Stop ignoring -->
                     {% for mentor in site.data.mentors %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -142,7 +144,9 @@
             <!-- Contributor Section -->
             <section id="contributors" href="#contributors" class="contributors-sec">
                 <div id="contributors-list" class="row">
+                    <!-- Start ignoring BootLintBear -->
                     <h2>CONTRIBUTORS</h2>
+                    <!-- Stop ignoring BootLintBear -->
                 </div>
             </section>
             <!-- End of Contributor Section -->
@@ -150,7 +154,9 @@
             <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <div class="row students-wrapper">
+                    <!-- Start ignoring BootLintBear -->
                     <h2>STUDENTS</h2>
+                    <!-- Stop ignoring -->
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -196,7 +202,7 @@
                                     </div>
                                     {% endif %}
                                 </div>
-                                <p>
+                                <p style="margin-top: 9.5px;margin-bottom: 9.5px">
                                     <i class="fa fa-code"></i>
                                     &nbsp;
                                     <span title="{{student.name}}">
@@ -210,11 +216,14 @@
                 </div>
             </section>
             <!-- End of Student Section -->
-
+            <!-- Projects (including student projects, blog, logo, issues, loklak) -->
+            <div id="projects" href="#projects">
             <!-- Student Projects Section -->
             <section class="projects-sec" id="stprojects" href="#stprojects">
                 <div class="row projects-wrapper">
+                    <!-- Start ignoring BootLintBear -->
                     <h2>STUDENT PROJECTS</h2>
+                    <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -253,7 +262,9 @@
             <!-- Blog Posts Section -->
             <section id="blogs" href="#blogs" class="blogs-sec">
                 <div class="row blogs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
                     <h2>BLOG POSTS</h2>
+                    <!-- Stop ignoring -->
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
                     <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
@@ -261,11 +272,11 @@
                             <div class="avatar">
                                 {% if blog.blog_img %}
                                 <a href="{{blog.article_link}}">
-                                    <img src="images/blogs/{{blog.blog_img}}" alt="{{blog.name}}">
+                                    <div class="img" style="background-image:url(images/blogs/{{blog.blog_img}});"></div>
                                 </a>
                                 {% else %}
                                 <a href="#">
-                                    <img src="images/blogs/default.jpg" alt="{{blog.name}}">
+                                    <div class="img" style="background-image:url(images/blogs/default.jpg);"></div>
                                 </a>
                                 {% endif %}
                                 <p>
@@ -284,45 +295,54 @@
             <!-- Designs Section -->
             <section id="designs" href="#designs" class="designs-sec">
                 <!-- Start ignoring SpaceConsistencyBear -->
-                    <div class="row designs-wrapper">
-                        <h2>MBDyn Logo Designs</h2>
-                        {% for logo in site.data.logos %}
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="grid">
-                                <figure class="effect-gcihover">
-                                  <!-- Ignore HTMLLintBear -->
-                                    <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
-                                    <figcaption>
-                                        <p>
-                                            <span style="color: #000000">by {{logo.author}}</span>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                <div class="row designs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MBDyn Logo Designs</h2>
+                    <!-- Stop ignoring -->
+                    {% for logo in site.data.logos %}
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                              <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
+                                <figcaption>
+                                    <p>
+                                        <span style="color: #000000">by {{logo.author}}</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
                         </div>
-                        {% endfor %}
-                     </div>
-                </div>
+                    </div>
+                    {% endfor %}
+                 </div>
                 <!-- Stop ignoring -->
             </section>
             <!-- End of Designs Section -->
 
             <!-- Latest Issues Section -->
-                <section class="latest-issues" id="issues">
-                    <div class="issues-wrapper">
-                        <h2>LATEST ISSUES</h2>
-                        <a class="btn btn-success btn-lg"
-                        style="margin-left: 47%; color: #fff;"
-                        href="//github.com/fossasia/gci16.fossasia.org/issues">
-                            See all issues on &nbsp;<i class="fa fa-github"></i>
-                        </a>
-                        <div id="issues-categories-wrapper">
-                            <div class="issues-category" id="unlabeled-category">
-                                <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
-                            </div>
+            <section class="latest-issues" id="issues">
+                <div class="issues-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>LATEST ISSUES</h2>
+                    <!-- Stop ignoring -->
+                    
+                    <div id="issues-categories-wrapper">
+                        <div class="issues-category" id="unlabeled-category">
+                            <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
                         </div>
+                        <!-- <div class="button">
+                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                                See all issues on&nbsp;<i class="fa fa-github"></i>github
+                            </a>
+                        </div> -->
                     </div>
-                </section>
+                    <a class="btn btn-success btn-lg"
+                    style="margin-left: 40%; color: #fff;"
+                    href="//github.com/fossasia/gci16.fossasia.org/issues">
+                        See all issues on &nbsp;<i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </section>
             <!-- End of Latest Issues Section -->
 
             <!-- Loklak API -->
@@ -354,7 +374,8 @@
                 <!-- Stop ignoring -->
             </section>
             <!-- End of Loklak API -->
-
+            </div>
+            <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
                 <div class="social-media" id="social-media" href="#social-media">
                     <!-- Start ignoring BootLintBear -->
                     <div class="row">
@@ -366,8 +387,7 @@
                             scrolling="no" frameborder="0" allowtransparency="true"></iframe>
                         </div>
                         <div class="col-md-6">
-                            <div class="g-page" data-href="//plus.google.com/+fossasiaorg" 
-                            data-width="370" data-height="459"></div>
+                            <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370" data-height="459"></div>
                         </div>
                     </div>
                     <!-- Stop ignoring -->
@@ -462,18 +482,18 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <h2>FOSSASIA Links</h2>
                 <ul>
-                    <li><a href="//fossasia.org"><i class="fa fa-link"></i>Main site</a></li>
-                    <li><a href="//blog.fossasia.org"><i class="fa fa-link"></i>Blog</a></li>
+                    <li><a href="//fossasia.org"><i class="fa fa-link" style='color:white'></i>Main site</a></li>
+                    <li><a href="//blog.fossasia.org"><i class="fa fa-link " style='color:white'></i>Blog</a></li>
                     <li><a href="//codein.withgoogle.com/organizations/fossasia/">
-                            <i class="fa fa-link"></i>Google Code-In Page
+                            <i class="fa fa-link" style='color:white'></i>Google Code-In Page
                         </a>
                     </li>
-                    <li><a href="//events.fossasia.org"><i class="fa fa-link"></i>Events</a></li>
+                    <li><a href="//events.fossasia.org"><i class="fa fa-link" style='color:white'></i>Events</a></li>
                     <li><a href="//2016.fossasia.org">
-                            <i class="fa fa-link"></i>FOSSASIA 2016
+                            <i class="fa fa-link" style='color:white'></i>FOSSASIA 2016
                         </a>
                     </li>
-                    <li><a href="#"><i class="fa fa-link"></i>Top of the page</a></li>
+                    <li><a href="#"><i class="fa fa-link" style='color:white'></i>Top of the page</a></li>
                 </ul>
             </div>
         </div>
@@ -501,6 +521,264 @@
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
+    <!-- Start ignoring JSHintBear, LineLengthBear -->
+    <script>
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 2,
+                    scrollwheel: false,
+                    center: {
+                      lat: 0,
+                      lng: 0
+                    },
+                    styles: [{
+                      "elementType": "geometry",
+                      "stylers": [{
+                              "color": "#1d2c4d"
+                      }]
+            }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8ec3b9"
+                    }]
+            }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1a3646"
+                    }]
+            }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                   "featureType": "administrative.country",
+                   "elementType": "geometry.stroke",
+                   "stylers": [{
+                        "color": "#4b6878"
+                   }]
+            }, {
+                   "featureType": "administrative.land_parcel",
+                   "stylers": [{
+                        "visibility": "off"
+                   }]
+            }, {
+                      "featureType": "administrative.land_parcel",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#64779e"
+                      }]
+            }, {
+                      "featureType": "administrative.neighborhood",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "administrative.province",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#4b6878"
+                      }]
+            }, {
+                      "featureType": "landscape.man_made",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#334e87"
+                      }]
+            }, {
+                      "featureType": "landscape.natural",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#6f9ba5"
+                      }]
+            }, {
+                     "featureType": "poi",
+                     "elementType": "labels.text.stroke",
+                     "stylers": [{
+                        "color": "#1d2c4d"
+              }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#3C7680"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#304a7d"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.icon",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "road.arterial",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#2c6675"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#255763"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#b0d5ce"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "road.local",
+                      "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                      "featureType": "transit",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "transit.line",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "transit.station",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#3a4762"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#0e1626"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#4e6d70"
+                      }]
+            }]
+      });
+      var marker;
+      var infowindow = null;
+      {% for mentor in site.data.mentors %}
+          {% if mentor.lat %}
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                  map: map
+              });
+              
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
+          {% endif %}
+      {% endfor %}
+    };
+    </script>
+    <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <!-- Github Cards -->

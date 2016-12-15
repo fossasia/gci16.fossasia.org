@@ -130,7 +130,8 @@
     margin-top: 4.5%;
     font-size: 20px;
     white-space: nowrap;
-    padding: 5px;
+    padding-left:4px;
+    padding-right:4px;
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
@@ -171,6 +172,7 @@
 }
 .mentors .mentors-wrapper {
     background: #009688;
+
 }
 
 .students-sec .students-wrapper {
@@ -182,11 +184,13 @@
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
 }
-.blogs-sec img {
+.blogs-sec .img {
     width:500px;
     height: 300px;
+    background-size: cover;
+    background-position: center;
 }
-.blogs-sec img:hover {
+.blogs-sec .img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
@@ -339,6 +343,7 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
 }
+
 .blog-holder {
     padding: 20px;
     margin-top: 30px;
@@ -354,7 +359,13 @@ figure.effect-gcihover:hover figcaption::before {
     margin: auto;
     padding: 20px;
     background: #eee;
-    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.issues-wrapper:hover {
+    box-shadow: 1px 5px 20px #888888;
 }
 #issues-categories-wrapper {
     display: flex;
@@ -388,6 +399,13 @@ figure.effect-gcihover:hover figcaption::before {
     /*justify-content: center;*/
     -ms-align-items: center;
     align-items: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.issues-category:hover {
+    box-shadow: 1px 5px 20px #888888;
 }
 .issue {
     width: 100%;
@@ -535,6 +553,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .designs {
+
     background: #ffb300;
     padding: 1.5em;
     margin-bottom: 2em;
@@ -557,7 +576,16 @@ figure.effect-gcihover:hover figcaption::before {
 .social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
     margin-top: 50px;
 }
-
+.social-media {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    margin-bottom: 30px;
+}
+.social-media:hover {
+    box-shadow: 1px 5px 20px #888888;
+}
 .active {
     background: #eee;
 }
