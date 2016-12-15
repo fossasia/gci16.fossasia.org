@@ -754,20 +754,26 @@
             }]
       });
       var marker;
+      var infowindow = null;
       {% for mentor in site.data.mentors %}
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
                   map: map
               });
-              var infowindow = new google.maps.InfoWindow();
+              
+              infowindow = null;
               var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
-              google.maps.event.addListener(marker, 'click', (function(marker, content, infowindow) {
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
                   return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
                       infowindow.open(map, marker);
                   };
-              })(marker, content, infowindow));
+              })(marker, content));
           {% endif %}
       {% endfor %}
     };
