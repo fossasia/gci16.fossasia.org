@@ -75,6 +75,8 @@
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
+  lat: 41.4731364
+  lng: -74.0364419
 
 - name: Ajinkya Wavare
   github: ajinkya007
@@ -91,6 +93,8 @@
   image: princu7.jpg
   twitter: princu7
   facebook: abhishek.rastogi.58
+  lat: 20
+  lng: 77
 
 - name: Sreeja Kamishetty
   github: kamishettysreeja25
@@ -114,3 +118,10 @@
   image: shiven.jpg
   facebook: shiven.iiitd
   twitter: shiven_mian
+  lat: 28.704898200000002
+  lng: 77.1405305
+
+- name: Avi Aryan
+  github: aviaryan
+  image: aviaryan.jpg
+  twitter: aviaryan123
