@@ -46,6 +46,8 @@
   github: nghoangphu
   image: nghoangphu.jpg
   facebook: nghoangphu
+  lat: 10.058854561670294
+  lng: 105.7663967687538
 
 - name: Shubham Padia
   github: shubham-padia
@@ -69,6 +71,8 @@
   image: niccokunzmann.jpg
   blog: niccokunzmann.github.io
   twitter: dannhaltohneson
+  lat: 52.386447999999994
+  lng: 13.097770899999999
 
 - name: Robby O'Connor
   github: robbyoconnor

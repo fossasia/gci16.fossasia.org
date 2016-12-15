@@ -187,11 +187,13 @@
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
 }
-.blogs-sec img {
+.blogs-sec .img {
     width:500px;
     height: 300px;
+    background-size: cover;
+    background-position: center;
 }
-.blogs-sec img:hover {
+.blogs-sec .img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
