@@ -23,10 +23,6 @@
     width: 202px;
     height: 80px;
 }
-.heading{
-	text-align: center;
-	color:#373763;
-}
 #contributors-list {
     width: 100%;
     height: 100%;
@@ -519,14 +515,25 @@ figure.effect-gcihover:hover figcaption::before {
 .footer p {
     margin-top: 10px;
 }
-
+.heading{
+	color:#100E35;
+	text-align: center;
+}
+.links-list {
+	list-style: none;
+	margin-left: 38px;
+}
+.links-list i{
+	color:white;
+	font-size:18px;
+	margin-right:7px;
+}
 .footer .row .social a, .footer img {
     display: inline-block;
     width: 46px;
     height: 46px;
     border-radius: 40px;
 }
-
 .footer .row .social a {
     margin-right: 2px;
     margin-top: 5px;
@@ -539,7 +546,7 @@ figure.effect-gcihover:hover figcaption::before {
     margin-bottom: 5px;
 }
 
-.footer .row a i {
+.footer .row .social a i {
     font-size: 40px;
     color: black;
     margin-right: 8px;
