@@ -511,8 +511,10 @@ figure.effect-gcihover:hover figcaption::before {
 .footer {
     width: 100%;
     height: auto;
-    padding: 10px 50px 10px 50px;
-    background-color: #f44336;
+    /*padding: 10px 50px 10px 50px;*/
+    padding: 4em 0.5em;
+    /*background-color: #f44336;*/
+    background-color: #880E4F;
     color: white;
 }
 
@@ -520,8 +522,10 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 10px;
 }
 .heading{
-	color:#100E35;
+	color: #eee;
 	text-align: center;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
 }
 .links-list {
 	list-style: none;
@@ -532,30 +536,56 @@ figure.effect-gcihover:hover figcaption::before {
 	font-size:18px;
 	margin-right:7px;
 }
-.footer .row .social a, .footer img {
+.footer img {
     display: inline-block;
-    width: 46px;
-    height: 46px;
-    border-radius: 40px;
+    width: 40%;
+    /*margin-left: 25%;*/
+    margin-bottom: 0.5em;
 }
 .footer .row .social a {
     margin-right: 2px;
     margin-top: 5px;
 }
-
-.footer .row a {
+.footer-copyright
+{
+    margin-top: 2.2em;
+}
+.footer-copyright a {
+    color: #ffb300;
+}
+.footer-copyright .goup
+{
+    text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 4em;
+    opacity: .8;
+}
+.footer-copyright .goup:hover
+{
+    cursor: pointer;
+    opacity: 1;
+}
+.footer .links-list a {
+    color: #fff;
+    font-size: 18px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
-
-.footer .row .social a i {
+.links-list a:hover
+{
+    color: #ffb300;
+}
+.footer .row .social a {
     font-size: 40px;
-    color: black;
-    margin-right: 8px;
+    margin-right: 0.15em;
+    color: #fff;
+    text-decoration: none;
+    padding: .15em;
 }
-
+.footer .row .social a:hover
+{
+    color: #ffb300;
+}
 .navbar-brand {
     margin-top: -7px;
 }
