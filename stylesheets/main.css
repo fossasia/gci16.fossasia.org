@@ -111,7 +111,7 @@
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .cards {
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -121,10 +121,6 @@
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-}
-.blogs-sec .cards {
-    width: 500px;
-    height: 400px;
 }
 .stu-name{
     margin-left:-7px;
@@ -142,12 +138,31 @@
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .blogs-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
+@media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
+    .blogs-sec .avatar {
+        width: 200px !important;
+        height: 250px !important;
+        margin: auto !important;
+    }
+    .blogs-sec .img {
+        width: 200px !important;
+        height: 170px !important;
+    }
+    .blogs-sec .blog-holder {
+        padding: 0 15px !important;
+        margin: 0 !important;
+    }
+    .blogs-sec .avatar p {
+        font-size: 17px !important;
+    }
+}
 .blogs-sec .avatar {
+    position: relative;
     width: 500px;
     height: 400px;
     background: white;

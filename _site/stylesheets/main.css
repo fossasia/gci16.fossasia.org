@@ -4,21 +4,23 @@
 .white-header {
     color: white;
     margin-bottom: 30px;
-}.social{
-    font-size:13px;
 }
 .social-media {
     text-align: center;
-    background: #344146;
+    /*background: #344146;*/
+    background: #212121;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
-    margin-bottom: 30px;
+    height: 461px !important;
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+}
+.g-page-embed iframe .dgd.nae {
+    padding-bottom: 50px !important;
 }
 .inner a.button {
     display: inline-block;
@@ -109,7 +111,7 @@
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .cards {
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -120,13 +122,9 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.blogs-sec .cards {
-    width: 500px;
-    height: 400px;
-}
-.stu_name{
-	margin-left:-7px;
-	font-size:16px;
+.stu-name{
+    margin-left:-7px;
+    font-size:16px;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -140,12 +138,31 @@
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .blogs-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
+@media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
+    .blogs-sec .avatar {
+        width: 200px !important;
+        height: 250px !important;
+        margin: auto !important;
+    }
+    .blogs-sec .img {
+        width: 200px !important;
+        height: 170px !important;
+    }
+    .blogs-sec .blog-holder {
+        padding: 0 15px !important;
+        margin: 0 !important;
+    }
+    .blogs-sec .avatar p {
+        font-size: 17px !important;
+    }
+}
 .blogs-sec .avatar {
+    position: relative;
     width: 500px;
     height: 400px;
     background: white;
@@ -487,8 +504,8 @@ figure.effect-gcihover:hover figcaption::before {
     background-color: rgba(255, 255, 255, 0.8);
     /*height: 48px;*/
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
     box-shadow: none;
     border: none;
 }
@@ -501,13 +518,19 @@ figure.effect-gcihover:hover figcaption::before {
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    height: 400px;
+    /*margin-top: 0.5em;*/
+    /*margin-bottom: 0.5em;*/
+    height: 390px;
     padding: 0 !important;
     display: block;
 }
-
+#flickrembed {
+    margin-top: 3.6em;
+    overflow: hidden !important;
+}
+#flickrembed .ug-strip-panel {
+    display: none !important;
+}
 .footer {
     width: 100%;
     height: auto;
@@ -522,19 +545,19 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 10px;
 }
 .heading{
-	color: #eee;
-	text-align: center;
-	margin-bottom: 1.5em;
-	text-transform: uppercase;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
 }
 .links-list {
-	list-style: none;
-	margin-left: 38px;
+    list-style: none;
+    margin-left: 38px;
 }
 .links-list i{
-	color:white;
-	font-size:18px;
-	margin-right:7px;
+    color:white;
+    font-size:18px;
+    margin-right:7px;
 }
 .footer img {
     display: inline-block;
@@ -611,8 +634,8 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
-    margin-top: 3em;
-    padding: 1em;
+    /*margin-top: 3em;*/
+    /*padding: 1em;*/
 }
 
 .students-section {
@@ -627,7 +650,7 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 .social-media:hover {
     box-shadow: 1px 5px 20px #888888;
