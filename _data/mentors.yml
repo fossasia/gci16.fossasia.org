@@ -32,6 +32,8 @@
   image: hemantjadon.jpg
   twitter: hemantjadonhj
   facebook: hemant.jadon
+  lat: 28.7041
+  lng: 77.1025
 
 - name: Jigyasa Grover
   image: jgrover.jpg
@@ -46,6 +48,8 @@
   github: nghoangphu
   image: nghoangphu.jpg
   facebook: nghoangphu
+  lat: 10.058854561670294
+  lng: 105.7663967687538
 
 - name: Shubham Padia
   github: shubham-padia
@@ -69,6 +73,8 @@
   image: niccokunzmann.jpg
   blog: niccokunzmann.github.io
   twitter: dannhaltohneson
+  lat: 52.386447999999994
+  lng: 13.097770899999999
 
 - name: Robby O'Connor
   github: robbyoconnor
@@ -104,8 +110,10 @@
 - name: Harsh Vardhan
   github: royalharsh
   image: harshvardhan.jpg
-  blog: http://thehvardhan.me/
-  twitter: https://twitter.com/royalharsh95
+  blog: http://thehvardhan.me
+  twitter: royalharsh95
+  lat: 22.842643
+  lng: 86.229935
 
 - name: Yathannsh Kulshrestha
   facebook: yathannsh

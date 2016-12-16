@@ -8,6 +8,17 @@
   image: animeshsinghweb.jpg
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
+  lat: 22.8035475
+  lng: 86.1949906
+
+- name: Mostafa Elgayar
+  github: Elgayar
+  facebook: mostafa.elgayar1
+  twitter: MostafaaGayar
+  image: Gayar.jpg
+  bio: 17 Years Old, Future Silicon Valley Resident, Loves Music and Creating!
+  lat: 30.011387
+  lng: 31.298684
 
 - name: Simon Narang
   github: simonnarang
@@ -317,6 +328,12 @@
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
 
+- name: Mukund choudhary
+  github: mukundch28
+  image: mukund.jpg
+  facebook: mukund choudhary
+  bio: 16, Hacker and programmer
+
 - name: Tran Bao Nguyen
   github: bnguyenltt
   image: bnguyenltt.jpg
@@ -369,6 +386,13 @@
   facebook: phuc.ngohong.2001
   bio: 15,Vietnamese,Sudent Programmer, Guitar
 
+- name: Kartikeya Singh
+  github: kartikeya23
+  image: kartikeya.jpg
+  twitter: kart_singh08
+  facebook: kartikeya.singh23
+  bio: 13, Indian, Cuber, Amazingly Awesome! ^_^
+
 - name: Tushar Kumar
   github: meets2tushar
   image: tushar.jpg
@@ -387,3 +411,17 @@
   image: Hesham-Burawi.jpeg
   twitter: Hesham_Burawi
   bio: 13, Libyan/British, Love Sleep, Food, Coding 
+
+- name: Zahari Asparuhov
+  github: zahariasp
+  image: zahari.jpg
+  facebook: zari.asparuhov
+  bio: 17, Bulgaria, web developing and web servers with NodeJS
+
+  name: Arpna kumari
+  github: arpnakumari
+  facebook: arpna kumari
+  twitter: arpna07
+  image: arpna.jpg
+  blog: arpnablog.wordpress.com
+  bio: A 16 yr old from INDIA ,wants to pursue medical field.
