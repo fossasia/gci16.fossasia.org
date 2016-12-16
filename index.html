@@ -90,11 +90,11 @@
 
 <!-- Main Content -->
     <section class="main-content">
+
+        <div class="container">
         <div class="container">
             <div id="map"></div>
         </div>
-        <div class="container">
-
             <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <div class="row mentors-wrapper">
@@ -575,7 +575,7 @@
     <!-- Start ignoring JSHintBear, LineLengthBear -->
     <script>
         window.initMap = function() {
-            var map = new google.maps.Map(document.getElementById('map'), {
+            var map1 = new google.maps.Map(document.getElementById('map'), {
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -810,7 +810,7 @@
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
-                  map: map
+                  map1: map1
               });
 
               infowindow = null;
@@ -822,7 +822,7 @@
                       }
                       infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
-                      infowindow.open(map, marker);
+                      infowindow.open(map1, marker);
                   };
               })(marker, content));
           {% endif %}
@@ -833,7 +833,7 @@
     <!-- MAPS FOR STUDENTS -->
     <script>
         window.initMap = function() {
-            var mapp = new google.maps.Map(document.getElementById('mapp'), {
+            var map = new google.maps.Map(document.getElementById('mapp'), {
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -1068,7 +1068,7 @@
           {% if student.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
-                  mapp: mapp
+                  map: map
               });
 
               infowindow = null;
@@ -1080,7 +1080,7 @@
                       }
                       infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
-                      infowindow.open(mapp, marker);
+                      infowindow.open(map, marker);
                   };
               })(marker, content));
           {% endif %}
