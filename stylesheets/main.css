@@ -126,9 +126,9 @@
     width: 500px;
     height: 400px;
 }
-.stu_name{
-	margin-left:-7px;
-	font-size:16px;
+.stu-name{
+    margin-left:-7px;
+    font-size:16px;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -530,19 +530,19 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 10px;
 }
 .heading{
-	color: #eee;
-	text-align: center;
-	margin-bottom: 1.5em;
-	text-transform: uppercase;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
 }
 .links-list {
-	list-style: none;
-	margin-left: 38px;
+    list-style: none;
+    margin-left: 38px;
 }
 .links-list i{
-	color:white;
-	font-size:18px;
-	margin-right:7px;
+    color:white;
+    font-size:18px;
+    margin-right:7px;
 }
 .footer img {
     display: inline-block;
