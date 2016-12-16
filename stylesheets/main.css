@@ -153,6 +153,10 @@
         height: 250px !important;
         margin: auto !important;
     }
+    .blogs-sec .card {
+        width: 200px !important;
+        height: 250px !important;
+    }
     .blogs-sec .img {
         width: 200px !important;
         height: 170px !important;
