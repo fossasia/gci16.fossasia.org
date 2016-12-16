@@ -14,6 +14,12 @@
     "percy snapshot _site/",
     "ruby ./scripts/ImgChecker/ImgChecker.rb",
     "docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C"
+    "pip3 install 'git+https://github.com/jayvdb/coala-quickstart@gh_39';
+    coala-quickstart --ci;
+    yes 0 | coala --apply-patches --no-orig;
+    coala-ci || true"
+    git add --all
+    git push orgin gh-pages
   ],
   "group": "stable",
   "dist": "trusty",
