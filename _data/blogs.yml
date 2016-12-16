@@ -133,7 +133,7 @@
   article_link: http://blog.ankitrgadiya.me/tag/fossasia/
 
 - name: Gaeun Kim
-  blog: https://gaeuncode.wordpress.com/2016/12/13/participating-in-gci16-with-fossasia/
+  blog: https://gaeuncode.wordpress.com/
   blog_img: gaeunblog.png
   article: Participating in GCI16 with FOSSASIA
   article_link: https://gaeuncode.wordpress.com/2016/12/13/participating-in-gci16-with-fossasia/
@@ -160,3 +160,9 @@
   blog_img: adarsh-blog3.png
   article: My experience with Fossasia
   article_link: https://idealadarsh.wordpress.com/2016/12/12/my-experience-with-fossasia/
+
+- name: Gaeun Kim
+  blog: https://gaeuncode.wordpress.com/
+  blog_img: gaeunblog2.png
+  article: Interviewing Dr. Hicks about GCI
+  article_link: https://gaeuncode.wordpress.com/2016/12/16/interviewing-dr-hicks-about-gci/
