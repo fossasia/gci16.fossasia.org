@@ -153,7 +153,9 @@
             <!-- End of Contributor Section -->
 
 
-            <div id="map2">2</div>
+        <div class="container">
+            <div id="mapp"></div>
+        </div>
             <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <div class="row students-wrapper">
@@ -831,7 +833,7 @@
     <!-- MAPS FOR STUDENTS -->
     <script>
         window.initMap = function() {
-            var map = new google.maps.Map(document.getElementById('map2'), {
+            var map = new google.maps.Map(document.getElementById('mapp'), {
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -1068,7 +1070,7 @@
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
                   map: map
               });
-              
+
               infowindow = null;
               var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
               google.maps.event.addListener(marker, 'click', (function(marker, content) {
@@ -1085,7 +1087,6 @@
       {% endfor %}
     };
     </script>
-
     <!-- END MAPS FOR STUDENTS -->
 
 
