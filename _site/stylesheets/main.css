@@ -122,6 +122,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.blogs-sec .card {
+    width: 500px;
+    height: 400px;
+}
 .stu-name{
     margin-left:-7px;
     font-size:16px;
