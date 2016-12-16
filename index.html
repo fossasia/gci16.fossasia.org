@@ -572,8 +572,6 @@
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD_SKiu7JgINl-_lRdw00XO64r0yluYnOI&callback=initMap" async defer></script>
-
     <!-- Start ignoring JSHintBear, LineLengthBear -->
     <script>
         window.initMap = function() {
@@ -835,7 +833,7 @@
     <!-- MAPS FOR STUDENTS -->
     <script>
         window.initMap = function() {
-            var map = new google.maps.Map(document.getElementById('mapp'), {
+            var mapp = new google.maps.Map(document.getElementById('mapp'), {
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -1070,7 +1068,7 @@
           {% if student.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
-                  map: map
+                  mapp: mapp
               });
 
               infowindow = null;
@@ -1082,7 +1080,7 @@
                       }
                       infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
-                      infowindow.open(map, marker);
+                      infowindow.open(mapp, marker);
                   };
               })(marker, content));
           {% endif %}
