@@ -156,6 +156,7 @@
     .blogs-sec .card {
         width: 200px !important;
         height: 250px !important;
+        margin: 20px auto;
     }
     .blogs-sec .img {
         width: 200px !important;
