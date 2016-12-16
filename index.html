@@ -1070,7 +1070,7 @@
           {% if student.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
-                  map: map
+                  map2: map2
               });
               
               infowindow = null;
@@ -1082,7 +1082,7 @@
                       }
                       infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
-                      infowindow.open(map, marker);
+                      infowindow.open(map2, marker);
                   };
               })(marker, content));
           {% endif %}
