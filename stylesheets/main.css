@@ -4,21 +4,23 @@
 .white-header {
     color: white;
     margin-bottom: 30px;
-}.social{
-    font-size:13px;
 }
 .social-media {
     text-align: center;
-    background: #344146;
+    /*background: #344146;*/
+    background: #212121;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
-    margin-bottom: 30px;
+    height: 461px !important;
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+}
+.g-page-embed iframe .dgd.nae {
+    padding-bottom: 50px !important;
 }
 .inner a.button {
     display: inline-block;
@@ -487,8 +489,8 @@ figure.effect-gcihover:hover figcaption::before {
     background-color: rgba(255, 255, 255, 0.8);
     /*height: 48px;*/
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
     box-shadow: none;
     border: none;
 }
@@ -501,13 +503,19 @@ figure.effect-gcihover:hover figcaption::before {
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    height: 400px;
+    /*margin-top: 0.5em;*/
+    /*margin-bottom: 0.5em;*/
+    height: 390px;
     padding: 0 !important;
     display: block;
 }
-
+#flickrembed {
+    margin-top: 3.6em;
+    overflow: hidden !important;
+}
+#flickrembed .ug-strip-panel {
+    display: none !important;
+}
 .footer {
     width: 100%;
     height: auto;
@@ -611,8 +619,8 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
-    margin-top: 3em;
-    padding: 1em;
+    /*margin-top: 3em;*/
+    /*padding: 1em;*/
 }
 
 .students-section {
@@ -627,7 +635,7 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 .social-media:hover {
     box-shadow: 1px 5px 20px #888888;
