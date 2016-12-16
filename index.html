@@ -810,11 +810,38 @@
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                  label : 'M',
                   map: map
               });
 
               infowindow = null;
               var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
+          {% endif %}
+      {% endfor %}
+    };
+
+      var marker;
+      var infowindow = null;
+      {% for student in site.data.students %}
+          {% if student.lat %}
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                  label : 'S',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
               google.maps.event.addListener(marker, 'click', (function(marker, content) {
                   return function() {
                       if (infowindow) {
