@@ -835,7 +835,7 @@
 
     <script>
         window.initMap = function() {
-            var map2 = new google.maps.Map(document.getElementById('map2'), {
+            var map = new google.maps.Map(document.getElementById('map2'), {
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -1070,7 +1070,7 @@
           {% if student.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
-                  map2: map2
+                  map: map
               });
               
               infowindow = null;
@@ -1082,7 +1082,7 @@
                       }
                       infowindow = new google.maps.InfoWindow();
                       infowindow.setContent(content);
-                      infowindow.open(map2, marker);
+                      infowindow.open(map, marker);
                   };
               })(marker, content));
           {% endif %}
