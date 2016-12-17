@@ -1,4 +1,4 @@
-# New members please add your credentials to a random position in the file.
+﻿# New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
 - name: Animesh Singh
@@ -433,3 +433,9 @@
   image: gautam.jpg
   blog: gautamjajoo.wordpress.com
   bio: A 14 year old Indian, whose passion is Computer Science.
+
+- name: Guneet Singh
+  github: Guneetconvent2002
+  image: Guneet.jpg
+  facebook: Guneet 
+  bio: A 14 year old boy who wants to do somthing for the nation.
