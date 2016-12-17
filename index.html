@@ -6,25 +6,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="20x20" href="images/icons/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/popup.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Gci16.fossasia.org by fossasia</title>
+    <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
+<!-- Github Ribbon -->
     <a href="//github.com/fossasia/gci16.fossasia.org">
       <img class="ribbon" src="./images/ribbon.png">
     </a>
+
+<!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
             data-toggle="collapse" data-target="#collapse"
             aria-expanded="false">
             <span class="sr-only"></span>
@@ -37,24 +42,30 @@
           </a>
         </div>
         <div class="collapse navbar-collapse" id="collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#welcome">Welcome</a></li>
-            <li><a href="#mentors">Mentors</a></li>
-            <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#students">Students</a></li>
+          <ul class="nav navbar-nav" id="menu">
+            <li><a class="menu-item" href="#welcome">Welcome</a></li>
+            <li><a class="menu-item" href="#map">Map</a></li>
+            <li><a class="menu-item" href="#mentors">Mentors</a></li>
+            <li><a class="menu-item" href="#contributors">Contributors</a></li>
+            <li><a class="menu-item" href="#students">Students</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#blog-post">Blog posts</a></li>
+                <li><a href="#stprojects">Student projects</a></li>
+                <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
+                  <li><a href="#designsv2">MBDyn Logo Designs v2</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
+                <li><a href="#loklak">Loklak Webtweets</a></li>
               </ul>
             </li>
-            <li><a href="#social-media">Social media</a></li>
+            <li><a class="menu-item" href="#social-media">Social media</a></li>
           </ul>
         </div>
       </div>
     </nav>
+<!-- End of Navigation Bar -->
+<!-- Slider -->
     <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
         <ol>
@@ -75,11 +86,21 @@
         </ol>
       </div>
     </div>
+<!-- End of Slider -->
+
+<!-- Main Content -->
     <section class="main-content">
         <div class="container">
+            <div id="map"></div>
+        </div>
+        <div class="container">
+
+            <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
-                <h2>MENTORS</h2>
                 <div class="row mentors-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MENTORS</h2>
+                    <!-- Stop ignoring -->
                     {% for mentor in site.data.mentors %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
@@ -115,20 +136,31 @@
                                 <p>{{mentor.name}}</p>
                             </div>
                         </div>
+                        {% include popup.html person=mentor who='mentor' %}
                     </div>
                     {% endfor %}
                 </div>
             </section>
-            <section id="contributors" id="contributors" href="#contributors">
-                <h2>CONTRIBUTORS</h2>
-                <div id="contributors-list" class="row"></div>
+            <!-- End of Mentor Section -->
+
+            <!-- Contributor Section -->
+            <section id="contributors" href="#contributors" class="contributors-sec">
+                <div id="contributors-list" class="row">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>CONTRIBUTORS</h2>
+                    <!-- Stop ignoring BootLintBear -->
+                </div>
             </section>
+            <!-- End of Contributor Section -->
+            <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
-                <h2>STUDENTS</h2>
                 <div class="row students-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>STUDENTS</h2>
+                    <!-- Stop ignoring -->
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card stu-card">
                             <div class="avatar">
                                 {% if student.image %}
                                 <img src="images/students/{{student.image}}"
@@ -160,51 +192,124 @@
                                     </a>
                                     {% endif %}
                                     {% if student.blog %}
-                                    <a href="{{mentor.student}}"
+                                    <a href="//{{student.blog}}"
                                        target="_blank">
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
+                                    <!--
+                                    {% if student.bio %}
+                                    <div style="white-space: nowrap; overflow-x: hidden;">
+                                        {{student.bio}}
+                                    </div>
+                                    ...
+                                    {% endif %}
+                                    -->
                                 </div>
-                                <p><i class="fa fa-code"></i>&nbsp;{{student.name}}</p>
+                                <p style="padding-top:3px">
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span class="stu-name" title="{{student.name}}">
+                                        {{student.name}}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        {% include popup.html person=student who='student' %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End of Student Section -->
+            <!-- Projects (including student projects, blog, logo, issues, loklak) -->
+            <div id="projects" href="#projects">
+            <!-- Student Projects Section -->
+            <section class="projects-sec" id="stprojects" href="#stprojects">
+                <div class="row projects-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>STUDENT PROJECTS</h2>
+                    <!-- Stop ignoring -->
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/default.png"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <div class="links">
+                                    <a href="{{project.link}}" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="{{project.source}}" target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                </div>
+                                <p>
+                                    <span title="{{project.name}} by {{project.owner}}">
+                                        {{project.name}} by {{project.owner}}
+                                    </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
                 </div>
             </section>
+            <!-- End of Student Projects Section -->
             <!-- Stop ignoring -->
-            <div class="blog" style="background-color: #1B5E20;" id="blog-post" href="#blog-post">
-                <h1 style="color: #fafafa; text-align: center;">Blog Posts</h1>
-                <div class="row">
+
+            <!-- Blog Posts Section -->
+            <section id="blogs" href="#blogs" class="blogs-sec">
+                <div class="row blogs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>BLOG POSTS</h2>
+                    <!-- Stop ignoring -->
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div {% if blog.blog_img %}
-                        style="background: url("images/blogs/{{ blog.blog_img }}")
-                        no-repeat center top;" {% endif %} class="blog-post">
-                            <div class="blog-title"> Blog of
-                                <a href="{{ blog.blog }}"><strong>{{ blog.name }}</strong></a>
-                                <br> {% if blog.article %}
-                                <a href="{% if blog.article_link %}{{ blog.article_link }}{% endif %}"> {{ blog.article }}</a> {% endif %}
+                    <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if blog.blog_img %}
+                                <a href="{{blog.article_link}}">
+                                    <div class="img" style="background-image:url(images/blogs/{{blog.blog_img}});"></div>
+                                </a>
+                                {% else %}
+                                <a href="#">
+                                    <div class="img" style="background-image:url(images/blogs/default.jpg);"></div>
+                                </a>
+                                {% endif %}
+                                <p>
+                                    Blog of <a href="{{blog.article_link}}">{{blog.name}}</a><br />
+                                    {% if blog.article %}{{blog.article}}{% endif %}
+                                </p>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
                     <!-- Stop ignoring -->
                 </div>
-            </div>
+            </section>
+            <!-- End of Blog Posts Section -->
 
-            <!-- Start ignoring SpaceConsistencyBear -->
-            <div class="logos" id="designs">
-                <h1 style="color: #ffffff; text-align: center;">MBDyn Logo Designs</h1>
-                <div class="row">
+            <!-- Designs Section -->
+            <section id="designs" href="#designs" class="designs-sec">
+                <!-- Start ignoring SpaceConsistencyBear -->
+                <div class="row designs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MBDyn Logo Designs</h2>
+                    <!-- Stop ignoring -->
                     {% for logo in site.data.logos %}
-                    <div class="col-xs-4 col-sm-3">
+                    <div class="col-xs-6 col-sm-3">
                         <div class="grid">
                             <figure class="effect-gcihover">
                               <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/{{logo.img}}" alt="By {{logo.author}}">
+                                <img src="images/logos/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
                                 <figcaption>
                                     <p>
                                         <span style="color: #000000">by {{logo.author}}</span>
@@ -215,143 +320,240 @@
                     </div>
                     {% endfor %}
                  </div>
-            </div>
-            <!-- Stop ignoring -->
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Designs Section -->
+
+ <!-- Designs v2 Section -->
+            <section id="designsv2" href="#designsv2" class="designs-sec">
+                <!-- Start ignoring SpaceConsistencyBear -->
+                <div class="row designs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MBDyn Logo Designs v2</h2>
+                    <!-- Stop ignoring -->
+                    {% for logo in site.data.logosv2 %}
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="grid">
+                            <figure>
+                              <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/v2/{{logo.img}}" width="200px"  alt="By {{logo.author}}">
+                                        <span style="color: #000000">by {{logo.author}}</span>
+                            </figure>
+                        </div>
+                    </div>
+                    {% endfor %}
+                 </div>
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Designs v2 Section -->
+
+            <!-- Latest Issues Section -->
             <section class="latest-issues" id="issues">
-                <h2>LATEST ISSUES</h2>
                 <div class="issues-wrapper">
-                  <div class="button">
-                    <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                      See all issues on&nbsp;<i class="fa fa-github"></i>github
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>LATEST ISSUES</h2>
+                    <!-- Stop ignoring -->
+                    <div id="issues-categories-wrapper">
+                        <div class="issues-category" id="unlabeled-category">
+                            <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
+                        </div>
+                        <!-- <div class="button">
+                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
+                                See all issues on&nbsp;<i class="fa fa-github"></i>github
+                            </a>
+                        </div> -->
+                    </div>
+                    <a class="btn btn-success btn-lg"
+                    style="margin-left: 40%; color: #fff;"
+                    href="//github.com/fossasia/gci16.fossasia.org/issues">
+                        See all issues on &nbsp;<i class="fa fa-github"></i>
                     </a>
-                  </button>
                 </div>
             </section>
-            <div class="social-media" id="social-media" href="#social-media">
-                <h1 class="white-header">FOSSASIA on social media</h1>
+            <!-- End of Latest Issues Section -->
+
+            <!-- Loklak API -->
+            <section class="latest-issues" id="loklak" href="#loklak">
+                <!-- Start ignoring BootLintBear -->
                 <div class="row">
-                    <div class="col-md-6">
-                        <!-- Ignore LineLengthBear -->
-                        <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                        width="370" height="459" style="border:none;overflow:hidden"
-                        scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                    </div>
-                    <div class="col-md-6">
-                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg"
-                    data-width="370" data-height="459"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="twitter-timeline" data-width="370" data-height="459"
-                        href="//twitter.com/fossasia">Tweets by fossasia</a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="github-widget" data-username="fossasia"></div>
-                        </div>
-                </div>
-                <div class="last-one">
-                    <div style="margin-top: 2em;">
-                        <!-- Ignore LineLengthBear -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6 col-md-offset-3 yt">
-                                    <div id="gyt">
-                                        <div class="g-ytsubscribe"
-                                        data-channelid="UCQprMsG-raCIMlBudm20iLQ"
-                                        data-layout="full"
-                                        data-count="default" height="48px"></div>
-                                    </div>
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item"
-                                    src="//www.youtube.com/embed/videoseries\
-                                    ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                    frameborder="0" allowfullscreen></iframe>
-                                    </div>
+                    <h2>Loklak API Tweets</h2>
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <div class="twitter-feed">
+                            <i class="icon social-twitter text-white"></i>
+                            <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
+                                <div class="arrow-up"></div>
+                                <p id="tweet" class="tweet">
+                                    Loading...
+                                </p>
+                                <div class="panel-footer">
+                                  <span id="tweet-info">Fetching tweets...</span>
                                 </div>
-                                <div class="col-xs-12 col-md-12">
-                                    <div id="flickrembed"></div><small style="display: block;
-                                    text-align: center; margin: 0 auto;">
-                                    <a href="//www.flickr.com/photos/fossasia">
-                                    Fossasia's flickralbum</a></small></div>
+                            </div>
+                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
+                                ← &nbsp; Previous Tweet!
+                            </button>
+                            <button type="button" class="btn" id="next"onclick="nextTweet()">
+                                Next Tweet! &nbsp; →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Loklak API -->
+            </div>
+            <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
+
+        </div> <!-- End of .container inside the main-wrapper section -->
+
+        <div class="social-media" id="social-media" href="#social-media">
+          <div class="container-fluid">
+            <!-- Start ignoring BootLintBear -->
+            <div class="row">
+                <h2 class="white-header">FOSSASIA on social media</h2>
+                <div class="col-md-3">
+                    <!-- Ignore LineLengthBear -->
+                    <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                    width="370" style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+                <div class="col-md-3 g-page-embed">
+                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370"></div>
+                </div>
+            <!-- Stop ignoring -->
+            <!-- Start ignoring BootLintBear -->
+                <div class="col-md-3">
+                    <a class="twitter-timeline" data-width="370"
+                    href="//twitter.com/fossasia">Tweets by fossasia</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="github-widget" data-username="fossasia"></div>
+                </div>
+            </div>
+          </div> <!--Fluid-Container-->
+            <!-- Stop ignoring -->
+            <div class="last-one">
+                    <!-- Ignore LineLengthBear -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 yt">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                src="//www.youtube.com/embed/videoseries\
+                                ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
+                                frameborder="0" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div id="flickrembed"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-<!--Flickr Album-->
-<div class="row">
-<div class="col-xs-12 col-md-12">
-<div id="flickrembed"></div>
-<small style="display: block; text-align: center; margin: 0 auto;">
-<a href="//www.flickr.com/photos/fossasia">Fossasia's flickr album</a>
-</small>
-</div>
-</div>
-            </div>
-        </div>
+            </div> <!--Last One-->
+        </div> <!--Social Media-->
     </section>
-    <section class="footer container">
+<!-- End of Main Content -->
+
+<!-- Footer -->
+    <section class="footer">
+        <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 social">
-                <h2>Social Media</h2>
-                <a href="//facebook.com/fossasia" target="_blank">
-                    <img src="images/icons/facebook.png">
+            <div class="col-sm-12 col-sm-6 col-md-4 text-center">
+                <h2 class="heading">About</h2>
+                <a href="//fossasia.org">
+                    <img src="images/fossasia-light.png" alt="Fossasia Google Code In">
                 </a>
-                <a href="//twitter.com/fossasia" target="_blank">
-                    <img src="images/icons/twitter.png">
-                </a>
-                <a href="//plus.google.com/108920596016838318216" target="_blank">
-                    <img src="images/icons/googleplus.png">
-                </a>
-                <a href="//www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
-                    <img src="images/icons/linkedin.png">
-                </a>
-                <br>
-                <a href="//github.com/fossasia" target="_blank">
-                    <img src="images/icons/github.png">
-                </a>
-                <a href="//flickr.com/photos/fossasia" target="_blank">
-                    <img src="images/icons/flickr.png">
-                </a>
-                <a href="//www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
-                    <img src="images/icons/youtube.png">
-                </a>
-                <a href="//en.wikipedia.org/wiki/FOSSASIA" target="_blank">
-                    <img src="images/icons/wiki.png">
-                </a>
+                <div>
+                    <p>
+                    FOSSASIA is an open source technology organization in Asia that aims to
+                    bring together an inspiring community across borders and ages to form a better
+                    future with Open Technologies and ICT.
+                    </p>
+                    <p>FOSSASIA is involved in Google Code-In, which serves as a great introduction
+                    to the world of open source collaboration and an excellent mediator to involve
+                    the next generation of digital collaborators.
+                    </p>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <h2>About FOSSASIA</h2>
-                <p>FOSSASIA is an open source technology organization in Asia that aims to
-                bring together an inspiring community across borders and ages to form a better
-                future with Open Technologies and ICT.
-                </p>
-                <p>FOSSASIA is involved in Google Code-In, which serves as a great introduction
-                to the world of open source collaboration and an excellent mediator to involve
-                the next generation of digital collaborators.
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <h2>FOSSASIA Links</h2>
-                <ul>
+            <div class="col-sm-12 col-sm-6 col-md-4">
+                <h2 class="heading text-left">Links</h2>
+                <ul class="links-list">
                     <li><a href="//fossasia.org"><i class="fa fa-link"></i>Main site</a></li>
-                    <li><a href="//blog.fossasia.org"><i class="fa fa-link"></i>Blog</a></li>
-                    <li><a href="//codein.withgoogle.com/organizations/fossasia/">
-                            <i class="fa fa-link"></i>Google Code-In Page
+                    <li><a href="//blog.fossasia.org">
+                        <i class="fa fa-rss-square"></i>Blog</a>
+                    </li>
+                    <li>
+                        <a href="//codein.withgoogle.com/organizations/fossasia/">
+                            <i class="fa fa-google"></i>Google Code-In Page
                         </a>
                     </li>
-                    <li><a href="//blog.fossasia.org/events"><i class="fa fa-link"></i>Events</a></li>
+                    <li>
+                        <a href="//events.fossasia.org">
+                            <i class="fa fa-calendar-o"></i>Events
+                        </a>
+                    </li>
                     <li><a href="//2016.fossasia.org">
                             <i class="fa fa-link"></i>FOSSASIA 2016
                         </a>
                     </li>
-                    <li><a href="#"><i class="fa fa-link"></i>Top of the page</a></li>
+                    <li>
+                        <a href="//github.com/fossasia/gci16.fossasia.org">
+                            <i class="fa fa-github"></i>Fork this on Github
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <div class="col-sm-12 col-md-4 social text-center">
+                <h2 class="heading">Get Connected</h2>
+                <a href="//facebook.com/fossasia" target="_blank">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="//twitter.com/fossasia" target="_blank">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="//plus.google.com/108920596016838318216" target="_blank">
+                    <i class="fa fa-google-plus-official"></i>
+                </a>
+                <a href="//www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+                <br>
+                <a href="//github.com/fossasia" target="_blank">
+                    <i class="fa fa-github-square"></i>
+                </a>
+                <a href="//flickr.com/photos/fossasia" target="_blank">
+                    <i class="fa fa-flickr"></i>
+                </a>
+                <a href="//www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="//en.wikipedia.org/wiki/FOSSASIA" target="_blank">
+                    <i class="fa fa-wikipedia-w"></i>
+                </a>
+                <a href="//www.quora.com/topic/FOSSASIA" target="_blank">
+                    <i class="fa fa-quora"></i>
+                </a>
+                <a href="//www.reddit.com/r/FOSSASIA/" target="_blank">
+                    <i class="fa fa-reddit"></i>
+                </a>
+            </div>
         </div>
-        <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
-        <i class="fa fa-heart"></i> for Google Code-In</p>
+        <div class="footer-copyright">
+            <p class="text-center">
+                <a href="#welcome" class="goup"><i class="fa fa-arrow-circle-up"></i></a>
+            </p>
+            <p class="text-center">
+                <i>© Copyright 2009-2016  <a href="//fossasia.org">FOSSASIA</a>
+                | Made with <i class="fa fa-heart" style="color:#ffb300;"></i>
+                for Google Code-In</i>
+            </p>
+        </div>
+        </div>
     </section>
+<!-- End of Footer -->
+
+<!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -367,15 +569,563 @@
             }
         }(document, "script", "twitter-wjs");
     </script>
+    <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
+    <!-- Start ignoring JSHintBear, LineLengthBear -->
+    <script>
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 2,
+                    scrollwheel: false,
+                    center: {
+                      lat: 0,
+                      lng: 0
+                    },
+                    styles: [{
+                      "elementType": "geometry",
+                      "stylers": [{
+                              "color": "#1d2c4d"
+                      }]
+            }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8ec3b9"
+                    }]
+            }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1a3646"
+                    }]
+            }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                   "featureType": "administrative.country",
+                   "elementType": "geometry.stroke",
+                   "stylers": [{
+                        "color": "#4b6878"
+                   }]
+            }, {
+                   "featureType": "administrative.land_parcel",
+                   "stylers": [{
+                        "visibility": "off"
+                   }]
+            }, {
+                      "featureType": "administrative.land_parcel",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#64779e"
+                      }]
+            }, {
+                      "featureType": "administrative.neighborhood",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "administrative.province",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#4b6878"
+                      }]
+            }, {
+                      "featureType": "landscape.man_made",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#334e87"
+                      }]
+            }, {
+                      "featureType": "landscape.natural",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#6f9ba5"
+                      }]
+            }, {
+                     "featureType": "poi",
+                     "elementType": "labels.text.stroke",
+                     "stylers": [{
+                        "color": "#1d2c4d"
+              }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#3C7680"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#304a7d"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.icon",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "road.arterial",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#2c6675"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#255763"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#b0d5ce"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "road.local",
+                      "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                      "featureType": "transit",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "transit.line",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "transit.station",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#3a4762"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#0e1626"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#4e6d70"
+                      }]
+            }]
+      });
+      var marker;
+      var marker2;
+      var infowindow = null;
+      {% for mentor in site.data.mentors %}
+      {% for student in site.data.students %}
+          {% if mentor.lat %}
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                  label: 'M',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
+          {% endif %}
+          {% if student.lat %}
+              marker2 = new google.maps.Marker({
+                  position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                  label : 'S',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+              google.maps.event.addListener(marker2, 'click', (function(marker2, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker2);
+                  };
+              })(marker2, content));
+          {% endif %}
+      {% endfor %}
+      {% endfor %}
+    };
+    </script>
+
+    <!-- MAPS FOR STUDENTS -->
+    <!--<script>
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('mapp'), {
+                    zoom: 2,
+                    scrollwheel: false,
+                    center: {
+                      lat: 0,
+                      lng: 0
+                    },
+                    styles: [{
+                      "elementType": "geometry",
+                      "stylers": [{
+                              "color": "#1d2c4d"
+                      }]
+            }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8ec3b9"
+                    }]
+            }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1a3646"
+                    }]
+            }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                   "featureType": "administrative.country",
+                   "elementType": "geometry.stroke",
+                   "stylers": [{
+                        "color": "#4b6878"
+                   }]
+            }, {
+                   "featureType": "administrative.land_parcel",
+                   "stylers": [{
+                        "visibility": "off"
+                   }]
+            }, {
+                      "featureType": "administrative.land_parcel",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#64779e"
+                      }]
+            }, {
+                      "featureType": "administrative.neighborhood",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "administrative.province",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#4b6878"
+                      }]
+            }, {
+                      "featureType": "landscape.man_made",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#334e87"
+                      }]
+            }, {
+                      "featureType": "landscape.natural",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#6f9ba5"
+                      }]
+            }, {
+                     "featureType": "poi",
+                     "elementType": "labels.text.stroke",
+                     "stylers": [{
+                        "color": "#1d2c4d"
+              }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#3C7680"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#304a7d"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.icon",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "road.arterial",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#2c6675"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#255763"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#b0d5ce"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "road.local",
+                      "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                      "featureType": "transit",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "transit.line",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "transit.station",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#3a4762"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#0e1626"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#4e6d70"
+                      }]
+            }]
+      });
+      var marker;
+      var infowindow = null;
+      {% for student in site.data.students %}
+          {% if student.lat %}
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
+          {% endif %}
+      {% endfor %}
+    };
+    </script>-->
+    <!-- END MAPS FOR STUDENTS -->
+
+
+    <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
-    <script src="//use.fontawesome.com/7f8b61349a.js"></script>
+    <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <!-- Github Cards -->
-    <script src="//unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-<!--Flickr album js-->
-<script src="//flickrembed.com/embed_v2.js.php?source=flickr
-&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
-&theme=default&scale=fit&skin=default&id=5843ed99c6db7"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/github-card@1.2.1/dist/widget.js" async></script>
+
+    <!--Flickr album js-->
+    <script src="//flickrembed.com/embed_v2.js.php?source=flickr
+    &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
+    &theme=default&scale=fit&skin=default&id=5843ed99c6db7" async></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="./javascripts/loklak-fetcher.js" async></script>
+    <script src="./javascripts/tweet.js"></script>
 </body>
 </html>

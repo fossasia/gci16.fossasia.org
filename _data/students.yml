@@ -1,4 +1,6 @@
-# New members please add your credentials to the bottom of the file.
+# New members please add your credentials to a random position in the file.
+# This is to remove conflicts with other people adding their credentials.
+
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -6,6 +8,24 @@
   image: animeshsinghweb.jpg
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
+  lat: 22.8035475
+  lng: 86.1949906
+
+- name: Mostafa Elgayar
+  github: Elgayar
+  facebook: mostafa.elgayar1
+  twitter: MostafaaGayar
+  image: Gayar.jpg
+  bio: 17 Years Old, Future Silicon Valley Resident, Loves Music and Creating!
+  lat: 30.011387
+  lng: 31.298684
+
+- name: Simon Narang
+  github: simonnarang
+  image: Simon_Narang.jpg
+  twitter: simnrn
+  facebook: simnrn
+  bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
 
 - name: Oana Rosca
   github: oanarosca
@@ -22,7 +42,7 @@
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog: http://mehant-alphaunitedteam.blogspot.in/
+  blog: mehant-alphaunitedteam.blogspot.in/
   email: kmehant@gmail.com
   github: kmehant
   image: mehant.jpg
@@ -114,7 +134,7 @@
   facebook: ridhwanul.haque
   email: rhemon19@gmail.com
   bio: 17 years old, Programmer, Web/Android Designer and Developer, Bangladeshi
-  blog: https://rhemon.github.io/blog
+  blog: rhemon.github.io/blog
   blog_img: rhemon-blog.png
 
 - name: Victoria Juan
@@ -214,6 +234,19 @@
   facebook: jha.dwij
   bio: 14,Indian,Sudent Programmer
 
+- name: Riley Kovacev
+  github: Rbkovacev
+  image: rileykova.png
+  twitter: RileyKovacev
+  bio: Java & Python, amenities of life
+
+- name: Abhijeet Manohar
+  github: abhijeetmanohar
+  image: Abhijeet.jpg
+  twitter: jeet_manohar
+  facebook: abhijeetmanohar66
+  bio: 16,Indian,Programmer,App Developer,tech-geek
+
 - name: Miguel Piedrafita
   github: m1guelpf
   facebook: m1guelpiedrafita
@@ -221,6 +254,15 @@
   image: m1guelpiedrafita.png
   blog: blog.miguelpiedrafita.com
   bio: An spanish coder that loves open source.
+  lat: 43.360233099999995
+  lng: -5.8469849
+
+- name: Adelina Todorova
+  github: adikrasimirowa
+  facebook: adelina.todorov
+  twitter: 4x2young
+  image: aditodorova.jpg
+  bio: A girl that loves to explore and try new things.
 
 - name: Nguyen Chanh Dai
   github: nguyenchanhdai
@@ -236,3 +278,158 @@
   twitter: TinhDao3
   bio: 17, student, competitive programmer, interested in games
   facebook: dcongtinh
+
+- name: Nadun Yashmika
+  github: yashNadun
+  image: nadunyashmika.jpg
+  twitter: NadunYashmika
+  bio: 17, student, web developer
+  facebook: nadun.yashmika.9
+
+- name: Mehmet Cagri Ari
+  github: hesapadim
+  image: cagriari_avatar.jpg
+  bio: I am 15, I know 6 programming languages and I want to become a software engineer :)
+  facebook: sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa.as.sa
+
+- name: Tan Ngo Minh
+  email: nmtan2001ct@gmail.com
+  github: nmtan2001
+  facebook: tan.ngominh.73
+  twitter: nmtan2001ct
+  image: TanNgoMinh.jpg
+  bio: 15 years old, Vietnamese, study Computer Science, interested in developed games.
+
+- name: Will Kaye
+  github: will747
+  image: will.jpg
+  bio: 13, student, video editor, web developer
+  twitter: willkaye3
+
+- name: Ankit R Gadiya
+  github: ankitrgadiya
+  facebook: ankit.r.gadia
+  twitter: ankit4922
+  image: ankit.jpg
+  blog: blog.ankitrgadiya.me
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
+
+- name: Zenon
+  github: zehata
+  facebook: Zehata Taneka
+  twitter: Zenon
+  image: zehata.jpg
+  bio: 15, Full stack web dev. Loves making game engines.
+
+- name: Sanchit Mishra
+  github: sanchittechnogeek
+  image: sanchit.jpg
+  twitter: s_technogeek
+  facebook: sanchit.technogeek
+  bio: 17, amateur Nodejs dev, roboticist, linux guru.
+
+- name: Mukund choudhary
+  github: mukundch28
+  image: mukund.jpg
+  facebook: mukund choudhary
+  bio: 16, Hacker and programmer
+
+- name: Tran Bao Nguyen
+  github: bnguyenltt
+  image: bnguyenltt.jpg
+  twitter: bnguyenltt
+  bio: 16, student, competitive programmer, interested in games and manga
+  facebook: bnguyenltt
+
+- name: Nikhil Chandak
+  github: nikhilchandak
+  image: nikhil_chandak.jpg
+  twitter: nikhilchandak29
+  bio: 15, Interested in competetive programming and open source projects
+
+- name: Pranav Sharma
+  github: sharma-p
+  image: pranav1.jpg
+  twitter: eccentric_pra
+  bio: 17, Loves to code.
+
+- name: Prabhdeep Singh
+  github: prabhdeep29
+  image: Prabhdeep.jpg
+  twitter: singhprabh2929
+  facebook: Prabhdeep Singh
+  bio: 14, Programmer in every way
+
+- name: Dewansh Rawat
+  github: dewanshrawat15
+  image: dewansh.jpg
+  twitter: dewanshrawat15
+  facebook: dewanshrawat15
+  bio:  Designer, Developer at Converge Clan. Indian.
+
+- name: Manraj Juneja
+  github: manrajjuneja
+  image: manraj.jpg
+  twitter: manrajuneja2003
+  facebook: manraj.juneja
+  bio: 13, I have skills.
+
+- name: Saurabh Singh
+  github: AlexTurning
+  image: Sa.jpg
+  facebook: meetsaurabh.s
+  bio: 16,Indian,keen learner
+
+- name: Ngo Hong Phuc
+  github: Jerry2001
+  image: Phuc.jpg
+  facebook: phuc.ngohong.2001
+  bio: 15,Vietnamese,Sudent Programmer, Guitar
+
+- name: Kartikeya Singh
+  github: kartikeya23
+  image: kartikeya.jpg
+  twitter: kart_singh08
+  facebook: kartikeya.singh23
+  bio: 13, Indian, Cuber, Amazingly Awesome! ^_^
+
+- name: Tushar Kumar
+  github: meets2tushar
+  image: tushar.jpg
+  facebook: meets2tushar
+  twitter: meets2tushar
+  blog: meets2tushar.wordpress.com
+  bio: 15, Indian, Love HTML/CSS, FOSS
+
+- name: Yashvardhan Sharma
+  github: yvsja
+  image: yashvardhan_sharma.jpg
+  facebook: yash.vardhan.18062
+
+- name: Hesham Burawi
+  github: Hesham-Burawi
+  image: Hesham-Burawi.jpeg
+  twitter: Hesham_Burawi
+  bio: 13, Libyan/British, Love Sleep, Food, Coding
+
+- name: Zahari Asparuhov
+  github: zahariasp
+  image: zahari.jpg
+  facebook: zari.asparuhov
+  bio: 17, Bulgaria, web developing and web servers with NodeJS
+
+  name: Arpna kumari
+  github: arpnakumari
+  facebook: arpna kumari
+  twitter: arpna07
+  image: arpna.jpg
+  blog: arpnablog.wordpress.com
+  bio: A 16 yr old from INDIA ,wants to pursue medical field.
+
+  name: Gautam Jajoo
+  github: gautamjajoo
+  facebook: Gautam Jajoo
+  twitter: gautamjajoo
+  image: gautam.jpg
+  blog: gautamjajoo.wordpress.com
+  bio: A 14 year old Indian, whose passion is Computer Science.

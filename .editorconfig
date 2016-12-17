@@ -1,0 +1,13 @@
+# EditorConfig is a file which defines behaviour for most text editors
+# I have added this so that there wont be any EOF problems or trailing
+# white space errors to ensure better experience for contributors.
+# Made with love for FOSSASIA
+
+# Defines that this is the top-most EditorConfig file.
+root = true
+
+# A newline ending every file and also trim the trailing white spaces.
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
