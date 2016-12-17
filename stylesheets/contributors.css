@@ -1,0 +1,89 @@
+.content {
+  position: absolute;
+  margin-top: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -mos-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 45px;
+  line-height: 40px;
+  font-family: 'Lato', sans-serif;
+  color: #203670;
+  height: 160px;
+  overflow: hidden;
+}
+
+.visible {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+.visible:before {
+  content: '[';
+  left: 0;
+  line-height: 40px;
+}
+.visible:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -mos-animation-name: opacity;
+  -mos-animation-duration: 2s;
+  -mos-animation-iteration-count: infinite;
+  -o-animation-name: opacity;
+  -o-animation-duration: 2s;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-name: opacity;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+p {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-left: 90px;
+  padding-left: 410px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -mos-animation-name: change;
+  -mos-animation-duration: 6s;
+  -mos-animation-iteration-count: infinite;
+  -o-animation-name: change;
+  -o-animation-duration: 6s;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-name: change;
+  -ms-animation-duration: 6s;
+  -ms-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+ul li {
+  line-height: 40px;
+  margin: 0;
+}
