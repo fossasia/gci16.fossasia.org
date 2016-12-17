@@ -155,47 +155,62 @@
                     <!-- Start ignoring BootLintBear -->
                     <h2>STUDENTS</h2>
                     <!-- Stop ignoring -->
+                    {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="avatar">
-                                
-                                <img src="images/students/gautam.jpg"
-                                alt="gautam.jpg"
+                                {% if student.image %}
+                                <img src="images/students/{{gautam.jpg}}"
+                                alt="{{gautam.jpg}}"
+                                width="240px" height="240px">
+                                {% else %}
+                                <img src="images/mentors/member.png"
+                                alt="{{student.name}}"
                                 width="200px" height="200px">
+                                {% endif %}
                                 <div class="social">
-                                    <a href="http://www.github.com/gautamjajoo"
+                                    {% if student.github %}
+                                    <a href="//github.com/{{gautamjajoo.github}}"
                                        target="_blank">
-                                       <img src="images/icons/github.png"
-                                alt="gautam.jpg" style="width:55px; height:50px; padding-left:-4; padding-bottom:5;">
                                         <i class="fa fa-github"></i>
                                     </a>
-                                    <a href="http://www.facebook.com/gautamjajoo"
+                                    {% endif %}
+                                    {% if student.facebook %}
+                                    <a href="//facebook.com/{{gautamjajoo.facebook}}"
                                        target="_blank">
-                                       <img src="images/icons/facebook.png"
-                                alt="gautam.jpg" style="width:55px; height:50px; padding-left:5; padding-bottom:5;">
                                         <i class="fa fa-facebook"></i>
                                     </a>
+                                    {% endif %}
                                     <br>
-                                    <a href="http://www.twitter.com/gautamjajoo"
+                                    {% if student.twitter %}
+                                    <a href="//twitter.com/{{gautam_jajoo.twitter}}"
                                        target="_blank">
-                                       <img src="images/icons/twitter.png"
-                                alt="gautam.jpg" style="width:50px; height:50px; padding-bottom:5;">
                                         <i class="fa fa-twitter"></i>
                                     </a>
+                                    {% endif %}
+                                    {% if student.blog %}
+                                    <a href="//{{gautamjajoo.wordpress.com}}"
+                                       target="_blank">
+                                        <i class="fa fa-code"></i>
+                                    </a>
+                                    {% endif %}
+                                    {% if student.bio %}
                                     <div>
-                                        A 14 year old Indian, whose passion is Computer Science.
+                                        {{student.bio}}
                                     </div>
+                                    {% endif %}
                                 </div>
                                 <p style='padding-top:3px'>
                                     <i class="fa fa-code"></i>
                                     &nbsp;
-                                    <span class='stu_name' title="{{gautam.name}}">
-                                      </>  Gautam Jajoo
+                                    <span class='stu_name' title="{{student.name}}">
+                                        {{student.name}}
                                     </span>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </section>
             <!-- End of Student Section -->
