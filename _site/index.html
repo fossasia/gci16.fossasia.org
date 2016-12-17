@@ -1713,6 +1713,52 @@
                         <div class="card stu-card">
                             <div class="avatar">
                                 
+                                <img src="images/students/Gayar.jpg"
+                                alt="Mostafa Elgayar"
+                                width="200px" height="200px">
+                                
+                                <div class="social">
+                                    
+                                    <a href="//github.com/Elgayar"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                    
+                                    
+                                    <a href="//facebook.com/mostafa.elgayar1"
+                                       target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    
+                                    <br>
+                                    
+                                    <a href="//twitter.com/MostafaaGayar"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    
+                                    
+                                    
+                                    <div>
+                                        17 Years Old, Future Silicon Valley Resident, Loves Music and Creating!
+                                    </div>
+                                    
+                                </div>
+                                <p style="padding-top:3px">
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span class="stu-name" title="Mostafa Elgayar">
+                                        Mostafa Elgayar
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                
                                 <img src="images/students/Simon_Narang.jpg"
                                 alt="Simon Narang"
                                 width="200px" height="200px">
@@ -6775,6 +6821,47 @@
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card stu-card">
                             <div class="avatar">
+                                <img src="images/students/Hesham-Burawi.jpeg"
+                                alt="Hesham Burawi"
+                                width="200px" height="200px">
+                                
+                                <div class="social">
+                                    <a href="//github.com/Hesham-Burawi"
+                                       target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                    <br>
+                                    
+                                    <a href="//twitter.com/Hesham_Burawi"
+                                       target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    
+                                    
+                                    
+                                    <!--
+                                    <div style="white-space: nowrap; overflow-x: hidden;">
+                                        13, Libyan/British, Love Sleep, Food, Coding
+                                    </div>
+                                    ...
+
+                                    -->
+                                  
+                                </div>
+                                <p style="padding-top:3px">
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span class="stu-name" title="Hesham Burawi">
+                                        Hesham Burawi
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
                                 
                                 <img src="images/students/arpna.jpg"
                                 alt="Arpna kumari"
@@ -6786,8 +6873,7 @@
                                        target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
-                                    
-                                    
+                                   
                                     <a href="//facebook.com/arpna kumari"
                                        target="_blank">
                                         <i class="fa fa-facebook"></i>
@@ -6807,7 +6893,6 @@
                                     </a>
                                     
                                     <!--
-                                    
                                     <div style="white-space: nowrap; overflow-x: hidden;">
                                         A 16 yr old from INDIA ,wants to pursue medical field.
                                     </div>
@@ -8217,6 +8302,24 @@
               })(marker, content));
           
       
+          
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(22.317983, 70.782976),
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/mentors/shubham-padia.jpg' width='240' height='240'><br/>Shubham Padia<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
           
       
           

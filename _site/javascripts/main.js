@@ -149,4 +149,4 @@ $(".close").click(function() {
     $(this).parent().css("display", "none");
     modalShown = false;
     // window.opener.location.reload(false);
-})
+});
