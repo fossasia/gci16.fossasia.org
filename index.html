@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/popup.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -64,7 +65,6 @@
       </div>
     </nav>
 <!-- End of Navigation Bar -->
-
 <!-- Slider -->
     <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
@@ -136,6 +136,7 @@
                                 <p>{{mentor.name}}</p>
                             </div>
                         </div>
+                        {% include popup.html person=mentor who='mentor' %}
                     </div>
                     {% endfor %}
                 </div>
@@ -164,7 +165,7 @@
                     <!-- Stop ignoring -->
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card stu-card">
                             <div class="avatar">
                                 {% if student.image %}
                                 <img src="images/students/{{student.image}}"
@@ -201,11 +202,14 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
+                                    <!--
                                     {% if student.bio %}
-                                    <div>
+                                    <div style="white-space: nowrap; overflow-x: hidden;">
                                         {{student.bio}}
                                     </div>
+                                    ...
                                     {% endif %}
+                                    -->
                                 </div>
                                 <p style="padding-top:3px">
                                     <i class="fa fa-code"></i>
@@ -216,6 +220,7 @@
                                 </p>
                             </div>
                         </div>
+                        {% include popup.html person=student who='student' %}
                     </div>
                     {% endfor %}
                 </div>
