@@ -14,6 +14,7 @@ mentorsImgFiles = Dir["./images/mentors/**/*.*"]
 iconsImgFiles = Dir["./images/icons/**/*.png"]
 logosImgFiles = Dir["./images/logos/**/*.png"]
 blogsImgFiles = Dir["./images/blogs/**/*.*"]
+logosv2ImgFiles = Dir["./imagees/logos/v2/**/*.*"]
 
 # Defines the standard maximum dimensions for images in each section
 studentsImgSize = 240
@@ -24,6 +25,8 @@ blogsImgWidth = 1920
 blogsImgHeight = 1080
 logosImgWidth = 600
 logosImgHeight = 600
+logosv2ImgWidth = 600
+logosv2ImgHeight = 600
 
 # abortStatus stores status of tests
 abortStatus = 0
@@ -69,6 +72,15 @@ for logoImage in logosImgFiles
     size = FastImage.size(logoImage)
     if size[0] > logosImgWidth or size[1] > logosImgHeight
         puts "The image #{logoImage} is larger than #{logosImgWidth}px x #{logosImgHeight}px [w x h]"
+        abortStatus = 1
+    end
+end
+
+# Checking images in logos section
+for logov2Image in logosv2ImgFiles
+    size = FastImage.size(logov2Image)
+    if size[0] > logosv2ImgWidth or size[1] > logosv2ImgHeight
+        puts "The image #{logov2Image} is larger than #{logosv2ImgWidth}px x #{logosv2ImgHeight}px [w x h]"
         abortStatus = 1
     end
 end
