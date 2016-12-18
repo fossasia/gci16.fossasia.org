@@ -5,7 +5,6 @@ class ImageChecker
     puts "Improvements by Robby O'Connor during GCI 2016"
     @max_size = max_size
     @directories = directories
-    ok?
   end
 
   # DRY things up a bit
@@ -46,4 +45,5 @@ directories = [Dir['./images/students/**/*.*'], Dir['./images/students/**/*.*'],
                Dir['./images/privly/**/*.*']]
 
 # Check images now
-ImageChecker.new 240, directories
+checker = ImageChecker.new 240, directories
+checker.ok?
