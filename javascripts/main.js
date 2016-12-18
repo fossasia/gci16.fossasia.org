@@ -130,7 +130,10 @@ function onScroll() {
     }
   });
 }
+<<<<<<< HEAD
 
 $(".menu-item").click(function(){
     $("#collapse").removeClass("in");
 });
+=======
+>>>>>>> master
