@@ -1,0 +1,29 @@
+.modal {
+    position: fixed;
+    margin: 15% auto;
+    width: 50vw;
+    height: 300px;
+    z-index: 9999;
+    padding: 20px;
+    background: #efefef;
+    display:none;
+}
+
+.picture {
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    float: left;
+}
+
+.infromation {
+    display: inline-block;
+    float: right;
+    text-align: left;
+}
+.close {
+    width: 30px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

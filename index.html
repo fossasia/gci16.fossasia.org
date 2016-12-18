@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/popup.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -67,7 +68,6 @@
       </div>
     </nav>
 <!-- End of Navigation Bar -->
-
 <!-- Slider -->
     <div class="slider-container" id="welcome">
       <div class="ism-slider" data-transition_type="fade" id="my-slider">
@@ -144,6 +144,7 @@
                                 <p>{{mentor.name}}</p>
                             </div>
                         </div>
+                        {% include popup.html person=mentor who='mentor' %}
                     </div>
                     {% endfor %}
                 </div>
@@ -159,6 +160,7 @@
                 </div>
             </section>
             <!-- End of Contributor Section -->
+<<<<<<< HEAD
 
 <<<<<<< HEAD
         <!--<div class="container">
@@ -172,6 +174,8 @@
         </div>
 
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/fossasia/gh-pages
             <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <div class="row students-wrapper">
@@ -180,7 +184,7 @@
                     <!-- Stop ignoring -->
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card stu-card">
                             <div class="avatar">
                                 {% if student.image %}
                                 <img src="images/students/{{student.image}}"
@@ -217,11 +221,14 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
+                                    <!--
                                     {% if student.bio %}
-                                    <div>
+                                    <div style="white-space: nowrap; overflow-x: hidden;">
                                         {{student.bio}}
                                     </div>
+                                    ...
                                     {% endif %}
+                                    -->
                                 </div>
 <<<<<<< HEAD
                                 <p style="padding-top:3px">
@@ -239,6 +246,7 @@
                                 </p>
                             </div>
                         </div>
+                        {% include popup.html person=student who='student' %}
                     </div>
                     {% endfor %}
                 </div>
@@ -348,20 +356,29 @@
             <!-- End of Designs Section -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  <!-- Designs v2 Section -->
             <section id="designsv2" href="#designsv2" class="designs-sec">
+=======
+            <!-- Designs v2 Section -->
+            <section id="designs" href="#designs" class="designs-sec">
+>>>>>>> refs/remotes/fossasia/gh-pages
                 <!-- Start ignoring SpaceConsistencyBear -->
                 <div class="row designs-wrapper">
                     <!-- Start ignoring BootLintBear -->
-                    <h2>MBDyn Logo Designs v2</h2>
+                    <h2>MBDyn Logo Designs V2</h2>
                     <!-- Stop ignoring -->
                     {% for logo in site.data.logosv2 %}
                     <div class="col-xs-6 col-sm-3">
                         <div class="grid">
-                            <figure>
+                            <figure class="effect-gcihover">
                               <!-- Ignore HTMLLintBear -->
-                                <img src="images/logos/v2/{{logo.img}}" width="200px"  alt="By {{logo.author}}">
+                                <img src="images/logos/v2/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}">
+                                <figcaption>
+                                    <p>
                                         <span style="color: #000000">by {{logo.author}}</span>
+                                    </p>
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
@@ -369,7 +386,8 @@
                  </div>
                 <!-- Stop ignoring -->
             </section>
-            <!-- End of Designs v2 Section -->
+            <!-- End of Designs Section -->
+
 
 =======
 >>>>>>> master
@@ -949,6 +967,9 @@
       });
       var marker;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/fossasia/gh-pages
       var marker2;
       var infowindow = null;
       {% for mentor in site.data.mentors %}
@@ -984,6 +1005,9 @@
               })(marker, content));
           {% endif %}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/fossasia/gh-pages
           {% if student.lat %}
               marker2 = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
@@ -1005,13 +1029,17 @@
               })(marker2, content));
           {% endif %}
       {% endfor %}
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/fossasia/gh-pages
       {% endfor %}
     };
     </script>
 
     <!-- MAPS FOR STUDENTS -->
+<<<<<<< HEAD
 <<<<<<< HEAD
     <!--<script>
         window.initMap = function() {
@@ -1022,6 +1050,11 @@
         window.initMap = function() {
             var map2 = new google.maps.Map(document.getElementById('map2'), {
 >>>>>>> master
+=======
+    <!--<script>
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('mapp'), {
+>>>>>>> refs/remotes/fossasia/gh-pages
                     zoom: 2,
                     scrollwheel: false,
                     center: {
@@ -1259,10 +1292,14 @@
                   map: map
               });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
               
 >>>>>>> master
+=======
+
+>>>>>>> refs/remotes/fossasia/gh-pages
               infowindow = null;
               var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
               google.maps.event.addListener(marker, 'click', (function(marker, content) {
@@ -1279,11 +1316,15 @@
       {% endfor %}
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
     </script>-->
 =======
     </script>
 
 >>>>>>> master
+=======
+    </script>-->
+>>>>>>> refs/remotes/fossasia/gh-pages
     <!-- END MAPS FOR STUDENTS -->
 
 

@@ -135,5 +135,24 @@ function onScroll() {
 $(".menu-item").click(function(){
     $("#collapse").removeClass("in");
 });
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+
+var modalShown = false;
+
+$(".card").click(function() {
+    console.log("it was clicked");
+    if (!modalShown) {
+        $(this).next(".modal").css("display", "block");
+        modalShown = true;
+    }
+});
+
+$(".close").click(function() {
+    $(this).parent().css("display", "none");
+    modalShown = false;
+    // window.opener.location.reload(false);
+});
+>>>>>>> refs/remotes/fossasia/gh-pages
