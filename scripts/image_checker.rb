@@ -31,7 +31,7 @@ class ImageChecker
 
   def ok?
     if check_images?
-      puts 'All images are ok... Hurray!' if valid_sizes
+      puts 'All images are ok... Hurray!'
     else
       puts 'Image Checker: There are images which exceed the expected dimensions as specified above'
       puts "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
