@@ -130,10 +130,15 @@ function onScroll() {
     }
   });
 }
+<<<<<<< HEAD
 
 $(".menu-item").click(function(){
     $("#collapse").removeClass("in");
 });
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
 
 var modalShown = false;
 
@@ -150,3 +155,4 @@ $(".close").click(function() {
     modalShown = false;
     // window.opener.location.reload(false);
 });
+>>>>>>> refs/remotes/fossasia/gh-pages

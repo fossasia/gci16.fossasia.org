@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 .DS_Store
 *.swp
 _data/*~
 images/students/Gayar.jpg
+<<<<<<< HEAD
+=======
+_site/
+.DS_Store
+*.swp
+_data/*~
+>>>>>>> master
+=======
+>>>>>>> refs/remotes/fossasia/gh-pages
