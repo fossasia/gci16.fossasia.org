@@ -14,7 +14,10 @@ mentorsImgFiles = Dir["./images/mentors/**/*.*"]
 iconsImgFiles = Dir["./images/icons/**/*.png"]
 logosImgFiles = Dir["./images/logos/**/*.png"]
 blogsImgFiles = Dir["./images/blogs/**/*.*"]
+<<<<<<< HEAD
 logosv2ImgFiles = Dir["./imagees/logos/v2/**/*.*"]
+=======
+>>>>>>> master
 
 # Defines the standard maximum dimensions for images in each section
 studentsImgSize = 240
@@ -25,8 +28,11 @@ blogsImgWidth = 1920
 blogsImgHeight = 1080
 logosImgWidth = 600
 logosImgHeight = 600
+<<<<<<< HEAD
 logosv2ImgWidth = 600
 logosv2ImgHeight = 600
+=======
+>>>>>>> master
 
 # abortStatus stores status of tests
 abortStatus = 0
@@ -76,6 +82,7 @@ for logoImage in logosImgFiles
     end
 end
 
+<<<<<<< HEAD
 # Checking images in logos section
 for logov2Image in logosv2ImgFiles
     size = FastImage.size(logov2Image)
@@ -85,6 +92,8 @@ for logov2Image in logosv2ImgFiles
     end
 end
 
+=======
+>>>>>>> master
 # Checking images in icon section
 for blogImage in blogsImgFiles
     size = FastImage.size(blogImage)

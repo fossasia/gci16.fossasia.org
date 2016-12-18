@@ -32,8 +32,11 @@
   image: hemantjadon.jpg
   twitter: hemantjadonhj
   facebook: hemant.jadon
+<<<<<<< HEAD
   lat: 28.7041
   lng: 77.1025
+=======
+>>>>>>> master
 
 - name: Jigyasa Grover
   image: jgrover.jpg
@@ -56,8 +59,11 @@
   image: shubham-padia.jpg
   twitter: shubham_p98
   facebook: padiashubham
+<<<<<<< HEAD
   lat: 22.317983
   lng: 70.782976
+=======
+>>>>>>> master
 
 - name: Dishant Khanna
   github: DishantK1807

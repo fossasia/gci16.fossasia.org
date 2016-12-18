@@ -4,24 +4,40 @@
 .white-header {
     color: white;
     margin-bottom: 30px;
+<<<<<<< HEAD
 }
 .social-media {
     text-align: center;
     /*background: #344146;*/
     background: #212121;
+=======
+}.social{
+    font-size:13px;
+}
+.social-media {
+    text-align: center;
+    background: #344146;
+>>>>>>> master
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
+<<<<<<< HEAD
     height: 461px !important;
+=======
+    margin-bottom: 30px;
+>>>>>>> master
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
 }
+<<<<<<< HEAD
 .g-page-embed iframe .dgd.nae {
     padding-bottom: 50px !important;
 }
+=======
+>>>>>>> master
 .inner a.button {
     display: inline-block;
     width: 202px;
@@ -111,7 +127,11 @@
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
+<<<<<<< HEAD
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
+=======
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .cards {
+>>>>>>> master
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -122,6 +142,7 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+<<<<<<< HEAD
 .blogs-sec .card {
     width: 500px;
     height: 400px;
@@ -129,6 +150,15 @@
 .stu-name{
     margin-left:-7px;
     font-size:16px;
+=======
+.blogs-sec .cards {
+    width: 500px;
+    height: 400px;
+}
+.stu_name{
+	margin-left:-7px;
+	font-size:16px;
+>>>>>>> master
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -142,11 +172,16 @@
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
+<<<<<<< HEAD
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+=======
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .blogs-sec .avatar {
+>>>>>>> master
     position: relative;
     width: 200px;
     height: 200px;
 }
+<<<<<<< HEAD
 @media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
     .blogs-sec .avatar {
         width: 200px !important;
@@ -172,6 +207,9 @@
 }
 .blogs-sec .avatar {
     position: relative;
+=======
+.blogs-sec .avatar {
+>>>>>>> master
     width: 500px;
     height: 400px;
     background: white;
@@ -513,8 +551,13 @@ figure.effect-gcihover:hover figcaption::before {
     background-color: rgba(255, 255, 255, 0.8);
     /*height: 48px;*/
     overflow: hidden;
+<<<<<<< HEAD
     /*margin: 10px;*/
     /*padding: 10px;*/
+=======
+    margin: 10px;
+    padding: 10px;
+>>>>>>> master
     box-shadow: none;
     border: none;
 }
@@ -527,6 +570,7 @@ figure.effect-gcihover:hover figcaption::before {
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
+<<<<<<< HEAD
     /*margin-top: 0.5em;*/
     /*margin-bottom: 0.5em;*/
     height: 390px;
@@ -547,6 +591,20 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 4em 0.5em;
     /*background-color: #f44336;*/
     background-color: #880E4F;
+=======
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 400px;
+    padding: 0 !important;
+    display: block;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 10px 50px 10px 50px;
+    background-color: #f44336;
+>>>>>>> master
     color: white;
 }
 
@@ -554,6 +612,7 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 10px;
 }
 .heading{
+<<<<<<< HEAD
     color: #eee;
     text-align: center;
     margin-bottom: 1.5em;
@@ -573,11 +632,31 @@ figure.effect-gcihover:hover figcaption::before {
     width: 40%;
     /*margin-left: 25%;*/
     margin-bottom: 0.5em;
+=======
+	color:#100E35;
+	text-align: center;
+}
+.links-list {
+	list-style: none;
+	margin-left: 38px;
+}
+.links-list i{
+	color:white;
+	font-size:18px;
+	margin-right:7px;
+}
+.footer .row .social a, .footer img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 40px;
+>>>>>>> master
 }
 .footer .row .social a {
     margin-right: 2px;
     margin-top: 5px;
 }
+<<<<<<< HEAD
 .footer-copyright
 {
     margin-top: 2.2em;
@@ -618,6 +697,22 @@ figure.effect-gcihover:hover figcaption::before {
 {
     color: #ffb300;
 }
+=======
+
+.footer .row a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer .row .social a i {
+    font-size: 40px;
+    color: black;
+    margin-right: 8px;
+}
+
+>>>>>>> master
 .navbar-brand {
     margin-top: -7px;
 }
@@ -643,8 +738,13 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
+<<<<<<< HEAD
     /*margin-top: 3em;*/
     /*padding: 1em;*/
+=======
+    margin-top: 3em;
+    padding: 1em;
+>>>>>>> master
 }
 
 .students-section {
@@ -659,7 +759,11 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
+<<<<<<< HEAD
     /*margin-bottom: 30px;*/
+=======
+    margin-bottom: 30px;
+>>>>>>> master
 }
 .social-media:hover {
     box-shadow: 1px 5px 20px #888888;
@@ -681,6 +785,7 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 1px 5px 20px #888888;
 }
 
+<<<<<<< HEAD
 #mapp {
     margin-top: 30px;
     width: 100%;
@@ -694,6 +799,8 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 1px 5px 20px #888888;
 }
 
+=======
+>>>>>>> master
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }

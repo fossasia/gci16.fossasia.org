@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .DS_Store
 *.swp
 _data/*~
 images/students/Gayar.jpg
+=======
+_site/
+.DS_Store
+*.swp
+_data/*~
+>>>>>>> master
