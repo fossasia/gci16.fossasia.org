@@ -23,7 +23,7 @@ class ImageChecker
     valid_sizes = true
     @directories.each do |dir|
       dir.each do |image|
-        valid_sizes = false if check_image_dimensions?(image, @max_size)
+        valid_sizes = false unless check_image_dimensions?(image, @max_size)
       end
     end
     valid_sizes
@@ -35,7 +35,9 @@ class ImageChecker
     else
       puts 'Image Checker: There are images which exceed the expected dimensions as specified above'
       puts "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
+      return false
     end
+    true
   end
 end
 
@@ -43,5 +45,5 @@ directories = [Dir['./img/students/**/*.*'], Dir['./img/students/**/*.*'],
                Dir['./img/mentors/**/*.*'], Dir['./img/blogs/**/*.*'],
                Dir['./img/privly/**/*.*']]
 
-# Check images now.
+# Check images now
 ImageChecker.new 240, directories
