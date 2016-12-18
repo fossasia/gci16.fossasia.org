@@ -5,6 +5,11 @@
     color: white;
     margin-bottom: 30px;
 }
+
+.ism-slider li.ism-slide{
+    background-color: white;
+}
+
 .social-media {
     text-align: center;
     /*background: #344146;*/
