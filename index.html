@@ -66,26 +66,34 @@
     </nav>
 <!-- End of Navigation Bar -->
 <!-- Slider -->
-    <div class="slider-container" id="welcome">
-      <div class="ism-slider" data-transition_type="fade" id="my-slider">
-        <ol>
-          {% for slide in site.data.slides %}
-          <li>
-            <img src="images/{{slide.img}}">
-            <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
-                {{slide.exp-1}}<br>
-                {{slide.exp-2}}<br>
-                {{slide.exp-3}}
-                {% if slide.action %}
-                    <a href="{{slide.actionURL}}">{{slide.action}}</a>
-                {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ol>
-      </div>
-    </div>
+   <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/image_slider_crowd.png" style="width:100%">
+    <div class="text">Fossasia</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/image_slider_fossasia.png" style="width:100%">
+    <div class="text">Great Experience</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/image_slider_machine.png" style="width:100%">
+    <div class="text">Having Fun!!!</div>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
 <!-- End of Slider -->
 
 <!-- Main Content -->
@@ -162,62 +170,52 @@
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card stu-card">
                             <div class="avatar">
-                                {% if student.image %}
-                                <img src="images/students/{{student.image}}"
-                                alt="{{student.name}}"
+                                <img src="images/students/HarshitBagla.jpg"
+                                alt="Harshit Bagla"
                                 width="200px" height="200px">
-                                {% else %}
-                                <img src="images/mentors/member.png"
-                                alt="{{student.name}}"
-                                width="200px" height="200px">
-                                {% endif %}
+                                
                                 <div class="social">
-                                    {% if student.github %}
-                                    <a href="//github.com/{{student.github}}"
+                                  
+                                    <a href="//github.com/HarshitBagla"
                                        target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
-                                    {% endif %}
-                                    {% if student.facebook %}
-                                    <a href="//facebook.com/{{student.facebook}}"
+                                  
+                                    <a href="//facebook.com/harshit.bagla.5"
                                        target="_blank">
                                         <i class="fa fa-facebook"></i>
                                     </a>
-                                    {% endif %}
+                                  
                                     <br>
-                                    {% if student.twitter %}
-                                    <a href="//twitter.com/{{student.twitter}}"
+                                   
+                                    <a href="//twitter.com/HarshitBagla"
                                        target="_blank">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    {% endif %}
-                                    {% if student.blog %}
-                                    <a href="//{{student.blog}}"
-                                       target="_blank">
-                                        <i class="fa fa-code"></i>
-                                    </a>
-                                    {% endif %}
-                                    <!--
-                                    {% if student.bio %}
+                                    
+                                    
+                                    
+                                   
                                     <div style="white-space: nowrap; overflow-x: hidden;">
-                                        {{student.bio}}
+                                        I am a Maths, Computer Science and Physics enthusiast.
                                     </div>
-                                    ...
-                                    {% endif %}
-                                    -->
+
+                                   
+                                    
+                                    
                                 </div>
                                 <p style="padding-top:3px">
                                     <i class="fa fa-code"></i>
                                     &nbsp;
-                                    <span class="stu-name" title="{{student.name}}">
-                                        {{student.name}}
+                                    <span class="stu-name" title="Harshit Bagla">
+                                        Harshit Bagla
                                     </span>
                                 </p>
                             </div>
                         </div>
-                        {% include popup.html person=student who='student' %}
+                        
                     </div>
-                    {% endfor %}
+                    
                 </div>
             </section>
             <!-- End of Student Section -->
@@ -1117,6 +1115,7 @@
     <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
+    <script type="javascripts/main.js"></script>
     <!-- Github Cards -->
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js" async></script>
 
