@@ -41,9 +41,9 @@ class ImageChecker
   end
 end
 
-directories = [Dir['./img/students/**/*.*'], Dir['./img/students/**/*.*'],
-               Dir['./img/mentors/**/*.*'], Dir['./img/blogs/**/*.*'],
-               Dir['./img/privly/**/*.*']]
+directories = [Dir['./images/students/**/*.*'], Dir['./images/students/**/*.*'],
+               Dir['./images/mentors/**/*.*'], Dir['./images/blogs/**/*.*'],
+               Dir['./images/privly/**/*.*']]
 
 # Check images now
 ImageChecker.new 240, directories
