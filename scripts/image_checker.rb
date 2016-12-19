@@ -33,7 +33,7 @@ class ImageChecker
       puts 'All images are ok... Hurray!'
     else
       puts 'Image Checker: There are images which exceed the expected dimensions as specified above'
-      puts "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
+      abort "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
       return false
     end
     true
