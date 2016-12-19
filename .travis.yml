@@ -26,3 +26,5 @@ branches:
   only:
     - gh-pages  # Must be appear explicitly
     - /./  # Allows builds for any other branch name
+  except:
+    - coala-fix
