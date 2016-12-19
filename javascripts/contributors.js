@@ -1,43 +1,26 @@
-(function() {
-  var words = [
-      "Oanarosca",
-      "M1guelpf",
-      "Abhi2424shek",
-      "Niccokunzmann",
-      "Rhemon",
-      "Hoangvanthien",
-      "Jig08",
-      "Hemantjadon",
-      "Gaeun",
-      "Ankitrgadiya",
-      "Princu7",
-      "Daminisatya",
-      "PolBaladas",
-      "Vickyjjj",
-      "BohJieQi",
-      "Adarsh-ideal",
-      "Prabhdeep29",
-      "Hpdang",
-      "LeeCareGene",
-      "Abhijeetmanohar",
-      "Baidya99",
-      "Nolik2000",
-      "Pipix51",
-      "Codethejason",
-      "Shubham-padia",
-      "Hesapadim",
-      "Animeshsinghweb",
-      "Dannymout",
-      "Royalharsh",
-      "Hesham-Burawi"
-    ],
-    i = 0;
+var i = 0;
 
+var getContributors = function(page) {
+$.ajax({
+  url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
+}).done(function(data) {
+  if (data.length === 0) {
+    return;
+  }
+  data.forEach(function(contributors) {
+    // Ignore LineLengthBear
+  //for(var i =0; i<data.length; i++){
+    setInterval(function() {
+      $('#name').fadeOut(function() {
+        $(this).html(data[i = (i + 1)].login).fadeIn();
+      });
+    }, 3000);
 
-  setInterval(function() {
-    $('#name').fadeOut(function() {
-      $(this).html(words[i = (i + 1) % words.length]).fadeIn();
-    });
-  }, 3000);
+      //}
 
-})();
+  });
+  getContributors(page+1);
+});
+};
+
+$(getContributors(1));
