@@ -10,7 +10,7 @@ install:
 script:
   - bundle exec jekyll build
   - percy snapshot _site/
-  - ruby ./scripts/ImgChecker/ImgChecker.rb
+  - ruby ./scripts/image_checker.rb
   - docker run --volume=$(pwd):/app --workdir=/app coala/base coala -C
 branches:
   only:
