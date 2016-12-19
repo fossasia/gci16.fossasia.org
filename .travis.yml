@@ -22,9 +22,10 @@ script:
   - git remote add origin-pages https://coala-autofix-bot:$COALA_FIXER@github.com/fossasia/gci16.fossasia.org.git
   - git pull --rebase origin-pages coala-fix
   - git push --quiet --set-upstream origin-pages coala-fix
+
 branches:
+  except:
+    - coala-fix # No need to build this...
   only:
     - gh-pages  # Must be appear explicitly
     - /./  # Allows builds for any other branch name
-  except:
-    - coala-fix
