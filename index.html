@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
     <link rel="stylesheet" href="stylesheets/popup.css">
+    <link rel="stylesheet" href="stylesheets/social-media.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -415,54 +416,82 @@
 
         </div> <!-- End of .container inside the main-wrapper section -->
 
-        <div class="social-media" id="social-media" href="#social-media">
-          <div class="container-fluid">
-            <!-- Start ignoring BootLintBear -->
-            <div class="row">
-                <h2 class="white-header">FOSSASIA on social media</h2>
-                <div class="col-xs-12 col-md-6">
-                    <!-- Ignore LineLengthBear -->
-                    <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                    width="370" style="border:none;overflow:hidden"
-                    scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                </div>
-                <div class="col-xs-12 col-md-6 g-page-embed">
-                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370"></div>
-                </div>
+        <div class="social-media", id="social-media", href="#social-media">
+            <div id="sm-sidebar">
+                <ul>
+                    <li data-sm="fb">Facebook</li>
+                    <li data-sm="gplus">Google+</li>
+                    <li data-sm="twitter">Twitter</li>
+                    <li data-sm="github">Github</li>
+                    <li data-sm="youtube">Youtube</li>
+                </ul>
             </div>
-            <!-- Stop ignoring -->
-            <!-- Start ignoring BootLintBear -->
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <a class="twitter-timeline" data-width="370" data-height = "500"
-                    href="//twitter.com/fossasia">Tweets by fossasia</a>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="github-widget" data-username="fossasia"></div>
-                </div>
-            </div>
-          </div> <!--Fluid-Container-->
-            <!-- Stop ignoring -->
-            <div class="last-one">
-                    <!-- Ignore LineLengthBear -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6 yt">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item"
-                                src="//www.youtube.com/embed/videoseries\
-                                ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                frameborder="0" allowfullscreen>
-                                    </iframe>
+            
+            <div id="sm-pane">
+                <ul>
+                    <li>
+                        <div class="fb panel">
+                            <div class="banner"></div>
+                            <div class="banner-overlay"></div>
+                            <div class="wrapper">
+                                <div class="header">
+                                    <div>Latest Posts<span class="likes"><span class="count">x</span> likes</span></div>
+                                    <img src="http://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png"/>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div id="flickrembed"></div>
+                                <div class="line"></div>
+                                <div class="arrows"><button class="left">&lt;</button><button class="right">&gt;</button></div>
                             </div>
                         </div>
-                    </div>
-            </div> <!--Last One-->
-        </div> <!--Social Media-->
+                    </li>
+                    <li>
+                        <div class="gplus panel">
+                            <div class="wrapper">
+                                <div>
+                                    <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 370px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 431px;" tabindex="0" vspace="0" width="100%" id="I0_1482007826312" name="I0_1482007826312" src="https://apis.google.com/u/0/_/widget/render/page?usegapi=1&amp;href=%2F%2Fplus.google.com%2F%2Bfossasiaorg&amp;width=370&amp;origin=http%3A%2F%2Fgci16.fossasia.org&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.PbBqUN5CsYY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPmVtknW0nGp1uQh0Fe0NYz0LV71w#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1482007826312&amp;parent=http%3A%2F%2Fgci16.fossasia.org&amp;pfname=&amp;rpctoken=56786239" data-gapiattached="true" title="+Badge"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twitter panel">
+                            <div class="wrapper">
+                                <div class="header">
+                                    <div>Latest Tweets</div>
+                                    <img src="img/twitter-512.gif"/>
+                                </div>
+                                <div class="line"></div>
+                                <div class="arrows"><button class="left">&lt;</button><button class="right">&gt;</button></div>
+                                <div id="sm-tweets" class="tweets"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="github panel">
+                            <div class="bg">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                            </div>
+                            <div class="github-widget" data-username="fossasia"></div>
+                            <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="youtube panel">
+                            <div class="wrapper">
+                                <div class="header">
+                                    <div>2016 Playlist</div>
+                                    <img src="https://www.youtube.com/yt/brand/media/image/YouTube_light_color_icon.png"/>
+                                </div>
+                                <div class="line"></div>
+                                <div class="vid-wrapper">
+                                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/videoseries\&#10;                                ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5" frameborder="0" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 <!-- End of Main Content -->
 
@@ -568,6 +597,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//apis.google.com/js/platform.js" async defer></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="./javascripts/twitterfetcher.js"></script>
+    <script src="//use.fontawesome.com/40751fc112.js"></script>
     <script>
         ! function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -1124,10 +1157,10 @@
     </script>-->
     <!-- END MAPS FOR STUDENTS -->
 
-
     <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
+    <script src="./javascripts/script.js"></script>
     <!-- Github Cards -->
     <script src="//unpkg.com/github-card@1.2.1/dist/widget.js" async></script>
 
