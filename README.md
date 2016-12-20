@@ -27,6 +27,8 @@ you may use any image optimizer of your choice. Also the images should be 240x24
 Adding facebook, twitter, github, image are not needed but you may provide it and never
 provide empty fileds like `facebook: `.**
 
+**_Please avoid using contractions such as can't, don't, etc._**
+
 **Also try to use abbrivation in your name wherever possible.**
 Try to strict your name in 13 letter (including spaces) otherwise your name might be
 truncated automatically.
