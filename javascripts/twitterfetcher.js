@@ -394,7 +394,7 @@
         twitterFetcher.fetch(queue[0]);
         queue.splice(0,1);
       }
-       
+
       // Added by Jessie Mindel to allow for callback after processing rather than during processing
       $(window).trigger('loadedTweets');
     }
