@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Push Coala fixes back to the repo
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "coala-autofix-bot"
 git checkout -B coala-fix
