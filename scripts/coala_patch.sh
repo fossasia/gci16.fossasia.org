@@ -3,7 +3,7 @@
 # make a branch per fix
 FIX_BRANCH=coala-fix-$TRAVIS_BUILD_NUMBER
 # only do this on gh-page branch
-if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
+if [ $TRAVIS_BRANCH = "gh-pages" ]; then
     git config --global user.email "travis@travis-ci.org"
     git config --global user.name "coala-autofix-bot"
     git checkout -B $FIX_BRANCH
