@@ -134,3 +134,8 @@ function onScroll() {
     }
   });
 }
+
+function buttons(){
+  var btn = document.getElementById('Zahari');
+  btn.style.opacity = 0.6; 
+}
