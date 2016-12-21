@@ -13,7 +13,9 @@ if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
         git pull --rebase origin-pages $FIX_BRANCH
         git push --quiet --set-upstream origin-pages $FIX_BRANCH
         curl -X POST -H "Authorization: token $GITHUB_TOKEN" --data '{"title":"coala-fixes for build '$TRAVIS_BUILD_NUMBER'", "body":"Automated Coala fixes:'$TRAVIS_BUILD_NUMBER'", "head":"'$FIX_BRANCH'", "base":"gh-pages"}' https://api.github.com/repos/fossasia/gci16.fossasia.org/pulls;
+    else
+        echo "No changes detected. Not creating a patch."
     fi
 else
-    echo "Not committing a patch since we are not on the gh-pages branch."
+    echo "Not commiting a patch since not on gh-pages branch"
 fi
