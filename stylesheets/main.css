@@ -730,10 +730,10 @@ body {
 
 #previous {
     float: left;
-    color: white;
+    color: black;
 }
 
 #next {
     float: right;
-    color: white;
+    color: black;
 }
