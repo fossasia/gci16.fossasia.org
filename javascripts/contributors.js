@@ -15,7 +15,7 @@ setInterval(function() {
   $('#name').fadeOut(function() {
     $(this).html(whom[j = (j + 1)]).fadeIn();
   });
-}, 4000);
+}, 6000);
 
   getContributors(page+1);
 });
