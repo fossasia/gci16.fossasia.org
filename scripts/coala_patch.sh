@@ -17,5 +17,5 @@ if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
         echo "No changes detected. Not creating a patch."
     fi
 else
-    echo "Not commiting a patch since not on gh-pages branch"
+    echo "Not creating a patch since not on gh-pages branch"
 fi
