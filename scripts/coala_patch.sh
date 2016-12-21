@@ -8,5 +8,5 @@ git commit --message "Coala auto-patch for Travis CI Build:$TRAVIS_BUILD_NUMBER 
 git remote add origin-pages https://coala-autofix-bot:$COALA_FIXER@github.com/fossasia/gci16.fossasia.org.git
 git pull --rebase origin-pages coala-fix
 git push --quiet --set-upstream origin-pages coala-fix
-response = $(curl --write-out '%{http_code}' -output /dev/null -H "Authorization: token $GITHUB_TOKEN" -d '{"title":"coala-fixes", "body":"Automated Coala fixes", "head":"coala-autofix", "base":"master"}' https://api.github.com/repos/fossasia/gci16.fossasia.org/pulls)
+response = $(curl --write-out '%{http_code}' -output /dev/null -X POST--H "Authorization: token $GITHUB_TOKEN" --data '{"title":"coala-fixes", "body":"Automated Coala fixes", "head":"coala-autofix", "base":"master"}' https://api.github.com/repos/fossasia/gci16.fossasia.org/pulls)
 echo $response
