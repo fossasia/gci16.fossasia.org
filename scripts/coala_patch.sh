@@ -1,6 +1,7 @@
 #!/bin/bash
 # Push Coala fixes back to the repo if on gh-pages branch
-FIX_BRANCH="$FIX_BRANCH-$TRAVIS_BUILD_NUMBER" # make a branch per fix
+FIX_BRANCH='$FIX_BRANCH'-'$TRAVIS_BUILD_NUMBER' # make a branch per fix
+echo $FIX_BRANCH
 if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
     git config --global user.email "travis@travis-ci.org"
     git config --global user.name "coala-autofix-bot"
