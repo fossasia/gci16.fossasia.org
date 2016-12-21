@@ -3,7 +3,7 @@
   margin-top: 7%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -mos-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -40,9 +40,9 @@
   -webkit-animation-name: opacity;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -mos-animation-name: opacity;
-  -mos-animation-duration: 2s;
-  -mos-animation-iteration-count: infinite;
+  -moz-animation-name: opacity;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
   -o-animation-name: opacity;
   -o-animation-duration: 2s;
   -o-animation-iteration-count: infinite;
@@ -69,9 +69,9 @@ ul {
   -webkit-animation-name: change;
   -webkit-animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
-  -mos-animation-name: change;
-  -mos-animation-duration: 6s;
-  -mos-animation-iteration-count: infinite;
+  -moz-animation-name: change;
+  -moz-animation-duration: 6s;
+  -moz-animation-iteration-count: infinite;
   -o-animation-name: change;
   -o-animation-duration: 6s;
   -o-animation-iteration-count: infinite;
