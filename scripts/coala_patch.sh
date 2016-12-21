@@ -8,4 +8,4 @@ git commit --message "Coala auto-patch for Travis CI Build:$TRAVIS_BUILD_NUMBER 
 git remote add origin-pages https://coala-autofix-bot:$COALA_FIXER@github.com/fossasia/gci16.fossasia.org.git
 git pull --rebase origin-pages coala-fix
 git push --quiet --set-upstream origin-pages coala-fix
-curl -X POST -H "Authorization: token $GITHUB_TOKEN" --data '{"title":"coala-fixes for build '$TRAVIS_BUILD_NUMBER'", "body":"Automated Coala fixes:'$TRAVIS_BUILD_NUMBER'", "head":"coala-fix", "base":"gh-pages"}' https://api.github.com/repos/fossasia/gci16.fossasia.org/pulls
+curl -X POST -H "Authorization: token $GITHUB_TOKEN" --data '{"title":"coala-fixes for build '$TRAVIS_BUILD_NUMBER'", "body":"Automated Coala fixes:'$TRAVIS_BUILD_NUMBER'", "head":"coala-fix", "base":"'$TRAVIS_BRANCH'"}' https://api.github.com/repos/fossasia/gci16.fossasia.org/pulls
