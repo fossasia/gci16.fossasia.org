@@ -8,7 +8,7 @@ if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
     git config --global user.name "coala-autofix-bot"
     git checkout -B "$FIX_BRANCH"
     git add .
-    # check for changes
+    # check for staged case changes
     git status --porcelain|grep "A"
     # if there are changes
     if [ "$?" = 0 ]; then
