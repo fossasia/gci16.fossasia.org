@@ -17,5 +17,5 @@ script:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./scripts/coala_patch.sh; fi'
 branches:
   only:
-    - gh-pages  # Must be appear explicitly
+    - gh-pages
     - /^.$/  # Allows builds for any other branch name
