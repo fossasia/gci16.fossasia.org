@@ -1,4 +1,4 @@
-# New members please add your credentials to a random position in the file.
+﻿# New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
 - name: Animesh Singh
@@ -47,7 +47,7 @@
   github: kmehant
   image: mehant.jpg
   twitter: mehant1
-  bio: I do not play games, I build games! \"GameJamTitans finalist\" /m\
+  bio: I don't play games, I build games! "GameJamTitans finalist" \m/
 
 - name: Alejandro Heredia
   email: alex.heredia.barbosa@gmail.com
@@ -184,7 +184,7 @@
   github: Abhi2424shek
   image: abishek.jpg
   twitter: abhi2424shek
-  bio: 15, hacker from God\'s own country
+  bio: 15, hacker from God's own country
   facebook: abishekvashok
 
 - name: Deepraj Pandey
@@ -312,7 +312,7 @@
   twitter: ankit4922
   image: ankit.jpg
   blog: blog.ankitrgadiya.me
-  bio: I am 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
 
 - name: Zenon
   github: zehata
@@ -418,7 +418,7 @@
   facebook: zari.asparuhov
   bio: 17, Bulgaria, web developing and web servers with NodeJS
 
-- name: Arpna kumari
+  name: Arpna kumari
   github: arpnakumari
   facebook: arpna kumari
   twitter: arpna07
@@ -426,7 +426,7 @@
   blog: arpnablog.wordpress.com
   bio: A 16 yr old from INDIA ,wants to pursue medical field.
 
-- name: Gautam Jajoo
+  name: Gautam Jajoo
   github: gautamjajoo
   facebook: Gautam Jajoo
   twitter: gautamjajoo
@@ -445,27 +445,13 @@
   facebook: Guneet
   bio: A 14 year old boy who wants to do somthing for the nation.
 
-- name: Vishal Singh
-  github: vishu15singh
-  image: Vishalsingh.jpg
-  twitter: vishu15singh
-  bio: 16, Student, Footballer, Indian.
-
 - name: Srijan Jha
   github: SrijanJha28
   image: SrijanJha.jpg
   twitter: SrijanJha2
   bio: 16, Indian, coder, hacker, tech enthusiast
 
-- name: Peirce Chow
-  github: peircechow
-  image: peircechow.jpg
-  facebook: peirce.chowzhengjie
-  twitter: peircechow
-  bio: 17, Singaporean, aspiring coder
-
-- name: Koh Yi Ting
-  github: kohyt
-  image: kohyt.jpg
-  twitter: msft007
-  bio: 17, Singaporean, learning Python
+- name: Mridul Birla
+  image: Mridul.jpg
+  facebook: Mridul Birla
+  bio: 14, If you fear failure, you will never go anywhere.
