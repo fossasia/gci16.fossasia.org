@@ -11,6 +11,8 @@ Read thoroughly our [contributing guide](https://github.com/fossasia/gci16.fossa
 
 # Adding yourselves to student section
 
+**NOTE: Your addition should not modify the entire file. If this occurs, you did something wrong.**
+
 To add yourself to student section you need to open the file `students.yml` in `_data` folder and please
 maintain the following format to enter a student:
 
