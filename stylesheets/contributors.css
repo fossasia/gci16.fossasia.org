@@ -1,6 +1,6 @@
 .content {
   position: absolute;
-  margin-top: 8%;
+  margin-top: 100px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
