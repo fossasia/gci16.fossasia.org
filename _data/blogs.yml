@@ -1,6 +1,12 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Mostafa Elgayar
+  blog: thegigotheory.wordpress.com
+  blog_img: thegigotheory.png
+  article: My Jounrey To Open Source
+  article_link: https://thegigotheory.wordpress.com/2016/12/19/my-journey-to-open-source/
+
 - name: Apurv Jain
   blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
   blog_img: apurv_blog.png.png
