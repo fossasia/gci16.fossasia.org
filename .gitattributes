@@ -1,6 +1,11 @@
 _data/students.yml merge=union
 text eol=lf
 
+# text files
+*.yml text
+*.html text
+*.md text
+
 # Denote all files that are truly binary and should not be modified.
 *.png binary
 *.jpg binary
