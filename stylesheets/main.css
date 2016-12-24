@@ -51,16 +51,16 @@
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
-    position: relative;
-    margin-top: 60%;
-    left: 30px;
+    margin-top: 15px;
+    text-align: center;
     font-size: 18px;
+    display: inline-block;
 }
 #contributors-list div img {
     width: 200px;
     height: 200px;
 }
-#contributors-list div a {
+/*#contributors-list div a {
     position: absolute;
     left: 20px;
     margin-top: 212px;
@@ -70,7 +70,7 @@
 #contributors-list div .gh-icon {
     position: absolute;
     top: -3px;
-}
+}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
@@ -122,6 +122,13 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+
+.card-text{
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline;
+}
+
 .blogs-sec .card {
     width: 500px;
     height: 400px;
