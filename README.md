@@ -22,11 +22,14 @@ maintain the following format to enter a student:
   twitter: Your twitter id
   facebook: Your facebook id
   bio: Some bio about yourself
+  lat: Your latitude
+  lng: Your longitude
 ```
 **Important: All images must be optimized before uploaded to the repo via commit or PR,
 you may use any image optimizer of your choice. Also the images should be 240x240 pixels
 Adding facebook, twitter, github, image are not needed but you may provide it and never
-provide empty fileds like `facebook: `.**
+provide empty fileds like `facebook: `. To find your lattitude and longitude go to the official
+FOSSASIA geolocation website https://fossasia.github.io/geolocation.**
 
 **Please avoid changing the whole file just to add yourself. Line endings should not change.**
 
@@ -34,7 +37,7 @@ provide empty fileds like `facebook: `.**
 
 **Also try to use abbrivation in your name wherever possible.**
 Try to restrict your name in 13 letter (including spaces) otherwise your name might be
-truncated automatically.
+truncated automatically. However, your name will be displayed completely when hovered.
 
 # Blog Post
 

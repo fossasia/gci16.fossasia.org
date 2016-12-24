@@ -94,7 +94,9 @@
   twitter: PolBaladas
   image: pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
-
+  lat: 41.3714697
+  lng: 2.1597459
+  
 - name: David Nagli
   email: davidnagli@gmail.com
   github: davidnagli
@@ -191,8 +193,10 @@
   github: Abhi2424shek
   image: abishek.jpg
   twitter: abhi2424shek
-  bio: 15, hacker from God\'s own country
+  bio: Keep calm and expect me
   facebook: abishekvashok
+  lat: 9.8931813
+  lng: 76.3231929
 
 - name: Deepraj Pandey
   github: DeeprajPandey
