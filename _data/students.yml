@@ -11,6 +11,13 @@
   lat: 22.8035475
   lng: 86.1949906
 
+- name: Joseph Bywater
+  github: josephbywater
+  facebook: josephbywater.1
+  twitter: thejj100100
+  image: joseph.jpg
+  bio: 15 Years Old, Loves Open Source and coding!
+
 - name: Mostafa Elgayar
   github: Elgayar
   facebook: mostafa.elgayar1
@@ -456,10 +463,22 @@
   image: SrijanJha.jpg
   twitter: SrijanJha2
   bio: 16, Indian, coder, hacker, tech enthusiast
-  
+
+- name: Vivek Kumar
+  github: vivekkumarsvm
+  image: vivek.jpg
+  twitter: vivekkumarsvm46
+  bio: 16, Indian, Computer Science Student
+
 - name: Peirce Chow
   github: peircechow
   image: peircechow.jpg
   facebook: peirce.chowzhengjie
   twitter: peircechow
   bio: 17, Singaporean, aspiring coder
+
+- name: Koh Yi Ting
+  github: kohyt
+  image: kohyt.jpg
+  twitter: msft007
+  bio: 17, Singaporean, learning Python
