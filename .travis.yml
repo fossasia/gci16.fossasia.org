@@ -11,7 +11,7 @@ script:
   - bundle exec jekyll build
   - percy snapshot _site/
   - ruby ./scripts/image_checker.rb
-  - docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c 'coala --ci --apply-patches --no-orig'
+  - docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c 'coala --apply-patches --no-orig'
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./scripts/coala_patch.sh; fi'
 branches:
   only:
