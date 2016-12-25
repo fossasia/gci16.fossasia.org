@@ -4,7 +4,6 @@ if (IntersectionObserver) {
   var io = new IntersectionObserver(
     function(entries) {
       if (entries[0].target == scrollWaiter || entries[0].target == socialDiv) {
-        console.info('Loading social widgets');
         loadSocialMediaWidgets();
         io.disconnect();
       }
@@ -16,8 +15,14 @@ if (IntersectionObserver) {
   io.observe(scrollWaiter);
   io.observe(socialDiv);
 } else {
-  console.info('Loading social widgets by default');
-  loadSocialMediaWidgets();
+  var scrollThreshold = document.querySelector('#loklak').scrollTop;
+  var fun = function(e) {
+    var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollPos >= scrollThreshold) {
+      loadSocialMediaWidgets();
+    }
+  };
+  window.addEventListener('scroll', fun, { passive: true });
 }
 
 function loadSocialMediaWidgets() {
