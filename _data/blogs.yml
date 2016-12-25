@@ -178,4 +178,10 @@
   blog_img: rileykova.png
   article: FOSSASIA
   article_link: http://rkblog2k16.cf/blog/fossasia
+  
+- name: Nadun Yashmika
+  blog: https://yashnadun.wordpress.com
+  blog_img: nadunyashblog.jpg 
+  article: My Participation in Google Code-in with FOSSASIA
+  article_link: https://yashnadun.wordpress.com/2016/12/25/blog-post-title-5/
 
