@@ -16,3 +16,8 @@
   link: http://techfest.vratsa.net/
   source: https://github.com/granets/SoftUniHack
   image: MS.jpg
+- name: Susi Documentation
+  owner: Adarsh Kumar
+  link: https://fossasia.github.io/susi_server/
+  source: https://adarsh-ideal.github.io/susi_server/
+  image: adarsh-susi.png

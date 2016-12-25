@@ -7,6 +7,13 @@
   blog: http://blog.fossasia.org/
   facebook: hpdang
 
+- name: Harshit Dwivedi
+  github: the-dagger
+  image: harshit1.png
+  twitter: @daggerdwivedi
+  lat: 28.608278
+  lng: 77.3009404
+
 - name: Mario Behling
   github: mariobehling
   image: mariobehling.jpg
@@ -78,7 +85,7 @@
   lat: 52.386447999999994
   lng: 13.097770899999999
 
-- name: Robby O'Connor
+- name: "Robby O'Connor"
   github: robbyoconnor
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
@@ -135,3 +142,4 @@
   github: aviaryan
   image: aviaryan.jpg
   twitter: aviaryan123
+

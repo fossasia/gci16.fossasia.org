@@ -108,6 +108,9 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper {
+    margin-top: 100px;
+}
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
@@ -652,7 +655,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .social-media {
     -moz-transition: all .2s ease-in;
@@ -730,10 +733,10 @@ body {
 
 #previous {
     float: left;
-    color: white;
+    color: black;
 }
 
 #next {
     float: right;
-    color: white;
+    color: black;
 }
