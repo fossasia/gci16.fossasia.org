@@ -54,13 +54,12 @@
   animation-iteration-count: infinite;
 }
 
-p {
+#contributors-thanks p {
   display: inline;
-
- margin: 0;
+  margin: 0;
 }
 
-ul {
+#contributors-thanks ul {
   margin-top: 0;
   margin-left: 90px;
   padding-left: 410px;
@@ -83,7 +82,7 @@ ul {
   animation-iteration-count: infinite;
 }
 
-ul li {
+#contributors-thanks ul li {
   line-height: 40px;
   margin: 0;
 }
