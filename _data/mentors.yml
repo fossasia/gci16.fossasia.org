@@ -32,6 +32,8 @@
   image: hemantjadon.jpg
   twitter: hemantjadonhj
   facebook: hemant.jadon
+  lat: 28.7041
+  lng: 77.1025
 
 - name: Jigyasa Grover
   image: jgrover.jpg
@@ -46,12 +48,16 @@
   github: nghoangphu
   image: nghoangphu.jpg
   facebook: nghoangphu
+  lat: 10.058854561670294
+  lng: 105.7663967687538
 
 - name: Shubham Padia
   github: shubham-padia
   image: shubham-padia.jpg
   twitter: shubham_p98
   facebook: padiashubham
+  lat: 22.317983
+  lng: 70.782976
 
 - name: Dishant Khanna
   github: DishantK1807
@@ -69,12 +75,16 @@
   image: niccokunzmann.jpg
   blog: niccokunzmann.github.io
   twitter: dannhaltohneson
+  lat: 52.386447999999994
+  lng: 13.097770899999999
 
-- name: Robby O'Connor
+- name: "Robby O'Connor"
   github: robbyoconnor
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
+  lat: 41.4731364
+  lng: -74.0364419
 
 - name: Ajinkya Wavare
   github: ajinkya007
@@ -91,6 +101,8 @@
   image: princu7.jpg
   twitter: princu7
   facebook: abhishek.rastogi.58
+  lat: 20
+  lng: 77
 
 - name: Sreeja Kamishetty
   github: kamishettysreeja25
@@ -100,11 +112,26 @@
 - name: Harsh Vardhan
   github: royalharsh
   image: harshvardhan.jpg
-  blog: http://thehvardhan.me/
-  twitter: https://twitter.com/royalharsh95
+  blog: http://thehvardhan.me
+  twitter: royalharsh95
+  lat: 22.842643
+  lng: 86.229935
+
+- name: Yathannsh Kulshrestha
+  facebook: yathannsh
+  github: Yathannsh
+  image: yathannsh.jpg
+  twitter: yathannsh
 
 - name: Shiven Mian
   github: shivenmian
   image: shiven.jpg
   facebook: shiven.iiitd
   twitter: shiven_mian
+  lat: 28.704898200000002
+  lng: 77.1405305
+
+- name: Avi Aryan
+  github: aviaryan
+  image: aviaryan.jpg
+  twitter: aviaryan123

@@ -1,0 +1,56 @@
+<!-- Ignore HTMLLintBear, BootLintBear -->
+<div class="modal">
+    <div class="picture">
+    {% if include.person.image %}
+    {% if include.who == 'student' %}
+    <img src="images/students/{{include.person.image}}"
+    alt="{{include.person.name}}"
+    width="200px" height="200px">
+    {% endif %}
+    {% if include.who == 'mentor' %}
+    <img src="images/mentors/{{include.person.image}}" alt="{{ include.person.name }}">
+    {% endif %}
+    {% else %}
+    <img src="images/mentors/member.png"
+    alt="{{include.person.name}}"
+    width="200px" height="200px">
+    {% endif %}
+    </div>
+    <div class="information">
+    <h3> Information of {{ include.person.name }}</h3>
+    <div>
+    {% if include.person.github %}
+    <a href="//github.com/{{include.person.github}}"
+       target="_blank">
+        <i class="fa fa-github" style="font-size: 40px; margin: 10px;"></i>
+    </a>
+    {% endif %}
+    {% if include.person.facebook %}
+    <a href="//facebook.com/{{include.person.facebook}}"
+       target="_blank">
+        <i class="fa fa-facebook" style="font-size: 40px; margin: 10px;"></i>
+    </a>
+    {% endif %}
+    {% if include.person.twitter %}
+    <a href="//twitter.com/{{include.person.twitter}}"
+       target="_blank">
+        <i class="fa fa-twitter" style="font-size: 40px; margin: 10px;"></i>
+    </a>
+    {% endif %}
+    {% if include.person.blog %}
+    <a href="//{{include.person.blog}}"
+       target="_blank">
+        <i class="fa fa-code" style="font-size: 40px; margin: 10px;"></i>
+    </a>
+    {% endif %}
+    </div>
+    <br>
+    {% if include.person.bio %}
+    <div style="font-size: 14px; padding: 20px;">
+        {{include.person.bio}}
+    </div>
+    {% endif %}
+    </div>
+    <p class="close"
+       style="right: 50px; bottom: 10px; position: absolute;">Close</p>
+</div>

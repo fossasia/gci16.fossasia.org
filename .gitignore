@@ -1,4 +1,4 @@
-_site/
 .DS_Store
 *.swp
 _data/*~
+_site/
