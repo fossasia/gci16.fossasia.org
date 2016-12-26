@@ -5,7 +5,7 @@ rvm:
   - 2.3.3
 install:
   - gem install danger
-  - danger --verbose
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then danger --verbose; fi'
   - bundle install
 script:
   - bundle exec jekyll build
