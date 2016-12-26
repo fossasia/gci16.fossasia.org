@@ -86,3 +86,11 @@
   line-height: 40px;
   margin: 0;
 }
+
+.contributor-gh{
+  text-decoration: none;
+  position: absolute;
+  left: 88px;
+  top: 140px;
+  color: black;
+}

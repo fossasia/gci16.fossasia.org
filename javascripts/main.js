@@ -17,9 +17,9 @@ var getContributors = function(page) {
       } else {
         html += " contributions";
       }
-      html += "</p></div><a href=" + contributors.html_url + ">";
-      html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
-      html += contributors.login + "</span></a></div></div></div>";
+      html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
+      html += "<span>";
+      html += contributors.login + "</span></div></div></div>";
       $("#contributors-list").append(html);
     });
     getContributors(page+1);
@@ -153,80 +153,14 @@ $(".close").click(function() {
 
 // Import social media widgets
 if (document.readyState === "complete") {
-  loadSocialMediaWidgets();
+  importSocialMediaWidgets();
 } else {
-  window.addEventListener('load', loadSocialMediaWidgets);
+  window.addEventListener('load', importSocialMediaWidgets);
 }
 
-function loadSocialMediaWidgets() {
-  var widgetWidth = 370;
-  if (window.innerWidth <= 370) {
-    widgetWidth = 300;
-  }
-
-  // Facebook
-  var fbDiv = document.querySelector('.facebook-widget');
-  var fbFrame = document.createElement('iframe');
-  fbFrame.setAttribute('src', '//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width='+widgetWidth+'&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId');
-  fbFrame.setAttribute('width', widgetWidth);
-  fbFrame.setAttribute('style', 'border:none;overflow:hidden');
-  fbFrame.setAttribute('scrolling', 'no');
-  fbFrame.setAttribute('frameborder', 0);
-  fbFrame.setAttribute('allowtransparency', 'true');
-  fbDiv.appendChild(fbFrame);
-
-  // Google+
-  if (widgetWidth === 300) {
-    document.querySelector('.g-page').setAttribute('data-width', 300);
-  }
+function importSocialMediaWidgets() {
   var script = document.createElement('script');
-  script.setAttribute('src', '//apis.google.com/js/platform.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-
-  // Twitter
-  // Start ignoring JSHintBear
-  // This is obfuscated code from Twitter, It's a good idea to ignore it
-  if (widgetWidth === 300) {
-    document.querySelector('.twitter-timeline').setAttribute('data-width', 300);
-  }
-  script = document.createElement('script');
-  script.setAttribute('src', '//platform.twitter.com/widgets.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-  ! function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        p = /^http:/.test(d.location) ? "http" : "https";
-      if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = p + "://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-  }(document, "script", "twitter-wjs");
-  // Stop ignoring JSHintBear
-
-  // Github
-  if (widgetWidth === 300) {
-    document.querySelector('.github-widget').setAttribute('style', 'width:300px !important;');
-  }
-  script = document.createElement('script');
-  script.setAttribute('src', '//unpkg.com/github-card@1.2.1/dist/widget.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-
-  // Youtube
-  var ytFrame = document.createElement('iframe');
-  var ytDiv = document.querySelector('.embed-responsive-4by3');
-  ytFrame.setAttribute('src', '//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5');
-  ytFrame.setAttribute('allowfullscreen', true);
-  ytFrame.setAttribute('frameborder', 0);
-  ytFrame.classList.add('embed-responsive-item');
-  ytDiv.appendChild(ytFrame);
-
-  // Flickr
-  script = document.createElement('script');
-  script.setAttribute('src', '//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user&theme=default&scale=fit&skin=default&id=5843ed99c6db7');
+  script.setAttribute('src', '/javascripts/social-widgets-loader.js');
   script.setAttribute('async', true);
   document.head.appendChild(script);
 }
