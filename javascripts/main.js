@@ -17,9 +17,9 @@ var getContributors = function(page) {
       } else {
         html += " contributions";
       }
-      html += "</p></div><a href=" + contributors.html_url + ">";
-      html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
-      html += contributors.login + "</span></a></div></div></div>";
+      html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
+      html += "<span>";
+      html += contributors.login + "</span></div></div></div>";
       $("#contributors-list").append(html);
     });
     getContributors(page+1);

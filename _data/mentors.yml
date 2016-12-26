@@ -1,6 +1,13 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Harshit Dwivedi
+  github: the-dagger
+  image: harshit1.jpg
+  twitter: daggerdwivedi
+  lat: 28.608278
+  lng: 77.3009404
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
