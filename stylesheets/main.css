@@ -555,12 +555,14 @@ figure.effect-gcihover:hover figcaption::before {
     width: 100%;
     height: auto;
     padding: 10px 50px 10px 50px;
-    background-color: #e12b00;
-    color: white;
+    background-color:  #EEEEEE;
+    color: #424242;
+    margin-top: 30px;
 }
 
 .footer p {
     margin-top: 10px;
+    color: #616161;
 }
 
 .footer .row .social a, .footer img {
@@ -589,15 +591,32 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .footer .social a {
-    background: #0e5bd6;
     margin-top: -5px;
 }
 
 .footer .social a i {
-    color: #fff;
+    color: #424242;
     margin: 10px 0 0 11px;
+    opacity: 0.7;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
-
+.footer .social a i:hover {
+    opacity: 1;
+}
+.footer .row ul li a {
+    color: #424242;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: 0.7;
+}
+.footer .row ul li a:hover {
+    opacity: 1;
+}
 .footer .social a:last-child i {
     margin-left: 6px;
 }
@@ -669,18 +688,7 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 1px 5px 20px #888888;
 }
 
-#mapp {
-    margin-top: 30px;
-    width: 100%;
-    height: 500px;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-#mapp:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
+
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
