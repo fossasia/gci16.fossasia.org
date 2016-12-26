@@ -3,7 +3,6 @@ if (IntersectionObserver) {   // Start ignoring JSHintBear
   // Stop ignoring
   var scrollWaiter = document.querySelector('#loklak');
   var socialDiv = document.querySelector('#social-media');
-  /* Start ignoring JSHintBear */
   var io = new IntersectionObserver(
     function(entries) {
       if (entries[0].target === scrollWaiter || entries[0].target === socialDiv) {
