@@ -1,6 +1,12 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Srijan Jha
+  blog: https://srijanjha28fossasia.wordpress.com/
+  blog_img: blog2.png
+  article: GCI Experience with FOSSASIA
+  article_link: https://srijanjha28fossasia.wordpress.com/2016/12/26/google-code-in-with-fossasia/
+
 - name: Mostafa Elgayar
   blog: thegigotheory.wordpress.com
   blog_img: thegigotheory.png
