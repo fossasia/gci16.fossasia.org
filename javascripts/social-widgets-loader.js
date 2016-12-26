@@ -3,7 +3,7 @@ if (IntersectionObserver) {   // Start ignoring JSHintBear
   // Stop ignoring
   var scrollWaiter = document.querySelector('#loklak');
   var socialDiv = document.querySelector('#social-media');
-  var io = new IntersectionObserver(
+  var io = new IntersectionObserver( // Start ignoring JSHintBear
     function(entries) {
       if (entries[0].target === scrollWaiter || entries[0].target === socialDiv) {
         loadSocialMediaWidgets();
@@ -13,17 +13,17 @@ if (IntersectionObserver) {   // Start ignoring JSHintBear
     {
       threshold: 1.0
     }
-  );
+  ); 
   io.observe(scrollWaiter);
-  io.observe(socialDiv);
+  io.observe(socialDiv); // Stop ignoring
 } else {
   var scrollThreshold = document.querySelector('#loklak').scrollTop;
-  var fun = function(e) {
+  var fun = function(e) { // Start ignoring JSHintBear
     var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollPos >= scrollThreshold) {
       loadSocialMediaWidgets();
     }
-  };
+  }; // Stop ignoring
   window.addEventListener('scroll', fun, { passive: true });
 }
 
@@ -70,7 +70,8 @@ function loadSocialMediaWidgets() {
         js.src = p + "://platform.twitter.com/widgets.js";
         fjs.parentNode.insertBefore(js, fjs);
       }
-  }(document, "script", "twitter-wjs");
+  }(document, "script", "twitter-wjs"); // Start ignoring JSHintBear
+  // Stop ignoring
   
   // Github
   if (widgetWidth === 300) {
