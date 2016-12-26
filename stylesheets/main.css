@@ -127,9 +127,9 @@
 }
 
 .card-text{
-    overflow: scroll;
+    overflow: auto;
     white-space: nowrap;
-    display: inline;
+    display: inline-block;
 }
 
 .blogs-sec .card {
@@ -150,7 +150,7 @@
     padding-left:4px;
     padding-right:4px;
     overflow-x: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
