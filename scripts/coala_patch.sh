@@ -4,6 +4,7 @@
 if [ "$TRAVIS_BRANCH" = "gh-pages" ]; then
     git config --global user.email "travis@travis-ci.org"
     git config --global user.name "coala-autofix-bot"
+    git checkout gh-pages
     git add .
     # check for staged changes
     git status --porcelain|grep "M"
