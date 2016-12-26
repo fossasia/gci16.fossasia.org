@@ -145,12 +145,7 @@
 }
 .mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
-    font-size: 20px;
-    white-space: nowrap;
-    padding-left:4px;
-    padding-right:4px;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+    font-size: 15px;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
@@ -165,7 +160,7 @@
     }
     .blogs-sec .card {
         width: 200px !important;
-        height: 250px !important;
+        height: 270px !important;
         margin: 20px auto;
     }
     .blogs-sec .img {
