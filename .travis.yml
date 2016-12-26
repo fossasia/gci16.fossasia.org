@@ -4,8 +4,7 @@ services: docker
 rvm:
   - 2.3.3
 install:
-  - gem install danger
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then danger --verbose; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then gem install danger ; danger --verbose; fi'
   - bundle install
 script:
   - bundle exec jekyll build
