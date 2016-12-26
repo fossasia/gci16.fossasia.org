@@ -501,10 +501,11 @@
   lat: 1.3950886
   lng: 103.9014255
 
-  Name: Prajwal K Patil
+  name: Prajwal K Patil
   github: PrajwalPatill
   image: prajwal.jpg
   twitter: p_kailasanath
+  blog: https://prajwalpatil.tech.blog  
   bio: I am cool coder.
   facebook: prajwal.udchankar
   lat: 15.849695299999999
