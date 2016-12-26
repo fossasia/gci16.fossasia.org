@@ -54,6 +54,11 @@
   animation-iteration-count: infinite;
 }
 
+#contributors-thanks p {
+  display: inline;
+  margin: 0;
+}
+
 #contributors-thanks ul {
   margin-top: 0;
   margin-left: 90px;

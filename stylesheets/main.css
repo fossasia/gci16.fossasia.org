@@ -151,7 +151,6 @@
     padding-right:4px;
     overflow-x: hidden;
     text-overflow: ellipsis;
-	overflow: auto;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
