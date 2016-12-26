@@ -1,9 +1,10 @@
 if (IntersectionObserver) {
   var scrollWaiter = document.querySelector('#loklak');
   var socialDiv = document.querySelector('#social-media');
+  // Start ignoring JSHintBear
   var io = new IntersectionObserver(
     function(entries) {
-      if (entries[0].target == scrollWaiter || entries[0].target == socialDiv) {
+      if (entries[0].target === scrollWaiter || entries[0].target === socialDiv) {
         loadSocialMediaWidgets();
         io.disconnect();
       }
@@ -14,6 +15,7 @@ if (IntersectionObserver) {
   );
   io.observe(scrollWaiter);
   io.observe(socialDiv);
+// Stop ignoring
 } else {
   var scrollThreshold = document.querySelector('#loklak').scrollTop;
   var fun = function(e) {
@@ -94,3 +96,4 @@ function loadSocialMediaWidgets() {
   script.setAttribute('async', true);
   document.head.appendChild(script);
 }
+
