@@ -13,7 +13,7 @@ if (IntersectionObserver) {   // Start ignoring JSHintBear
     {
       threshold: 1.0
     }
-  ); 
+  );
   io.observe(scrollWaiter);
   io.observe(socialDiv); // Stop ignoring
 } else {
@@ -32,7 +32,7 @@ function loadSocialMediaWidgets() {
   if (window.innerWidth <= 370) {
     widgetWidth = 300;
   }
-  
+
   // Facebook
   var fbDiv = document.querySelector('.facebook-widget');
   var fbFrame = document.createElement('iframe');
@@ -43,7 +43,7 @@ function loadSocialMediaWidgets() {
   fbFrame.setAttribute('frameborder', 0);
   fbFrame.setAttribute('allowtransparency', 'true');
   fbDiv.appendChild(fbFrame);
-  
+
   // Google+
   if (widgetWidth === 300) {
     document.querySelector('.g-page').setAttribute('data-width', 300);
@@ -52,7 +52,7 @@ function loadSocialMediaWidgets() {
   script.setAttribute('src', '//apis.google.com/js/platform.js');
   script.setAttribute('async', true);
   document.head.appendChild(script);
-  
+
   // Twitter
   if (widgetWidth === 300) {
     document.querySelector('.twitter-timeline').setAttribute('data-width', 300);
@@ -72,7 +72,7 @@ function loadSocialMediaWidgets() {
       }
   }(document, "script", "twitter-wjs"); // Start ignoring JSHintBear
   // Stop ignoring
-  
+
   // Github
   if (widgetWidth === 300) {
     document.querySelector('.github-widget').setAttribute('style', 'width:300px !important;');
@@ -81,7 +81,7 @@ function loadSocialMediaWidgets() {
   script.setAttribute('src', '//unpkg.com/github-card@1.2.1/dist/widget.js');
   script.setAttribute('async', true);
   document.head.appendChild(script);
-  
+
   // Youtube
   var ytFrame = document.createElement('iframe');
   var ytDiv = document.querySelector('.embed-responsive-4by3');
@@ -90,7 +90,7 @@ function loadSocialMediaWidgets() {
   ytFrame.setAttribute('frameborder', 0);
   ytFrame.classList.add('embed-responsive-item');
   ytDiv.appendChild(ytFrame);
-  
+
   // Flickr
   script = document.createElement('script');
   script.setAttribute('src', '//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user&theme=default&scale=fit&skin=default&id=5843ed99c6db7');
