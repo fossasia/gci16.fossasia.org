@@ -8,7 +8,7 @@ Please acknowledge each of the following before submitting your pull request.
 
 **You may check them after opening your pull request.**
 
-- [ ] Read and understood [the contribution guidelines](https://github.com/fossasia/gci16.fossasia.org/blob/gh-pages/CONTRIBUTING.md)
+- [ ] Read and understood (see CONTRIBUTING.md)
 - [ ] Included a live link or preview screenshot
 - [ ] Images are `240 x 240` [w x h]
 - [ ] Resolved merge conflicts
