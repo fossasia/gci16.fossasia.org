@@ -1,13 +1,13 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
-- name: Prince John 
+- name: Prince John
   github: Prince-John
   twitter: Princejohn001
   image: prince-john.jpg
   blog: andnowhissleephasended.blogspot.in
-  bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.  
-    
+  bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
+
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
