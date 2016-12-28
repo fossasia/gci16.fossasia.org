@@ -3,17 +3,17 @@
 message "Hi @#{github.pr_author} thank you for your submission at Fossasia's GCI 2016 website. Please correct any issues above, if any."
 
 # Check if a Pull Request is mergeable and warn if you have merge issues
-can_merge = github.pr_json["mergeable"]
+can_merge = github.pr_json['mergeable']
 warn('This Pull Request appears to have merge errors. Please check CONTRIBUTING.md for help solving that.', sticky: false) unless can_merge
 
 # Check for Pull Request description
-if github.pr_body.length <= 19 and git.body.include?('- Replace this with your change description')
+if git.body.include?('- Replace this with your change description') || github.pr_body.length < 20
   warn 'Please be sure to replace the text "Replace this with your change description"
 with a summary of your change.'
 end
 
 # Warn if there is [WIP] in the title
-warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? "[WIP]"
+warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? '[WIP]'
 
 warn 'Please add your live link or a preview screenshot to the Pull Request body.' unless github.pr_body.include? 'http'
 
