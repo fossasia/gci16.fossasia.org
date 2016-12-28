@@ -16,4 +16,4 @@ Please acknowledge each of the following before submitting your pull request.
 
 # Things done in this Pull Request
 
-- **_REPLACE THIS TEXT WITH YOUR CHANGE_**
+- Replace this with your change description
