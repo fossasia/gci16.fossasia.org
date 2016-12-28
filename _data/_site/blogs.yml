@@ -1,18 +1,6 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
-- name: Srijan Jha
-  blog: https://srijanjha28fossasia.wordpress.com/
-  blog_img: blog2.png
-  article: GCI Experience with FOSSASIA
-  article_link: https://srijanjha28fossasia.wordpress.com/2016/12/26/google-code-in-with-fossasia/
-
-- name: Mostafa Elgayar
-  blog: thegigotheory.wordpress.com
-  blog_img: thegigotheory.png
-  article: My Jounrey To Open Source
-  article_link: https://thegigotheory.wordpress.com/2016/12/19/my-journey-to-open-source/
-
 - name: Apurv Jain
   blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
   blog_img: apurv_blog.png.png
@@ -98,11 +86,6 @@
   article: GCI 2016
   article_link: https://wordpress.com/read/feeds/57811189
 
-- name: Radac Anastasia
-  blog: https://anastasia2000.edublogs.org/
-  article: FOSSASIA and GCI
-  article_link: https://anastasia2000.edublogs.org/2016/12/10/fossasia-and-gci/
-
 - name: Hesham Burawi
   blog: https://heshamburawi19.wordpress.com/
   blog_img: burawi19-logo.png
@@ -144,12 +127,6 @@
   article: FOSSASIA and GCI Posts
   article_link: http://blog.ankitrgadiya.me/tag/fossasia/
 
-- name: Gaeun Kim
-  blog: https://gaeuncode.wordpress.com/
-  blog_img: gaeunblog.png
-  article: Participating in GCI16 with FOSSASIA
-  article_link: https://gaeuncode.wordpress.com/2016/12/13/participating-in-gci16-with-fossasia/
-
 - name: Sanchit Mishra
   blog: https://sanchittechnogeek.github.io
   blog_img: sanchit.jpg
@@ -161,39 +138,3 @@
   blog_img: Blog.png
   article: My interests in FOSSASIA
   article_link: http://prabh29.edublogs.org/2016/12/11/my-interests-in-the-fossasia-community/
-
-- name: Oana Rosca
-  blog: https://oanarosca.github.io/blog
-  article: Google Code-In and the Open Source community
-  article_link: https://oanarosca.github.io/blog/gci/2016/12/12/gci-and-open-source
-
-- name: Adarsh Kumar
-  blog: https://idealadarsh.wordpress.com
-  blog_img: adarsh-blog3.png
-  article: My experience with Fossasia
-  article_link: https://idealadarsh.wordpress.com/2016/12/12/my-experience-with-fossasia/
-
-- name: Gaeun Kim
-  blog: https://gaeuncode.wordpress.com/
-  blog_img: gaeunblog2.png
-  article: Interviewing Dr. Hicks about GCI
-  article_link: https://gaeuncode.wordpress.com/2016/12/16/interviewing-dr-hicks-about-gci/
-
-- name: Riley Kovacev
-  blog: http://rkblog2k16.cf/
-  blog_img: rileykova.png
-  article: FOSSASIA
-  article_link: http://rkblog2k16.cf/blog/fossasia
-
-- name: Nadun Yashmika
-  blog: https://yashnadun.wordpress.com
-  blog_img: nadunyashblog.jpg
-  article: My Participation in Google Code-in with FOSSASIA
-  article_link: https://yashnadun.wordpress.com/2016/12/25/blog-post-title-5/
-
-- name: Prajwal K Patil
-  blog: https://prajwalpatil.tech.blog/
-  blog_img: prajwal.jpg
-  article: My Participation in Google Code-in
-  article_link: https://prajwalpatil.tech.blog/2016/12/27/experience-in-google-code-in/
-

@@ -1,13 +1,6 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
-- name: Prince John
-  github: Prince-John
-  twitter: Princejohn001
-  image: prince-john.jpg
-  blog: andnowhissleephasended.blogspot.in
-  bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
-
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -15,24 +8,6 @@
   image: animeshsinghweb.jpg
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
-  lat: 22.8035475
-  lng: 86.1949906
-
-- name: Joseph Bywater
-  github: josephbywater
-  facebook: josephbywater.1
-  twitter: thejj100100
-  image: joseph.jpg
-  bio: 15 Years Old, Loves Open Source and coding!
-
-- name: Mostafa Elgayar
-  github: Elgayar
-  facebook: mostafa.elgayar1
-  twitter: MostafaaGayar
-  image: Gayar.jpg
-  bio: 17 Years Old, Future Silicon Valley Resident, Loves Music and Creating!
-  lat: 30.011387
-  lng: 31.298684
 
 - name: Simon Narang
   github: simonnarang
@@ -40,16 +15,6 @@
   twitter: simnrn
   facebook: simnrn
   bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
-
-- name: Kshitij Singla
-  github: kshitijsingla
-  image: kshitij.jpg
-  twitter: kshitij_singla
-  blog: https://medium.com/@kshitijsingla123
-  bio: Open-source enthusiast.
-  facebook: kshitij.singla.14
-  lat: 30.210994
-  lng: 74.945475
 
 - name: Oana Rosca
   github: oanarosca
@@ -71,7 +36,7 @@
   github: kmehant
   image: mehant.jpg
   twitter: mehant1
-  bio: I do not play games, I build games! \"GameJamTitans finalist\" /m\
+  bio: I don't play games, I build games! "GameJamTitans finalist" \m/
 
 - name: Alejandro Heredia
   email: alex.heredia.barbosa@gmail.com
@@ -105,23 +70,12 @@
   image: darshil.jpg
   bio: 16, Computer enthusiast, soccer player, cars, business, startups
 
-- name: Matthew Ponce de Leon
-  github: mattpdl
-  image: mattpdl.jpg
-  twitter: mattpdl
-  facebook: mattpdl01
-  bio: 15, Tech Enthusiast, 2nd GCI, &quot;Building Tomorrow, Today&quot;
-  lat: 33.9744
-  lng: -118.0420
-
 - name: Pol Baladas
   email: polbaladasluna@gmail.com
   github: PolBaladas
   twitter: PolBaladas
   image: pol.jpg
   bio: 17, Hacker, Software Dev, Entrepreneur, GCI Lover ⌨
-  lat: 41.3714697
-  lng: 2.1597459
 
 - name: David Nagli
   email: davidnagli@gmail.com
@@ -219,10 +173,8 @@
   github: Abhi2424shek
   image: abishek.jpg
   twitter: abhi2424shek
-  bio: Keep calm and expect me
+  bio: 15, hacker from God's own country
   facebook: abishekvashok
-  lat: 9.8931813
-  lng: 76.3231929
 
 - name: Deepraj Pandey
   github: DeeprajPandey
@@ -243,8 +195,6 @@
   twitter: gaeunkim913
   facebook: gaeunkim913
   bio: 15, South Korean, High school junior, Machine learning researcher, Frequent traveller
-  lat: 37.514
-  lng: 127.101
 
 - name: Nguyen Diep Xuan Quang
   github: xuanquang1999
@@ -271,11 +221,7 @@
   github: codein-dwij
   image: dwij.png
   facebook: jha.dwij
-  twitter: Dwij_Jha
-  blog: https://www.dwijjha.wordpress.com
-  bio: I am 14 yrs old and love programming!(Also love playing games and making them)I am from Mumbai , India and in Grade 10
-  lat: 19.0759837
-  lng: 72.8776559
+  bio: 14,Indian,Sudent Programmer
 
 - name: Riley Kovacev
   github: Rbkovacev
@@ -355,9 +301,7 @@
   twitter: ankit4922
   image: ankit.jpg
   blog: blog.ankitrgadiya.me
-  bio: I am 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
-  lat: 26.45
-  lng: 74.6333
+  bio: I'm 17, beginner Programmer, Linux Enthusiast, Blogger, Youtuber.
 
 - name: Zenon
   github: zehata
@@ -372,12 +316,6 @@
   twitter: s_technogeek
   facebook: sanchit.technogeek
   bio: 17, amateur Nodejs dev, roboticist, linux guru.
-
-- name: Mukund choudhary
-  github: mukundch28
-  image: mukund.jpg
-  facebook: mukund choudhary
-  bio: 16, Hacker and programmer
 
 - name: Tran Bao Nguyen
   github: bnguyenltt
@@ -405,13 +343,6 @@
   facebook: Prabhdeep Singh
   bio: 14, Programmer in every way
 
-- name: Dewansh Rawat
-  github: dewanshrawat15
-  image: dewansh.jpg
-  twitter: dewanshrawat15
-  facebook: dewanshrawat15
-  bio:  Designer, Developer at Converge Clan. Indian.
-
 - name: Manraj Juneja
   github: manrajjuneja
   image: manraj.jpg
@@ -430,130 +361,9 @@
   image: Phuc.jpg
   facebook: phuc.ngohong.2001
   bio: 15,Vietnamese,Sudent Programmer, Guitar
-
-- name: Kartikeya Singh
-  github: kartikeya23
-  image: kartikeya.jpg
-  twitter: kart_singh08
-  facebook: kartikeya.singh23
-  bio: 13, Indian, Cuber, Amazingly Awesome! ^_^
-
-- name: Tushar Kumar
-  github: meets2tushar
-  image: tushar.jpg
-  facebook: meets2tushar
-  twitter: meets2tushar
-  blog: meets2tushar.wordpress.com
-  bio: 15, Indian, Love HTML/CSS, FOSS
-
+  
 - name: Yashvardhan Sharma
   github: yvsja
   image: yashvardhan_sharma.jpg
   facebook: yash.vardhan.18062
-
-- name: Hesham Burawi
-  github: Hesham-Burawi
-  image: Hesham-Burawi.jpeg
-  twitter: Hesham_Burawi
-  bio: 13, Libyan/British, Love Sleep, Food, Coding
-
-- name: Zahari Asparuhov
-  github: zahariasp
-  image: zahari.jpg
-  facebook: zari.asparuhov
-  bio: 17, Bulgaria, web developing and web servers with NodeJS
-
-- name: Arpna kumari
-  github: arpnakumari
-  facebook: arpna kumari
-  twitter: arpna07
-  image: arpna.jpg
-  blog: arpnablog.wordpress.com
-  bio: A 16 yr old from INDIA ,wants to pursue medical field.
-
-- name: Gautam Jajoo
-  github: gautamjajoo
-  facebook: Gautam Jajoo
-  twitter: gautamjajoo
-  image: gautam.jpg
-  blog: gautamjajoo.wordpress.com
-  bio: A 14 year old Indian, whose passion is Computer Science.
-
-- name: Shivam Singh
-  twitter: shivamkumar4848
-  image: shivam.png
-  bio: A 16 year old Indian, study in XI, like playing.
-
-- name: Guneet Singh
-  github: Guneetconvent2002
-  image: Guneet.jpg
-  facebook: Guneet
-  bio: A 14 year old boy who wants to do somthing for the nation.
-
-- name: Vishal Singh
-  github: vishu15singh
-  image: Vishalsingh.jpg
-  twitter: vishu15singh
-  bio: 16, Student, Footballer, Indian.
-
-- name: Srijan Jha
-  github: SrijanJha28
-  image: SrijanJha.jpg
-  twitter: SrijanJha2
-  bio: 16, Indian, coder, hacker, tech enthusiast
-
-- name: Vivek Kumar
-  github: vivekkumarsvm
-  image: vivek.jpg
-  twitter: vivekkumarsvm46
-  bio: 16, Indian, Computer Science Student
-
-- name: Peirce Chow
-  github: peircechow
-  image: peircechow.jpg
-  facebook: peirce.chowzhengjie
-  twitter: peircechow
-  bio: 17, Singaporean, aspiring coder
-
-- name: Koh Yi Ting
-  github: kohyt
-  image: kohyt.jpg
-  twitter: msft007
-  bio: 17, Singaporean, learning Python
-
-- name: Samuel Chua Jia Cong
-  github: Samuel Chua
-  image: samuelchua.jpg
-  twitter: scjc2001
-  facebook: samuel.cong
-  blog: samuelchuadhs.wordpress.com
-  bio: 15, Singaporean, Cuber, Explorer
-  lat: 1.3950886
-  lng: 103.9014255
-
-- name: Prajwal K Patil
-  github: PrajwalPatill
-  image: prajwal.jpg
-  twitter: p_kailasanath
-  blog: https://prajwalpatil.tech.blog
-  bio: I am cool coder.
-  facebook: prajwal.udchankar
-  lat: 15.849695299999999
-  lng: 74.4976741
-
-- name: Muktiadi Akhmad Januar
-  github: Muktiadi
-  image: Muktiadi.jpg
-  twitter: Zukaizen
-  facebook: MuktiadiAkhmadJanuar
-  bio: Love to learning from basics.
-  lat: -6.895726746997539
-  lng: 107.80893713235855
-
-- name: Guo Jialu Benjamin
-  github: benjaminguo
-  image: benjaminguo.jpg
-  twitter: guoJLbenjamin
-  bio: Cynical
-  lat: 1.3553794
-  lng: 103.86774439999999
+  
