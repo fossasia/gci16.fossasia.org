@@ -11,6 +11,7 @@ if github.pr_body.length <= 19 and git.body.include?('- Replace this with your c
   warn 'Please be sure to replace the text "Replace this with your change description"
 with a summary of your change.'
 end
+
 # Warn if there is [WIP] in the title
 warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? "[WIP]"
 
