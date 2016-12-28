@@ -356,7 +356,7 @@ figure.effect-gcihover figcaption::before {
     right: 2em;
     left: 2em;
     z-index: -1;
-    height: 3.5em;
+    height: 0em;
     background: #fff;
     content: '';
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
