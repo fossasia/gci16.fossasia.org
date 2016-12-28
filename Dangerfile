@@ -7,11 +7,10 @@ can_merge = github.pr_json["mergeable"]
 warn('This Pull Request appears to have merge errors. Please check CONTRIBUTING.md for help solving that.', sticky: false) unless can_merge
 
 # Check for Pull Request description
-if github.pr_body.length <= 19 && git.body.include? '- Replace this with your change description'
+if(github.pr_body.length <= 19 && git.body.include? '- Replace this with your change description')
   warn 'Please be sure to replace the text "Replace this with your change description"
 with a summary of your change.'
 end
-
 # Warn if there is [WIP] in the title
 warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? "[WIP]"
 
