@@ -41,6 +41,16 @@
   facebook: simnrn
   bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
 
+- name: Kshitij Singla
+  github: kshitijsingla
+  image: kshitij.jpg
+  twitter: kshitij_singla
+  blog: https://medium.com/@kshitijsingla123
+  bio: Open-source enthusiast.
+  facebook: kshitij.singla.14
+  lat: 30.210994
+  lng: 74.945475
+
 - name: Oana Rosca
   github: oanarosca
   image: oanarosca.jpg
