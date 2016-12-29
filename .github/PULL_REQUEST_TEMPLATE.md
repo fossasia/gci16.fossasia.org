@@ -19,4 +19,4 @@ Please acknowledge that you have read and understood each of the following befor
 
 # Things done in this Pull Request
 
-<!-- Replace this line with your change description -->
+- Replace this with your change description
