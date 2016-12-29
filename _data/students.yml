@@ -16,16 +16,16 @@
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
   lat: 22.8035475
-  lng: 86.1949906
- 
- - name: Manas Taneja
-   github: manastaneja
-   image: manas.jpg
-   twitter: manastaneja1
-   facebook: manas.taneja.1
-   bio: 15 years old, coding is passion , physics for life.
-   lat: 29.0587757
-   lng: 76.085601
+  lng: 86.194990
+
+- name: Manas Taneja
+  github: manastaneja
+  image: manas.jpg
+  twitter: manastaneja1
+  facebook: manas.taneja.1
+  bio: 15 years old, coding is passion , physics for life.
+  lat: 29.0587757
+  lng: 76.085601
 
 - name: Joseph Bywater
   github: josephbywater
@@ -570,8 +570,7 @@
   twitter: guoJLbenjamin
   bio: Cynical
   lat: 1.3553794
-  lng: 103.86774439999999
-  
+  lng: 103.86774
   name: Galangkangin Gotera
   github: thegalang
   image: galangkangin.jpg
@@ -580,4 +579,3 @@
   bio: 16, from Indonesia, i love learning algorithms
   lat: -8.6539591
   lng: 115.22582229999999
-
