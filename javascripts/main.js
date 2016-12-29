@@ -17,9 +17,9 @@ var getContributors = function(page) {
       } else {
         html += " contributions";
       }
-      html += "</p></div><a href=" + contributors.html_url + ">";
-      html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
-      html += contributors.login + "</span></a></div></div></div>";
+      html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
+      html += "<span>";
+      html += contributors.login + "</span></div></div></div>";
       $("#contributors-list").append(html);
     });
     getContributors(page+1);
@@ -163,3 +163,22 @@ $(".card").click(function() {
     }
 });
 
+$(".close").click(function() {
+    $(this).parent().css("display", "none");
+    modalShown = false;
+    // window.opener.location.reload(false);
+});
+
+// Import social media widgets
+if (document.readyState === "complete") {
+  importSocialMediaWidgets();
+} else {
+  window.addEventListener('load', importSocialMediaWidgets);
+}
+
+function importSocialMediaWidgets() {
+  var script = document.createElement('script');
+  script.setAttribute('src', '/javascripts/social-widgets-loader.js');
+  script.setAttribute('async', true);
+  document.head.appendChild(script);
+}

@@ -57,16 +57,16 @@
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
-    position: relative;
-    margin-top: 60%;
-    left: 30px;
+    margin-top: 15px;
+    text-align: center;
     font-size: 18px;
+    display: inline-block;
 }
 #contributors-list div img {
     width: 200px;
     height: 200px;
 }
-#contributors-list div a {
+/*#contributors-list div a {
     position: absolute;
     left: 20px;
     margin-top: 212px;
@@ -76,7 +76,7 @@
 #contributors-list div .gh-icon {
     position: absolute;
     top: -3px;
-}
+}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
@@ -114,6 +114,9 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper {
+    margin-top: 100px;
+}
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
@@ -128,6 +131,13 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+
+.card-text{
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline;
+}
+
 .blogs-sec .card {
     width: 500px;
     height: 400px;
@@ -141,12 +151,7 @@
 }
 .mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
-    font-size: 20px;
-    white-space: nowrap;
-    padding-left:4px;
-    padding-right:4px;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+    font-size: 15px;
 }
 .mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
@@ -161,7 +166,7 @@
     }
     .blogs-sec .card {
         width: 200px !important;
-        height: 250px !important;
+        height: 270px !important;
         margin: 20px auto;
     }
     .blogs-sec .img {
@@ -357,7 +362,7 @@ figure.effect-gcihover figcaption::before {
     right: 2em;
     left: 2em;
     z-index: -1;
-    height: 3.5em;
+    height: 0em;
     background: #fff;
     content: '';
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -546,84 +551,81 @@ figure.effect-gcihover:hover figcaption::before {
 #flickrembed .ug-strip-panel {
     display: none !important;
 }
+
 .footer {
     width: 100%;
     height: auto;
-    /*padding: 10px 50px 10px 50px;*/
-    padding: 4em 0.5em;
-    /*background-color: #f44336;*/
-    background-color: #880E4F;
-    color: white;
+    padding: 10px 50px 10px 50px;
+    background-color:  #EEEEEE;
+    color: #424242;
+    margin-top: 30px;
 }
 
 .footer p {
     margin-top: 10px;
+    color: #616161;
 }
-.heading{
-    color: #eee;
-    text-align: center;
-    margin-bottom: 1.5em;
-    text-transform: uppercase;
-}
-.links-list {
-    list-style: none;
-    margin-left: 38px;
-}
-.links-list i{
-    color:white;
-    font-size:18px;
-    margin-right:7px;
-}
-.footer img {
+
+.footer .row .social a, .footer img {
     display: inline-block;
-    width: 40%;
-    /*margin-left: 25%;*/
-    margin-bottom: 0.5em;
+    width: 46px;
+    height: 46px;
+    border-radius: 40px;
 }
+
 .footer .row .social a {
     margin-right: 2px;
     margin-top: 5px;
 }
-.footer-copyright
-{
-    margin-top: 2.2em;
-}
-.footer-copyright a {
-    color: #ffb300;
-}
-.footer-copyright .goup
-{
-    text-decoration: none;
+
+.footer .row a {
     color: #fff;
-    font-size: 4em;
-    opacity: .8;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
 }
-.footer-copyright .goup:hover
-{
-    cursor: pointer;
+
+.footer .row a i {
+    font-size: 26px;
+    color: #000;
+    margin-right: 8px;
+}
+
+.footer .social a {
+    margin-top: -5px;
+}
+
+.footer .social a i {
+    color: #424242;
+    margin: 10px 0 0 11px;
+    opacity: 0.7;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.footer .social a i:hover {
     opacity: 1;
 }
-.footer .links-list a {
-    color: #fff;
-    font-size: 18px;
-    display: block;
-    margin-bottom: 8px;
+.footer .row ul li a {
+    color: #424242;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: 0.7;
 }
-.links-list a:hover
-{
-    color: #ffb300;
+.footer .row ul li a:hover {
+    opacity: 1;
 }
-.footer .row .social a {
-    font-size: 40px;
-    margin-right: 0.15em;
-    color: #fff;
-    text-decoration: none;
-    padding: .15em;
+.footer .social a:last-child i {
+    margin-left: 6px;
 }
-.footer .row .social a:hover
-{
-    color: #ffb300;
+
+.footer .social a:first-child i {
+    margin-left: 14px;
 }
+
 .navbar-brand {
     margin-top: -7px;
 }
@@ -658,7 +660,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .social-media {
     -moz-transition: all .2s ease-in;
@@ -687,18 +689,7 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 1px 5px 20px #888888;
 }
 
-#mapp {
-    margin-top: 30px;
-    width: 100%;
-    height: 500px;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-#mapp:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
+
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -736,12 +727,12 @@ body {
 
 #previous {
     float: left;
-    color: white;
+    color: black;
 }
 
 #next {
     float: right;
-    color: white;
+    color: black;
 }
 
 /* Slideshow container */
