@@ -40,5 +40,5 @@ git.modified_files.each do |file|
       break
     end
   end
-  fail "File #{file} contains carriage returns. Please ensure you choose Unix line-endings (line-feeds). Please fix this."
+  fail "File #{file} uses DOS line-endings (CRLF -- Carriage Return (`^M` in your diff) followed by a Line Feed), and not Unix line-endings (line-feeds). Please fix this file so it uses unix line-endings (line-feed)." if crlf
 end
