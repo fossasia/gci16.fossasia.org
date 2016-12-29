@@ -28,3 +28,13 @@ end
 if git.commits.size > 1
   warn "You have more than one commit! Please squash them. If you need help, check CONTRIBUTING.md. Mentor note: If you're going to merge this, use the Github 'Squash and merge' function (check mantainers.md)."
 end
+
+# Check if the PR uses dos (CRLF line-endings) and fail the build
+git.modified_files.each do |file|
+  File.open(File.expand_path(file), 'r').readlines.each do |line|
+    eol = line.split('').last(2).join # CRLF or "\r\n"
+    if eol.bytes.include? 13 # carriage return
+      fail "File #{file} contains carriage returns, please ensure you choose Unix line-endings (line-feeds). Please fix this."
+    end
+  end
+end
