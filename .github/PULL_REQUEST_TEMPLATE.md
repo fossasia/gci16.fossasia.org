@@ -4,7 +4,7 @@ Please acknowledge each of the following before submitting your pull request.
 
 **Maintainers: If any of these are left unchecked, do not merge.**
 
-**Students: If one of them is applicable to you -- leave it unchecked. DO NOT REMOVE ANYTHING!**
+**Students: If one of them is applicable to you -- Please check it anyways. DO NOT REMOVE ANYTHING!**
 
 **You may check them after opening your pull request.**
 
