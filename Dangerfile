@@ -7,7 +7,7 @@ can_merge = github.pr_json['mergeable']
 warn('This Pull Request appears to have merge errors. Please check CONTRIBUTING.md for help solving that.', sticky: false) unless can_merge
 
 # Check for Pull Request description
-if github.pr_body.include?('- Replace this with your change description')
+if github.pr_body.include?('<!-- Replace this line with your change description -->')
   warn 'Please be sure to replace the text "Replace this with your change description"
 with a summary of your change.'
 end
@@ -16,7 +16,7 @@ end
 warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? '[WIP]'
 
 warn 'Please add your live link or a preview screenshot to the Pull Request body.' unless github.pr_body.include? 'http'
-
+warn 'Please mark all the checkboxes.' if github.pr_body.include? '- [ ]'
 # Notify the user if he's trying to modify the index.html and fail
 unless github.pr_body.include? '<!-- Safe Edit -->'
   if git.modified_files.include? 'index.html'
