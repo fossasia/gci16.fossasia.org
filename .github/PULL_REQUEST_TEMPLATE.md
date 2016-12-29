@@ -1,4 +1,4 @@
-Thank you for your pull request! Please read and
+Thank you for your pull request! Please read and understand everything below
 
 Please acknowledge that you have read and understood each of the following before submitting your pull request.
 
