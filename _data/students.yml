@@ -572,8 +572,8 @@
   lat: 1.3553794
   lng: 103.86774439999999
 
-  
-  name: Galangkangin Gotera
+
+- name: Galangkangin Gotera
   github: thegalang
   image: galangkangin.jpg
   facebook: fuspak
@@ -581,4 +581,3 @@
   bio: 16, from Indonesia, i love learning algorithms
   lat: -8.6539591
   lng: 115.22582229999999
-
