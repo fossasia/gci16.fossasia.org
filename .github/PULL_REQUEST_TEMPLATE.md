@@ -17,6 +17,6 @@ Please acknowledge that you have read and understood each of the following befor
 - [ ] Resolved merge conflicts
 - [ ] Included a description of my change below
 
-# Things done in this Pull Request (replace the text as instructed)
+# Things done in this Pull Request
 
-- Replace this with your change description
+<!-- Replace this line with your change description -->
