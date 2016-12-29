@@ -1,3 +1,4 @@
+
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
@@ -16,16 +17,7 @@
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
   lat: 22.8035475
-  lng: 86.194990
-
-- name: Manas Taneja
-  github: manastaneja
-  image: manas.jpg
-  twitter: manastaneja1
-  facebook: manas.taneja.1
-  bio: 15 years old, coding is passion , physics for life.
-  lat: 29.0587757
-  lng: 76.085601
+  lng: 86.1949906
 
 - name: Joseph Bywater
   github: josephbywater
@@ -33,13 +25,6 @@
   twitter: thejj100100
   image: joseph.jpg
   bio: 15 Years Old, Loves Open Source and coding!
-
-- name: S Rahul Badami
-  github: srahulbadami
-  email: srahulbadami@gmail.com
-  twitter: srahulbadami
-  image: badami.jpg
-  bio: 17 Years Old,Coding,Gamming,Sports !!!
 
 - name: Mostafa Elgayar
   github: Elgayar
@@ -153,8 +138,6 @@
   twitter: ThienVHoang
   image: thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
-  lat: 10.058854561670294
-  lng: 105.7663967687538
 
 - name: George Semenov
   email: themrgeorgeous@gmail.com
@@ -571,9 +554,8 @@
   bio: Cynical
   lat: 1.3553794
   lng: 103.86774439999999
-
-
-- name: Galangkangin Gotera
+ 
+ - name: Galangkangin Gotera
   github: thegalang
   image: galangkangin.jpg
   facebook: fuspak
@@ -581,3 +563,13 @@
   bio: 16, from Indonesia, i love learning algorithms
   lat: -8.6539591
   lng: 115.22582229999999
+
+- name: Mridul Birla
+  github: Mridulbirla13
+  image: Mridul.jpg
+  twitter: @mridulbirla13
+  facebook: Mridul Birla
+  bio: 14, Indian, love learning, Love FOSS
+  lat: 29.0587757
+  lng: 76.085601
+
