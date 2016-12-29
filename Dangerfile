@@ -40,5 +40,5 @@ git.modified_files.each do |file|
       break
     end
   end
-  fail "File #{file} contains carriage returns, please ensure you choose Unix line-endings (line-feeds). Please fix this."
+  fail "File #{file} contains carriage returns. Please ensure you choose Unix line-endings (line-feeds). Please fix this."
 end
