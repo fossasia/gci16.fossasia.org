@@ -1,6 +1,9 @@
-Thank you for your pull request!
+Thank you for your pull request! Please read and
 
-Please acknowledge each of the following before submitting your pull request.
+Please acknowledge that you have read and understood each of the following before submitting your pull request.
+
+# _Do not_ delete any text other than where you are instructed.
+
 
 **Maintainers: If any of these are left unchecked, do not merge.**
 
@@ -14,6 +17,6 @@ Please acknowledge each of the following before submitting your pull request.
 - [ ] Resolved merge conflicts
 - [ ] Included a description of my change below
 
-# Things done in this Pull Request
+# Things done in this Pull Request (replace the text as instructed)
 
 - Replace this with your change description
