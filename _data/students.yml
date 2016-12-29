@@ -1,3 +1,4 @@
+
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
@@ -553,6 +554,15 @@
   bio: Cynical
   lat: 1.3553794
   lng: 103.86774439999999
+ 
+ - name: Galangkangin Gotera
+  github: thegalang
+  image: galangkangin.jpg
+  facebook: fuspak
+  twitter: BukanGalangK
+  bio: 16, from Indonesia, i love learning algorithms
+  lat: -8.6539591
+  lng: 115.22582229999999
 
 - name: Mridul Birla
   github: Mridulbirla13
@@ -562,3 +572,4 @@
   bio: 14, Indian, love learning, Love FOSS
   lat: 29.0587757
   lng: 76.085601
+  
