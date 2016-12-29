@@ -28,8 +28,9 @@ warn "You have more than one commit! Please squash them. If you need help, check
 git.modified_files.each do |file|
   crlf = false
   File.open(File.expand_path(file), 'r').readlines.each do |line|
-    eol = line.split('').last(2).join # CRLF or "\r\n"
-    if eol.bytes.include? 13 # carriage return
+    eol = line.split('').last(2).join
+    #crlf = ascii 13
+    if eol.bytes.include? 13
       crlf = true
       break
     end
