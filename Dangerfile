@@ -7,6 +7,7 @@ can_merge = github.pr_json['mergeable']
 warn('This Pull Request appears to have merge errors. Please check CONTRIBUTING.md for help solving that.', sticky: false) unless can_merge
 
 # Check for Pull Request description
+warn 'Please do not remove the Pull Request template. Please add it back (see `.github/PULL_REQUEST_TEMPLATE.md`)' if github.pr_body.size < 24
 warn 'Please be sure to replace the text "Replace this with your change description" with a summary of your change.' if github.pr_body.include?('- Replace this with your change description')
 warn 'Please add your live link or a preview screenshot to the Pull Request body.' unless github.pr_body.include? 'http'
 warn 'Please mark all the checkboxes.' if github.pr_body.include? '- [ ]'
