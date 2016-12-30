@@ -400,6 +400,7 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .issues-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
@@ -440,16 +441,36 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+@media (max-width: 960px) {
+    .issues-category {
+        width: 100%;
+    }
+}
 .issues-category:hover {
     box-shadow: 1px 5px 20px #888888;
 }
+
+.issues-category > .button {
+    width: 90%;
+}
+
 .issue {
     width: 100%;
     padding: 18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
     background: #FFF;
-
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;   
+    -moz-flex-flow: row wrap;  
+    -ms-flex-flow: row wrap;   
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .issue:last-child {
     border-bottom: none;
@@ -467,10 +488,12 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: -30px;
     margin-left: 74px;
 }
-.issues-wrapper .right-coms {
-    float: right;
+.issue .issue-left {
+    width: 80%;
+}
+.issue .issue-right {
+    width: 20%;
     text-align: right;
-    margin-top: -55px;
 }
 .issues-wrapper i {
     margin-right: 5px;
