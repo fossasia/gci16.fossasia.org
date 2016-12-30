@@ -27,6 +27,7 @@ warn "You have more than one commit! Please squash them. If you need help, check
 # Check if the PR uses dos (CRLF line-endings) and fail the build
 git.modified_files.each do |file|
   crlf = false
+  break if git.deleted_files.include? file
   File.open(File.expand_path(file), 'r').readlines.each do |line|
     eol = line.split('').last(2).join
     #crlf = ascii 13
