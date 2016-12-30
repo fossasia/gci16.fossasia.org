@@ -30,12 +30,7 @@ git.modified_files.each do |file|
   next if git.deleted_files.include? file
   next if file =~ /.jpg|.png|.gif|.ico/i
   File.open(File.expand_path(file), 'r').readlines.each do |line|
-    eol = line.force_encoding('UTF-8')
-            .encode('UTF-8', 'binary', invalid: :replace,
-                    undef: :replace, replace: '').split('')
-            .last(2).join
-    #crlf = ascii 13
-    if eol.bytes.include? 13
+    if line =~ /^.+\r\n$/u
       crlf = true
       break
     end
