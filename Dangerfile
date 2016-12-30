@@ -33,7 +33,7 @@ git.modified_files.each do |file|
   next if git.deleted_files.include? file
   next if file =~ /.jpg|.png|.gif|.ico/i
   File.open(File.expand_path(file), 'r').readlines.each do |line|
-    if line =~ /^.+\r\n$/u
+    if line =~ /^.+?\r\n$/u
       crlf = true
       break
     end
