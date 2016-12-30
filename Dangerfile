@@ -28,6 +28,7 @@ warn "You have more than one commit! Please squash them. If you need help, check
 git.modified_files.each do |file|
   crlf = false
   next if git.deleted_files.include? file
+  next if file =~ /.jpg|.png|.gif|.ico/i
   File.open(File.expand_path(file), 'r').readlines.each do |line|
     eol = line.force_encoding('UTF-8')
             .encode('UTF-8', 'binary', invalid: :replace,
