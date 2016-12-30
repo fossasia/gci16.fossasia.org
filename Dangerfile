@@ -27,12 +27,14 @@ warn "You have more than one commit! Please squash them. If you need help, check
 # Check if the PR uses dos (CRLF line-endings) and fail the build
 git.modified_files.each do |file|
   crlf = false
+  next if git.deleted_files.include? file
   File.open(File.expand_path(file), 'r').readlines.each do |line|
-    eol = line.split('').last(2).join # CRLF or "\r\n"
-    if eol.bytes.include? 13 # carriage return
+    eol = line.split('').last(2).join
+    #crlf = ascii 13
+    if eol.bytes.include? 13
       crlf = true
       break
     end
   end
-  fail "File \"#{file}\" uses DOS line-endings (CRLF -- Carriage Return (`^M` in your diff) followed by a Line Feed), and not Unix line-endings (line-feeds). Please fix this file so it uses unix line-endings (line-feed)." if crlf
+  fail "File \"#{file}\" uses DOS line-endings (CRLF -- Carriage Return (`^M` in your diff) followed by a Line Feed), and not Unix line-endings (line-feeds). Please fix this file so it uses unix line-endings (line-feeds)." if crlf
 end
