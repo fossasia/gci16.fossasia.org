@@ -17,7 +17,7 @@ warn 'Please mark all the checkboxes.' if github.pr_body.include? '- [ ]'
 # Warn if there is [WIP] in the title
 warn 'Pull Request is classified as Work in Progress' if github.pr_title.include? '[WIP]'
 
-# Notify the user if he's trying to modify the index.html and fail
+# Notify the user if they are trying to modify the index.html and fail
 unless github.pr_body.include? '<!-- Safe Edit -->'
   if git.modified_files.include? 'index.html'
     fail "You're modifying the index.html file. If you're trying to add a student/blog/mentor, you're doing it wrong. If you did this intentionally, please contact a mentor, as index.html is a core file."
