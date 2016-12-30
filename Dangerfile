@@ -29,7 +29,10 @@ git.modified_files.each do |file|
   crlf = false
   next if git.deleted_files.include? file
   File.open(File.expand_path(file), 'r').readlines.each do |line|
-    eol = line.split('').last(2).join
+    eol = line.force_encoding('UTF-8')
+            .encode('UTF-8', 'binary', invalid: :replace,
+                    undef: :replace, replace: '').split('')
+            .last(2).join
     #crlf = ascii 13
     if eol.bytes.include? 13
       crlf = true
