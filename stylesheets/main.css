@@ -465,9 +465,9 @@ figure.effect-gcihover:hover figcaption::before {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;   
-    -moz-flex-flow: row wrap;  
-    -ms-flex-flow: row wrap;   
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     -o-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: space-between;
