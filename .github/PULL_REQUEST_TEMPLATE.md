@@ -11,6 +11,8 @@ Please acknowledge that you have read and understood each of the following befor
 
 **You may check them after opening your pull request.**
 
+You may do so by changing each `[ ]` to `[x]` Please take note of the whitespace as it matters.
+
 - [ ] Read and understood (see CONTRIBUTING.md)
 - [ ] Included a live link or preview screenshot
 - [ ] Images are `240 x 240` [w x h]
