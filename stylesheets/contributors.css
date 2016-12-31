@@ -1,0 +1,50 @@
+.content {
+  left: 50%;
+  font-size: 35px;
+  line-height: 40px;
+  color: #203670;
+}
+
+.visible {
+  font-weight: 600;
+  text-align: center;
+}
+.visible:before {
+  left: 0;
+  line-height: 40px;
+}
+.visible:after {
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+}
+
+#name {
+  display: inline;
+  margin-top: 0;
+  text-align: center;
+  list-style: none;
+  line-height: 40px;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: change;
+  -moz-animation-duration: 6s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: change;
+  -o-animation-duration: 6s;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-name: change;
+  -ms-animation-duration: 6s;
+  -ms-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  width: 100%;
+}

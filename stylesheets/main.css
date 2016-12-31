@@ -4,21 +4,23 @@
 .white-header {
     color: white;
     margin-bottom: 30px;
-}.social{
-    font-size:13px;
 }
 .social-media {
     text-align: center;
-    background: #344146;
+    /*background: #344146;*/
+    background: #212121;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
-    margin-bottom: 30px;
+    height: 461px !important;
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+}
+.g-page-embed iframe .dgd.nae {
+    padding-bottom: 50px !important;
 }
 .inner a.button {
     display: inline-block;
@@ -49,16 +51,16 @@
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
-    position: relative;
-    margin-top: 60%;
-    left: 30px;
+    margin-top: 15px;
+    text-align: center;
     font-size: 18px;
+    display: inline-block;
 }
 #contributors-list div img {
     width: 200px;
     height: 200px;
 }
-#contributors-list div a {
+/*#contributors-list div a {
     position: absolute;
     left: 20px;
     margin-top: 212px;
@@ -68,7 +70,7 @@
 #contributors-list div .gh-icon {
     position: absolute;
     top: -3px;
-}
+}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
@@ -94,7 +96,7 @@
     text-transform: uppercase;
     box-shadow: 1px 2px 20px rgba(33,35,23,.51);
 }
-.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors {
+.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -106,10 +108,13 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper, {
+    margin-top: 100px;
+}
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .cards {
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
     margin: 20px;
@@ -120,32 +125,58 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.blogs-sec .cards {
+.card-text{
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline;
+}
+
+.blogs-sec .card {
     width: 500px;
     height: 400px;
+    margin: 0;
 }
-.stu_name{
-	margin-left:-7px;
-	font-size:16px;
+.stu-name{
+    margin-left:-7px;
+    font-size:16px;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
-    font-size: 20px;
-    white-space: nowrap;
-    padding-left:4px;
-    padding-right:4px;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+    font-size: 15px;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .blogs-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
 }
+@media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
+    .blogs-sec .avatar {
+        width: 200px !important;
+        height: 250px !important;
+        margin: auto !important;
+    }
+    .blogs-sec .card {
+        width: 200px !important;
+        height: 270px !important;
+        margin: 20px auto;
+    }
+    .blogs-sec .img {
+        width: 200px !important;
+        height: 170px !important;
+    }
+    .blogs-sec .blog-holder {
+        padding: 0 15px !important;
+        margin: 0 !important;
+    }
+    .blogs-sec .avatar p {
+        font-size: 17px !important;
+    }
+}
 .blogs-sec .avatar {
+    position: relative;
     width: 500px;
     height: 400px;
     background: white;
@@ -290,6 +321,7 @@ figure.effect-gcihover {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    margin-left: 20px;
 }
 figure.effect-gcihover:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -325,7 +357,7 @@ figure.effect-gcihover figcaption::before {
     right: 2em;
     left: 2em;
     z-index: -1;
-    height: 3.5em;
+    height: 0em;
     background: #fff;
     content: '';
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -369,6 +401,7 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .issues-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
@@ -409,16 +442,36 @@ figure.effect-gcihover:hover figcaption::before {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+@media (max-width: 960px) {
+    .issues-category {
+        width: 100%;
+    }
+}
 .issues-category:hover {
     box-shadow: 1px 5px 20px #888888;
 }
+
+.issues-category > .button {
+    width: 90%;
+}
+
 .issue {
     width: 100%;
     padding: 18px;
     border-bottom: 1px solid #bbb;
     margin-bottom: 10px;
     background: #FFF;
-
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .issue:last-child {
     border-bottom: none;
@@ -436,10 +489,12 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: -30px;
     margin-left: 74px;
 }
-.issues-wrapper .right-coms {
-    float: right;
+.issue .issue-left {
+    width: 80%;
+}
+.issue .issue-right {
+    width: 20%;
     text-align: right;
-    margin-top: -55px;
 }
 .issues-wrapper i {
     margin-right: 5px;
@@ -487,8 +542,8 @@ figure.effect-gcihover:hover figcaption::before {
     background-color: rgba(255, 255, 255, 0.8);
     /*height: 48px;*/
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
     box-shadow: none;
     border: none;
 }
@@ -501,43 +556,41 @@ figure.effect-gcihover:hover figcaption::before {
     overflow: hidden;
 }
 .embed-responsive-4by3, .embed-responsive {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    height: 400px;
+    /*margin-top: 0.5em;*/
+    /*margin-bottom: 0.5em;*/
+    height: 390px;
     padding: 0 !important;
     display: block;
+}
+#flickrembed {
+    margin-top: 3.6em;
+    overflow: hidden !important;
+}
+#flickrembed .ug-strip-panel {
+    display: none !important;
 }
 
 .footer {
     width: 100%;
     height: auto;
     padding: 10px 50px 10px 50px;
-    background-color: #f44336;
-    color: white;
+    background-color:  #EEEEEE;
+    color: #424242;
+    margin-top: 30px;
 }
 
 .footer p {
     margin-top: 10px;
+    color: #616161;
 }
-.heading{
-	color:#100E35;
-	text-align: center;
-}
-.links-list {
-	list-style: none;
-	margin-left: 38px;
-}
-.links-list i{
-	color:white;
-	font-size:18px;
-	margin-right:7px;
-}
+
 .footer .row .social a, .footer img {
     display: inline-block;
     width: 46px;
     height: 46px;
     border-radius: 40px;
 }
+
 .footer .row .social a {
     margin-right: 2px;
     margin-top: 5px;
@@ -550,10 +603,45 @@ figure.effect-gcihover:hover figcaption::before {
     margin-bottom: 5px;
 }
 
-.footer .row .social a i {
-    font-size: 40px;
-    color: black;
+.footer .row a i {
+    font-size: 26px;
+    color: #000;
     margin-right: 8px;
+}
+
+.footer .social a {
+    margin-top: -5px;
+}
+
+.footer .social a i {
+    color: #424242;
+    margin: 10px 0 0 11px;
+    opacity: 0.7;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.footer .social a i:hover {
+    opacity: 1;
+}
+.footer .row ul li a {
+    color: #424242;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: 0.7;
+}
+.footer .row ul li a:hover {
+    opacity: 1;
+}
+.footer .social a:last-child i {
+    margin-left: 6px;
+}
+
+.footer .social a:first-child i {
+    margin-left: 14px;
 }
 
 .navbar-brand {
@@ -581,23 +669,23 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .yt {
-    margin-top: 3em;
-    padding: 1em;
+    /*margin-top: 3em;*/
+    /*padding: 1em;*/
 }
 
 .students-section {
     padding: 2em;
 }
 
-.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
-    margin-top: 50px;
+.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors {
+    margin-top: 100px;
 }
 .social-media {
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 .social-media:hover {
     box-shadow: 1px 5px 20px #888888;
@@ -618,6 +706,8 @@ figure.effect-gcihover:hover figcaption::before {
 #map:hover {
     box-shadow: 1px 5px 20px #888888;
 }
+
+
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -655,10 +745,10 @@ body {
 
 #previous {
     float: left;
-    color: white;
+    color: black;
 }
 
 #next {
     float: right;
-    color: white;
+    color: black;
 }

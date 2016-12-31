@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/popup.css">
+    <link rel="stylesheet" href="stylesheets/contributors.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,13 +21,12 @@
     <title>FOSSASIA | Google Code-In 2016</title>
 </head>
 <body>
-<!-- Github Ribbon -->
-    <a href="//github.com/fossasia/gci16.fossasia.org">
-      <img class="ribbon" src="./images/ribbon.png">
-    </a>
 
 <!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
+        <!-- Start ignoring LineLengthBear -->
+        <a href="//github.com/fossasia/gci16.fossasia.org" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <!-- Stop ignoring LineLengthBear -->
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed"
@@ -53,6 +54,7 @@
                 <li><a href="#stprojects">Student projects</a></li>
                 <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
+                  <li><a href="#designsv2">MBDyn Logo Designs v2</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
                 <li><a href="#loklak">Loklak Webtweets</a></li>
               </ul>
@@ -90,8 +92,8 @@
 <!-- Main Content -->
     <section class="main-content">
         <div class="container">
-        <div id="map"></div>
-    </div>
+            <div id="map"></div>
+        </div>
         <div class="container">
 
             <!-- Mentors Section -->
@@ -132,17 +134,32 @@
                                         <i class="fa fa-code"></i></a>
                                     {% endif %}
                                 </div>
-                                <p>{{mentor.name}}</p>
+                                <p style="display: inline-block;">{{mentor.name}}</p>
                             </div>
                         </div>
+                        {% include popup.html person=mentor who='mentor' %}
                     </div>
                     {% endfor %}
                 </div>
             </section>
             <!-- End of Mentor Section -->
 
+            <div id="contributors-thanks" href="#contributors">
+                <div id="contributors-thanks-list" class="row">
+                    <div class="col-xs-12">
+                        <div class="content">
+                            <div class="visible">
+                                <p id="name">
+                                    Thanks for your contributions, everyone!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Contributor Section -->
-            <section id="contributors" href="#contributors" class="contributors-sec">
+            <section id="contributors" class="contributors-sec">
                 <div id="contributors-list" class="row">
                     <!-- Start ignoring BootLintBear -->
                     <h2>CONTRIBUTORS</h2>
@@ -159,7 +176,7 @@
                     <!-- Stop ignoring -->
                     {% for student in site.data.students %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card stu-card">
                             <div class="avatar">
                                 {% if student.image %}
                                 <img src="images/students/{{student.image}}"
@@ -196,21 +213,25 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                     {% endif %}
+                                    <!--
                                     {% if student.bio %}
-                                    <div>
+                                    <div style="white-space: nowrap; overflow-x: hidden;">
                                         {{student.bio}}
                                     </div>
+                                    ...
                                     {% endif %}
+                                    -->
                                 </div>
-                                <p style='padding-top:3px'>
+                                <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
                                     <i class="fa fa-code"></i>
                                     &nbsp;
-                                    <span class='stu_name' title="{{student.name}}">
+                                    <span class="stu-name card-text" title="{{student.name}}">
                                         {{student.name}}
                                     </span>
                                 </p>
                             </div>
                         </div>
+                        {% include popup.html person=student who='student' %}
                     </div>
                     {% endfor %}
                 </div>
@@ -245,11 +266,11 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                 </div>
-                                <p>
-                                    <span title="{{project.name}} by {{project.owner}}">
+                                <p style="width: 200px;display: inline-block;margin-top: 9px;">
+                                    <span style="width:200px;display: inline-block;" title="{{project.name}} by {{project.owner}}" class="card-text">
                                         {{project.name}} by {{project.owner}}
                                     </span>
-                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -319,13 +340,40 @@
             </section>
             <!-- End of Designs Section -->
 
+            <!-- Designs v2 Section -->
+            <section id="designsv2" href="#designsv2" class="designs-sec">
+                <!-- Start ignoring SpaceConsistencyBear -->
+                <div class="row designs-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MBDyn Logo Designs V2</h2>
+                    <!-- Stop ignoring -->
+                    {% for logo in site.data.logosv2 %}
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="grid">
+                            <figure class="effect-gcihover">
+                              <!-- Ignore HTMLLintBear -->
+                                <img src="images/logos/v2/{{logo.img}}" width="200px" height="200px" alt="By {{logo.author}}" style="border:0;">
+                                <figcaption>
+                                    <p>
+                                        <span style="color: #000000">by {{logo.author}}</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    {% endfor %}
+                 </div>
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Designs Section -->
+
+
             <!-- Latest Issues Section -->
             <section class="latest-issues" id="issues">
                 <div class="issues-wrapper">
                     <!-- Start ignoring BootLintBear -->
                     <h2>LATEST ISSUES</h2>
                     <!-- Stop ignoring -->
-                    
                     <div id="issues-categories-wrapper">
                         <div class="issues-category" id="unlabeled-category">
                             <div class="button"><a href="//github.com/fossasia/gci16.fossasia.org/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Unlabeled</a></div>
@@ -376,114 +424,96 @@
             <!-- End of Loklak API -->
             </div>
             <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
-                <div class="social-media" id="social-media" href="#social-media">
-                    <!-- Start ignoring BootLintBear -->
-                    <div class="row">
-                        <h2 class="white-header">FOSSASIA on social media</h2>
-                        <div class="col-md-6">
-                            <!-- Ignore LineLengthBear -->
-                            <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width=370&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
-                            width="370" height="459" style="border:none;overflow:hidden"
-                            scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370" data-height="459"></div>
-                        </div>
-                    </div>
-                    <!-- Stop ignoring -->
-                    <!-- Start ignoring BootLintBear -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="twitter-timeline" data-width="370" data-height="459"
-                            href="//twitter.com/fossasia">Tweets by fossasia</a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="github-widget" data-username="fossasia"></div>
-                        </div>
-                    </div>
-                    <!-- Stop ignoring -->
-                    <div class="last-one">
-                        <div style="margin-top: 2em;">
-                            <!-- Ignore LineLengthBear -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-8 col-md-offset-2 yt">
-                                        <div id="gyt">
-                                            <div class="embed-responsive embed-responsive-4by3">
-                                                <iframe class="embed-responsive-item"
-                                            src="//www.youtube.com/embed/videoseries\
-                                            ?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5"
-                                            frameborder="0" allowfullscreen>
-                                                </iframe>
-                                            </div>
-                                            <div class="g-ytsubscribe"
-                                            data-channelid="UCQprMsG-raCIMlBudm20iLQ"
-                                            data-layout="full"
-                                            data-count="default"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-12">
-                                        <div id="flickrembed"></div><small style="display: block;
-                                        text-align: center; margin: 0 auto;">
-                                        <a href="//www.flickr.com/photos/fossasia">
-                                        Fossasia's flickralbum</a></small></div>
-                                </div>
+
+        </div> <!-- End of .container inside the main-wrapper section -->
+
+        <div class="social-media" id="social-media" href="#social-media">
+          <div class="container-fluid">
+            <!-- Start ignoring BootLintBear -->
+            <div class="row">
+                <h2 class="white-header">FOSSASIA on social media</h2>
+                <div class="col-xs-12 col-md-6 facebook-widget"></div>
+                <div class="col-xs-12 col-md-6 g-page-embed">
+                    <div class="g-page" data-href="//plus.google.com/+fossasiaorg" data-width="370"></div>
+                </div>
+            </div>
+            <!-- Stop ignoring -->
+            <!-- Start ignoring BootLintBear -->
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <a class="twitter-timeline" data-width="370" data-height="500"
+                    href="//twitter.com/fossasia">Tweets by fossasia</a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="github-widget" data-username="fossasia"></div>
+                </div>
+            </div>
+          </div> <!--Fluid-Container-->
+            <!-- Stop ignoring -->
+            <div class="last-one">
+                    <!-- Ignore LineLengthBear -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 yt">
+                                <div class="embed-responsive embed-responsive-4by3"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div id="flickrembed"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
+            </div> <!--Last One-->
+        </div> <!--Social Media-->
     </section>
 <!-- End of Main Content -->
 
 <!-- Footer -->
-    <section class="footer">
+    <section class="footer container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 social">
-                <h2 style='color:#100E35'>Social Media</h2>
+                <h2>Social Media</h2>
                 <a href="//facebook.com/fossasia" target="_blank">
-                    <i class="fa fa-facebook-square" ></i>
+                    <i class="fa fa-facebook" style="margin-left: 14px;"></i>
                 </a>
                 <a href="//twitter.com/fossasia" target="_blank">
-                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-twitter"></i>
                 </a>
                 <a href="//plus.google.com/108920596016838318216" target="_blank">
-                    <i class="fa fa-google-plus-official"></i>
+                    <i class="fa fa-google-plus"></i>
                 </a>
                 <a href="//www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
-                    <i class="  fa fa-linkedin-square"></i>
+                    <i class="fa fa-linkedin"></i>
                 </a>
                 <br>
                 <a href="//github.com/fossasia" target="_blank">
-                    <i class="fa fa-github-square"></i>
+                    <i class="fa fa-github"></i>
                 </a>
                 <a href="//flickr.com/photos/fossasia" target="_blank">
                     <i class="fa fa-flickr"></i>
                 </a>
                 <a href="//www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
-                    <i class="  fa fa-youtube-play"></i>
+                    <i class="fa fa-youtube"></i>
                 </a>
                 <a href="//en.wikipedia.org/wiki/FOSSASIA" target="_blank">
-                    <i class="  fa fa-wikipedia-w"></i>
+                    <i class="fa fa-wikipedia-w"></i>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <h2 class='heading'>About FOSSASIA</h2>
-                <p style='text-align: justify;'>FOSSASIA is an open source technology organization in Asia that aims to
+                <h2>About FOSSASIA</h2>
+                <p>FOSSASIA is an open source technology organization in Asia that aims to
                 bring together an inspiring community across borders and ages to form a better
                 future with Open Technologies and ICT.
                 </p>
-                <p style='text-align: justify;'>FOSSASIA is involved in Google Code-In, which serves as a great introduction
+                <p>FOSSASIA is involved in Google Code-In, which serves as a great introduction
                 to the world of open source collaboration and an excellent mediator to involve
                 the next generation of digital collaborators.
                 </p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <h2 class='heading'>FOSSASIA Links</h2>
-                <ul class='links-list'>
+                <h2>FOSSASIA Links</h2>
+                <ul style="list-style-type:none">
                     <li><a href="//fossasia.org"><i class="fa fa-link"></i>Main site</a></li>
-                    <li><a href="//blog.fossasia.org"><i class="fa fa-link "></i>Blog</a></li>
+                    <li><a href="//blog.fossasia.org"><i class="fa fa-link"></i>Blog</a></li>
                     <li><a href="//codein.withgoogle.com/organizations/fossasia/">
                             <i class="fa fa-link"></i>Google Code-In Page
                         </a>
@@ -497,27 +527,13 @@
                 </ul>
             </div>
         </div>
-        <p class="text-center"><i>© Copyright 2009-2016 FOSSASIA | Made with
-        <i class="fa fa-heart"></i> for Google Code-In</i></p>
+        <p class="text-center">© Copyright 2009-2016 FOSSASIA | Made with
+        <i class="fa fa-heart"></i> for Google Code-In</p>
     </section>
 <!-- End of Footer -->
 
 <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="//apis.google.com/js/platform.js" async defer></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-        ! function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? "http" : "https";
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");
-    </script>
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
@@ -754,14 +770,17 @@
             }]
       });
       var marker;
+      var marker2;
       var infowindow = null;
       {% for mentor in site.data.mentors %}
+      {% for student in site.data.students %}
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                  label: 'M',
                   map: map
               });
-              
+
               infowindow = null;
               var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
               google.maps.event.addListener(marker, 'click', (function(marker, content) {
@@ -775,21 +794,36 @@
                   };
               })(marker, content));
           {% endif %}
+          {% if student.lat %}
+              marker2 = new google.maps.Marker({
+                  position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                  label : 'S',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+              google.maps.event.addListener(marker2, 'click', (function(marker2, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker2);
+                  };
+              })(marker2, content));
+          {% endif %}
+      {% endfor %}
       {% endfor %}
     };
     </script>
+
     <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
-    <!-- Github Cards -->
-    <script src="//unpkg.com/github-card@1.2.1/dist/widget.js" async></script>
-
-    <!--Flickr album js-->
-    <script src="//flickrembed.com/embed_v2.js.php?source=flickr
-    &layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user
-    &theme=default&scale=fit&skin=default&id=5843ed99c6db7" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
-    <script src="./javascripts/loklak-fetcher.js" async></script>
+    <script src="./javascripts/loklak-fetcher.js"></script>
     <script src="./javascripts/tweet.js"></script>
 </body>
 </html>
