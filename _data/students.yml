@@ -242,7 +242,10 @@
   github: adarsh-ideal
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
+  blog: idealadarsh.wordpress.com
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+  lat: 25.383324
+  lng: 86.472066
 
 - name: Ainesh Sootha
   github: champforevaa
