@@ -1,12 +1,29 @@
 // Add your function at the end. First function is of highest priority.
+var contributorsList = [];
+var thank = function() {
+  var j = 0;
+  setInterval(function() {
+    $('#name').fadeOut(function() {
+      if (j === contributorsList.length) {
+        j = 0;
+      }
+      $(this).html("Thanks for your contributions, " + contributorsList[j++]);
+      $(this).fadeIn();
+    });
+  }, 6000);
+};
 var getContributors = function(page) {
+  // Fetching contributors list
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
   }).done(function(data) {
     if (data.length === 0) {
+      // Fetching is done, now display name in Thanks section
+      thank();
       return;
     }
     data.forEach(function(contributors) {
+      contributorsList.push(contributors.login);
       // Ignore LineLengthBear
       var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
       html += "<div class='avatar'>";
@@ -26,6 +43,7 @@ var getContributors = function(page) {
   });
 };
 
+// Calling recursion function
 $(getContributors(1));
 
 $(function() {

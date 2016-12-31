@@ -96,7 +96,7 @@
     text-transform: uppercase;
     box-shadow: 1px 2px 20px rgba(33,35,23,.51);
 }
-.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors {
+.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -108,7 +108,7 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper {
+.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper, {
     margin-top: 100px;
 }
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
@@ -677,7 +677,7 @@ figure.effect-gcihover:hover figcaption::before {
     padding: 2em;
 }
 
-.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors, #contributors {
+.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors {
     margin-top: 100px;
 }
 .social-media {
