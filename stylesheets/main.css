@@ -125,7 +125,6 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-
 .card-text{
     overflow: scroll;
     white-space: nowrap;
@@ -135,6 +134,7 @@
 .blogs-sec .card {
     width: 500px;
     height: 400px;
+    margin: 0;
 }
 .stu-name{
     margin-left:-7px;
@@ -321,6 +321,7 @@ figure.effect-gcihover {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    margin-left: 20px;
 }
 figure.effect-gcihover:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
