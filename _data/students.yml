@@ -218,6 +218,8 @@
   email: koh.pirong@dhs.sg
   image: KohPR.jpg
   bio: 14, Student, Interested in Python, C++
+  lat: 1.3666953
+  lng: 103.95943439999999
 
 - name: Lee Care Gene
   github: LeeCareGene
