@@ -160,8 +160,13 @@
   twitter: _gnovi
   facebook: praveenpatil103
 
+- name: Jason Wong
+  github: codethejason
+  image: JasonWong.jpg
+  twitter: codethejason
+  bio: A cryptocurrency enthusiast.
+  
 - name: John Vandenberg
   github: jayvdb
   image: jayvdb.jpg
   facebook: johnmark.vandenberg
-
