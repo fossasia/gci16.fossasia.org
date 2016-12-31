@@ -13,6 +13,12 @@
   article: My Jounrey To Open Source
   article_link: https://thegigotheory.wordpress.com/2016/12/19/my-journey-to-open-source/
 
+- name: Miguel Piedrafita
+  blog: blog.miguelpiedrafita.com
+  blog_img: m1guelpf.png
+  article: GCI – About FOSSASIA
+  article_link: https://blog.miguelpiedrafita.com/gci-fossasia/
+
 - name: Apurv Jain
   blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
   blog_img: apurv_blog.png.png
@@ -198,7 +204,6 @@
 
 - name: Prajwal K Patil
   blog: https://prajwalpatil.tech.blog/
-  blog_img: prajwal.jpg
   article: My Participation in Google Code-in
   article_link: https://prajwalpatil.tech.blog/2016/12/27/experience-in-google-code-in/
 
