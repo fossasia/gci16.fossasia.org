@@ -1,0 +1,23 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+- name: Hangman
+  owner: Jason Wong
+  link: http://codethejason.github.io/gci2015/hangman/index.html
+  source: https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/
+  image: hangman.png
+- name: Activity
+  owner: Miguel Piedrafita
+  link: http://github.com/m1guelpf/Activity
+  source: http://github.com/m1guelpf/Activity
+  image: activity.png
+- name: MONSTROUS SUCCESS
+  owner: Zahari Asparuhov
+  link: http://techfest.vratsa.net/
+  source: https://github.com/granets/SoftUniHack
+  image: MS.jpg
+- name: Susi Documentation
+  owner: Adarsh Kumar
+  link: https://fossasia.github.io/susi_server/
+  source: https://adarsh-ideal.github.io/susi_server/
+  image: adarsh-susi.png
