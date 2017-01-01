@@ -15,7 +15,6 @@
 
 - name: Miguel Piedrafita
   blog: blog.miguelpiedrafita.com
-  blog_img: m1guelpf.png
   article: GCI – About FOSSASIA
   article_link: https://blog.miguelpiedrafita.com/gci-fossasia/
 
@@ -206,4 +205,3 @@
   blog: https://prajwalpatil.tech.blog/
   article: My Participation in Google Code-in
   article_link: https://prajwalpatil.tech.blog/2016/12/27/experience-in-google-code-in/
-
