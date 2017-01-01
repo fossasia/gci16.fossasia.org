@@ -26,7 +26,7 @@ to enter a mentor:
 
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repo via commit or PR,
-you may use any image optimizer of your choice. 
+you may use any image optimizer of your choice.
 - The images should be 240 x 240 pixels.
 - Adding Facebook, Twitter, Github, etc. is not obliged. But if you do not want to include social media accounts, please do not provide empty fileds like `facebook: `. Ask the mentors if you do not know their accounts.
 - If you do not know the mentors' location, ask them to go to the official FOSSASIA geolocation website https://fossasia.github.io/geolocation and give you their latitude and longitude.
@@ -51,7 +51,7 @@ maintain the following format to enter a student:
 
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repo via commit or PR,
-you may use any image optimizer of your choice. 
+you may use any image optimizer of your choice.
 - The images should be 240 x 240 pixels.
 - Adding Facebook, Twitter, Github, etc. is not obliged. But if you do not want to include your social media accounts, please do not provide empty fileds like `facebook: `.
 - To find your lattitude and longitude go to the official FOSSASIA geolocation website https://fossasia.github.io/geolocation.
@@ -106,7 +106,7 @@ in the `_data` folder and maintain the following format to enter a new slide.
   exp-3: Third sentence explanation
 ```
 
-**IMPORTANT:** 
+**IMPORTANT:**
 - Put the images in the `/images/` folder. All images must be optimized before uploaded to the repo via commit or PR, you may use any image optimizer of your choice.
 - Adding `action` and `actionURL` is not obliged. If you do not add, please do not provide empty fileds like `action: `. If you do, please provide both `action` and `actionURL`.
 - Try to equalize the length of `exp-1`, `exp-2`, and `exp-3` in combination with `action`.
