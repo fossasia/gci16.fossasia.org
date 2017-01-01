@@ -1,12 +1,29 @@
 // Add your function at the end. First function is of highest priority.
+var contributorsList = [];
+var thank = function() {
+  var j = 0;
+  setInterval(function() {
+    $('#name').fadeOut(function() {
+      if (j === contributorsList.length) {
+        j = 0;
+      }
+      $(this).html("Thanks for your contributions, " + contributorsList[j++]);
+      $(this).fadeIn();
+    });
+  }, 6000);
+};
 var getContributors = function(page) {
+  // Fetching contributors list
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
   }).done(function(data) {
     if (data.length === 0) {
+      // Fetching is done, now display name in Thanks section
+      thank();
       return;
     }
     data.forEach(function(contributors) {
+      contributorsList.push(contributors.login);
       // Ignore LineLengthBear
       var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
       html += "<div class='avatar'>";
@@ -26,6 +43,7 @@ var getContributors = function(page) {
   });
 };
 
+// Calling recursion function
 $(getContributors(1));
 
 $(function() {
@@ -61,10 +79,12 @@ $(function() {
     for (i = 0; i < data.length; i++) {
       if (data[i].labels.length === 0) {
         issueElement = $('<div class="issue"></div>')
-                .append($("<span></span>").append(data[i].number))
-                .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
-                .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
-                .append($('<div class="right-coms"></div>')
+                .append($('<div class="issue-left"></div>')
+                  .append($("<span></span>").append(data[i].number))
+                  .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
+                )
+                .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[i].html_url)
                     .attr('target', '_blank')
@@ -92,10 +112,12 @@ $(function() {
             // all hail .append()
             // build the issue element
             issueElement = $('<div class="issue"></div>')
-                .append($("<span></span>").append(data[j].number))
-                .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
-                .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
-                .append($('<div class="right-coms"></div>')
+                .append($('<div class="issue-left"></div>')
+                  .append($("<span></span>").append(data[j].number))
+                  .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
+                )
+                .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[j].html_url)
                     .attr('target', '_blank')

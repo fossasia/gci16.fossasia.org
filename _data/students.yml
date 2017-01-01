@@ -1,6 +1,16 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Aditya Jyoti Paul
+  github: TechGuyAditya
+  image: Aditya240.jpg
+  twitter: Aditya_Jyoti007
+  blog: https://wordpress.com/stats/insights/techguyaditya.wordpress.com
+  bio: 17, loves Maths and Computers, FRIENDS fan :)
+  facebook: /aditya.paul.56614
+  lat: 22.484401
+  lng: 88.314114
+
 - name: Prince John
   github: Prince-John
   twitter: Princejohn001
@@ -16,7 +26,22 @@
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
   lat: 22.8035475
-  lng: 86.1949906
+  lng: 86.194990
+
+- name: Manas Taneja
+  github: manastaneja
+  image: manas.jpg
+  twitter: manastaneja1
+  facebook: manas.taneja.1
+  bio: 15 years old, coding is passion , physics for life.
+  lat: 29.0587757
+  lng: 76.085601
+
+- name: Shrey Goel
+  github: Coder-404
+  facebook: shrey.goel.581
+  twitter: Coder404
+  image: Shrey.jpg
 
 - name: Joseph Bywater
   github: josephbywater
@@ -144,6 +169,8 @@
   twitter: ThienVHoang
   image: thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
+  lat: 10.058854561670294
+  lng: 105.7663967687538
 
 - name: George Semenov
   email: themrgeorgeous@gmail.com
@@ -201,6 +228,8 @@
   email: koh.pirong@dhs.sg
   image: KohPR.jpg
   bio: 14, Student, Interested in Python, C++
+  lat: 1.3666953
+  lng: 103.95943439999999
 
 - name: Lee Care Gene
   github: LeeCareGene
@@ -213,7 +242,10 @@
   github: adarsh-ideal
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
+  blog: idealadarsh.wordpress.com
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+  lat: 25.383324
+  lng: 86.472066
 
 - name: Ainesh Sootha
   github: champforevaa
@@ -331,6 +363,8 @@
   twitter: NadunYashmika
   bio: 17, student, web developer
   facebook: nadun.yashmika.9
+  lat: 7.0025129999999995
+  lng: 79.9098925
 
 - name: Mehmet Cagri Ari
   github: hesapadim
@@ -560,3 +594,37 @@
   bio: Cynical
   lat: 1.3553794
   lng: 103.86774439999999
+
+
+- name: Galangkangin Gotera
+  github: thegalang
+  image: galangkangin.jpg
+  facebook: fuspak
+  twitter: BukanGalangK
+  bio: 16, from Indonesia, i love learning algorithms
+  lat: -8.6539591
+  lng: 115.22582229999999
+
+- name: Mridul Birla
+  github: Mridulbirla13
+  image: Mridul.jpg
+  twitter: mridulbirla13
+  facebook: Mridul Birla
+  bio: 14, Indian, love learning, Love FOSS
+  lat: 29.0587757
+  lng: 76.085601
+
+- name: Shi Wei Zheng
+  github: dive0
+  image: ShiWeiZheng.jpg
+  twitter: shiweizheng
+  facebook: shiwei.zheng.56
+  bio: 16 years old, from New York, love science, math, and technologies
+  lat: 40.640453300000004
+  lng: -74.0073878
+
+- name: Ekesh Kumar
+  github: redblacktrees
+  image: EKumar.jpg
+  twitter: ekeshh
+  bio: 16 years old, United States. Open-source developer.

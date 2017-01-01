@@ -9,73 +9,6 @@ The student site for GCI 2016 Students.
 # Contributing
 Read thoroughly our [contributing guide](https://github.com/fossasia/gci16.fossasia.org/blob/gh-pages/CONTRIBUTING.md) before sending in your Pull Requests. Happy Contributing !
 
-# Adding yourselves to student section
-
-
-To add yourself to student section you need to open the file `students.yml` in `_data` folder and please
-maintain the following format to enter a student:
-
-```
-- name: Your name
-  github: Your github username
-  image: your_image
-  twitter: Your twitter id
-  facebook: Your facebook id
-  bio: Some bio about yourself
-  lat: Your latitude
-  lng: Your longitude
-```
-**Important: All images must be optimized before uploaded to the repo via commit or PR,
-you may use any image optimizer of your choice. Also the images should be 240x240 pixels
-Adding facebook, twitter, github, image are not needed but you may provide it and never
-provide empty fileds like `facebook: `. To find your lattitude and longitude go to the official
-FOSSASIA geolocation website https://fossasia.github.io/geolocation.**
-
-**Please avoid changing the whole file just to add yourself. Line endings should not change.**
-
-**_Please avoid using contractions such as can't, don't, etc. If you must do it, such as your name has one...put double quotes (`"`) around that part._**
-
-**Also try to use abbrivation in your name wherever possible.**
-Try to restrict your name in 13 letter (including spaces) otherwise your name might be
-truncated automatically. However, your name will be displayed completely when hovered.
-
-# Blog Post
-
-To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the
-following format to enter your blog in this website.
-
-```
-- name: Your name
-  blog: https://yourbloglink.com
-  blog_img: your_image
-  article: Article title
-  article_link: https://yourarticlelink.com
-```
-
-**Important: The image should be added inside blogs folder which is in the images folder, and `your_image` should be the file's
-name, for example 'mypost.png'. Make sure that the images are in 16:9 aspect ratio.**
-Also adding article and article_link is optional, unless your task recommends it.
-
-# Adding Logos
-
-To add your logos, you need to open the file `logos.yml` in the `_data` folder and please
-maintain the following format to enter your logo in this website:
-
-```
-- author: Your name
-  img: your_image
-```
-
-and place your logo in `/images/logos` folder and `your_image` should be the name of your file.
-
-**Please resize your image to 400px x 400px (w x h) OR in relative proportion
-before uploading.
-We don't want image of high dimensions or of big file size for logo.**
-The students uploading the images of dimensions below those mentioned above, would also not be
-aceepted as they would disturb the UX of the site. Please make the logo in the proportion to
-the dimensions mentioned above, and crop/resize using any preferred softwares or online tool and
-then upload and do PR.
-
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format
@@ -90,11 +23,75 @@ to enter a mentor:
   lat: Mentor's latitude
   lng: Mentor's longitude
 ```
-**Important: All images must be optimized before uploaded to the repo via commit or PR,
-you may use any image optimizer of your choice. Also the images should be 240x240 pixels
-Adding facebook, twitter, github, image are not needed but you may provide it and never
-provide empty fileds like `facebook: `. If you really want to add them and you don't know
-please ask a mentor.**
+
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repo via commit or PR,
+you may use any image optimizer of your choice.
+- The images should be 240 x 240 pixels.
+- Adding Facebook, Twitter, Github, etc. is not obliged. But if you do not want to include social media accounts, please do not provide empty fileds like `facebook: `. Ask the mentors if you do not know their accounts.
+- If you do not know the mentors' location, ask them to go to the official FOSSASIA geolocation website https://fossasia.github.io/geolocation and give you their latitude and longitude.
+- Avoid using contractions such as _can't, don't,_ etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+- Try to use abbrivation in the name wherever possible, i.e. restrict it in 13 letters (including spaces), otherwise it might be truncated automatically. However, the name will be displayed completely when it is hovered.
+
+# Adding yourselves to student section
+
+To add yourself to student section you need to open the file `students.yml` in `_data` folder and please
+maintain the following format to enter a student:
+
+```
+- name: Your name
+  github: Your github username
+  image: your_image
+  twitter: Your twitter id
+  facebook: Your facebook id
+  bio: Some bio about yourself
+  lat: Your latitude
+  lng: Your longitude
+```
+
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repo via commit or PR,
+you may use any image optimizer of your choice.
+- The images should be 240 x 240 pixels.
+- Adding Facebook, Twitter, Github, etc. is not obliged. But if you do not want to include your social media accounts, please do not provide empty fileds like `facebook: `.
+- To find your lattitude and longitude go to the official FOSSASIA geolocation website https://fossasia.github.io/geolocation.
+- Avoid changing the whole file just to add yourself. Line endings should not change.
+- Avoid using contractions such as _can't, don't,_ etc. If there is no choice (e.g. your name has single quote mark) put double quotes (`"`) around that part.
+- Try to use abbrivation in your name wherever possible, i.e. restrict your name in 13 letters (including spaces), otherwise your name might be truncated automatically. However, your name will be displayed completely when it is hovered.
+
+# Blog Post
+
+To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the
+following format to enter your blog in this website.
+
+```
+- name: Your name
+  blog: https://yourbloglink.com
+  blog_img: your_image
+  article: Article title
+  article_link: https://yourarticlelink.com
+```
+
+**IMPORTANT:**
+- The image should be placed inside `images/blogs` folder, and `your_image` should be the file's name, for example `mypost.png`. Make sure that the images are in 16:9 aspect ratio.
+- If you do not provide a blog image, a default image will be displayed.
+- Adding article and article_link is optional, unless your task requires it.
+
+# Adding Logos
+
+To add your logos, you need to open the file `logos.yml` in the `_data` folder and please
+maintain the following format to enter your logo in this website:
+
+```
+- author: Your name
+  img: your_image
+```
+
+and place your logo in `/images/logos` folder and `your_image` should be the name of your file.
+
+**IMPORTANT:**
+- Please resize your image to 400px x 400px (w x h) OR in relative proportion before uploading. We don't want logos that have high dimensions or large size.
+- The students uploading the images of dimensions below those mentioned above, would not be accepted as they would disturb the UX of the site. Please make the logo in the proportion to the dimensions mentioned above, crop/resize by any softwares or online tools, upload, and create a pull request.
 
 # Adding a slide
 
@@ -109,10 +106,10 @@ in the `_data` folder and maintain the following format to enter a new slide.
   exp-3: Third sentence explanation
 ```
 
-**Important: Put the image in `/images/` folder and enter the name here.All images must be optimized before
-uploaded to the repo via commit or PR, you may use any image optimizer of your choice. Adding action and
-actionURL are not needed but you may provide it and never provide empty fileds like `action: `. Only provide
-action and actionURL together.**
+**IMPORTANT:**
+- Put the images in the `/images/` folder. All images must be optimized before uploaded to the repo via commit or PR, you may use any image optimizer of your choice.
+- Adding `action` and `actionURL` is not obliged. If you do not add, please do not provide empty fileds like `action: `. If you do, please provide both `action` and `actionURL`.
+- Try to equalize the length of `exp-1`, `exp-2`, and `exp-3` in combination with `action`.
 
 # Finding Support
 

@@ -142,4 +142,31 @@
   github: aviaryan
   image: aviaryan.jpg
   twitter: aviaryan123
+  facebook: aviaryan123
 
+- name: Sudheesh Singanamalla
+  github: sudheesh001
+  blog: https://sudheesh.info/
+  image: sudheesh001.jpg
+  twitter: sudheesh001
+  facebook: sudheesh001
+  lat: 18.0001
+  lng: 79.5882
+
+- name: Praveen Patil
+  github: wavicles
+  blog: http://wavicles.in/
+  image: rsz_praveen.jpg
+  twitter: _gnovi
+  facebook: praveenpatil103
+
+- name: John Vandenberg
+  github: jayvdb
+  image: jayvdb.jpg
+  facebook: johnmark.vandenberg
+
+- name: Jason Wong
+  github: codethejason
+  image: JasonWong.jpg
+  twitter: codethejason
+  bio: A cryptocurrency enthusiast.
