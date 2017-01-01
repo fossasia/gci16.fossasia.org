@@ -1,12 +1,29 @@
 // Add your function at the end. First function is of highest priority.
+var contributorsList = [];
+var thank = function() {
+  var j = 0;
+  setInterval(function() {
+    $('#name').fadeOut(function() {
+      if (j === contributorsList.length) {
+        j = 0;
+      }
+      $(this).html("Thanks for your contributions, " + contributorsList[j++]);
+      $(this).fadeIn();
+    });
+  }, 6000);
+};
 var getContributors = function(page) {
+  // Fetching contributors list
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
   }).done(function(data) {
     if (data.length === 0) {
+      // Fetching is done, now display name in Thanks section
+      thank();
       return;
     }
     data.forEach(function(contributors) {
+      contributorsList.push(contributors.login);
       // Ignore LineLengthBear
       var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
       html += "<div class='avatar'>";
@@ -17,15 +34,16 @@ var getContributors = function(page) {
       } else {
         html += " contributions";
       }
-      html += "</p></div><a href=" + contributors.html_url + ">";
-      html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
-      html += contributors.login + "</span></a></div></div></div>";
+      html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
+      html += "<span>";
+      html += contributors.login + "</span></div></div></div>";
       $("#contributors-list").append(html);
     });
     getContributors(page+1);
   });
 };
 
+// Calling recursion function
 $(getContributors(1));
 
 $(function() {
@@ -61,10 +79,12 @@ $(function() {
     for (i = 0; i < data.length; i++) {
       if (data[i].labels.length === 0) {
         issueElement = $('<div class="issue"></div>')
-                .append($("<span></span>").append(data[i].number))
-                .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
-                .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
-                .append($('<div class="right-coms"></div>')
+                .append($('<div class="issue-left"></div>')
+                  .append($("<span></span>").append(data[i].number))
+                  .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
+                )
+                .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[i].html_url)
                     .attr('target', '_blank')
@@ -92,10 +112,12 @@ $(function() {
             // all hail .append()
             // build the issue element
             issueElement = $('<div class="issue"></div>')
-                .append($("<span></span>").append(data[j].number))
-                .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
-                .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
-                .append($('<div class="right-coms"></div>')
+                .append($('<div class="issue-left"></div>')
+                  .append($("<span></span>").append(data[j].number))
+                  .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
+                )
+                .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[j].html_url)
                     .attr('target', '_blank')
@@ -153,80 +175,14 @@ $(".close").click(function() {
 
 // Import social media widgets
 if (document.readyState === "complete") {
-  loadSocialMediaWidgets();
+  importSocialMediaWidgets();
 } else {
-  window.addEventListener('load', loadSocialMediaWidgets);
+  window.addEventListener('load', importSocialMediaWidgets);
 }
 
-function loadSocialMediaWidgets() {
-  var widgetWidth = 370;
-  if (window.innerWidth <= 370) {
-    widgetWidth = 300;
-  }
-
-  // Facebook
-  var fbDiv = document.querySelector('.facebook-widget');
-  var fbFrame = document.createElement('iframe');
-  fbFrame.setAttribute('src', '//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;tabs=timeline&amp;width='+widgetWidth+'&amp;height=459&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId');
-  fbFrame.setAttribute('width', widgetWidth);
-  fbFrame.setAttribute('style', 'border:none;overflow:hidden');
-  fbFrame.setAttribute('scrolling', 'no');
-  fbFrame.setAttribute('frameborder', 0);
-  fbFrame.setAttribute('allowtransparency', 'true');
-  fbDiv.appendChild(fbFrame);
-
-  // Google+
-  if (widgetWidth === 300) {
-    document.querySelector('.g-page').setAttribute('data-width', 300);
-  }
+function importSocialMediaWidgets() {
   var script = document.createElement('script');
-  script.setAttribute('src', '//apis.google.com/js/platform.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-
-  // Twitter
-  // Start ignoring JSHintBear
-  // This is obfuscated code from Twitter, It's a good idea to ignore it
-  if (widgetWidth === 300) {
-    document.querySelector('.twitter-timeline').setAttribute('data-width', 300);
-  }
-  script = document.createElement('script');
-  script.setAttribute('src', '//platform.twitter.com/widgets.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-  ! function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        p = /^http:/.test(d.location) ? "http" : "https";
-      if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = p + "://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-  }(document, "script", "twitter-wjs");
-  // Stop ignoring JSHintBear
-
-  // Github
-  if (widgetWidth === 300) {
-    document.querySelector('.github-widget').setAttribute('style', 'width:300px !important;');
-  }
-  script = document.createElement('script');
-  script.setAttribute('src', '//unpkg.com/github-card@1.2.1/dist/widget.js');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
-
-  // Youtube
-  var ytFrame = document.createElement('iframe');
-  var ytDiv = document.querySelector('.embed-responsive-4by3');
-  ytFrame.setAttribute('src', '//www.youtube.com/embed/videoseries?list=PLzZVLecTsGpK039bJFaMsFbYXA6QVPaO5');
-  ytFrame.setAttribute('allowfullscreen', true);
-  ytFrame.setAttribute('frameborder', 0);
-  ytFrame.classList.add('embed-responsive-item');
-  ytDiv.appendChild(ytFrame);
-
-  // Flickr
-  script = document.createElement('script');
-  script.setAttribute('src', '//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user&theme=default&scale=fit&skin=default&id=5843ed99c6db7');
+  script.setAttribute('src', '/javascripts/social-widgets-loader.js');
   script.setAttribute('async', true);
   document.head.appendChild(script);
 }

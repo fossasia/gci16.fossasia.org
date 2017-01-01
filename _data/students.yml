@@ -1,6 +1,23 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Aditya Jyoti Paul
+  github: TechGuyAditya
+  image: Aditya240.jpg
+  twitter: Aditya_Jyoti007
+  blog: https://wordpress.com/stats/insights/techguyaditya.wordpress.com
+  bio: 17, loves Maths and Computers, FRIENDS fan :)
+  facebook: /aditya.paul.56614
+  lat: 22.484401
+  lng: 88.314114
+
+- name: Prince John
+  github: Prince-John
+  twitter: Princejohn001
+  image: prince-john.jpg
+  blog: andnowhissleephasended.blogspot.in
+  bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
+
 - name: Animesh Singh
   github: animeshsinghweb
   facebook: f4.animeshsinghweb
@@ -9,7 +26,22 @@
   blog: blog.animeshsingh.in
   bio: A 17 yr old techygeek, loves coding & FOSS.
   lat: 22.8035475
-  lng: 86.1949906
+  lng: 86.194990
+
+- name: Manas Taneja
+  github: manastaneja
+  image: manas.jpg
+  twitter: manastaneja1
+  facebook: manas.taneja.1
+  bio: 15 years old, coding is passion , physics for life.
+  lat: 29.0587757
+  lng: 76.085601
+
+- name: Shrey Goel
+  github: Coder-404
+  facebook: shrey.goel.581
+  twitter: Coder404
+  image: Shrey.jpg
 
 - name: Joseph Bywater
   github: josephbywater
@@ -17,6 +49,13 @@
   twitter: thejj100100
   image: joseph.jpg
   bio: 15 Years Old, Loves Open Source and coding!
+
+- name: S Rahul Badami
+  github: srahulbadami
+  email: srahulbadami@gmail.com
+  twitter: srahulbadami
+  image: badami.jpg
+  bio: 17 Years Old,Coding,Gamming,Sports !!!
 
 - name: Mostafa Elgayar
   github: Elgayar
@@ -33,6 +72,16 @@
   twitter: simnrn
   facebook: simnrn
   bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
+
+- name: Kshitij Singla
+  github: kshitijsingla
+  image: kshitij.jpg
+  twitter: kshitij_singla
+  blog: https://medium.com/@kshitijsingla123
+  bio: Open-source enthusiast.
+  facebook: kshitij.singla.14
+  lat: 30.210994
+  lng: 74.945475
 
 - name: Oana Rosca
   github: oanarosca
@@ -88,6 +137,15 @@
   image: darshil.jpg
   bio: 16, Computer enthusiast, soccer player, cars, business, startups
 
+- name: Matthew Ponce de Leon
+  github: mattpdl
+  image: mattpdl.jpg
+  twitter: mattpdl
+  facebook: mattpdl01
+  bio: 15, Tech Enthusiast, 2nd GCI, &quot;Building Tomorrow, Today&quot;
+  lat: 33.9744
+  lng: -118.0420
+
 - name: Pol Baladas
   email: polbaladasluna@gmail.com
   github: PolBaladas
@@ -111,6 +169,8 @@
   twitter: ThienVHoang
   image: thien.jpg
   bio: 17 years old, Vietnamese, study Computer Science.
+  lat: 10.058854561670294
+  lng: 105.7663967687538
 
 - name: George Semenov
   email: themrgeorgeous@gmail.com
@@ -168,6 +228,8 @@
   email: koh.pirong@dhs.sg
   image: KohPR.jpg
   bio: 14, Student, Interested in Python, C++
+  lat: 1.3666953
+  lng: 103.95943439999999
 
 - name: Lee Care Gene
   github: LeeCareGene
@@ -180,7 +242,10 @@
   github: adarsh-ideal
   image: adarsh.jpg
   twitter: Adarsh_Kumar1
+  blog: idealadarsh.wordpress.com
   bio: 16, Student Programmer, Web developer, Computer enthusiast
+  lat: 25.383324
+  lng: 86.472066
 
 - name: Ainesh Sootha
   github: champforevaa
@@ -217,6 +282,8 @@
   twitter: gaeunkim913
   facebook: gaeunkim913
   bio: 15, South Korean, High school junior, Machine learning researcher, Frequent traveller
+  lat: 37.514
+  lng: 127.101
 
 - name: Nguyen Diep Xuan Quang
   github: xuanquang1999
@@ -243,7 +310,10 @@
   github: codein-dwij
   image: dwij.png
   facebook: jha.dwij
-  bio: 14,Indian,Sudent Programmer
+  twitter: Dwij_Jha
+  bio: I am 14 years old and love coding! I know HTML , Javascript , CSS and Python. Will learn Bootstrap, PHP and others! I enjoy learning at Khan Academy and Code cademy. Also love contributing and coding on Sololearn app. I enjoy playing and building games :P
+  lat: 19.171644999999998
+  lng: 72.8810743
 
 - name: Riley Kovacev
   github: Rbkovacev
@@ -296,6 +366,8 @@
   twitter: NadunYashmika
   bio: 17, student, web developer
   facebook: nadun.yashmika.9
+  lat: 7.0025129999999995
+  lng: 79.9098925
 
 - name: Mehmet Cagri Ari
   github: hesapadim
@@ -488,3 +560,81 @@
   image: kohyt.jpg
   twitter: msft007
   bio: 17, Singaporean, learning Python
+
+- name: Samuel Chua Jia Cong
+  github: Samuel Chua
+  image: samuelchua.jpg
+  twitter: scjc2001
+  facebook: samuel.cong
+  blog: samuelchuadhs.wordpress.com
+  bio: 15, Singaporean, Cuber, Explorer
+  lat: 1.3950886
+  lng: 103.9014255
+
+- name: Prajwal K Patil
+  github: PrajwalPatill
+  image: prajwal.jpg
+  twitter: p_kailasanath
+  blog: https://prajwalpatil.tech.blog
+  bio: I am cool coder.
+  facebook: prajwal.udchankar
+  lat: 15.849695299999999
+  lng: 74.4976741
+
+- name: Muktiadi Akhmad Januar
+  github: Muktiadi
+  image: Muktiadi.jpg
+  twitter: Zukaizen
+  facebook: MuktiadiAkhmadJanuar
+  bio: Love to learning from basics.
+  lat: -6.895726746997539
+  lng: 107.80893713235855
+
+- name: Guo Jialu Benjamin
+  github: benjaminguo
+  image: benjaminguo.jpg
+  twitter: guoJLbenjamin
+  bio: Cynical
+  lat: 1.3553794
+  lng: 103.86774439999999
+
+
+- name: Galangkangin Gotera
+  github: thegalang
+  image: galangkangin.jpg
+  facebook: fuspak
+  twitter: BukanGalangK
+  bio: 16, from Indonesia, i love learning algorithms
+  lat: -8.6539591
+  lng: 115.22582229999999
+
+- name: Mridul Birla
+  github: Mridulbirla13
+  image: Mridul.jpg
+  twitter: mridulbirla13
+  facebook: Mridul Birla
+  bio: 14, Indian, love learning, Love FOSS
+  lat: 29.0587757
+  lng: 76.085601
+
+- name: Shi Wei Zheng
+  github: dive0
+  image: ShiWeiZheng.jpg
+  twitter: shiweizheng
+  facebook: shiwei.zheng.56
+  bio: 16 years old, from New York, love science, math, and technologies
+  lat: 40.640453300000004
+  lng: -74.0073878
+
+- name: Ekesh Kumar
+  github: redblacktrees
+  image: EKumar.jpg
+  twitter: ekeshh
+  bio: 16 years old, United States. Open-source developer.
+
+- name: Muhammed Nagy
+  github: muhammednagy
+  image: MuhammedNagy.jpg
+  facebook: muhammed.nagy.0
+  bio: 16, Egyptian, Junior Web developer who loves backend operations and Devops
+  blog: muhnagy.com

@@ -1,6 +1,13 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Harshit Dwivedi
+  github: the-dagger
+  image: harshit1.png
+  twitter: daggerdwivedi
+  lat: 28.608278
+  lng: 77.3009404
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
@@ -92,6 +99,10 @@
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
 
+  name: Ananyo Maiti
+  facebook: ananyo.maiti
+  github: ananyo2012
+
 - name: Agata Kowalska
   github: agwisniewska
   image: agatakowalska.jpg
@@ -135,3 +146,37 @@
   github: aviaryan
   image: aviaryan.jpg
   twitter: aviaryan123
+  facebook: aviaryan123
+
+- name: Sudheesh Singanamalla
+  github: sudheesh001
+  blog: https://sudheesh.info/
+  image: sudheesh001.jpg
+  twitter: sudheesh001
+  facebook: sudheesh001
+  lat: 18.0001
+  lng: 79.5882
+
+- name: Praveen Patil
+  github: wavicles
+  blog: http://wavicles.in/
+  image: rsz_praveen.jpg
+  twitter: _gnovi
+  facebook: praveenpatil103
+
+- name: John Vandenberg
+  github: jayvdb
+  image: jayvdb.jpg
+  facebook: johnmark.vandenberg
+
+- name: Jason Wong
+  github: codethejason
+  image: JasonWong.jpg
+  twitter: codethejason
+  bio: A cryptocurrency enthusiast.
+
+- name: Michael-Christen
+  github: abdulsamad234
+  image: michael.png
+  twitter: nitrocoder2
+  bio: Has a masters degree in computer science

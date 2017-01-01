@@ -9,7 +9,6 @@ install:
   - bundle install
 script:
   - bundle exec jekyll build
-  - percy snapshot _site/
   - ruby ./scripts/image_checker.rb
   - >
     docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
@@ -20,3 +19,10 @@ branches:
   only:
     - gh-pages
     - /^.$/  # Allows builds for any other branch name
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/c19a09921ecce91bb027
+    on_success: change
+    on_failure: always
+    on_start: never
