@@ -33,6 +33,7 @@ Notes for Mantainers
 
 - If a PR edits index.html, it will fail for security. To remove that error, add ```<!-- Safe Edit -->``` somewhere in the PR body. See [#349](https://github.com/fossasia/gci16.fossasia.org/issues/349) for more info.
 - If you want to merge a PR but the commits aren't squashed, please use Github squash and merge function rather than merging without squashing. Check [#402](https://github.com/fossasia/gci16.fossasia.org/issues/402) for more info.
+- If Travis is failing, check **_WHY_** -- if for example jekyll reports a syntax error and won't build, **_do not_** merge it. There are few (if any) circumstances where a failing Travis build should be merged.
 
 Further Reading
 ---------------
