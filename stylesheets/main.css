@@ -108,9 +108,6 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.blogs-sec .blogs-wrapper, .designs-sec .designs-wrapper, {
-    margin-top: 100px;
-}
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
@@ -219,6 +216,7 @@
 }
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
+    margin-top: 100px;
 }
 .blogs-sec .img {
     width:500px;
@@ -232,6 +230,7 @@
 }
 .designs-sec .designs-wrapper {
     background: #00bcd4;
+    margin-top: 100px;
 }
 .title {
     padding-top: 30px;

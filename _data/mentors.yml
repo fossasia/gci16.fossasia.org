@@ -99,6 +99,10 @@
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
 
+  name: Ananyo Maiti
+  facebook: ananyo.maiti
+  github: ananyo2012
+
 - name: Agata Kowalska
   github: agwisniewska
   image: agatakowalska.jpg
@@ -165,3 +169,8 @@
   image: jayvdb.jpg
   facebook: johnmark.vandenberg
 
+- name: Jason Wong
+  github: codethejason
+  image: JasonWong.jpg
+  twitter: codethejason
+  bio: A cryptocurrency enthusiast.

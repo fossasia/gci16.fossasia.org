@@ -5,7 +5,7 @@
   github: TechGuyAditya
   image: Aditya240.jpg
   twitter: Aditya_Jyoti007
-  blog: https://wordpress.com/stats/insights/techguyaditya.wordpress.com
+  blog: techguyaditya.wordpress.com/
   bio: 17, loves Maths and Computers, FRIENDS fan :)
   facebook: /aditya.paul.56614
   lat: 22.484401
@@ -77,7 +77,7 @@
   github: kshitijsingla
   image: kshitij.jpg
   twitter: kshitij_singla
-  blog: https://medium.com/@kshitijsingla123
+  blog: medium.com/@kshitijsingla123
   bio: Open-source enthusiast.
   facebook: kshitij.singla.14
   lat: 30.210994
@@ -98,7 +98,7 @@
   bio: Malaysian, coder, gamer, SMK Taman Melawati FTW!
 
 - name: mehant
-  blog: mehant-alphaunitedteam.blogspot.in/
+  blog: mehant-alphaunitedteam.blogspot.in
   email: kmehant@gmail.com
   github: kmehant
   image: mehant.jpg
@@ -310,7 +310,10 @@
   github: codein-dwij
   image: dwij.png
   facebook: jha.dwij
-  bio: 14,Indian,Sudent Programmer
+  twitter: Dwij_Jha
+  bio: I am 14 years old and love coding! I know HTML , Javascript , CSS and Python. Will learn Bootstrap, PHP and others! I enjoy learning at Khan Academy and Code cademy. Also love contributing and coding on Sololearn app. I enjoy playing and building games :P
+  lat: 19.171644999999998
+  lng: 72.8810743
 
 - name: Riley Kovacev
   github: Rbkovacev
@@ -633,4 +636,20 @@
   github: balderasdiana27
   image: dianabalderas.jpg
   twitter: diianaxvi
-  bio: A sixteen year old hispanic coder from Los Angeles, California. 
+  bio: A sixteen year old hispanic coder from Los Angeles, California.
+  
+- name: Muhammed Nagy
+  github: muhammednagy
+  image: MuhammedNagy.jpg
+  facebook: muhammed.nagy.0
+  bio: 16, Egyptian, Junior Web developer who loves backend operations and Devops
+  blog: muhnagy.com
+
+- name: Andrew Jung
+  github: nutella25
+  image: andrewj.jpg
+  twitter: nutnutella25
+  facebook: andrewjunggg
+  bio: 16 years old. Bandung, Indonesia.
+  lat: -6.904950
+  lng: 107.612176

@@ -15,7 +15,6 @@
 
 - name: Miguel Piedrafita
   blog: blog.miguelpiedrafita.com
-  blog_img: m1guelpf.png
   article: GCI – About FOSSASIA
   article_link: https://blog.miguelpiedrafita.com/gci-fossasia/
 
@@ -152,7 +151,7 @@
 - name: Dwij Jha
   blog: https://dwijjha.wordpress.com
   blog_img: blog_dwij.png
-  aricle: Open Source and Fossasia
+  article: Open Source and Fossasia
   article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
 
 - name: Ankit R Gadiya
@@ -213,3 +212,7 @@
   article: My Participation in Google Code-in
   article_link: https://prajwalpatil.tech.blog/2016/12/27/experience-in-google-code-in/
 
+- name: Muhammed Nagy
+  blog: https://blog.muhnagy.com
+  article: About me
+  article_link: https://blog.muhnagy.com

@@ -10,7 +10,6 @@ install:
 script:
   - bundle exec jekyll build
   - ruby ./scripts/image_checker.rb
-  - percy snapshot _site/
   - >
     docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
     "coala --apply-patches --no-orig;
