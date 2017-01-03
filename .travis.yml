@@ -4,10 +4,9 @@ services: docker
 rvm:
   - 2.3.3
 install:
-  - gem install danger && danger --verbose
   - bundle install
 script:
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then danger --verbose; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then gem install danger ; danger --verbose; fi'
   - bundle exec jekyll build
   - ruby ./scripts/image_checker.rb
   - >
