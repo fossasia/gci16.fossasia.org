@@ -6,7 +6,7 @@ pr_author = github.pr_author
 message "Hi @#{pr_author} thank you for your submission at Fossasia's GCI 2016 website. Please correct any issues above, if any."
 
 # include link unless provided.
-message "Maintainers: #{pr_author} did not provide a live link, one can be found at https://#{pr_author}.github.io/gci16.github.io" unless github.pr_body.include? 'http'
+message "Maintainers: @#{pr_author} did not provide a live link, one can be found at https://#{pr_author}.github.io/gci16.github.io" unless github.pr_body.include? 'http'
 
 # Check if a Pull Request is mergeable and warn if you have merge issues
 can_merge = github.pr_json['mergeable']
