@@ -20,10 +20,14 @@
         margin-top: -200px;
     }
     .picture {
+		width: 70% !important;
         float: none !important;
         margin: 0 auto !important;
         display: block !important;
     }
+	.picture img {
+		width: 100%;
+	}
     .information h3 {
         font-size: 12pt;
         margin-top: 4px;
