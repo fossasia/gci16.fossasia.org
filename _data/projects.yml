@@ -21,3 +21,8 @@
   link: https://fossasia.github.io/susi_server/
   source: https://adarsh-ideal.github.io/susi_server/
   image: adarsh-susi.png
+- name: Christmas With FOSSASIA
+  owner: Mostafa Elgayar
+  link: https://christmasfossasia.herokuapp.com/
+  source: https://github.com/Elgayar/ChristmasWithFOSSASIA/
+  image: christmas.png
