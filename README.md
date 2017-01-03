@@ -107,7 +107,9 @@ The website shows an ism slider which has slides, to input another slide please 
 
 # Finding Support
 
-Probably the easiest way to seek help is to comment on your Task instance, but you should understand that it is not easy for mentors to stay available 24/7 to reply to every comment. You can instead participate in various chatrooms where you can ask both students and mentors for help. Here are few links to chatrooms that you could join for support.
+Probably the easiest way to seek help is to comment on your Task instance. Please understand that it is not easy for mentors to stay available 24/7 to reply to every comment.
+
+You can instead participate in various chatrooms where you can ask both students and mentors for help. Here are few links to chatrooms that you could join for support.
 
 1. Slack
   * Visit [here](http://fossasia-slack.herokuapp.com/) to get invitation to join the chatrooms of FOSSASIA in slack.
