@@ -5,8 +5,9 @@ rvm:
   - 2.3.3
 install:
   - bundle install
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then gem install danger; fi'
 script:
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then gem install danger ; danger --verbose; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then danger --verbose; fi'
   - bundle exec jekyll build
   - ruby ./scripts/image_checker.rb
   - >
