@@ -1,12 +1,22 @@
 .modal {
     position: fixed;
-    margin: 15% auto;
-    width: 50vw;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -300px;
+    width: 600px;
     height: 300px;
     z-index: 9999;
     padding: 20px;
     background: #efefef;
     display:none;
+}
+
+@media(max-width: 420px) {
+	.modal {
+		width: 300px;
+		margin-left: -150px;
+	}
 }
 
 .picture {
