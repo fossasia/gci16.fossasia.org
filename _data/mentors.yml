@@ -88,9 +88,9 @@
 - name: "Robby O'Connor"
   github: robbyoconnor
   image: robby.jpg
-  blog: http://robby.oconnor.ninja/
+  blog: https://robby.oconnor.ninja/
   twitter: robbyoconnor
-  bio: LibreHealth Steering Committee Member and Infrastructure Engineer. Loves everything FLOSS!
+  bio: LibreHealth Steering Committee Member and Infrastructure Engineer. Loves FLOSS.
   lat: 41.4731364
   lng: -74.0364419
 
