@@ -90,6 +90,7 @@
   image: robby.jpg
   blog: http://robby.oconnor.ninja/
   twitter: robbyoconnor
+  bio: LibreHealth Steering Committee Member and Infrastructure Engineer. Loves everything FLOSS!
   lat: 41.4731364
   lng: -74.0364419
 
@@ -99,7 +100,7 @@
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
 
-  name: Ananyo Maiti
+- name: Ananyo Maiti
   facebook: ananyo.maiti
   github: ananyo2012
 
