@@ -88,8 +88,9 @@
 - name: "Robby O'Connor"
   github: robbyoconnor
   image: robby.jpg
-  blog: http://robby.oconnor.ninja/
+  blog: https://robby.oconnor.ninja/
   twitter: robbyoconnor
+  bio: LibreHealth Steering Committee Member and Infrastructure Engineer. Loves FLOSS.
   lat: 41.4731364
   lng: -74.0364419
 
@@ -98,10 +99,6 @@
   image: ajinkya.jpg
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
-
-  name: Ananyo Maiti
-  facebook: ananyo.maiti
-  github: ananyo2012
 
 - name: Agata Kowalska
   github: agwisniewska
@@ -174,3 +171,9 @@
   image: JasonWong.jpg
   twitter: codethejason
   bio: A cryptocurrency enthusiast.
+
+- name: Hon Nguyen
+  github: vanhonit
+  image: hon.png
+  twitter: vanhonit
+  bio: works on linux server and management.
