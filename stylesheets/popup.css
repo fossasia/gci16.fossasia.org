@@ -1,12 +1,36 @@
 .modal {
     position: fixed;
-    margin: 15% auto;
-    width: 50vw;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    width: 600px;
     height: 300px;
     z-index: 9999;
     padding: 20px;
     background: #efefef;
     display:none;
+}
+
+@media(max-width: 420px) {
+    .modal {
+        width: 300px;
+        height: 400px;
+        margin-left: -150px;
+        margin-top: -200px;
+    }
+    .picture {
+        float: none !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .information h3 {
+        font-size: 12pt;
+        margin-top: 4px;
+    }
+    .information div:last-child {
+        padding-top: 0 !important;
+    }
 }
 
 .picture {

@@ -691,3 +691,20 @@
   lat: 30.284540800000002
   lng: 78.0965691
 
+- name: Kaisar Arkhan
+  github: yukiisbored
+  image: yuki.png
+  twitter: yuki_is_bored
+  bio: "Your average weeb and computer hobbyist. I use Emacs because it's moe."
+  lat: -6.13698
+  lng: 106.82279
+
+- name: Abdulsamad Aliyu
+  github: abdulsamad234
+  image: abdul.png
+  twitter: nitrocoder2
+  facebook: abdulsamad.aliyu
+  blog: https://rarbloggers.blogspot.com
+  bio: An aspiring coder and entrepreneur
+  lat: 8.059230
+  lng: 7.767334
