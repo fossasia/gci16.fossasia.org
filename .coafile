@@ -27,3 +27,7 @@ files = **.js
 ignore = **.min.js, _site/**
 environment_jquery = True
 javascript_strictness = implied
+
+[md]
+bears = MarkdownBear
+files = **.md, **.markdown
