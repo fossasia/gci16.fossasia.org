@@ -4,21 +4,21 @@ services: docker
 rvm:
   - 2.3.3
 install:
-  - gem install danger
-  - danger --verbose
   - bundle install
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then gem install danger; fi'
 script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then danger --verbose; fi'
   - bundle exec jekyll build
   - ruby ./scripts/image_checker.rb
   - >
-    docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
+    docker run --volume=$(pwd):/app --workdir=/app coala/base:0.9 /bin/bash -c
     "coala --apply-patches --no-orig;
     coala --non-interactive"
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./scripts/coala_patch.sh; fi'
 branches:
   only:
     - gh-pages
-    - /^.$/  # Allows builds for any other branch name
+    - /./  # Allows builds for any other branch name
 notifications:
   webhooks:
     urls:

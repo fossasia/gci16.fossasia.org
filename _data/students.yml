@@ -11,12 +11,28 @@
   lat: 22.484401
   lng: 88.314114
 
+- name: Sidhdharth
+  github: sidhdharths
+  image: sidhdharth.jpg
+  twitter: s_sidhdharth
+  bio: 17, Web Developer, aspiring enterpreneur.
+  lat: 13.082680199999999
+  lng: 80.2707184
+
 - name: Prince John
   github: Prince-John
   twitter: Princejohn001
   image: prince-john.jpg
   blog: andnowhissleephasended.blogspot.in
   bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
+
+- name: Rahul Yesantharao
+  github: rahulyesantharao
+  image: Rahul240.jpg
+  twitter: rahulyrao1
+  bio: 17, love math, CS, music
+  lat: 29.7604
+  lng: 95.3698
 
 - name: Animesh Singh
   github: animeshsinghweb
@@ -632,6 +648,12 @@
   twitter: ekeshh
   bio: 16 years old, United States. Open-source developer.
 
+- name: Diana Balderas
+  github: balderasdiana27
+  image: dianabalderas.jpg
+  twitter: diianaxvi
+  bio: A sixteen year old hispanic coder from Los Angeles, California.
+
 - name: Muhammed Nagy
   github: muhammednagy
   image: MuhammedNagy.jpg
@@ -656,3 +678,59 @@
   bio: 15 years old. Denpasar,Bali, Indonesia im just a newbie :v :v.
   lat: -7.7827801704407
   lng: 110.36083221436
+
+- name: Animesh Mishra
+  github: cheersanimesh
+  image: animeshmishra.jpg
+  twitter: animeshmishra1m
+  blog: animeshblogblog.wordpress.com
+  bio: 16,intense passion in maths,coding(java) and a professional badminton player
+  facebook: animesh.mishra.125
+  lat: 22.8068706
+  lng: 86.1884319
+
+- name: Kishan Shetty
+  github: kishanshetty1991
+  image: Kishan_Shetty.jpg
+  twitter:  kishanshetty19
+  blog: https://kishanshetty1991.github.io/
+  bio: Love being a Geek and an Entreprenuer.
+  facebook: kishan.shetty.967
+  lat: 18.479669
+  lng: 73.876052
+
+- name: Paras Dumka
+  github: paras-d
+  image: paras-d.jpg
+  twitter: _parasd
+  facebook: paras020
+  bio: 16, loves to code
+  lat: 30.284540800000002
+  lng: 78.0965691
+
+- name: Kaisar Arkhan
+  github: yukiisbored
+  image: yuki.png
+  twitter: yuki_is_bored
+  bio: "Your average weeb and computer hobbyist. I use Emacs because it's moe."
+  lat: -6.13698
+  lng: 106.82279
+
+- name: Abdulsamad Aliyu
+  github: abdulsamad234
+  image: abdul.png
+  twitter: nitrocoder2
+  facebook: abdulsamad.aliyu
+  blog: https://rarbloggers.blogspot.com
+  bio: An aspiring coder and entrepreneur
+  lat: 8.059230
+  lng: 7.767334
+
+- name: Adi Wahyudi
+  github: adiwahyudi
+  image: adiwahyudi1.jpg
+  facebook: adi.wah14
+  blog: https://adiwahyudi14.blogspot.com
+  bio: easy to learn,hard to masters
+  lat: -8.653905
+  lng: 115.22535859999999
