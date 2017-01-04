@@ -30,4 +30,4 @@ javascript_strictness = implied
 
 [md]
 bears = MarkdownBear
-files = **.md, **.markdown
+files = **.md
