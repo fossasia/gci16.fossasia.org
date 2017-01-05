@@ -13,7 +13,7 @@ Thoroughly read our [contributing guide](https://github.com/fossasia/gci16.fossa
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
-```
+```yaml
 - name: Mentor's name
   github: Mentor's github username
   image: mentor's_image
@@ -36,7 +36,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 
 To add yourself to student section you need to open the file `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
-```
+```yaml
 - name: Your name
   github: Your github username
   image: your_image
@@ -61,7 +61,7 @@ To add yourself to student section you need to open the file `students.yml` in `
 
 To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format *EXACTLY* (replacing values where indicated) to enter your blog in this website.
 
-```
+```yaml
 - name: Your name
   blog: https://yourbloglink.com
   blog_img: your_image
@@ -80,7 +80,7 @@ To add your blog post, you need to open the file `blogs.yml` in `_data` folder. 
 To add your logos, you need to open the file `logos.yml` in the `_data` folder and please
 maintain the following format *EXACTLY* (replacing values where indicated) to enter your logo in this website:
 
-```
+```yaml
 - author: Your name
   img: your_image
 ```
@@ -96,7 +96,7 @@ and place your logo in `/images/logos` folder and `your_image` should be the nam
 
 The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format *EXACTLY* (replacing values where indicated) to enter a new slide.
 
-```
+```yaml
 - caption: main_heading
   img: image_of_the_slide
   exp-1: First sentence explanation
