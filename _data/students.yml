@@ -707,6 +707,15 @@
   lat: 18.479669
   lng: 73.876052
 
+- name: Dovan Sanjaya
+  github: dovansan
+  image: dovansan.jpg
+  twitter: dovan_san
+  bio: 17, loves pen testing
+  facebook: dovansanjaya
+  lat: -5.16934
+  lng: 105.7036801
+  
 - name: Paras Dumka
   github: paras-d
   image: paras-d.jpg
@@ -756,5 +765,3 @@
   facebook: ariqzuhdi1
   lat: -6.2517784999999995
   lng: 106.9774941
-
-
