@@ -112,27 +112,8 @@
                                 <img src="images/mentors/member.png" alt="{{ mentor.name }}">
                                 {% endif %}
                                 <div class="social">
-                                    {% if mentor.github %}
-                                    <a href="//github.com/{{mentor.github}}"
-                                       target="_blank">
-                                        <i class="fa fa-github"></i></a>
-                                    {% endif %}
-                                    {% if mentor.facebook %}
-                                    <a href="//facebook.com/{{mentor.facebook}}"
-                                       target="_blank">
-                                        <i class="fa fa-facebook"></i></a>
-                                    {% endif %}
-                                    <br>
-                                    {% if mentor.twitter %}
-                                    <a href="//twitter.com/{{mentor.twitter}}"
-                                       target="_blank">
-                                        <i class="fa fa-twitter"></i></a>
-                                    {% endif %}
-                                    {% if mentor.blog %}
-                                    <a href="{{mentor.blog}}"
-                                       target="_blank">
-                                        <i class="fa fa-code"></i></a>
-                                    {% endif %}
+                                    Show more<br>
+                                    information
                                 </div>
                                 <p style="display: inline-block;">{{mentor.name}}</p>
                             </div>
@@ -188,39 +169,7 @@
                                 width="200px" height="200px">
                                 {% endif %}
                                 <div class="social">
-                                    {% if student.github %}
-                                    <a href="//github.com/{{student.github}}"
-                                       target="_blank">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                    {% endif %}
-                                    {% if student.facebook %}
-                                    <a href="//facebook.com/{{student.facebook}}"
-                                       target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    {% endif %}
-                                    <br>
-                                    {% if student.twitter %}
-                                    <a href="//twitter.com/{{student.twitter}}"
-                                       target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    {% endif %}
-                                    {% if student.blog %}
-                                    <a href="//{{student.blog}}"
-                                       target="_blank">
-                                        <i class="fa fa-code"></i>
-                                    </a>
-                                    {% endif %}
-                                    <!--
-                                    {% if student.bio %}
-                                    <div style="white-space: nowrap; overflow-x: hidden;">
-                                        {{student.bio}}
-                                    </div>
-                                    ...
-                                    {% endif %}
-                                    -->
+                                    Show more<br>information
                                 </div>
                                 <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
                                     <i class="fa fa-code"></i>
