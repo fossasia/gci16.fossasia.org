@@ -11,7 +11,7 @@ Thoroughly read our [contributing guide](https://github.com/fossasia/gci16.fossa
 
 # Adding a mentor
 
-To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format:
+To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
 ```
 - name: Mentor's name
@@ -34,7 +34,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 
 # Adding yourselves to student section
 
-To add yourself to student section you need to open the file `students.yml` in `_data` folder and please maintain the following format:
+To add yourself to student section you need to open the file `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
 ```
 - name: Your name
@@ -59,7 +59,7 @@ To add yourself to student section you need to open the file `students.yml` in `
 
 # Blog Post
 
-To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format to enter your blog in this website.
+To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format *EXACTLY* (replacing values where indicated) to enter your blog in this website.
 
 ```
 - name: Your name
@@ -78,7 +78,7 @@ To add your blog post, you need to open the file `blogs.yml` in `_data` folder. 
 # Adding Logos
 
 To add your logos, you need to open the file `logos.yml` in the `_data` folder and please
-maintain the following format to enter your logo in this website:
+maintain the following format *EXACTLY* (replacing values where indicated) to enter your logo in this website:
 
 ```
 - author: Your name
@@ -94,7 +94,7 @@ and place your logo in `/images/logos` folder and `your_image` should be the nam
 
 # Adding a slide
 
-The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format to enter a new slide.
+The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format *EXACTLY* (replacing values where indicated) to enter a new slide.
 
 ```
 - caption: main_heading
