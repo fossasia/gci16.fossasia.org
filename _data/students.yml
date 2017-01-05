@@ -1,6 +1,14 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Yash Kumar Verma
+  image: yashkumarverma.jpg
+  github: yashkumarverma
+  twitter: yash_kr_verma
+  facebook: yashkumarverma
+  blog: yashkumarverma.net
+  bio: 16, Develops for mobile and web. Loves JS and PHP. INDIAN
+
 - name: Aditya Jyoti Paul
   github: TechGuyAditya
   image: Aditya240.jpg
@@ -670,7 +678,7 @@
   lat: -6.904950
   lng: 107.612179
 
-  name: Semara Putra
+- name: Semara Putra
   github: semara123
   image: semara.jpg
   twitter: semarainc
@@ -740,3 +748,13 @@
   image: danipop.jpg
   bio: Christian, supporter of traditional family(Man + Woman), coder, sportsman. In this order
   facebook: dani.avram.pop
+
+- name: Ariq Zuhdi
+  github: ariqzuhdi
+  image: ariqzuhdi.jpg
+  bio: 9gagger, 16 years old, gaming 4 life
+  facebook: ariqzuhdi1
+  lat: -6.2517784999999995
+  lng: 106.9774941
+
+
