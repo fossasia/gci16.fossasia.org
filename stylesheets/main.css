@@ -757,3 +757,8 @@ body {
     float: right;
     color: black;
 }
+ @media (min-width: 950px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
