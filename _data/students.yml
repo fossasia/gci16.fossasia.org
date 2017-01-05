@@ -1,6 +1,14 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Yash Kumar Verma
+  image: yashkumarverma.jpg
+  github: yashkumarverma
+  twitter: yash_kr_verma
+  facebook: yashkumarverma
+  blog: yashkumarverma.net
+  bio: 16, Develops for mobile and web. Loves JS and PHP. INDIAN
+
 - name: Aditya Jyoti Paul
   github: TechGuyAditya
   image: Aditya240.jpg
@@ -25,6 +33,14 @@
   image: prince-john.jpg
   blog: andnowhissleephasended.blogspot.in
   bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
+
+- name: Rahul Yesantharao
+  github: rahulyesantharao
+  image: Rahul240.jpg
+  twitter: rahulyrao1
+  bio: 17, love math, CS, music
+  lat: 29.7604
+  lng: 95.3698
 
 - name: Animesh Singh
   github: animeshsinghweb
@@ -662,6 +678,15 @@
   lat: -6.904950
   lng: 107.612179
 
+  name: Semara Putra
+  github: semara123
+  image: semara.jpg
+  twitter: semarainc
+  facebook: semara.tude
+  bio: 15 years old. Denpasar,Bali, Indonesia im just a newbie :v :v.
+  lat: -7.7827801704407
+  lng: 110.36083221436
+
 - name: Animesh Mishra
   github: cheersanimesh
   image: animeshmishra.jpg
@@ -691,3 +716,35 @@
   lat: 30.284540800000002
   lng: 78.0965691
 
+- name: Kaisar Arkhan
+  github: yukiisbored
+  image: yuki.png
+  twitter: yuki_is_bored
+  bio: "Your average weeb and computer hobbyist. I use Emacs because it's moe."
+  lat: -6.13698
+  lng: 106.82279
+
+- name: Abdulsamad Aliyu
+  github: abdulsamad234
+  image: abdul.png
+  twitter: nitrocoder2
+  facebook: abdulsamad.aliyu
+  blog: https://rarbloggers.blogspot.com
+  bio: An aspiring coder and entrepreneur
+  lat: 8.059230
+  lng: 7.767334
+
+- name: Adi Wahyudi
+  github: adiwahyudi
+  image: adiwahyudi1.jpg
+  facebook: adi.wah14
+  blog: https://adiwahyudi14.blogspot.com
+  bio: easy to learn,hard to masters
+  lat: -8.653905
+  lng: 115.22535859999999
+
+- name: Avram Pop
+  github: AvramPop
+  image: danipop.jpg
+  bio: Christian, supporter of traditional family(Man + Woman), coder, sportsman. In this order
+  facebook: dani.avram.pop

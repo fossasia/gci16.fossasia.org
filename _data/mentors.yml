@@ -100,10 +100,6 @@
   blog: http://ajinkya007.in/
   twitter: wavare_ajinkya
 
-- name: Ananyo Maiti
-  facebook: ananyo.maiti
-  github: ananyo2012
-
 - name: Agata Kowalska
   github: agwisniewska
   image: agatakowalska.jpg
@@ -180,12 +176,15 @@
   github: vanhonit
   image: hon.png
   twitter: vanhonit
-  bio: works on linux server and management.
+
+- name: Ananyo Maiti
+  github: ananyo2012
+  image: MaitiAnanyo.jpg
+  twitter: MaitiAnanyo
 
 - name: Aayush Arora
-  github: angularboy
-  blog: https://angularboy.wordpress.com/
+  github: aayusharora
   image: aayusharora.jpg
-  facebook: aayush.arora359
-  lat: 28.6143845
-  lng: 77.3587834
+  blog: https://angularboy.wordpress.com/
+  bio: Web developer, JS lover
+>>>>>>> upstream/gh-pages
