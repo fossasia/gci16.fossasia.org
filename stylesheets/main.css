@@ -114,7 +114,7 @@
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
-    margin: 20px;
+    margin: 20px auto;
     background: #fff;
     text-align: center;
     -moz-transition: all .2s ease-in;
