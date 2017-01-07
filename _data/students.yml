@@ -9,15 +9,38 @@
   blog: yashkumarverma.net
   bio: 16, Develops for mobile and web. Loves JS and PHP. INDIAN
 
+- name: Anoopkumar Sonar
+  github: anoopsonar30
+  image: AnoopSonar.jpg
+  facebook: anoopsonar30
+  bio: 17, VR and Game Developer. Tech Enthusiast.
+  lat: 19.9849
+  lng: 73.7471
+
 - name: Aditya Jyoti Paul
   github: TechGuyAditya
   image: Aditya240.jpg
   twitter: Aditya_Jyoti007
   blog: techguyaditya.wordpress.com/
   bio: 17, loves Maths and Computers, FRIENDS fan :)
-  facebook: /aditya.paul.56614
+  facebook: aditya.paul.56614
   lat: 22.484401
   lng: 88.314114
+
+- name: Amritanshu Ranjan
+  github: Amritanshu54
+  image: Amritanshu.jpg
+  blog: knowwag.wordpress.com/
+  bio: 14, loves Football and Computers & Gaming
+  lat: 26.897284
+  lng: 75.796737
+
+- name: Marcin Dzieciatkowski
+  github: Nelnir
+  image: marcin_dzieciatkowski.jpg
+  twitter: NelnirQ
+  bio: 16, loves programming in c++
+  facebook: Felt.Best.Girl
 
 - name: Sidhdharth
   github: sidhdharths
@@ -377,6 +400,14 @@
   blog: ncdai.blogspot.com
   bio: 17, student, web developer
 
+- name: Yusrilia H.
+  github: reallyly
+  image: Yusrilia.png
+  twitter: yrlya
+  bio: 15. Secretly a geek ;)
+  lat: -6.9174638999999996
+  lng: 107.61912280000001
+
 - name: Tinh Dao
   github: dcongtinh
   image: tinhdao.jpg
@@ -707,6 +738,15 @@
   lat: 18.479669
   lng: 73.876052
 
+- name: Dovan Sanjaya
+  github: dovansan
+  image: dovansan.jpg
+  twitter: dovan_san
+  bio: 17, loves pen testing
+  facebook: dovansanjaya
+  lat: -5.16934
+  lng: 105.7036801
+
 - name: Paras Dumka
   github: paras-d
   image: paras-d.jpg
@@ -757,4 +797,34 @@
   lat: -6.2517784999999995
   lng: 106.9774941
 
+- name: Chen Yiyang
+  github: Chen-Yiyang
+  image: Yiyang.png
+  bio: Foreign student in Singapore, 17 years old, love coding, love Hearthstone
+  facebook: Yiyang Chen
+  lat: 1.2996621685419882
+  lng: 103.88312715701254
 
+- name: Jokubas de Kort
+  github: Jokubasdk
+  image: jokubas.jpg
+  facebook: Jokubas.dekort
+  bio: 9gagger, programmer
+  lat: 49.627945
+  lng: 6.0372604
+
+- name: Andre Dwi Winama
+  github: Andre002wp
+  image: Andre.jpg
+  facebook: andre.winamaputra
+  bio: A 15 year old boy who likes to play
+  lat: -8.6539591
+  lng: 115.22582229999999
+
+- name: Vasudev Singhal
+  github: vasudevcoder
+  twitter: vasudevcoder
+  image: vasudevcoder.jpg
+  bio: Decent geek, Future web developer
+  lat: 28.5497020
+  lng: 77.3523170
