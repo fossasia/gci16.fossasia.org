@@ -26,3 +26,8 @@
   link: https://christmasfossasia.herokuapp.com/
   source: https://github.com/Elgayar/ChristmasWithFOSSASIA/
   image: christmas.png
+- name: img_checker gem
+  owner: Abhishek V Ashok and Ankit R Gadiya
+  link: https://rubygems.org/gems/img_checker
+  source: https://github.com/Abhi2424shek/img_checker
+  image: gem-project.jpg

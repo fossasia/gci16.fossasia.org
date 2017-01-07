@@ -9,6 +9,14 @@
   blog: yashkumarverma.net
   bio: 16, Develops for mobile and web. Loves JS and PHP. INDIAN
 
+- name: Anoopkumar Sonar
+  github: anoopsonar30
+  image: AnoopSonar.jpg
+  facebook: anoopsonar30
+  bio: 17, VR and Game Developer. Tech Enthusiast.
+  lat: 19.9849
+  lng: 73.7471
+
 - name: Aditya Jyoti Paul
   github: TechGuyAditya
   image: Aditya240.jpg
@@ -821,3 +829,11 @@
   lat: -0.5529334
   lng: 117.1206134
 
+- name: Vasudev Singhal
+  github: vasudevcoder
+  twitter: vasudevcoder
+  image: vasudevcoder.jpg
+  bio: Decent geek, Future web developer
+  lat: 28.5497020
+  lng: 77.3523170
+  

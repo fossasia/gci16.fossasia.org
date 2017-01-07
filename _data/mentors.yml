@@ -182,13 +182,25 @@
   image: MaitiAnanyo.jpg
   twitter: MaitiAnanyo
 
+- name: Pawan Pal
+  github: pa1pal
+  twitter: pa1pal
+  image: Pawan.jpg
+
 - name: Aayush Arora
   github: aayusharora
   image: aayusharora.jpg
   blog: https://angularboy.wordpress.com/
   bio: Web developer, JS lover
 
+- name: Manan Wason
+  github: mananwason
+  image: Manan.jpg
+  twitter: mananwason
+  facebook: manan.wason
+
 - name: Nguyen Vu Hung
   github: vuhung
   image: NguyenVuHung.png
   facebook: nguyenvuhung
+
