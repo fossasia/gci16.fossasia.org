@@ -391,6 +391,14 @@
   image: ncdai.jpg
   blog: ncdai.blogspot.com
   bio: 17, student, web developer
+  
+- name: Yusrilia H.
+  github: reallyly
+  image: Yusrilia.png
+  twitter: yrlya
+  bio: 15. Secretly a geek ;)
+  lat: -6.9174638999999996
+  lng: 107.61912280000001
 
 - name: Tinh Dao
   github: dcongtinh
