@@ -40,16 +40,7 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-#contributors-list:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
-#contributors h2 {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    padding: 10px 10px;
-    box-shadow: 1px 5px 20px #888888;
-}
+
 #contributors-list div span {
     margin-top: 15px;
     text-align: center;
@@ -82,8 +73,7 @@
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
 .designs-sec h2, .latest-issues h2, .social-media h2,
-.white-header, .contributors-sec h2 {
-    background-color: rgba(255,255,255,0.7);
+.white-header, .contributors-sec h2, #contributors h2 {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 0.8em;
@@ -92,9 +82,8 @@
     padding-bottom: 10px;
     font-size: 35px;
     text-align: center;
-    color: black;
+    color: white;
     text-transform: uppercase;
-    box-shadow: 1px 2px 20px rgba(33,35,23,.51);
 }
 .mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
@@ -108,9 +97,7 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
+
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
@@ -391,8 +378,6 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 30px;
 }
 .latest-issues h2 {
-    background: #eeeeee;
-    width: 260px;
     color: black;
 }
 .issues-wrapper {
@@ -407,9 +392,6 @@ figure.effect-gcihover:hover figcaption::before {
     transition: all 0.5s;
 }
 
-.issues-wrapper:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
 #issues-categories-wrapper {
     display: flex;
     -webkit-flex-direction: row;
@@ -451,9 +433,6 @@ figure.effect-gcihover:hover figcaption::before {
     .issues-category {
         width: 100%;
     }
-}
-.issues-category:hover {
-    box-shadow: 1px 5px 20px #888888;
 }
 
 .issues-category > .button {
@@ -692,9 +671,7 @@ figure.effect-gcihover:hover figcaption::before {
     transition: all .2s ease-in;
     /*margin-bottom: 30px;*/
 }
-.social-media:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
+
 .active {
     background: #eee;
 }
@@ -708,11 +685,6 @@ figure.effect-gcihover:hover figcaption::before {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-#map:hover {
-    box-shadow: 1px 5px 20px #888888;
-}
-
-
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
