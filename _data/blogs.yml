@@ -2,7 +2,7 @@
 # This is to remove conflicts with other people adding entries.
 
 - name: Christian Scheub
-   blog:http://appmaker.000webhostapp.com/blog.html
+   blog: http://appmaker.000webhostapp.com/blog.html
    blog_img: chdev-website.png
    article: My experience with fossasia
    article_link:http://appmaker.000webhostapp.com/blog/fosasia.html
