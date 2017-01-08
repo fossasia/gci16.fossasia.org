@@ -1,6 +1,12 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Christian Scheub
+  blog: http://appmaker.000webhostapp.com/blog.html
+  blog_img: chdev-website.png
+  article: My experience with fossasia
+  article_link: http://appmaker.000webhostapp.com/blog/fosasia.html
+
 - name: Srijan Jha
   blog: https://srijanjha28fossasia.wordpress.com/
   blog_img: blog2.png
@@ -35,6 +41,12 @@
   blog_img: rhemon-blog.png
   article: FOSSASIA, me and Open source
   article_link: https://rhemon.github.io/blog/gci/2016/11/30/00-fossassia-me-what-why/
+
+- name: Diana Balderas
+  blog: fantasydiana.wordpress.com
+  blog_img: fantasydianablog.PNG
+  article: Being part of the FOSSASIA Community
+  article_link: https://fantasydiana.wordpress.com/2016/12/29/being-part-of-the-fossasia-community/
 
 - name: Adarsh Kumar
   blog: https://idealadarsh.wordpress.com/

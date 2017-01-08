@@ -1,22 +1,69 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Yash Kumar Verma
+  image: yashkumarverma.jpg
+  github: yashkumarverma
+  twitter: yash_kr_verma
+  facebook: yashkumarverma
+  blog: yashkumarverma.net
+  bio: 16, Develops for mobile and web. Loves JS and PHP. INDIAN
+
+- name: Anoopkumar Sonar
+  github: anoopsonar30
+  image: AnoopSonar.jpg
+  facebook: anoopsonar30
+  bio: 17, VR and Game Developer. Tech Enthusiast.
+  lat: 19.9849
+  lng: 73.7471
+
 - name: Aditya Jyoti Paul
   github: TechGuyAditya
   image: Aditya240.jpg
   twitter: Aditya_Jyoti007
   blog: techguyaditya.wordpress.com/
   bio: 17, loves Maths and Computers, FRIENDS fan :)
-  facebook: /aditya.paul.56614
+  facebook: aditya.paul.56614
   lat: 22.484401
   lng: 88.314114
+
+- name: Amritanshu Ranjan
+  github: Amritanshu54
+  image: Amritanshu.jpg
+  blog: knowwag.wordpress.com/
+  bio: 14, loves Football and Computers & Gaming
+  lat: 26.897284
+  lng: 75.796737
+
+- name: Marcin Dzieciatkowski
+  github: Nelnir
+  image: marcin_dzieciatkowski.jpg
+  twitter: NelnirQ
+  bio: 16, loves programming in c++
+  facebook: Felt.Best.Girl
+
+- name: Sidhdharth
+  github: sidhdharths
+  image: sidhdharth.jpg
+  twitter: s_sidhdharth
+  bio: 17, Web Developer, aspiring enterpreneur.
+  lat: 13.082680199999999
+  lng: 80.2707184
 
 - name: Prince John
   github: Prince-John
   twitter: Princejohn001
   image: prince-john.jpg
   blog: andnowhissleephasended.blogspot.in
-  bio: 16, Arduino Tinkerer, Web Developer, GOT fanboy.
+  bio: 16, Arduino Tinkerer, Web Devloper, GOT fanboy.
+
+- name: Rahul Yesantharao
+  github: rahulyesantharao
+  image: Rahul240.jpg
+  twitter: rahulyrao1
+  bio: 17, love math, CS, music
+  lat: 29.7604
+  lng: 95.3698
 
 - name: Animesh Singh
   github: animeshsinghweb
@@ -33,7 +80,7 @@
   image: manas.jpg
   twitter: manastaneja1
   facebook: manas.taneja.1
-  bio: 15 years old, coding is passion, physics for life.
+  bio: 15 years old, coding is passion , physics for life.
   lat: 29.0587757
   lng: 76.085601
 
@@ -55,7 +102,7 @@
   email: srahulbadami@gmail.com
   twitter: srahulbadami
   image: badami.jpg
-  bio: 17 Years Old, Coding, Gamming, Sports !!!
+  bio: 17 Years Old,Coding,Gamming,Sports !!!
 
 - name: Mostafa Elgayar
   github: Elgayar
@@ -71,7 +118,7 @@
   image: Simon_Narang.jpg
   twitter: simnrn
   facebook: simnrn
-  bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSSASIA.
+  bio: 13 Year Old Student. Enjoy Hacking Apps, Boys etc. Love FOSS.
 
 - name: Kshitij Singla
   github: kshitijsingla
@@ -89,6 +136,13 @@
   twitter: oanarosca12
   facebook: Rosca.Oanaa
   bio: 17, Romanian, coder, geek, science enthusiast :D
+
+- name: Satyam Chawla
+  github: satyamchawla
+  image: satyam.png
+  twitter: SatyamChawla25
+  facebook: s.chawla.2510
+  bio: 16, Indian, programmer, science enthusiast :D
 
 - name: Haikal Izzuddin
   github: webhaikal
@@ -111,7 +165,7 @@
   image: AlejandroHeredia.jpg
   twitter: Heredroky
   facebook: alejandro.heredia.756
-  bio: Colombian, Coder, Technology lover, IoT enthusiast, 14
+  bio: Colombian, Coder, technology lover, IoT enthusiast, 14
 
 - name: Aryan Bhasin
   email: bhasinaryan@gmail.com
@@ -119,7 +173,7 @@
   twitter: aryanbhasin
   facebook: bhasinaryan
   image: aryan.jpg
-  bio: 16, Indian, Computer Science and Math enthusiast
+  bio: 16, Indian, computer science and maths enthusiast
 
 - name: Anastasia Kostiv
   email: kostiv08nastya@gmail.com
@@ -179,7 +233,7 @@
   twitter: TheMrGeorgeous
   image: mrgeorgeous.jpg
   websites: mrgeorgeous.ru, mrgeorgeous.com
-  bio: iOS, Android, PHP Dev, 15 y.o., coding for 6 years.
+  bio: iOS, Android, PHP Dev, 15 y.o, coding for 6 years.
 
 - name: Shreyas Sanghvi
   email: Shreyas.sanghvi11@gmail.com
@@ -187,7 +241,7 @@
   facebook: Alpha.Foxtrot11
   twitter: Shreyas2101
   image: shreyas.jpg
-  bio: 17 years old, Indian, studying Computer Science
+  bio: 17 years old, Indian, Studying Computer Science
 
 - name: Aditya Singh
   github: S-ulphuric
@@ -246,14 +300,13 @@
   bio: 16, Student Programmer, Web developer, Computer enthusiast
   lat: 25.383324
   lng: 86.472066
-  bio: 16, Student, Programmer, Web Developer, Computer Enthusiast
 
 - name: Ainesh Sootha
   github: champforevaa
   image: ainesh.jpg
   twitter: ainesh_sootha
   facebook: ainesh.sootha
-  bio: 15, Web Developer, Game Developer, Programmer, Indian
+  bio: 15, Web developer, Game developer. Programmer, Indian
 
 - name: Abishek V Ashok
   github: Abhi2424shek
@@ -275,7 +328,7 @@
   github: Witus13
   image: Witus.jpg
   twitter: 13thMyfrom
-  bio: 14, Student, self-learning web developer, first time in GCI
+  bio: 14, Student, self-learning web developer, First time in GCI
 
 - name: Gaeun Kim
   github: gaeun
@@ -315,7 +368,6 @@
   bio: I am 14 years old and love coding! I know HTML , Javascript , CSS and Python. Will learn Bootstrap, PHP and others! I enjoy learning at Khan Academy and Code cademy. Also love contributing and coding on Sololearn app. I enjoy playing and building games :P
   lat: 19.171644999999998
   lng: 72.8810743
-  bio: 14, Indian, Student, Programmer
 
 - name: Riley Kovacev
   github: Rbkovacev
@@ -328,7 +380,7 @@
   image: Abhijeet.jpg
   twitter: jeet_manohar
   facebook: abhijeetmanohar66
-  bio: 16, Indian, Programmer, App Developer, tech-geek
+  bio: 16,Indian,Programmer,App Developer,tech-geek
 
 - name: Miguel Piedrafita
   github: m1guelpf
@@ -336,7 +388,7 @@
   twitter: m1guelpf
   image: m1guelpiedrafita.png
   blog: blog.miguelpiedrafita.com
-  bio: A spanish coder who loves open source.
+  bio: An spanish coder that loves open source.
   lat: 43.360233099999995
   lng: -5.8469849
 
@@ -345,7 +397,7 @@
   facebook: adelina.todorov
   twitter: 4x2young
   image: aditodorova.jpg
-  bio: A girl who loves to explore and try new things.
+  bio: A girl that loves to explore and try new things.
 
 - name: Nguyen Chanh Dai
   github: nguyenchanhdai
@@ -354,6 +406,14 @@
   image: ncdai.jpg
   blog: ncdai.blogspot.com
   bio: 17, student, web developer
+
+- name: Yusrilia H.
+  github: reallyly
+  image: Yusrilia.png
+  twitter: yrlya
+  bio: 15. Secretly a geek ;)
+  lat: -6.9174638999999996
+  lng: 107.61912280000001
 
 - name: Tinh Dao
   github: dcongtinh
@@ -383,7 +443,7 @@
   facebook: tan.ngominh.73
   twitter: nmtan2001ct
   image: TanNgoMinh.jpg
-  bio: 15 years old, Vietnamese, study Computer Science, interested in developing games.
+  bio: 15 years old, Vietnamese, study Computer Science, interested in developed games.
 
 - name: Will Kaye
   github: will747
@@ -465,13 +525,13 @@
   github: AlexTurning
   image: Sa.jpg
   facebook: meetsaurabh.s
-  bio: 16, Indian, keen learner
+  bio: 16,Indian,keen learner
 
 - name: Ngo Hong Phuc
   github: Jerry2001
   image: Phuc.jpg
   facebook: phuc.ngohong.2001
-  bio: 15, Vietnamese, Student, Programmer, Guitar
+  bio: 15,Vietnamese,Sudent Programmer, Guitar
 
 - name: Kartikeya Singh
   github: kartikeya23
@@ -486,7 +546,7 @@
   facebook: meets2tushar
   twitter: meets2tushar
   blog: meets2tushar.wordpress.com
-  bio: 15, Indian, Love HTML/CSS, FOSSASIA
+  bio: 15, Indian, Love HTML/CSS, FOSS
 
 - name: Yashvardhan Sharma
   github: yvsja
@@ -511,7 +571,7 @@
   twitter: arpna07
   image: arpna.jpg
   blog: arpnablog.wordpress.com
-  bio: 16 yr old, from INDIA, I want to pursue medical field.
+  bio: A 16 yr old from INDIA ,wants to pursue medical field.
 
 - name: Gautam Jajoo
   github: gautamjajoo
@@ -519,7 +579,7 @@
   twitter: gautamjajoo
   image: gautam.jpg
   blog: gautamjajoo.wordpress.com
-  bio: A 14 year old Indian whose passion is Computer Science.
+  bio: A 14 year old Indian, whose passion is Computer Science.
 
 - name: Shivam Singh
   twitter: shivamkumar4848
@@ -530,7 +590,7 @@
   github: Guneetconvent2002
   image: Guneet.jpg
   facebook: Guneet
-  bio: A 14 year old boy who wants to do something for the nation.
+  bio: A 14 year old boy who wants to do somthing for the nation.
 
 - name: Vishal Singh
   github: vishu15singh
@@ -542,7 +602,7 @@
   github: SrijanJha28
   image: SrijanJha.jpg
   twitter: SrijanJha2
-  bio: 16, Indian, coder, hacker, Tech enthusiast
+  bio: 16, Indian, coder, hacker, tech enthusiast
 
 - name: Vivek Kumar
   github: vivekkumarsvm
@@ -600,12 +660,13 @@
   lat: 1.3553794
   lng: 103.86774439999999
 
+
 - name: Galangkangin Gotera
   github: thegalang
   image: galangkangin.jpg
   facebook: fuspak
   twitter: BukanGalangK
-  bio: 16, from Indonesia, I love learning algorithms
+  bio: 16, from Indonesia, i love learning algorithms
   lat: -8.6539591
   lng: 115.22582229999999
 
@@ -614,7 +675,7 @@
   image: Mridul.jpg
   twitter: mridulbirla13
   facebook: Mridul Birla
-  bio: 14, Indian, love learning, Love FOSSASIA
+  bio: 14, Indian, love learning, Love FOSS
   lat: 29.0587757
   lng: 76.085601
 
@@ -633,6 +694,12 @@
   twitter: ekeshh
   bio: 16 years old, United States. Open-source developer.
 
+- name: Diana Balderas
+  github: balderasdiana27
+  image: dianabalderas.jpg
+  twitter: diianaxvi
+  bio: A sixteen year old hispanic coder from Los Angeles, California.
+
 - name: Muhammed Nagy
   github: muhammednagy
   image: MuhammedNagy.jpg
@@ -648,3 +715,151 @@
   bio: 16 years old. Bandung, Indonesia.
   lat: -6.904950
   lng: 107.612179
+
+- name: Semara Putra
+  github: semara123
+  image: semara.jpg
+  twitter: semarainc
+  facebook: semara.tude
+  bio: 15 years old. Denpasar,Bali, Indonesia im just a newbie :v :v.
+  lat: -7.7827801704407
+  lng: 110.36083221436
+
+- name: Animesh Mishra
+  github: cheersanimesh
+  image: animeshmishra.jpg
+  twitter: animeshmishra1m
+  blog: animeshblogblog.wordpress.com
+  bio: 16,intense passion in maths,coding(java) and a professional badminton player
+  facebook: animesh.mishra.125
+  lat: 22.8068706
+  lng: 86.1884319
+
+- name: Kishan Shetty
+  github: kishanshetty1991
+  image: Kishan_Shetty.jpg
+  twitter:  kishanshetty19
+  blog: https://kishanshetty1991.github.io/
+  bio: Love being a Geek and an Entreprenuer.
+  facebook: kishan.shetty.967
+  lat: 18.479669
+  lng: 73.876052
+
+- name: Dovan Sanjaya
+  github: dovansan
+  image: dovansan.jpg
+  twitter: dovan_san
+  bio: 17, loves pen testing
+  facebook: dovansanjaya
+  lat: -5.16934
+  lng: 105.7036801
+
+- name: Paras Dumka
+  github: paras-d
+  image: paras-d.jpg
+  twitter: _parasd
+  facebook: paras020
+  bio: 16, loves to code
+  lat: 30.284540800000002
+  lng: 78.0965691
+
+- name: Kaisar Arkhan
+  github: yukiisbored
+  image: yuki.png
+  twitter: yuki_is_bored
+  bio: "Your average weeb and computer hobbyist. I use Emacs because it's moe."
+  lat: -6.13698
+  lng: 106.82279
+
+- name: Abdulsamad Aliyu
+  github: abdulsamad234
+  image: abdul.png
+  twitter: nitrocoder2
+  facebook: abdulsamad.aliyu
+  blog: https://rarbloggers.blogspot.com
+  bio: An aspiring coder and entrepreneur
+  lat: 8.059230
+  lng: 7.767334
+
+- name: Adi Wahyudi
+  github: adiwahyudi
+  image: adiwahyudi1.jpg
+  facebook: adi.wah14
+  blog: https://adiwahyudi14.blogspot.com
+  bio: easy to learn,hard to masters
+  lat: -8.653905
+  lng: 115.22535859999999
+
+- name: Avram Pop
+  github: AvramPop
+  image: danipop.jpg
+  bio: Christian, supporter of traditional family(Man + Woman), coder, sportsman. In this order
+  facebook: dani.avram.pop
+
+- name: Ariq Zuhdi
+  github: ariqzuhdi
+  image: ariqzuhdi.jpg
+  bio: 9gagger, 16 years old, gaming 4 life
+  facebook: ariqzuhdi1
+  lat: -6.2517784999999995
+  lng: 106.9774941
+
+- name: Chen Yiyang
+  github: Chen-Yiyang
+  image: Yiyang.png
+  bio: Foreign student in Singapore, 17 years old, love coding, love Hearthstone
+  facebook: Yiyang Chen
+  lat: 1.2996621685419882
+  lng: 103.88312715701254
+
+- name: Jokubas de Kort
+  github: Jokubasdk
+  image: jokubas.jpg
+  facebook: Jokubas.dekort
+  bio: 9gagger, programmer
+  lat: 49.627945
+  lng: 6.0372604
+
+- name: Andre Dwi Winama
+  github: Andre002wp
+  image: Andre.jpg
+  facebook: andre.winamaputra
+  bio: A 15 year old boy who likes to play
+  lat: -8.6539591
+  lng: 115.22582229999999
+
+- name: Vasudev Singhal
+  github: vasudevcoder
+  twitter: vasudevcoder
+  image: vasudevcoder.jpg
+  bio: Decent geek, Future web developer
+  lat: 28.5497020
+  lng: 77.3523170
+
+- name: Jeorme Leow
+  github: JLeow00
+  twitter: JLeow00
+  image: jleow.png
+  bio: 16, Student, 3rd GCI
+  lat: 1.299108
+  lng: 103.882670
+
+- name: Poh Say Keong
+  github: PohSayKeong
+  twitter: pohsaykeong
+  image: saykeong.png
+  bio: 15, Student, GCI enthusiast
+
+- name: Agam Ahluwalia
+  github: AgamAhluwalia
+  image: Agam.jpg
+  bio: Decent geek, Future web developer
+
+- name: Sparsh Garg
+  github: sparsh-garg
+  twitter: sparshg141
+  image: sparshgarg.png
+  bio: 15, Decent geek
+  lat: 28.5497020
+  lng: 77.3523170
+

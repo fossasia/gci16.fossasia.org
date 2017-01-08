@@ -87,7 +87,7 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 0.8em;
-    width: 70% !important;
+    width: 100% !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
@@ -114,7 +114,7 @@
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
     height: 250px;
-    margin: 20px;
+    margin: 20px auto;
     background: #fff;
     text-align: center;
     -moz-transition: all .2s ease-in;
@@ -136,6 +136,12 @@
 .stu-name{
     margin-left:-7px;
     font-size:16px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -193,7 +199,7 @@
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    padding-top: 20%;
+    padding-top: 40%;
 }
 .mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
@@ -750,4 +756,8 @@ body {
 #next {
     float: right;
     color: black;
+}@media (min-width: 950px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }
