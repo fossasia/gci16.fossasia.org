@@ -850,6 +850,11 @@
   image: saykeong.png
   bio: 15, Student, GCI enthusiast
 
+- name: Agam Ahluwalia
+  github: AgamAhluwalia
+  image: Agam.jpg
+  bio: Decent geek, Future web developer
+
 - name: Sparsh Garg
   github: sparsh-garg
   twitter: sparshg141
@@ -857,3 +862,4 @@
   bio: 15, Decent geek
   lat: 28.5497020
   lng: 77.3523170
+
