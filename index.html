@@ -68,13 +68,13 @@
 
 <!-- Slider -->
     <div class="slider-container" id="welcome">
-      <div class="ism-slider" data-transition_type="fade" id="my-slider">
+      <div class="ism-slider" data-play_type="loop" data-image_fx="zoompan" data-transition_type="fade" id="my-slider">
         <ol>
           {% for slide in site.data.slides %}
           <li>
             <img src="images/{{slide.img}}">
             <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
+            <div class="ism-caption ism-caption-1" data-delay="0">
                 {{slide.exp-1}}<br>
                 {{slide.exp-2}}<br>
                 {{slide.exp-3}}
