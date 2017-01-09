@@ -844,6 +844,14 @@
   lat: 28.5497020
   lng: 77.3523170
 
+- name: Neil Bedagkar
+  github: flashguru
+  twitter: flamingmangoe
+  image: NeilB.jpg
+  bio: 13 y/o boy who likes to play video games
+  lat: 37.5203456
+  lng: -121.9676358
+
 - name: Jeorme Leow
   github: JLeow00
   twitter: JLeow00
@@ -870,4 +878,4 @@
   bio: 15, Decent geek
   lat: 28.5497020
   lng: 77.3523170
-
+  
