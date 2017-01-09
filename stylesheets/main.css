@@ -199,7 +199,7 @@
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    padding-top: 20%;
+    padding-top: 40%;
 }
 .mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
