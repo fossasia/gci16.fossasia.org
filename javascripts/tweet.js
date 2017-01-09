@@ -48,8 +48,13 @@ function lastTweet() {
 }
 */
 function parser(data) {
+    var tweet;
+    if (data && tweetNum < data.statuses.length) {
+        tweet = data.statuses[tweetNum].text;
+    } else {
+        return;
+    }
     var parsed = "";
-    var tweet = data.statuses[tweetNum].text;
     var words = tweet.split(" ");
     var loklakLinkCount = 0;
     for (var word in words) {
