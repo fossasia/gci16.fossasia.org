@@ -137,6 +137,13 @@
   facebook: Rosca.Oanaa
   bio: 17, Romanian, coder, geek, science enthusiast :D
 
+- name: Satyam Chawla
+  github: satyamchawla
+  image: satyam.png
+  twitter: SatyamChawla25
+  facebook: s.chawla.2510
+  bio: 16, Indian, programmer, science enthusiast :D
+
 - name: Haikal Izzuddin
   github: webhaikal
   image: haikal.png
@@ -836,4 +843,38 @@
   bio: Decent geek, Future web developer
   lat: 28.5497020
   lng: 77.3523170
-  
+
+- name: Neil Bedagkar
+  github: flashguru
+  twitter: flamingmangoe
+  image: NeilB.jpg
+  bio: 13 y/o boy who likes to play video games
+  lat: 37.5203456
+  lng: -121.9676358
+
+- name: Jeorme Leow
+  github: JLeow00
+  twitter: JLeow00
+  image: jleow.png
+  bio: 16, Student, 3rd GCI
+  lat: 1.299108
+  lng: 103.882670
+
+- name: Poh Say Keong
+  github: PohSayKeong
+  twitter: pohsaykeong
+  image: saykeong.png
+  bio: 15, Student, GCI enthusiast
+
+- name: Agam Ahluwalia
+  github: AgamAhluwalia
+  image: Agam.jpg
+  bio: Decent geek, Future web developer
+
+- name: Sparsh Garg
+  github: sparsh-garg
+  twitter: sparshg141
+  image: sparshgarg.png
+  bio: 15, Decent geek
+  lat: 28.5497020
+  lng: 77.3523170

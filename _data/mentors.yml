@@ -193,6 +193,12 @@
   blog: https://angularboy.wordpress.com/
   bio: Web developer, JS lover
 
+- name: Sopan Khosla
+  github: sopu
+  image: Sopan.jpg
+  twitter: KhoslaSopan
+  facebook: sopan.khosla
+
 - name: Manan Wason
   github: mananwason
   image: Manan.jpg
@@ -203,4 +209,12 @@
   github: vuhung
   image: NguyenVuHung.png
   facebook: nguyenvuhung
+
+- name: Bill Acha
+  github: achabill
+  twitter: achabill
+  image: BillAcha.jpg
+  lat: 4.1572639
+  lng: 9.2895411
+
 

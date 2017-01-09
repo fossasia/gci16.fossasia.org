@@ -1,6 +1,12 @@
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
+- name: Christian Scheub
+  blog: http://appmaker.000webhostapp.com/blog.html
+  blog_img: chdev-website.png
+  article: My experience with fossasia
+  article_link: http://appmaker.000webhostapp.com/blog/fosasia.html
+
 - name: Srijan Jha
   blog: https://srijanjha28fossasia.wordpress.com/
   blog_img: blog2.png
@@ -129,6 +135,11 @@
   blog: https://zehatablog.wordpress.com/
   article: Why I participated in GCI 2016
   article_link: https://zehatablog.wordpress.com/2016/12/10/why-i-participated-in-google-code-in-2016/
+
+- name: Koh Pi Rong
+  blog: https://pipix51.wordpress.com/
+  article: Contributing To Open Source (Part III)
+  article_link: https://pipix51.wordpress.com/2016/12/03/blog-post-title-2/
 
 - name: Ainesh Sootha
   blog: https://aineshsootha.wordpress.com/
