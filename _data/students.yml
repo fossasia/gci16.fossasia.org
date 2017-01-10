@@ -886,3 +886,13 @@
   bio: 14, Web Designer, Web Developer, Quizzer
   lat: 28.667720
   lng: 77.064309
+
+- name: Sean
+  github: Sea-n
+  image: sean.jpg
+  twitter: Sea_n64
+  facebook: Sean0604
+  blog: blog.sean.taipei
+  bio: PHP Developer, Taiwanese
+  lat: 24.9664
+  lng: 121.4357
