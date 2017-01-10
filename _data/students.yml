@@ -895,7 +895,13 @@
   bio: 14, Web Designer, Web Developer, Quizzer
   lat: 28.667720
   lng: 77.064309
-
+  
+- name: Li Zhaoqi
+  github: Eclipse-Dominator
+  twitter: Doomgrammar
+  image: Zhaoqi.png
+  bio: Student, 3rd GCI
+  
 - name: Damian Heaton
   github: Scratso
   image: damian.png
@@ -903,7 +909,7 @@
   bio: 14, Web Designer, Web Developer, Student, Software Developer
   lat: 53.916661000000005
   lng: -3.035673
-
+  
 - name: Sean
   github: Sea-n
   image: sean.jpg
