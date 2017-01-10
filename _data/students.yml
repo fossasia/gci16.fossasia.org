@@ -887,6 +887,14 @@
   lat: 28.667720
   lng: 77.064309
 
+- name: Damian Heaton
+  github: Scratso
+  image: damian.png
+  twitter: Scratso
+  bio: 14, Web Designer, Web Developer, Student, Software Developer
+  lat: 53.916661000000005
+  lng: -3.035673
+
 - name: Sean
   github: Sea-n
   image: sean.jpg
@@ -896,3 +904,4 @@
   bio: PHP Developer, Taiwanese
   lat: 24.9664
   lng: 121.4357
+
