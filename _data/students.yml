@@ -1,6 +1,15 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Aditya Kumar
+  github: adityak1121
+  image: adityak1121-5dimension.png
+  twitter: adityak11212
+  facebook: Aditya Kumar
+  bio: 14, learning WebDev, a little bit java and PHP
+  lat: 28.6618976
+  lng: 77.2273958
+
 - name: Tarang Dwivedy
   image: me 2.jpg
   github: T4RANG
