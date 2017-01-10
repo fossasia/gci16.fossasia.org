@@ -835,6 +835,14 @@
   lat: -8.6539591
   lng: 115.22582229999999
 
+- name: Aditya Mukti
+  github: skywrapper
+  image: adityamukti.png
+  facebook: AdityaMuktiNugroho
+  bio: high school student
+  lat: -0.5529334
+  lng: 117.1206134
+
 - name: Vasudev Singhal
   github: vasudevcoder
   twitter: vasudevcoder
@@ -877,4 +885,3 @@
   bio: 15, Decent geek
   lat: 28.5497020
   lng: 77.3523170
-
