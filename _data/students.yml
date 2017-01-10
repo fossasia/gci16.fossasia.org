@@ -878,8 +878,18 @@
   lat: 28.5497020
   lng: 77.3523170
 
+- name: Sayam Kanwar
+  github: SayamK
+  image: Sayam.jpg
+  twitter: sayamkanwar
+  facebook: sayamkanwar
+  bio: 14, Web Designer, Web Developer, Quizzer
+  lat: 28.667720
+  lng: 77.064309
+
 - name: Li Zhaoqi
   github: Eclipse-Dominator
   twitter: Doomgrammar
   image: Zhaoqi.png
-  bio: Student, 3rd GCI
+  bio: Student, 3rd time GCI
+  
