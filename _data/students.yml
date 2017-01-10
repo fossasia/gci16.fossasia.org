@@ -878,10 +878,11 @@
   lat: 28.5497020
   lng: 77.3523170
   
-  - name: Sayam Kanwar
-  image: Sayam.jpg
+- name: Sayam Kanwar
   github: SayamK
+  image: Sayam.jpg
   twitter: sayamkanwar
   facebook: sayamkanwar
   bio: 14, Web Designer, Web Developer, Quizzer
-
+  lat: 28.667720
+  lng: 77.064309
