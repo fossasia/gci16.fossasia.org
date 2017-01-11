@@ -1,6 +1,15 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Aditya Kumar
+  github: adityak1121
+  image: adityak1121-WebDev.png
+  twitter: adityak11212
+  facebook: adityak1121
+  bio: 14, learning WebDev, a little bit java and PHP
+  lat: 28.6618976
+  lng: 77.2273958
+
 - name: Tarang Dwivedy
   image: me 2.jpg
   github: T4RANG
@@ -895,3 +904,43 @@
   bio: 16 Years Old, Web Developer and designer
   lat: 28.66667
   lng: 77.21667
+
+- name: Damian Heaton
+  github: Scratso
+  image: damian.png
+  twitter: Scratso
+  bio: 14, Web Designer, Web Developer, Student, Software Developer
+  lat: 53.916661000000005
+  lng: -3.035673
+
+- name: Sean
+  github: Sea-n
+  image: sean.jpg
+  twitter: Sea_n64
+  facebook: Sean0604
+  blog: blog.sean.taipei
+  bio: PHP Developer, Taiwanese
+  lat: 24.9664
+  lng: 121.4357
+
+- name: Zhaoqi
+  github: Eclipse-Dominator
+  image: Zhaoqi.png
+  twitter: Doomgrammar
+  bio: 3rd year in gci
+
+- name: Giovan Isa Musthofa
+  github: GnarledHarpy06
+  image: lucifer.png
+  twitter: giovanism_stc
+  facebook: GiovanIsaMusthofa
+  bio: A country bumpkin left wandering in the internet since 2014
+  lat: -6.6903682
+  lng: 111.4775637
+
+- name: David
+  github: DavidYi
+  image: davidyi.png
+  twitter: davidcyyi
+  bio: HS student trying his best
+  
