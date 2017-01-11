@@ -920,8 +920,18 @@
   twitter: Doomgrammar
   bio: 3rd year in gci
 
+- name: Giovan Isa Musthofa
+  github: GnarledHarpy06
+  image: lucifer.png
+  twitter: giovanism_stc
+  facebook: GiovanIsaMusthofa
+  bio: A country bumpkin left wandering in the internet since 2014
+  lat: -6.6903682
+  lng: 111.4775637
+
 - name: David
   github: DavidYi
   image: davidyi.png
   twitter: davidcyyi
   bio: HS student trying his best
+
