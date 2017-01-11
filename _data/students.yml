@@ -896,6 +896,15 @@
   lat: 28.667720
   lng: 77.064309
 
+- name: Sanatan Chaudhary
+  github: sanatanchaudhary
+  facebook: SanatanKChaudhary
+  blog: sanatan.gq
+  image: sanatan.jpg
+  bio: 16 Years Old, Web Developer and designer
+  lat: 28.66667
+  lng: 77.21667
+
 - name: Damian Heaton
   github: Scratso
   image: damian.png
@@ -934,4 +943,4 @@
   image: davidyi.png
   twitter: davidcyyi
   bio: HS student trying his best
-
+  
