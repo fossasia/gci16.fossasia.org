@@ -2,3 +2,4 @@
 *.swp
 _data/*~
 _site/
+.coala-cache/*
