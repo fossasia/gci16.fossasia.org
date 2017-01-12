@@ -1,0 +1,12 @@
+## Student data
+
+	student:
+		name: Yashwardhann
+		age: 15
+		facebook_url: https://www.facebook.com/yashwardhann.100
+		github_url: https://github.com/Tandoori-Momos
+		email: yash@exunclan.com
+		city: New Delhi
+		state: New Delhi
+		country: India
+		img_url: ../images/yash.jpg
