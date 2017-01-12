@@ -9,6 +9,15 @@
   bio: 14, learning WebDev, a little bit java and PHP
   lat: 28.6618976
   lng: 77.2273958
+  
+- name: Abdu Muhaimin
+  github: abdumuhaimin
+  image: muhaimin.jpg
+  twitter: DH_Infinity
+  facebook: /abdumuhaimin
+  bio: 17, learning PHP, Java, Python. Building a search engine.
+  lat: 3.139003
+  lng: 101.686855
 
 - name: Atiab Jobayer
   github: atiabjobayer
