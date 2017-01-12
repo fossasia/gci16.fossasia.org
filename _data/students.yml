@@ -19,6 +19,16 @@
   lat: 22.484401
   lng: 88.314114
 
+-name: Aneesh Chawla
+  github:aneesh987
+  image: AneeshChawla.jpg
+  twitter: @aneeshchawla1
+  blog:https://immortalmuon.wordpress.com/
+  bio: 17, loves Maths,Computers and physics.Love to compete.
+  lat:28.650742
+  lng:77.137907
+
+
 - name: Sidhdharth
   github: sidhdharths
   image: sidhdharth.jpg
