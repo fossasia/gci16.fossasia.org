@@ -1,0 +1,12 @@
+# image and basic credentials
+
+student:
+  name: Aryan
+  age: 16
+  country: India
+  email: bhasinaryan@gmail.com
+  blog_link: https://aryanbhasin.blogspot.in/
+  github_username: https://github.com/aryanbhasin
+  twitter_link: https://twitter.com/aryanbhasin
+  facebook_link: https://www.facebook.com/bhasinaryan
+  image_url: ../images/aryanimage.jpg
