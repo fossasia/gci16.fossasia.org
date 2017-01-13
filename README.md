@@ -9,6 +9,10 @@ The student site for GCI 2016 Students.
 
 Thoroughly read our [contributing guide](https://github.com/fossasia/gci16.fossasia.org/blob/gh-pages/CONTRIBUTING.md) before sending in your Pull Requests. Happy Contributing!
 
+# Installation
+
+Follow the [Installation](https://github.com/fossasia/gci16.fossasia.org/wiki/Installation) wiki to get the site running on your local environment.
+
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
