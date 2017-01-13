@@ -725,7 +725,6 @@
       var marker2;
       var infowindow = null;
       {% for mentor in site.data.mentors %}
-      {% for student in site.data.students %}
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
@@ -746,6 +745,8 @@
                   };
               })(marker, content));
           {% endif %}
+      {% endfor %}
+      {% for student in site.data.students %}
           {% if student.lat %}
               marker2 = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
@@ -766,7 +767,6 @@
                   };
               })(marker2, content));
           {% endif %}
-      {% endfor %}
       {% endfor %}
     };
     </script>
