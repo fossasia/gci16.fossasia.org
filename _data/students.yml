@@ -470,6 +470,11 @@
   lat: 7.0025129999999995
   lng: 79.9098925
 
+- name: Katrina Florendo
+  github: kflorendo
+  image: kflorendo_gci.jpg
+  bio: student, loves programming and science
+
 - name: Mehmet Cagri Ari
   github: hesapadim
   image: cagriari_avatar.jpg
