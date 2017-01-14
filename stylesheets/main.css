@@ -57,27 +57,15 @@
     display: inline-block;
 }
 #contributors-list div img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
-/*#contributors-list div a {
-    position: absolute;
-    left: 20px;
-    margin-top: 212px;
-    color: #000;
-    cursor: pointer;
-}
-#contributors-list div .gh-icon {
-    position: absolute;
-    top: -3px;
-}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
 #contributors-list .contribs p {
-    margin-top: 18px;
     color: #333;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
@@ -122,6 +110,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+#contributors-list .card {
+    width: 150px;
+    height: 200px;
+}
 .card-text{
     overflow: scroll;
     white-space: nowrap;
@@ -150,10 +142,15 @@
     margin-top: 4.5%;
     font-size: 15px;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+.mentors .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
+}
+#contributors-list .avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
 @media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
     .blogs-sec .avatar {
