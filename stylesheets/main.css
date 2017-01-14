@@ -758,3 +758,12 @@ body {
     display: block;
   }
 }
+.contribthank{
+    background-color: #e67e22;
+    margin-top: 10px;
+}
+
+.contribthank p{
+    color: white;
+    font-size: 50px;
+}
