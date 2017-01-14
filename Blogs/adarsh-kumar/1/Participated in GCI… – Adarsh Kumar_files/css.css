@@ -1,0 +1,72 @@
+/* latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'), url(https://fonts.gstatic.com/s/lobstertwo/v9/Law3VVulBOoxyKPkrNsAaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9T48MEBspdEKklcQvcIk8pU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9cZ4HySTEWshgORbPp2tk8k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quattrocento Sans Bold'), local('QuattrocentoSans-Bold'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/tXSgPxDl7Lk8Zr_5qX8FIdqgfwRMvy6EDFppit6Do18.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quattrocento Sans Bold'), local('QuattrocentoSans-Bold'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/tXSgPxDl7Lk8Zr_5qX8FIbvMLSVzqOGkoxdgTSsKqWM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Quattrocento Sans Italic'), local('QuattrocentoSans-Italic'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/8PXYbvM__bjl0rBnKiByg70czo27AklEAaHz4fJ0oZE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Quattrocento Sans Italic'), local('QuattrocentoSans-Italic'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/8PXYbvM__bjl0rBnKiByg-fU2ka509O1odprhyXBUMU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Quattrocento Sans Bold Italic'), local('QuattrocentoSans-BoldItalic'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/8N1PdXpbG6RtFvTjl-5E7RmzdD2i0Yy32wXknJg7uXD3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Quattrocento Sans Bold Italic'), local('QuattrocentoSans-BoldItalic'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/8N1PdXpbG6RtFvTjl-5E7afo0sDQ75c9ExQ-26lwTdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

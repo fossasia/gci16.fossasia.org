@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <script src="sat.js"></script>
+    <script type="text/javascript">
+        function sendMeta() {
+            if (typeof window.postMessage == 'undefined' || window.postMessage == null) {
+                //no support for ie 6-7 currently - meta blocking does not happen...
+            }else{
+                parent.postMessage(
+                    JSON.stringify({switchconcepts: {type: 'meta', content: {"id":"73","zones":[{"zone_id":"459","enabled":[],"queueJumping":1,"width":"160","height":"600","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"460","enabled":[],"queueJumping":1,"width":"300","height":"250","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"461","enabled":[],"queueJumping":1,"width":"728","height":"90","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"477","enabled":[],"queueJumping":1,"width":"160","height":"600","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"478","enabled":[],"queueJumping":1,"width":"300","height":"250","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"479","enabled":[],"queueJumping":1,"width":"728","height":"90","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"895","enabled":[],"queueJumping":1,"width":"300","height":"250","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"898","enabled":[],"queueJumping":1,"width":"160","height":"600","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"899","enabled":[],"queueJumping":1,"width":"728","height":"90","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"900","enabled":[],"queueJumping":1,"width":"160","height":"600","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"901","enabled":[],"queueJumping":1,"width":"300","height":"250","allowFirstPartyCookies":0,"preventTopRedirection":true},{"zone_id":"902","enabled":[],"queueJumping":1,"width":"728","height":"90","allowFirstPartyCookies":0,"preventTopRedirection":true}],"errors":[],"instance_id":0}}}),
+                    '*'
+                );
+            }
+        }
+
+        if (document.readyState == "complete"){
+            sendMeta();
+        }else if (window.addEventListener) {
+            window.addEventListener("load", sendMeta, false);
+        } else if (window.attachEvent) {
+            window.attachEvent("onload", sendMeta);
+        } else {
+            window.onload = sendMeta;
+        }
+    </script>
+</head>
+<body>
+
+</body></html>

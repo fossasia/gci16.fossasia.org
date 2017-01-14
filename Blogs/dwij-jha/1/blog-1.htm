@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://dwijjha.wordpress.com/xmlrpc.php">
+
+<title>Google Code-In(GCI) and FOSSASIA – Google Code-In 2016</title>
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="Google Code-In 2016 » Feed" href="https://dwijjha.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Google Code-In 2016 » Comments Feed" href="https://dwijjha.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Google Code-In 2016 » Google Code-In(GCI) and&nbsp;FOSSASIA Comments Feed" href="https://dwijjha.wordpress.com/2016/11/30/google-codein/feed/">
+	<script defer="defer" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/beacon.js"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1473172720h&ver=4.6.1-RC1-38499"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/wp-emoji-release.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="scratchpad-fonts-css" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-2-1" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a.css" type="text/css" media="all">
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a_003.js"></script>
+<link rel="stylesheet" id="all-css-0-2" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dwijjha.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="next" title="Open Source and Working with&nbsp;FOSSASIA" href="https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://dwijjha.wordpress.com/2016/11/30/google-codein/">
+<link rel="shortlink" href="http://wp.me/p8a7CS-4">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google Code-In(GCI) and FOSSASIA">
+<meta property="og:url" content="https://dwijjha.wordpress.com/2016/11/30/google-codein/">
+<meta property="og:description" content="This post will tell you about my journey in Google Code-In and how I came across FOSSASIA.">
+<meta property="article:published_time" content="2016-11-30T08:52:58+00:00">
+<meta property="article:modified_time" content="2016-12-12T04:03:52+00:00">
+<meta property="og:site_name" content="Google Code-In 2016">
+<meta property="og:image" content="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=1200">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="662">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image:src" content="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=640">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://dwijjha.wordpress.com/osd.xml" title="Google Code-In 2016">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="Google Code-In 2016"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Working with FOSSASIA in GCI-2016"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://dwijjha.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Google Code-In(GCI) and&nbsp;FOSSASIA | Google Code-In 2016 on WordPress.com">
+<meta name="description" content="This post will tell you about my journey in Google Code-In and how I came across FOSSASIA. My father always told me that I should participate in GCI when I would turn 13. So last year I turned 13 and when GCI 2015 came , I joined it. Now I came across different organizations and…">
+<link rel="amphtml" href="https://dwijjha.wordpress.com/2016/11/30/google-codein/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript" async="" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a_005.js"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/services.css"><script type="text/javascript" async="" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a_002.js"></script></head>
+
+<body class="single single-post postid-4 single-format-standard mp6 customizer-styles-applied no-sidebar has-site-logo highlander-enabled highlander-light">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="wrap">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<div class="menu-menu-container"><ul id="primary-menu" class="menu nav-menu" aria-expanded="false"><li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-60"><a href="https://dwijjha.wordpress.com/">Home</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://dwijjha.wordpress.com/about/">About Me</a></li>
+</ul></div>			</div><!-- .wrap -->
+		</nav><!-- #site-navigation -->
+
+		<div class="site-branding">
+			<div class="wrap">
+
+				<a href="https://dwijjha.wordpress.com/" class="site-logo-link" rel="home"><img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/blog.png" class="site-logo attachment-scratchpad-site-logo" alt="Blog" data-size="scratchpad-site-logo" srcset="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=544 544w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=1088 1088w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=150 150w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=300 300w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=768 768w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=1024 1024w" sizes="(max-width: 544px) 100vw, 544px" data-attachment-id="26" data-permalink="https://dwijjha.wordpress.com/2016/11/30/google-codein/blog/" data-orig-file="https://dwijjha.files.wordpress.com/2016/11/blog.png" data-orig-size="1262,696" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Blog" data-image-description="" data-medium-file="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=300" data-large-file="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=840" width="544" height="300"></a>					<p class="site-title"><a href="https://dwijjha.wordpress.com/" rel="home">Google Code-In 2016</a></p>
+									<p class="site-description">Working with FOSSASIA in GCI-2016</p>
+							</div><!-- .wrap -->
+		</div><!-- .site-branding -->
+
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div class="wrap">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-4" class="post-4 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+			<div class="featured-image">
+			<span>
+				<svg class="paperclip" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="168px" height="569px" viewBox="0 0 168 569" style="enable-background:new 0 0 168 569;" xml:space="preserve" aria-hidden="true">
+<path class="paperclip0" d="M96,0C49.7,0,24,37.7,24,84v63l18,6V84c0-36.4,17.6-66,54-66s54,29.6,54,66v401c0,36.4-29.6,66-66,66s-66-29.6-66-66V285H0v200c0,46.3,37.7,84,84,84s84-37.7,84-84V84C168,37.7,142.3,0,96,0z"></path>
+</svg>
+				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/blog_002.png" class="attachment-scratchpad-featured size-scratchpad-featured wp-post-image" alt="Blog" srcset="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=1000 1000w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=150 150w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=300 300w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=768 768w, https://dwijjha.files.wordpress.com/2016/11/blog.png?w=1024 1024w, https://dwijjha.files.wordpress.com/2016/11/blog.png 1262w" sizes="(max-width: 1000px) 100vw, 1000px" data-attachment-id="26" data-permalink="https://dwijjha.wordpress.com/2016/11/30/google-codein/blog/" data-orig-file="https://dwijjha.files.wordpress.com/2016/11/blog.png" data-orig-size="1262,696" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Blog" data-image-description="" data-medium-file="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=300" data-large-file="https://dwijjha.files.wordpress.com/2016/11/blog.png?w=840" width="1000" height="552">			</span>
+		</div><!-- .featured-image -->
+	
+	<header class="entry-header">
+
+				<h1 class="entry-title">Google Code-In(GCI) and&nbsp;FOSSASIA</h1>
+		<div class="entry-meta">
+						<span class="posted-on">Posted on <a href="https://dwijjha.wordpress.com/2016/11/30/google-codein/" rel="bookmark"><time class="entry-date published" datetime="2016-11-30T08:52:58+00:00">November 30, 2016</time><time class="updated" datetime="2016-12-12T04:03:52+00:00">December 12, 2016</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://dwijjha.wordpress.com/author/ashpikachu/">Dwij</a></span></span>					</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>This post will tell you about my journey in Google Code-In and how I came across FOSSASIA.</p>
+<p><span id="more-4"></span></p>
+<p>My father always told me that I should participate in GCI when I 
+would turn 13. So last year I turned 13 and when GCI 2015 came , I 
+joined it. Now I came across different organizations and lot of tasks. I
+ was excited and thus I chose a task by looking at its title and ended 
+up choosing a task in which I had&nbsp; a 0% knowledge. It was a 
+FOSSASIA’s task “Create a blog on Hugo”. I thought I could never do it 
+but the mentors guided me and extended my guideline. I almost completed 
+it but decided to take a break. Then I chose another task which seemed 
+easy for me and returned back to my old task and finally completed it.</p>
+<p>Then I worked more on Hugo and Git and improved myself in it. Soon my
+ exams began so I couldn’t spend much of my time there. In the end I had
+ completed 3 task <span class="skimlinks-unlinked">only.This</span> was 
+how my first GCI ended. I was determined that in the next GCI I would do
+ much better. Till then I came to know that working with one 
+organistaion was better so I chose “FOSSASIA” because my first task was 
+of this organisation.</p>
+<p style="text-align:center;">Now , GCI 16 has started and I have already started doing FOSSASIA <span class="skimlinks-unlinked">tasks.Its</span> fun working with these people who are always ready to help</p>
+<p>&nbsp;Links</p>
+<p><a href="http://fossasia.org/" target="_blank">FOSSASIA </a></p>
+<p><a href="http://gci15.fossasia.org/" target="_blank">FOSSASIA STUDENT SITE 2015</a></p>
+<p style="text-align:center;">
+	</p></div><!-- .entry-content -->
+
+	
+<div class="author-info clear">
+	<div class="author-avatar">
+		<span class="avatar-container"><img alt="" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/16c325e5466fc0f809a497559fd2879a.png" class="avatar avatar-100 grav-hashed grav-hijack" id="grav-16c325e5466fc0f809a497559fd2879a-0" width="100" height="100"></span>	</div><!-- .author-avatar -->
+
+	<div class="author-description">
+		<h2 class="author-title">
+			<span class="author-heading">Author:</span>
+			<a href="https://dwijjha.wordpress.com/author/ashpikachu/" rel="author">Dwij</a>
+		</h2>
+
+		<p class="author-bio">
+			I love Codein			<a class="author-link" href="https://dwijjha.wordpress.com/author/ashpikachu/" rel="author">
+				View All Posts							</a>
+		</p><!-- .author-bio -->
+	</div><!-- .author-description -->
+</div><!-- .author-info -->
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+<div class="post-navigation-container">
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-next"><a href="https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/" rel="next"><span class="post-navigation-header">Next Post</span> Open Source and Working with&nbsp;FOSSASIA</a></div></div>
+	</nav><svg class="little-pencil" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1013.5px" height="72.3px" viewBox="0 0 1013.5 72.3" style="enable-background:new 0 0 1013.5 72.3;" xml:space="preserve" aria-hidden="true">
+<path class="pencil-little0" d="M10,0C10,0,0,10.9,0,35.8c0,28.2,10,36.5,10,36.5h841.4V0H10z"></path>
+<path class="pencil-little1" d="M57,0c0,0-10,10.9-10,35.8c0,28.2,10,36.5,10,36.5h821.4V0L57,0z"></path>
+<path class="pencil-little2" d="M101,0c0,0-10,10.9-10,35.8c0,28.2,10,36.5,10,36.5h821.4V0L101,0z"></path>
+<rect x="92.7" y="24.3" class="pencil-little3" width="829.7" height="22.8"></rect>
+<polygon class="pencil-little4" points="92.7,49.5 101,72.3 922.4,72.3 922.4,49.5 "></polygon>
+<path class="pencil-little5" d="M1013.5,36.1l-91.2,36.1c0,0-8.4-9.8-8.4-36.1S922.4,0,922.4,0L1013.5,36.1z"></path>
+<path class="pencil-little6" d="M1013.5,36.1l-33.5,13.3c0,0-3.1-3.6-3.1-13.3s3.1-13.3,3.1-13.3L1013.5,36.1z"></path>
+<path class="pencil-little5" d="M922.4,72.3c0,0-12.7-5.4-14-10C907,57.7,914,53,914,49.4s-10-7.8-10-13.6s10-7.8,10-12.9s-5.7-8.3-5.7-13.6s14-9.3,14-9.3l11,35.8L922.4,72.3z"></path>
+</svg>
+</div>
+<div id="comments" class="comments-area">
+
+	
+</div><!-- #comments -->
+
+
+
+	<div id="comments-form">
+		<div class="comments-form-contain">
+			<svg class="post-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="395.7px" height="155.5px" viewBox="0 0 395.7 155.5" style="enable-background:new 0 0 395.7 155.5;" xml:space="preserve" aria-hidden="true">
+<path class="post-mark0" d="M318.4,155.5c-42.9,0-77.8-34.9-77.8-77.7S275.5,0,318.4,0s77.8,34.9,77.8,77.8S361.3,155.5,318.4,155.5z M318.4,5c-40.1,0-72.8,32.6-72.8,72.8c0,40.1,32.6,72.7,72.8,72.7s72.8-32.6,72.8-72.7C391.2,37.6,358.5,5,318.4,5z"></path>
+<path class="post-mark0" d="M318.4,136.6c-32.4,0-58.8-26.4-58.8-58.8c0-32.4,26.4-58.8,58.8-58.8s58.8,26.4,58.8,58.8C377.2,110.2,350.9,136.6,318.4,136.6z M318.4,20.9c-31.3,0-56.8,25.5-56.8,56.8s25.5,56.8,56.8,56.8s56.8-25.5,56.8-56.8S349.8,20.9,318.4,20.9z"></path>
+<path class="post-mark0" d="M247.6,32.1c0.9-1.4,1.8-2.8,2.8-4.1c-0.8-0.5-1.6-1-2.4-1.5c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4c-10.2,0-15.3,3.2-20.3,6.4C51,29.3,46.7,32,37.9,32c-8.8,0-13.1-2.7-17.6-5.6C15.3,23.3,10.2,20,0,20v5c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6C246.1,31.1,246.8,31.6,247.6,32.1z"></path>
+<path class="post-mark0" d="M240,46.7c-3.2-1.2-7.1-2.1-12.3-2.1c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4v5c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c4.5,0,7.8,0.7,10.6,1.8C238.9,49.9,239.4,48.3,240,46.7z"></path>
+<path class="post-mark0" d="M234.5,69.8c-2-0.4-4.2-0.6-6.8-0.6c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4v5c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c2.5,0,4.6,0.2,6.5,0.6C234.3,73.2,234.4,71.5,234.5,69.8z"></path>
+<path class="post-mark0" d="M235.8,94.7c-2.3-0.5-5-0.8-8.1-0.8c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4v5c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c3.9,0,6.9,0.5,9.5,1.4C236.7,98.4,236.2,96.6,235.8,94.7z"></path>
+<path class="post-mark0" d="M248.9,125.4c-0.3-0.2-0.6-0.4-0.9-0.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4s-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4c-10.2,0-15.3,3.2-20.3,6.4c-4.6,2.9-8.9,5.6-17.6,5.6c-8.8,0-13.1-2.7-17.6-5.6c-5-3.1-10.1-6.4-20.3-6.4v5c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6c8.8,0,13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6c5,3.1,10.1,6.4,20.3,6.4c10.2,0,15.3-3.2,20.3-6.4c4.6-2.9,8.9-5.6,17.6-5.6s13.1,2.7,17.6,5.6c3,1.9,6.2,3.9,10.5,5.1C253.3,131.4,251,128.5,248.9,125.4z"></path>
+</svg>
+<svg class="stamp" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="157.3px" height="186px" viewBox="0 0 157.3 186" style="enable-background:new 0 0 157.3 186;" xml:space="preserve" aria-hidden="true">
+<path class="stamp0" d="M157.3,16.4V0h-15.7c-0.4,3.3-3.3,5.9-6.7,5.9s-6.3-2.6-6.7-5.9h-9.1c-0.4,3.3-3.3,5.9-6.7,5.9s-6.3-2.6-6.7-5.9h-9.1c-0.4,3.3-3.3,5.9-6.7,5.9S83.7,3.3,83.3,0h-9.1c-0.4,3.3-3.3,5.9-6.7,5.9c-3.4,0-6.3-2.6-6.7-5.9h-9.1c-0.4,3.3-3.3,5.9-6.7,5.9c-3.4,0-6.3-2.6-6.7-5.9h-9.1c-0.4,3.3-3.3,5.9-6.7,5.9c-3.4,0-6.3-2.6-6.7-5.9H0v16.4c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8s-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8s-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8v6.7c3.7,0,6.8,3,6.8,6.8c0,3.7-3,6.8-6.8,6.8V186h15.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8h9c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8h9c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8h9c0-3.7,3-6.8,6.8-6.8s6.8,3,6.8,6.8h9c0-3.7,3-6.8,6.8-6.8s6.8,3,6.8,6.8h9c0-3.7,3-6.8,6.8-6.8s6.8,3,6.8,6.8h15.6v-14.5c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8s3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8s3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8v-6.7c-3.7,0-6.8-3-6.8-6.8C150.5,19.4,153.6,16.4,157.3,16.4z"></path>
+<rect x="15.5" y="16.4" class="stamp1" width="126.3" height="153.9"></rect>
+<g>
+	<path class="stamp2" d="M124.6,66.4c1.6,3.9,2.5,8.8,2.5,14.6s-1.7,11.5-5,16.9c-3.4,5.4-7.4,9.8-12.1,13.1c-4.7,3.3-9,5-12.9,5c-2.5,0-4.5-0.8-6-2.4c-1.5-1.6-2.5-3.6-3-6c-6.3,6.3-11.6,9.5-15.9,9.5c-2.9,0-5.9-1.5-9-4.5c-3.2-3-4.7-5.9-4.7-8.5c0-2.6,0.8-5.8,2.5-9.6c1.7-3.8,3.8-7.5,6.3-11.1c2.6-3.6,5.7-6.7,9.4-9.3c3.7-2.6,7.2-3.9,10.4-3.9s6.6,1.6,9.9,4.8c3.4,3.2,5,6.6,5,10c0,1.8-0.5,3.7-1.6,5.7c0.9,1.1,1.4,2,1.4,2.8c0,0.8-0.2,2.2-0.5,4.2c-0.3,2-0.6,3.5-0.7,4.3c-0.1,0.9,0,1.5,0.3,1.9c1.1,0,2.6-0.9,4.6-2.7c2-1.8,4-4.6,5.9-8.4c1.9-3.8,2.8-7.7,2.8-11.8c0-6.8-1.7-12-5.2-15.6c-3.5-3.6-8.4-5.4-14.8-5.4c-8.1,0-15.9,2.5-23.4,7.4c-7.5,5-13.4,11.2-17.7,18.6c-4.3,7.4-6.5,14.8-6.5,22c0,13.3,6.5,19.9,19.4,19.9c6.7,0,12.7-0.8,18-2.5c4.9-1.6,7.7-2.2,8.6-1.9c0.9,0.3,1.3,1,1.3,2.2c0,2.3-1.5,4.6-4.5,6.7c-3,2.2-6.5,3.9-10.6,5.1c-4.1,1.2-7.9,1.9-11.4,1.9c-8.9,0-17-3.1-24.3-9.2c-7.3-6.1-10.9-13.4-10.9-22c0-6.7,1.6-13.6,4.7-20.7c3.1-7.1,7.3-13.7,12.6-19.6c5.3-5.9,11.9-10.8,19.8-14.6c7.9-3.8,16.4-5.7,25.7-5.7c9.2,0,16.7,2.8,22.4,8.3C120.5,58.9,123,62.5,124.6,66.4z M71.4,106.3c2.4,0,6-2,10.7-5.8c4.8-3.9,7.7-8.1,8.7-12.7c0.2-0.7,0.6-1.1,1.1-1.3c-1.1-3.3-2.5-5-4.2-5c-3.6,0-7.6,3-11.9,9c-4.4,6-6.5,10.4-6.5,13.2C69.3,105.4,70,106.3,71.4,106.3z"></path>
+</g>
+</svg>
+				<div id="respond" class="comment-respond js">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://dwijjha.wordpress.com/2016/11/30/google-codein/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://dwijjha.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+					<input id="highlander_comment_nonce" name="highlander_comment_nonce" value="8f0121fc21" type="hidden"><input name="_wp_http_referer" value="/2016/11/30/google-codein/" type="hidden">
+<input name="hc_post_as" id="hc_post_as" value="guest" type="hidden">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; overflow-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: Arial,Helvetica,Tahoma,Verdana,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 25.2px; width: 612px;" class="autosizejs ">Enter your comment here...</textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 45px; overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a.htm" scrolling="no" allowtransparency="true" seamless="seamless" width="24" height="24" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Gravatar" class="no-grav" width="25">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email"></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text"></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url"></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/ad516503a11cd5ca435acc9bb6523536.png" alt="WordPress.com Logo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" type="hidden">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'wordpress'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Twitter picture" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" type="hidden">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'twitter'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Facebook photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" type="hidden">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'facebook'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Google+ photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" type="hidden">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'googleplus'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input name="subscribe" id="subscribe" value="subscribe" style="width: auto;" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" id="comment-submit" class="submit" value="Post Comment" type="submit"> <input name="comment_post_ID" value="4" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="f7953490a4" type="hidden"></p>
+<input name="genseq" value="1484430545" type="hidden">
+<p style="display: none;"></p>				<input id="ak_js" name="ak_js" value="1484430560285" type="hidden"></form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>		</div><!-- .comments-form-contain -->
+	</div><!-- #comments-form -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+		</div><!-- .wrap -->
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="wrap">
+
+							<aside id="footer-widgets" class="widget-area" role="complementary">
+					<div class="grid-container" style="position: relative; height: 273.383px;">
+						<section id="search-1" class="widget widget_search" style="position: absolute; left: 0px; top: 0px;"><h2 class="widget-title">Search the blog!</h2><form role="search" method="get" class="search-form" action="https://dwijjha.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input class="search-field" placeholder="Search …" name="s" type="search">
+				</label>
+				<input class="search-submit" value="Search" type="submit">
+			</form></section><section id="text-1" class="widget widget_text" style="position: absolute; left: 399px; top: 0px;"><h2 class="widget-title">Update on Upcoming Posts</h2>			<div class="textwidget">I will soon write a blog post about my tasks in GCI-15 !</div>
+		</section>					</div>
+				</aside><!-- #secondary -->
+			
+			<div class="site-info">
+				<svg class="line" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1509.5px" height="15.6px" viewBox="0 0 1509.5 15.6" style="enable-background:new 0 0 1509.5 15.6;" xml:space="preserve" aria-hidden="true">
+<path class="line0" d="M746,8.7c1.2,0,2.5,0,3.7,0c13.9-0.1,27.8-0.3,41.7-0.4S819.1,8,833,7.8c13.9-0.1,27.8-0.3,41.7-0.4s27.8-0.3,41.7-0.4s27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4c3.3,0,6.7-0.1,10-0.1c-503-3.3-1006,0.7-1508.9,12.2c13.9,0.3,27.7,0.6,41.6,0.8c13.9,0.2,27.7,0.5,41.6,0.6s27.8,0.3,41.6,0.5c13.9,0.1,27.8,0.2,41.6,0.3c13.9,0.1,27.8,0.1,41.6,0.1c13.9,0,27.8,0,41.6-0.1c13.9-0.1,27.8-0.1,41.6-0.3c13.9-0.1,27.8-0.3,41.6-0.4c13.9-0.2,27.7-0.4,41.6-0.6c13.9-0.2,27.7-0.5,41.6-0.8s27.7-0.6,41.6-1c13.9-0.4,27.7-0.8,41.6-1.2c13.7-0.4,27.5-0.3,41.3-0.4c13.9-0.1,27.8-0.3,41.7-0.4s27.8-0.3,41.7-0.4s27.8-0.3,41.7-0.4c13.9-0.1,27.8-0.3,41.7-0.4C720.7,8.9,733.3,8.8,746,8.7z"></path>
+</svg>
+				
+				<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+				
+							</div><!-- .site-info -->
+		</div><!-- .wrap -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-16c325e5466fc0f809a497559fd2879a">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/dwijjha.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/dwijjha.wordpress.com\/wp-login.php?action=logout&_wpnonce=a3e9fa883d","homeURL":"https:\/\/dwijjha.wordpress.com\/","postID":"4","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a.js"></script>
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var comment_like_text = {"loading":"Loading..."};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"120623286","siteName":"Google Code-In 2016","siteURL":"http:\/\/dwijjha.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/void.gif' class='avatar avatar-36' height='36' width='36' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/scratchpad","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/dwijjha.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F","themeURL":"https:\/\/wordpress.com\/themes\/scratchpad\/","xhrURL":"https:\/\/dwijjha.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"ec9f68ca1c","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"f4bf96cb99\" \/>","referer":"https:\/\/dwijjha.wordpress.com\/2016\/11\/30\/google-codein\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/dwijjha.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F","postID":"4","shortlink":"http:\/\/wp.me\/p8a7CS-4","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/dwijjha.wordpress.com\/4","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Scratchpad","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editFollows":"Manage sites I follow","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/dwijjha.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F\">Log in now.<\/a>"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/a_004.js"></script><div id="actionbar" class="actnbr-pub-scratchpad actnbr-has-follow"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href=""><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://dwijjha.wordpress.com/"><img alt="" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/void.gif" class="avatar avatar-36" width="36" height="36"> Google Code-In 2016</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://dwijjha.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href=""><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 						<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://dwijjha.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fdwijjha.wordpress.com%2F2016%2F11%2F30%2Fgoogle-codein%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="http://wp.me/p8a7CS-4">Copy shortlink</a></li> 				     				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "dwijjha.wordpress.com";
+	</script>
+	<script type="text/javascript" defer="defer" src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/725X1342.js"></script>		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/w.js" type="text/javascript" async="" defer="defer"></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'120623286','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'120623286','v':'wpcom','tz':'0','user_id':'0','post':'4','subd':'dwijjha'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1mJVY3bm9aR3VCbS9mWm1pRyZuJS1LX1t5QmRXZzE3RC9rQWZHK1FjbDltdWdaMVFFZTcxUGVHLWR0WTJodHcvdSt0K2ZVLHN4YytWbTMxXywzY0FfKzd3QyZ3NEQ1M2lqZTVCOUlQNk5RZkQyWiVVKy5STWhYekh4aGZXUltRQ3Zpa2tJfkUubDgwd3FXdF1NL2Vjdl8vNVFjQTEvQ0dofHxMfl9+TXBfSm9oZjErcSsycXFnLS40L3k9MHVxUW4lXy1qSUMteGVlL2ctVD9KbnBBLlNDZGhtMHBOWWl5eGF1Sy1SLndnaUZpVHE2dEc3X0dpXT8zOQ=='}]);
+_stq.push([ 'clickTrackerInit', '120623286', '4' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+
+<img src="Google%20Code-In%28GCI%29%20and%20FOSSASIA%20%E2%80%93%20Google%20Code-In%202016_files/g.gif" alt=":)" id="wpstats"><div class="comment-likes-overlay" style="display: none;"></div></body></html>

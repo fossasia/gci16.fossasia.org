@@ -1,0 +1,664 @@
+div#actionbar * {
+	box-sizing: border-box;
+	outline: none;
+	-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+	user-select: none;
+	-webkit-user-select: none;
+}
+div#actionbar {
+	background: #fff;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border: solid 1px #c8d7e1;
+	border-radius: 3px;
+	opacity: .98;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1;
+	border-radius: 2px;
+	z-index: 50000;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+
+	transition: all 0.2s ease-in-out;
+
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+div#actionbar.actnbr-hidden {
+	-webkit-transform: translate3d(0,150px,0);
+	-moz-transform: translate3d(0,150px,0);
+	-o-transform: translate3d(0,150px,0);
+	-ms-transform: translate3d(0,150px,0);
+	transform: translate3d(0,150px,0);
+}
+div#actionbar.actnbr-folded {
+	opacity: .7;
+}
+div#actionbar.actnbr-folded:hover {
+	opacity: 1;
+}
+
+div#actionbar ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	text-align: left;
+}
+div#actionbar li {
+	list-style-type: none;
+	display: inline-block;
+	min-width: 30px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 1;
+}
+div#actionbar li:before {
+	display: none;
+}
+div#actionbar li.actnbr-btn {
+	margin: 0 2px 0 6px;
+}
+div#actionbar.actnbr-has-customize.actnbr-has-edit li.actnbr-edit {
+	margin-right: 5px;
+	margin-left: -5px;
+}
+
+div#actionbar.actnbr-folded li.actnbr-btn {
+	margin-right: -5px;
+}
+div#actionbar.actnbr-folded.actnbr-has-customize.actnbr-has-edit li.actnbr-edit {
+	margin-right: -3px;
+	margin-left: 0;
+}
+
+div#actionbar li.actnbr-btn > a {
+	display: block;
+	color: #2e4453;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+	line-height: 1;
+	vertical-align: middle;
+	transition: none;
+	position: relative;
+	padding: 10px 8px 10px 32px;
+	border: none;
+	box-shadow: none;
+}
+div#actionbar li.actnbr-btn > a:hover {
+	color: #00aadc;
+	background: none;
+}
+div#actionbar li.actnbr-btn > a .gridicon {
+	fill: #87a6bc;
+	position: absolute;
+		top: 6px;
+		left: 5px;
+}
+div#actionbar li.actnbr-btn a:hover .gridicon {
+	fill: #00aadc;
+}
+div#actionbar li.actnbr-btn a.actnbr-actn-following,
+div#actionbar li.actnbr-btn a.actnbr-actn-following:hover {
+	color: #4ab866;
+}
+div#actionbar li.actnbr-btn a.actnbr-actn-following .gridicon,
+div#actionbar li.actnbr-btn a.actnbr-actn-following:hover .gridicon {
+	fill: #4ab866;
+}
+
+div#actionbar.actnbr-folded li.actnbr-btn a.actnbr-action .gridicon {
+	top: 2px;
+}
+
+div#actionbar.actnbr-folded .actnbr-btn span {
+	display: none;
+}
+
+div#actionbar.actnbr-has-customize.actnbr-has-edit.actnbr-folded .actnbr-customize {
+	display: none;
+}
+
+div#actionbar.actnbr-has-customize.actnbr-has-edit.actnbr-folded .actnbr-edit a .gridicon,
+div#actionbar.actnbr-has-customize.actnbr-folded .actnbr-customize a .gridicon {
+	top: 2px;
+}
+
+div#actionbar.actnbr-has-customize.actnbr-has-edit.actnbr-folded .actnbr-edit a .gridicon {
+	left: 10px;
+}
+
+div#actionbar li.actnbr-ellipsis {
+	position: relative;
+		top: 1px;
+		right: 2px;
+	cursor: pointer;
+	padding: 3px 5px 0 8px;
+}
+div#actionbar.actnbr-folded li.actnbr-ellipsis {
+	top: 2px;
+}
+div#actionbar .actnbr-ellipsis > .gridicon {
+	fill: #4f748e;
+	transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+div#actionbar .actnbr-ellipsis.actnbr-hidden > .gridicon {
+	fill: #87a6bc;
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+div#actionbar li.actnbr-hidden > a .gridicon {
+	position: absolute;
+		top: 6px;
+		left: 5px;
+}
+div#actionbar .actnbr-ellipsis.actnbr-hidden > .gridicon:hover {
+	fill: #4f748e;
+}
+
+div#actionbar .actnbr-ellipsis .tip-inner .gridicon {
+    margin: 0px 5px 0 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+div#actionbar .actnbr-popover {
+	font-size: 14px;
+	padding: 10px;
+	z-index: 1000;
+	margin-left: 15px;
+	position: absolute;
+	bottom: 40px;
+	right: -13px;
+	max-width: 320px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+div#actionbar li.actnbr-btn .actnbr-popover {
+	bottom: 47px;
+	right: 26px;
+}
+div#actionbar.actnbr-folded li.actnbr-btn .actnbr-popover {
+	right: 21px;
+}
+div#actionbar .actnbr-hidden .actnbr-popover {
+	display: none;
+}
+div#actionbar .actnbr-popover.tip-top-left .tip-arrow {
+	bottom: 0;
+	right: 21px;
+	margin-left: -7px;
+	border-top-style: solid;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+div#actionbar li.actnbr-btn .actnbr-popover.tip-top-left .tip-arrow {
+	left: 74%;
+}
+div#actionbar.actnbr-folded li.actnbr-btn .actnbr-popover.tip-top-left .tip-arrow {
+	left: 85%;
+}
+div#actionbar .actnbr-popover .tip-arrow {
+	border: 10px dashed #c8d7e1;
+	height: 0;
+	line-height: 0;
+	position: absolute;
+	width: 0;
+}
+div#actionbar .actnbr-popover.tip-top-left .tip-arrow::before {
+	bottom: 2px;
+	border: 10px solid white;
+	content: " ";
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	border-top-style: solid;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+div#actionbar .actnbr-popover .tip-inner {
+	background-color: white;
+	border: 1px solid #c8d7e1;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 56px rgba(0, 0, 0, 0.075);
+	text-align: center;
+}
+div#actionbar li.actnbr-btn .actnbr-popover .tip-inner .actnbr-reader a {
+	display: block;
+	margin: 0 0 4px 0;
+	font-weight: 400;
+	text-decoration: none;
+	color: #00aadc;
+	border: none;
+}
+
+div#actionbar li.actnbr-btn .actnbr-popover .tip-inner .actnbr-reader a:before {
+	content: '\f8a3';
+	font-family: 'Noticons';
+	font-size: 25px;
+	margin-right: 3px;
+	line-height: 1;
+	top: 7px;
+	position: relative;
+}
+
+div#actionbar .tip ul {
+	margin-bottom: 10px;
+}
+
+div#actionbar .tip li {
+	display: block;
+	border: none;
+}
+div#actionbar .tip li > a {
+	position: relative;
+	background: inherit;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	color: #2e4453;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px 16px;
+	text-align: left;
+	transition: all 0.05s ease-in-out;
+	min-width: 250px;
+	outline: none;
+	text-decoration: none;
+}
+
+div#actionbar li.actnbr-sitename {
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+
+div#actionbar .actnbr-ellipsis .actnbr-fold,
+div#actionbar .actnbr-notice .actnbr-login-nudge {
+	border-top: 1px solid #f0f0f0;
+	margin-top: 10px;
+}
+div#actionbar .actnbr-ellipsis .actnbr-folded-following,
+div#actionbar .actnbr-ellipsis .actnbr-folded-follow {
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+div#actionbar .actnbr-notice .actnbr-follow-count {
+	margin-bottom: 10px;
+}
+
+div#actionbar .actnbr-ellipsis li a:hover .gridicon {
+	fill: #fff;
+}
+
+div#actionbar .actnbr-notice form,
+div#actionbar .actnbr-notice .actnbr-login-nudge {
+	padding: 10px 16px 5px;
+	font-size: 12px;
+	color: #2e4453;
+	line-height: 17px;
+}
+
+div#actionbar .actnbr-notice form input {
+	background: #ffffff;
+	border: 1px solid #a8bece;
+	font-family: inherit;
+	font-size: 14px;
+	text-indent: 10px;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 12px;
+	padding: 0;
+	user-select: text;
+	-webkit-user-select: text;
+}
+
+div#actionbar .actnbr-notice form button {
+	background: #00aadc;
+  border-color: #008ab3;
+  color: white;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 4px;
+  padding: 7px 14px 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	font-family: inherit;
+	text-transform: none;
+	-webkit-font-smoothing: auto;
+	height: auto;
+	line-height: 1;
+}
+
+div#actionbar .actnbr-notice form button[disabled] {
+    background: #bceefd;
+    border-color: #8cc9e2;
+    color: white;
+}
+
+div#actionbar .actnbr-notice .actnbr-button-wrap {
+	text-align: right;
+}
+
+div#actionbar .actnbr-notice form button:hover {
+	border-color: #005082;
+	color: white;
+}
+
+div#actionbar .actnbr-notice form button:focus {
+	border-color: #005082;
+  box-shadow: 0 0 0 2px #78dcfa;
+}
+
+div#actionbar .actnbr-notice .actnbr-login-nudge {
+
+}
+
+div#actionbar .actnbr-notice .actnbr-login-nudge a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+div#actionbar .actnbr-notice .actnbr-login-nudge a:hover {
+	color: #00aadc;
+}
+
+div#actionbar li.actnbr-sitename a {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+	color: #2e4453;
+	text-decoration: none;
+	text-align: left;
+	border: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.7;
+}
+
+div#actionbar li.actnbr-sitename img {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin: -1px 5px 0 0;
+	background: #f0f0f0;
+	display: inline;
+}
+div#actionbar .actnbr-ellipsis li a:hover {
+	background: #00aadc;
+	color: #fff;
+	text-decoration: none;
+	border: 0;
+	box-shadow: none;
+}
+div#actionbar li.actnbr-sitename a:hover {
+	background: transparent;
+	color: #2e4453;
+	margin: 0;
+}
+
+div#actionbar .actnbr-fold {
+	padding-top: 10px;
+}
+
+div#actionbar .actnbr-ellipsis li.actnbr-folded-customize {
+	display: none;
+}
+
+div#actionbar.actnbr-folded.actnbr-has-customize.actnbr-has-edit .actnbr-ellipsis li.actnbr-folded-customize {
+	display: block;
+}
+
+div#actionbar.actnbr-has-follow .actnbr-ellipsis li.actnbr-folded-follow {
+	display: none;
+}
+
+div#actionbar .actnbr-notice .tip-inner {
+	padding: 0;
+}
+
+div#actionbar .actnbr-notice .actnbr-message {
+	padding: 15px 20px 20px;
+	width: 250px;
+	text-align: center;
+	line-height: 20px;
+  color: #2e4453;
+}
+
+div#actionbar .actnbr-notice .actnbr-message h3 {
+	margin: 0 0 10px;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: inherit;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+  color: #2e4453;
+	padding: 0;
+	line-height: 1em;
+}
+
+div#actionbar .actnbr-notice .actnbr-message a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+div#actionbar .actnbr-notice .actnbr-message a:hover {
+	color: #00aadc;
+}
+
+div#actionbar .actnbr-theme a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Responsive Styles */
+@media ( max-width: 660px ) {
+
+	div#actionbar {
+		bottom: 0;
+		right: 0;
+		padding: 5px 13px;
+		border-radius: 0;
+		width: 100%;
+		height: 44px;
+	}
+	div#actionbar.actnbr-folded {
+		opacity: .9;
+		width: auto;
+		padding: 5px 10px;
+	}
+
+	div#actionbar ul {
+		text-align: right;
+	}
+
+	div#actionbar .actnbr-popover {
+		right: -10px;
+	}
+
+	div#actionbar .actnbr-popover.tip-top-left .tip-arrow {
+		right: 17px;
+	}
+
+	div#actionbar li.actnbr-btn .actnbr-popover {
+		right: -3px;
+	}
+
+	div#actionbar li.actnbr-btn .actnbr-popover.tip-top-left .tip-arrow {
+		left: 53%;
+	}
+
+	div#actionbar.actnbr-folded li.actnbr-btn {
+		margin-right: 3px !important;
+	}
+}
+
+/***** Position adjustments for specific themes that conflict with action bar */
+
+div#actionbar.actnbr-premium-espresso { /* Espresso */
+	right: 70px;
+}
+
+div#actionbar.actnbr-premium-shelf { /* Shelf */
+	left: 10px;
+	right: auto;
+}
+	div#actionbar.actnbr-premium-shelf .actnbr-popover {
+		right: auto;
+		left: -35px;
+	}
+	div#actionbar.actnbr-premium-shelf .actnbr-popover.tip-top-left .tip-arrow {
+		right: auto;
+		left: 29px;
+	}
+	div#actionbar.actnbr-premium-shelf li.actnbr-btn .actnbr-popover.tip-top-left .tip-arrow,
+	div#actionbar.actnbr-premium-shelf.actnbr-folded li.actnbr-btn .actnbr-popover.tip-top-left .tip-arrow {
+		left: 26px;
+	}
+	div#actionbar.actnbr-premium-shelf li.actnbr-btn .actnbr-popover,
+	div#actionbar.actnbr-premium-shelf.actnbr-folded li.actnbr-btn .actnbr-popover {
+		right: 102px;
+		left: -26px;
+	}
+
+div#actionbar.actnbr-premium-obsidian { /* oObsidian */
+	bottom: 50px;
+}
+
+div#actionbar.actnbr-pub-boardwalk { /* Nowhere to go in boardwalk */
+	display: none;
+}
+
+body #habla_window_div.habla_window_div_base { /* Move the live chat box when needed */
+	margin-right: 160px !important;
+}
+
+div#translator-launcher { /* Move community translator tool when needed */
+	bottom: 67px;
+	right: 10px;
+	left: auto;
+}
+
+@media ( min-width: 876px ) { /* Move o2 dock count on desktop. */
+	div#o2-dock {
+		right: 230px;
+	}
+}
+
+@media ( max-width: 876px ) { /* Prioritize the o2 dock count in small screens, on top of Actionbar. */
+	div#o2-dock {
+		z-index: 50001;
+	}
+}
+
+#scrollUp, .to-top, #back-to-top { /* Up arrow on some themes */
+	bottom: 55px;
+	right: 18px;
+}
+
+#colophon #searchform input.search-field { /* Onigiri search box */
+	bottom: 65px;
+}
+
+#container #masthead #site-branding { /* Suidobashi site title */
+	z-index: 49999;
+	bottom: 65px;
+}
+
+/***** End theme adjustments */
+
+
+/* Hide Admin bar items */
+li#wp-admin-bar-follow, li#wp-admin-bar-admin-bar-likes-widget, li#wp-admin-bar-wpr-reblog, ul#wp-admin-bar-blog-secondary {
+	display: none !important;
+}
+
+/* Hide when printing */
+@media print {
+	#actionbar {
+		display: none !important;
+	}
+}
+/*
+	Global styles for WordPress.com
+*/
+img.latex {
+	border: none;
+	vertical-align: middle;
+}
+.video-player {
+	border: 0;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	max-width: 100%;
+}
+.hidden {
+	display: none;
+}
+.screen-reader-text {
+	position: absolute;
+	left: -1000em;
+}
+.comment object,
+.comment embed,
+.embed-vimeo iframe,
+.embed-youtube iframe {
+	max-width: 100%; /* avoid videos being too wide */
+}
+
+
+/**
+ * Layout
+ */
+
+.simple-homepage {
+	display: none;
+}

@@ -5,105 +5,105 @@
   blog: http://appmaker.000webhostapp.com/blog.html
   blog_img: chdev-website.png
   article: My experience with fossasia
-  article_link: http://appmaker.000webhostapp.com/blog/fosasia.html
+  article_link: /Blogs/christian-scheub/blog.html
 
 - name: Srijan Jha
   blog: https://srijanjha28fossasia.wordpress.com/
   blog_img: blog2.png
   article: GCI Experience with FOSSASIA
-  article_link: https://srijanjha28fossasia.wordpress.com/2016/12/26/google-code-in-with-fossasia/
+  article_link: /Blogs/srijan-jha/blog.htm
 
 - name: Mostafa Elgayar
   blog: thegigotheory.wordpress.com
   blog_img: thegigotheory.png
   article: My Jounrey To Open Source
-  article_link: https://thegigotheory.wordpress.com/2016/12/19/my-journey-to-open-source/
+  article_link: /Blogs/mostafa-elgayar/blog.htm
 
 - name: Miguel Piedrafita
   blog: blog.miguelpiedrafita.com
   article: GCI – About FOSSASIA
-  article_link: https://blog.miguelpiedrafita.com/gci-fossasia/
+  article_link: /Blogs/miguel-piedrafita/blog.htm
 
 - name: Apurv Jain
   blog: http://apurvjain123.edublogs.org/2016/12/04/about-me/
   blog_img: apurv_blog.png.png
   article: What is GCI16,ABOUT ME
-  article_link: http://apurvjain123.edublogs.org/2016/12/05/what-is-gci-2016/
+  article_link: /Blogs/apurv-jain/blog.htm
 
 - name: Animesh Singh
   blog: http://blog.animeshsingh.in
   blog_img: animeshsinghweb.jpg
   article: Coming Soon
-  article_link: http://animeshsingh.in
+  article_link: /Blogs/animesh-singh/blog.htm
 
 - name: Ridhwanul Haque
   blog: https://rhemon.github.io/blog
   blog_img: rhemon-blog.png
   article: FOSSASIA, me and Open source
-  article_link: https://rhemon.github.io/blog/gci/2016/11/30/00-fossassia-me-what-why/
+  article_link: /Blogs/ridhwanul-haque/blog.htm
 
 - name: Diana Balderas
   blog: fantasydiana.wordpress.com
   blog_img: fantasydianablog.png
   article: Being part of the FOSSASIA Community
-  article_link: https://fantasydiana.wordpress.com/2016/12/29/being-part-of-the-fossasia-community/
+  article_link: /Blogs/diana-balderas/blog.htm
 
 - name: Adarsh Kumar
   blog: https://idealadarsh.wordpress.com/
   blog_img: adarsh-blog.png
   article: Participated in GCI..
-  article_link: http://idealadarsh.wordpress.com/2016/12/01/participated-in-gci/
+  article_link: /Blogs/adarsh-kumar/1/blog-1.htm
 
 - name: Thien Hoang
   blog: https://hoangvanthien.edublogs.org/
   article: Participating in Google Code-in 2016
-  article_link: https://hoangvanthien.edublogs.org/2016/11/30/participating-in-google-code-in-2016/
+  article_link: /Blogs/thien-hoang/1/blog-1.htm
 
 - name: Thien Hoang
   blog: http://thienvhoang.blogspot.com/
   article: Unforgettable experience with FOSSASIA at Google Code-in
-  article_link: http://thienvhoang.blogspot.com/2016/12/unforgettable-experience-with-fossasia.html
+  article_link: /Blogs/thien-hoang/2/blog-2.html
 
 - name: Anastasia Kostiv
   blog: https://nolik2000.wordpress.com
   blog_img: kostivBLOG.png
   article: My experience in joining FOSSASIA
-  article_link: https://nolik2000.wordpress.com/blog/
+  article_link: /Blogs/anastasia-kostiv/blog.htm
 
 - name: Dwij Jha
   blog: https://dwijjha.wordpress.com/
   blog_img: blog_dwij.png
   article: GCI(16) and FOSSASIA
-  article_link: https://dwijjha.wordpress.com/2016/11/30/google-codein/
+  article_link: /Blogs/dwij-jha/1/blog-1.htm
 
 - name: Abhijeet Manohar
   blog: https://abhijeetmanohar.blogspot.com
   blog_img: abhijeet.jpg
   article: Exploring Google Code In
-  article_link: http://abhijeetmanohar.blogspot.in/2016/12/hi-friends-long-time-of-splashing-codes.html
+  article_link: /Blogs/abhijeet-manohar/blog.html
 
 - name: Adarsh Kumar
   blog: https://abhijeetmanohar.blogspot.com
   blog_img: adarsh-blog2.png
   article: What I learned after participating in GCI
-  article_link: https://idealadarsh.wordpress.com/2016/12/08/what-i-learned-after-participating-in-google-code-in/
+  article_link: /Blogs/adarsh-kumar/2/blog-2.htm
 
 - name: Denisa Pirlea
   blog: https://mylittleblog03.wordpress.com/
   blog_img:
   article: My experience joining FOSSASIA
-  article_link: https://mylittleblog03.wordpress.com/2016/12/07/my-experience-joining-fossasia/
+  article_link: /Blogs/denisa-pirlea/blog.htm
 
 - name: Tinh Dao
   blog: http://dcongtinh.blogspot.com/
   article: GCI 2016
-  article_link: http://dcongtinh.blogspot.com/2016/12/google-code-in-2016-google-code-in.html
+  article_link: /Blogs/tinh-dao/blog.html
 
 - name: Kunal Srivastav
   blog: https://gciblog719.wordpress.com/
   blog_img: Kunal_blog.png
   article: My first step in the Open tech community with FOSSASIA and GCI
-  article_link: https://gciblog719.wordpress.com/blog/
+  article_link: /Blogs/kunal-srivastav/blog.htm
 
 - name: Ngo Hong Phuc
   blog: https://wordpress.com/posts/jerry2001.school.blog
@@ -113,7 +113,7 @@
 - name: Hillary Moutou
   blog: http://hillamu2.edublogs.org/
   article: GCI and FOSSASIA
-  article_link: http://hillamu2.edublogs.org/
+  article_link: /Blogs/hillary-moutou/blog.htm
 
 - name: Manraj Juneja
   blog: https://www.blogger.com/blogger.g?blogID=3436867633936758241#editor/target=post;postID=1961075658112278688;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=0;src=postname
@@ -123,117 +123,117 @@
 - name: Radac Anastasia
   blog: https://anastasia2000.edublogs.org/
   article: FOSSASIA and GCI
-  article_link: https://anastasia2000.edublogs.org/2016/12/10/fossasia-and-gci/
+  article_link: /Blogs/radac-anastasia/blog.htm
 
 - name: Hesham Burawi
   blog: https://heshamburawi19.wordpress.com/
   blog_img: burawi19-logo.png
   article: Why I started GCI
-  article_link: https://heshamburawi19.wordpress.com/2016/12/03/why-i-started-gci/
+  article_link: /Blogs/hesham-burawi/blog.htm
 
 - name: Zenon
   blog: https://zehatablog.wordpress.com/
   article: Why I participated in GCI 2016
-  article_link: https://zehatablog.wordpress.com/2016/12/10/why-i-participated-in-google-code-in-2016/
+  article_link: /Blogs/zenon/blog.htm
 
 - name: Koh Pi Rong
   blog: https://pipix51.wordpress.com/
   article: Contributing To Open Source (Part III)
-  article_link: https://pipix51.wordpress.com/2016/12/03/blog-post-title-2/
+  article_link: /Blogs/koh-pi-rong/1/blog-1.htm
 
 - name: Koh Pi Rong
   blog: https://pipix51.wordpress.com/
   article: Contributing To Open Source (Part IV)
-  article_link: https://pipix51.wordpress.com/2016/12/03/contributing-to-open-source-part-iv/
+  article_link: /Blogs/koh-pi-rong/2/blog-2.htm
 
 - name: Koh Pi Rong
   blog: https://pipix51.wordpress.com/
   article: Contributing To Open Source (Part V)
-  article_link: https://pipix51.wordpress.com/2016/12/03/contributing-to-open-source-part-v/
+  article_link: /Blogs/koh-pi-rong/3/blog-3.htm
 
 - name: Ainesh Sootha
   blog: https://aineshsootha.wordpress.com/
   blog_img: aineshsoothablog.png
   article: Google Code-in and the Open Tech community.
-  article_link: https://aineshsootha.wordpress.com/2016/12/10/google-code-in-and-the-open-tech-community/
+  article_link: /Blogs/ainesh-sootha/blog.htm
 
 - name: Pranav Sharma
   blog: http://eccentric-pedantic.tech.blog
   blog_img: pranavblog.jpg
   article: My Journey in Google Code-In 2016
-  article_link: https://eccentric-pedantic.tech.blog/2016/12/08/my-journey-in-google-code-in-2016/
+  article_link: /Blogs/pranav-sharma/blog.htm
 
 - name: Prabhdeep Singh
   blog: https://prabh29.edublogs.org
   blog_img: Blog.png
   article: My connection with FOSSASIA
-  article_link: http://prabh29.edublogs.org/2016/12/10/my-connection-to-fossasia-and-gci/
+  article_link: /Blogs/prabhdeep-singh/1/blog-1.htm
 
 - name: Dwij Jha
   blog: https://dwijjha.wordpress.com
   blog_img: blog_dwij.png
   article: Open Source and Fossasia
-  article_link: https://dwijjha.wordpress.com/2016/12/07/open-source-and-working-with-fossasia/
+  article_link: /Blogs/dwij-jha/2/blog-2.htm
 
 - name: Ankit R Gadiya
-  blog: http://blog.ankitrgadiya.me
+  blog: https://blog.ankitrgadiya.me
   blog_img: ankit.jpg
   article: FOSSASIA and GCI Posts
-  article_link: http://blog.ankitrgadiya.me/tag/fossasia/
+  article_link: /Blogs/ankit-r-gadiya/blog.htm
 
 - name: Gaeun Kim
   blog: https://gaeuncode.wordpress.com/
   blog_img: gaeunblog.png
   article: Participating in GCI16 with FOSSASIA
-  article_link: https://gaeuncode.wordpress.com/2016/12/13/participating-in-gci16-with-fossasia/
+  article_link: /Blogs/gaeun-kim/1/blog-1.htm
 
 - name: Sanchit Mishra
   blog: https://sanchittechnogeek.github.io
   blog_img: sanchit.jpg
   article: My experience with Fossasia
-  article_link: https://sanchittechnogeek.github.io/articles/1/
+  article_link: /Blogs/sanchit-mishra/blog.htm
 
 - name: Prabhdeep Singh
   blog: https://prabh29.edublogs.org
   blog_img: Blog.png
   article: My interests in FOSSASIA
-  article_link: http://prabh29.edublogs.org/2016/12/11/my-interests-in-the-fossasia-community/
+  article_link: /Blogs/prabhdeep-singh/2/blog-2.htm
 
 - name: Oana Rosca
   blog: https://oanarosca.github.io/blog
   article: Google Code-In and the Open Source community
-  article_link: https://oanarosca.github.io/blog/gci/2016/12/12/gci-and-open-source
+  article_link: /Blogs/oana-rosca/blog.htm
 
 - name: Adarsh Kumar
   blog: https://idealadarsh.wordpress.com
   blog_img: adarsh-blog3.png
   article: My experience with Fossasia
-  article_link: https://idealadarsh.wordpress.com/2016/12/12/my-experience-with-fossasia/
+  article_link: /Blogs/adarsh-kumar/3/blog-3.htm
 
 - name: Gaeun Kim
   blog: https://gaeuncode.wordpress.com/
   blog_img: gaeunblog2.png
   article: Interviewing Dr. Hicks about GCI
-  article_link: https://gaeuncode.wordpress.com/2016/12/16/interviewing-dr-hicks-about-gci/
+  article_link: /Blogs/gaeun-kim/2/blog-2.htm
 
 - name: Riley Kovacev
   blog: http://rkblog2k16.cf/
   blog_img: rileykova.png
   article: FOSSASIA
-  article_link: http://rkblog2k16.cf/blog/fossasia
+  article_link: /Blogs/riley-kovacev/blog.htm
 
 - name: Nadun Yashmika
   blog: https://yashnadun.wordpress.com
   blog_img: nadunyashblog.jpg
   article: My Participation in Google Code-in with FOSSASIA
-  article_link: https://yashnadun.wordpress.com/2016/12/25/blog-post-title-5/
+  article_link: /Blogs/nadun-yashmika/blog.htm
 
 - name: Prajwal K Patil
   blog: https://prajwalpatil.tech.blog/
   article: My Participation in Google Code-in
-  article_link: https://prajwalpatil.tech.blog/2016/12/27/experience-in-google-code-in/
+  article_link: /Blogs/prajwal-k-patil/blog.htm
 
 - name: Muhammed Nagy
   blog: https://blog.muhnagy.com
   article: About me
-  article_link: https://blog.muhnagy.com
+  article_link: /Blogs/muhammed-nagy/blog.htm
