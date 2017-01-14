@@ -196,7 +196,7 @@
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
+                        <div class="card stuproj">
                             <div class="avatar">
                                 {% if project.image %}
                                 <img src="images/projects/{{project.image}}"
@@ -224,6 +224,7 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="box"><iframe src="{{ project.link }}" width = "400px" height = "300px"></iframe></div>
                     </div>
                     {% endfor %}
                 </div>

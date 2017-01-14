@@ -761,3 +761,13 @@ body {
     display: block;
   }
 }
+.box{
+    display: none;
+    width: 100%;
+}
+.stuproj:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+    top: -250;
+}
