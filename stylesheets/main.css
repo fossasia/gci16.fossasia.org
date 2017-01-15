@@ -51,14 +51,15 @@
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     display: inline-block;
 }
 #contributors-list div img {
     width: 150px;
     height: 150px;
+    border-radius: 100px;
 }
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
@@ -113,6 +114,7 @@
 #contributors-list .card {
     width: 150px;
     height: 200px;
+    border-radius: 100px;
 }
 .card-text{
     overflow: scroll;
@@ -197,6 +199,9 @@
     -o-transition: all 0.5s;
     transition: all 0.5s;
     padding-top: 40%;
+}
+#contributors-list .contribs {
+    border-radius: 100px;
 }
 .mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
@@ -757,4 +762,13 @@ body {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
+}
+.contribthank{
+    background-color: #e67e22;
+    margin-top: 10px;
+}
+
+.contribthank p{
+    color: white;
+    font-size: 50px;
 }
