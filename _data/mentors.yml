@@ -181,9 +181,43 @@
   github: ananyo2012
   image: MaitiAnanyo.jpg
   twitter: MaitiAnanyo
+  blog: https://ilovefoss.wordpress.com/
+  lat: 23.5437297
+  lon: 87.2876026
+
+- name: Pawan Pal
+  github: pa1pal
+  twitter: pa1pal
+  image: Pawan.jpg
 
 - name: Aayush Arora
   github: aayusharora
   image: aayusharora.jpg
   blog: https://angularboy.wordpress.com/
   bio: Web developer, JS lover
+
+- name: Sopan Khosla
+  github: sopu
+  image: Sopan.jpg
+  twitter: KhoslaSopan
+  facebook: sopan.khosla
+
+- name: Manan Wason
+  github: mananwason
+  image: Manan.jpg
+  twitter: mananwason
+  facebook: manan.wason
+
+- name: Nguyen Vu Hung
+  github: vuhung
+  image: NguyenVuHung.png
+  facebook: nguyenvuhung
+
+- name: Bill Acha
+  github: achabill
+  twitter: achabill
+  image: BillAcha.jpg
+  lat: 4.1572639
+  lng: 9.2895411
+
+

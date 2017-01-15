@@ -9,11 +9,15 @@ The student site for GCI 2016 Students.
 
 Thoroughly read our [contributing guide](https://github.com/fossasia/gci16.fossasia.org/blob/gh-pages/CONTRIBUTING.md) before sending in your Pull Requests. Happy Contributing!
 
+# Installation
+
+Follow the [Installation](https://github.com/fossasia/gci16.fossasia.org/wiki/Installation) wiki to get the site running on your local environment.
+
 # Adding a mentor
 
-To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format:
+To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
-```
+```yaml
 - name: Mentor's name
   github: Mentor's github username
   image: mentor's_image
@@ -34,9 +38,9 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 
 # Adding yourselves to student section
 
-To add yourself to student section you need to open the file `students.yml` in `_data` folder and please maintain the following format:
+To add yourself to student section you need to open the file `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
-```
+```yaml
 - name: Your name
   github: Your github username
   image: your_image
@@ -59,9 +63,9 @@ To add yourself to student section you need to open the file `students.yml` in `
 
 # Blog Post
 
-To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format to enter your blog in this website.
+To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format *EXACTLY* (replacing values where indicated) to enter your blog in this website.
 
-```
+```yaml
 - name: Your name
   blog: https://yourbloglink.com
   blog_img: your_image
@@ -78,9 +82,9 @@ To add your blog post, you need to open the file `blogs.yml` in `_data` folder. 
 # Adding Logos
 
 To add your logos, you need to open the file `logos.yml` in the `_data` folder and please
-maintain the following format to enter your logo in this website:
+maintain the following format *EXACTLY* (replacing values where indicated) to enter your logo in this website:
 
-```
+```yaml
 - author: Your name
   img: your_image
 ```
@@ -94,9 +98,9 @@ and place your logo in `/images/logos` folder and `your_image` should be the nam
 
 # Adding a slide
 
-The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format to enter a new slide.
+The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format *EXACTLY* (replacing values where indicated) to enter a new slide.
 
-```
+```yaml
 - caption: main_heading
   img: image_of_the_slide
   exp-1: First sentence explanation

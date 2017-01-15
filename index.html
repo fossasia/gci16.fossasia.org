@@ -48,18 +48,25 @@
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#contributors">Contributors</a></li>
             <li><a class="menu-item" href="#students">Students</a></li>
+            <li><a class="menu-item" href="#blogs">Blog Posts</a></li>
             <li class="dropdown">
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#stprojects">Student projects</a></li>
-                <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                   <li><a href="#designsv2">MBDyn Logo Designs v2</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
                 <li><a href="#loklak">Loklak Webtweets</a></li>
               </ul>
             </li>
-            <li><a class="menu-item" href="#social-media">Social media</a></li>
+            <li class="dropdown">
+              <a class="menu-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Contests  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="//codeheat.org">Codeheat</a></li>
+                <li><a href="//gci15.fossasia.org">Code-In 2015</a></li>
+                <li><a href="//gci14.fossasia.org">Code-In 2014</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -68,13 +75,13 @@
 
 <!-- Slider -->
     <div class="slider-container" id="welcome">
-      <div class="ism-slider" data-transition_type="fade" id="my-slider">
+      <div class="ism-slider" data-play_type="loop" data-image_fx="zoompan" data-transition_type="fade" id="my-slider">
         <ol>
           {% for slide in site.data.slides %}
           <li>
             <img src="images/{{slide.img}}">
             <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
-            <div class="ism-caption ism-caption-1" data-delay="200">
+            <div class="ism-caption ism-caption-1" data-delay="0">
                 {{slide.exp-1}}<br>
                 {{slide.exp-2}}<br>
                 {{slide.exp-3}}
@@ -123,8 +130,9 @@
                     {% endfor %}
                 </div>
             </section>
+        </div>
             <!-- End of Mentor Section -->
-
+        <div class="container-fluid contribthank">
             <div id="contributors-thanks" href="#contributors">
                 <div id="contributors-thanks-list" class="row">
                     <div class="col-xs-12">
@@ -138,7 +146,9 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="container">
             <!-- Contributor Section -->
             <section id="contributors" class="contributors-sec">
                 <div id="contributors-list" class="row">
@@ -215,8 +225,10 @@
                                         <i class="fa fa-code"></i>
                                     </a>
                                 </div>
-                                <p style="width: 200px;display: inline-block;margin-top: 9px;">
-                                    <span style="width:200px;display: inline-block;" title="{{project.name}} by {{project.owner}}" class="card-text">
+                                <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
+                                    <i class="fa fa-code"></i>
+                                    &nbsp;
+                                    <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
                                         {{project.name}} by {{project.owner}}
                                     </span>
                                 </p>
@@ -237,7 +249,7 @@
                     <!-- Stop ignoring -->
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
+                    <div class="blog-holder col-xs-24 col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="avatar">
                                 {% if blog.blog_img %}
@@ -400,17 +412,15 @@
           </div> <!--Fluid-Container-->
             <!-- Stop ignoring -->
             <div class="last-one">
-                    <!-- Ignore LineLengthBear -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6 yt">
-                                <div class="embed-responsive embed-responsive-4by3"></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div id="flickrembed"></div>
-                            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <!-- Ignore LineLengthBear, BootLintBear -->
+                            <a data-flickr-embed="true" data-context="true" href="//www.flickr.com/photos/fossasia/30907152523/" title="IMG_20161207_164809"><img src="//c1.staticflickr.com/1/350/30907152523_ab6bf453f4_z.jpg" width="640" height="480" alt="IMG_20161207_164809"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                            <!-- Stop ignoring -->
                         </div>
                     </div>
+                </div>
             </div> <!--Last One-->
         </div> <!--Social Media-->
     </section>
@@ -485,7 +495,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
     <!-- Start ignoring JSHintBear, LineLengthBear -->
     <script>
         window.initMap = function() {
@@ -722,7 +731,6 @@
       var marker2;
       var infowindow = null;
       {% for mentor in site.data.mentors %}
-      {% for student in site.data.students %}
           {% if mentor.lat %}
               marker = new google.maps.Marker({
                   position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
@@ -743,6 +751,8 @@
                   };
               })(marker, content));
           {% endif %}
+      {% endfor %}
+      {% for student in site.data.students %}
           {% if student.lat %}
               marker2 = new google.maps.Marker({
                   position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
@@ -764,9 +774,9 @@
               })(marker2, content));
           {% endif %}
       {% endfor %}
-      {% endfor %}
     };
     </script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
 
     <!-- Stop ignoring -->
     <script src="ism/js/ism-2.2.min.js"></script>
