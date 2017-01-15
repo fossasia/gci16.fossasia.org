@@ -48,18 +48,25 @@
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#contributors">Contributors</a></li>
             <li><a class="menu-item" href="#students">Students</a></li>
+            <li><a class="menu-item" href="#blogs">Blog Posts</a></li>
             <li class="dropdown">
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#stprojects">Student projects</a></li>
-                <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                   <li><a href="#designsv2">MBDyn Logo Designs v2</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
                 <li><a href="#loklak">Loklak Webtweets</a></li>
               </ul>
             </li>
-            <li><a class="menu-item" href="#social-media">Social media</a></li>
+            <li class="dropdown">
+              <a class="menu-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Contests  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="//codeheat.org">Codeheat</a></li>
+                <li><a href="//gci15.fossasia.org">Code-In 2015</a></li>
+                <li><a href="//gci14.fossasia.org">Code-In 2014</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -123,8 +130,9 @@
                     {% endfor %}
                 </div>
             </section>
+        </div>
             <!-- End of Mentor Section -->
-
+        <div class="container-fluid contribthank">
             <div id="contributors-thanks" href="#contributors">
                 <div id="contributors-thanks-list" class="row">
                     <div class="col-xs-12">
@@ -138,17 +146,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+
 
             <!-- Contributor Section -->
             <section id="contributors" class="contributors-sec">
                 <div id="contributors-list" class="row">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>CONTRIBUTORS</h2>
-                    <!-- Stop ignoring BootLintBear -->
+                    <div class="container">
+                        <div id="contributors-content">
+                            <!-- Start ignoring BootLintBear -->
+                            <h2>CONTRIBUTORS</h2>
+                            <!-- Stop ignoring BootLintBear -->
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- End of Contributor Section -->
 
+        <div class="container">
             <!-- Student Section -->
             <section class="students-sec" id="students" href="#students">
                 <div class="row students-wrapper">
@@ -185,52 +200,56 @@
                     {% endfor %}
                 </div>
             </section>
+        </div>
             <!-- End of Student Section -->
             <!-- Projects (including student projects, blog, logo, issues, loklak) -->
             <div id="projects" href="#projects">
             <!-- Student Projects Section -->
             <section class="projects-sec" id="stprojects" href="#stprojects">
                 <div class="row projects-wrapper">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>STUDENT PROJECTS</h2>
-                    <!-- Stop ignoring -->
-                    {% for project in site.data.projects %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="avatar">
-                                {% if project.image %}
-                                <img src="images/projects/{{project.image}}"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% else %}
-                                <img src="images/projects/default.png"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% endif %}
-                                <div class="links">
-                                    <a href="{{project.link}}" target="_blank">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                    <a href="{{project.source}}" target="_blank">
+                    <div class="container">
+                        <!-- Start ignoring BootLintBear -->
+                        <h2>STUDENT PROJECTS</h2>
+                        <!-- Stop ignoring -->
+                        {% for project in site.data.projects %}
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="avatar">
+                                    {% if project.image %}
+                                    <img src="images/projects/{{project.image}}"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% else %}
+                                    <img src="images/projects/default.png"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% endif %}
+                                    <div class="links">
+                                        <a href="{{project.link}}" target="_blank">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="{{project.source}}" target="_blank">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                    </div>
+                                    <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
                                         <i class="fa fa-code"></i>
-                                    </a>
+                                        &nbsp;
+                                        <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
+                                            {{project.name}} by {{project.owner}}
+                                        </span>
+                                    </p>
                                 </div>
-                                <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
-                                    <i class="fa fa-code"></i>
-                                    &nbsp;
-                                    <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
-                                        {{project.name}} by {{project.owner}}
-                                    </span>
-                                </p>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             </section>
             <!-- End of Student Projects Section -->
             <!-- Stop ignoring -->
 
+        <div class="container">
             <!-- Blog Posts Section -->
             <section id="blogs" href="#blogs" class="blogs-sec">
                 <div class="row blogs-wrapper">
@@ -239,7 +258,7 @@
                     <!-- Stop ignoring -->
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
+                    <div class="blog-holder col-xs-24 col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="avatar">
                                 {% if blog.blog_img %}
@@ -402,18 +421,15 @@
           </div> <!--Fluid-Container-->
             <!-- Stop ignoring -->
             <div class="last-one">
-                    <!-- Ignore LineLengthBear, BootLintBear -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="embed-responsive embed-responsive-4by3"></div>
-                            </div>
-                           </div>
+                <div class="container">
                     <div class="row">
-                        <div id="flickrembed"></div>
-                       </div>
+                        <div class="col-xs-12 col-md-6">
+                            <!-- Ignore LineLengthBear, BootLintBear -->
+                            <a data-flickr-embed="true" data-context="true" href="//www.flickr.com/photos/fossasia/30907152523/" title="IMG_20161207_164809"><img src="//c1.staticflickr.com/1/350/30907152523_ab6bf453f4_z.jpg" width="640" height="480" alt="IMG_20161207_164809"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                            <!-- Stop ignoring -->
+                        </div>
                     </div>
-                 <!-- Stop ignoring -->
+                </div>
             </div> <!--Last One-->
         </div> <!--Social Media-->
     </section>
@@ -777,8 +793,5 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
     <script src="./javascripts/loklak-fetcher.js"></script>
     <script src="./javascripts/tweet.js"></script>
-    <!-- Start ignoring JSHintBear, LineLengthBear -->
-    <script src="//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user&theme=default&scale=fill&skin=default&id=587574b49e66f"></script>
-    <!-- Stop ignoring -->
 </body>
 </html>

@@ -1,13 +1,19 @@
 // Add your function at the end. First function is of highest priority.
 var contributorsList = [];
+var thankList = ["Thanks", "Shukran", "Merci", "Sukria", "Danke", "Grazie", "Kamsa Hamnida", "Spasibo", "Obrigado"];
 var thank = function() {
   var j = 0;
+  var i = 0;
   setInterval(function() {
     $('#name').fadeOut(function() {
       if (j === contributorsList.length) {
         j = 0;
       }
-      $(this).html("Thanks for your contributions, " + contributorsList[j++]);
+      if (i === thankList.length) {
+        i = 0;
+        thankList = shuffler(thankList);
+      }
+      $(this).html(thankList[i++] + " for your contributions, " + contributorsList[j++]);
       $(this).fadeIn();
     });
   }, 6000);
@@ -25,7 +31,7 @@ var getContributors = function(page) {
     data.forEach(function(contributors) {
       contributorsList.push(contributors.login);
       // Ignore LineLengthBear
-      var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
+      var html = "<div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'><div class='card'>";
       html += "<div class='avatar'>";
       html += "<img src=" + contributors.avatar_url + "><div class='contribs'><p>";
       html += contributors.contributions;
@@ -37,7 +43,7 @@ var getContributors = function(page) {
       html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
       html += "<span>";
       html += contributors.login + "</span></div></div></div>";
-      $("#contributors-list").append(html);
+      $("#contributors-content").append(html);
     });
     getContributors(page+1);
   });
@@ -167,6 +173,14 @@ $(".card").click(function() {
     }
 });
 
+$(".stu-card").hover(function() {
+    console.log("it was hovered");
+    if (!modalShown) {
+        $(this).next(".modal").css("display", "block");
+        modalShown = true;
+    }
+});
+
 $(".close").click(function() {
     $(this).parent().css("display", "none");
     modalShown = false;
@@ -185,4 +199,14 @@ function importSocialMediaWidgets() {
   script.setAttribute('src', '/javascripts/social-widgets-loader.js');
   script.setAttribute('async', true);
   document.head.appendChild(script);
+}
+
+function shuffler(arr) {
+    for (var x = arr.length - 1; x > 0; x--) {
+        var y = Math.floor(Math.random() * (x + 1));
+        var temp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = temp;
+    }
+    return arr;
 }
