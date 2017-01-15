@@ -505,6 +505,15 @@
   lat: 26.45
   lng: 74.6333
 
+- name: Fransiskus Febryan
+  github: ryanz12
+  image: BlueRizk.JPG
+  twitter: bluerizk
+  facebook: febryan.bluerizk
+  bio: General enthusiast programmer. Loves java, but is also aspiring web developer. Is also a weeb.
+  lat: -6.9619288
+  lng: 107.5791671
+
 - name: Zenon
   github: zehata
   facebook: Zehata Taneka
@@ -993,5 +1002,3 @@
   facebook: krisna.vrindavana
   lat: -8.6535631
   lng: 115.2256706
-
-
