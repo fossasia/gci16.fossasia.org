@@ -173,8 +173,8 @@ $(".card").click(function() {
     }
 });
 
-$(".stu-card").click(function() {
-    console.log("it was clicked");
+$(".stu-card").hover(function() {
+    console.log("it was hovered");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
@@ -208,5 +208,5 @@ function shuffler(arr) {
         arr[x] = arr[y];
         arr[y] = temp;
     }
-    return array;
+    return arr;
 }
