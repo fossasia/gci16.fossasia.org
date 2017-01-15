@@ -37,7 +37,7 @@ var getContributors = function(page) {
       html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
       html += "<span>";
       html += contributors.login + "</span></div></div></div>";
-      $("#contributors-list").append(html);
+      $("#contributors-content").append(html);
     });
     getContributors(page+1);
   });
