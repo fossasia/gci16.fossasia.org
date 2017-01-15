@@ -101,8 +101,80 @@
         <div class="container">
             <div id="map"></div>
         </div>
+            <!-- Student Projects Section -->
+            <section class="projects-sec" id="stprojects" href="#stprojects">
+                <div class="row projects-wrapper">
+                    <div class="container">
+                        <!-- Start ignoring BootLintBear -->
+                        <h2>STUDENT PROJECTS</h2>
+                        <!-- Stop ignoring -->
+                        {% for project in site.data.projects %}
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="avatar">
+                                    {% if project.image %}
+                                    <img src="images/projects/{{project.image}}"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% else %}
+                                    <img src="images/projects/default.png"
+                                    alt="{{project.name}}"
+                                    width="200px" height="200px">
+                                    {% endif %}
+                                    <div class="links">
+                                        <a href="{{project.link}}" target="_blank">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="{{project.source}}" target="_blank">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                    </div>
+                                    <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
+                                        <i class="fa fa-code"></i>
+                                        &nbsp;
+                                        <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
+                                            {{project.name}} by {{project.owner}}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <!-- End of Student Projects Section -->
+            <!-- Stop ignoring -->
         <div class="container">
-
+            <!-- Loklak API -->
+            <section class="latest-issues" id="loklak" href="#loklak">
+                <!-- Start ignoring BootLintBear -->
+                <div class="row">
+                    <h2>Loklak API Tweets</h2>
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <div class="twitter-feed">
+                            <i class="icon social-twitter text-white"></i>
+                            <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
+                                <div class="arrow-up"></div>
+                                <p id="tweet" class="tweet">
+                                    Loading...
+                                </p>
+                                <div class="panel-footer">
+                                  <span id="tweet-info">Fetching tweets...</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
+                                ← &nbsp; Previous Tweet!
+                            </button>
+                            <button type="button" class="btn" id="next"onclick="nextTweet()">
+                                Next Tweet! &nbsp; →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Stop ignoring -->
+            </section>
+            <!-- End of Loklak API -->
             <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <div class="row mentors-wrapper">
@@ -204,50 +276,6 @@
             <!-- End of Student Section -->
             <!-- Projects (including student projects, blog, logo, issues, loklak) -->
             <div id="projects" href="#projects">
-            <!-- Student Projects Section -->
-            <section class="projects-sec" id="stprojects" href="#stprojects">
-                <div class="row projects-wrapper">
-                    <div class="container">
-                        <!-- Start ignoring BootLintBear -->
-                        <h2>STUDENT PROJECTS</h2>
-                        <!-- Stop ignoring -->
-                        {% for project in site.data.projects %}
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <div class="avatar">
-                                    {% if project.image %}
-                                    <img src="images/projects/{{project.image}}"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% else %}
-                                    <img src="images/projects/default.png"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% endif %}
-                                    <div class="links">
-                                        <a href="{{project.link}}" target="_blank">
-                                            <i class="fa fa-link"></i>
-                                        </a>
-                                        <a href="{{project.source}}" target="_blank">
-                                            <i class="fa fa-code"></i>
-                                        </a>
-                                    </div>
-                                    <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
-                                        <i class="fa fa-code"></i>
-                                        &nbsp;
-                                        <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
-                                            {{project.name}} by {{project.owner}}
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
-            <!-- End of Student Projects Section -->
-            <!-- Stop ignoring -->
 
         <div class="container">
             <!-- Blog Posts Section -->
@@ -363,35 +391,6 @@
             </section>
             <!-- End of Latest Issues Section -->
 
-            <!-- Loklak API -->
-            <section class="latest-issues" id="loklak" href="#loklak">
-                <!-- Start ignoring BootLintBear -->
-                <div class="row">
-                    <h2>Loklak API Tweets</h2>
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                        <div class="twitter-feed">
-                            <i class="icon social-twitter text-white"></i>
-                            <div class="tweets-feed panel" id="tweets" data-count="50" data-query="fossasia #gci">
-                                <div class="arrow-up"></div>
-                                <p id="tweet" class="tweet">
-                                    Loading...
-                                </p>
-                                <div class="panel-footer">
-                                  <span id="tweet-info">Fetching tweets...</span>
-                                </div>
-                            </div>
-                            <button type="button" class="btn" id="previous"onclick="lastTweet()">
-                                ← &nbsp; Previous Tweet!
-                            </button>
-                            <button type="button" class="btn" id="next"onclick="nextTweet()">
-                                Next Tweet! &nbsp; →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Stop ignoring -->
-            </section>
-            <!-- End of Loklak API -->
             </div>
             <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
 
