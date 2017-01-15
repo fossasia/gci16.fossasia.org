@@ -451,8 +451,7 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .blog-holder {
-    padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .latest-issues h2 {
     background: #eeeeee;

@@ -166,7 +166,6 @@ $(".menu-item").click(function(){
 var modalShown = false;
 
 $(".card").click(function() {
-    console.log("it was clicked");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
@@ -174,11 +173,18 @@ $(".card").click(function() {
 });
 
 $(".stu-card").hover(function() {
-    console.log("it was hovered");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
     }
+},function () {
+    $(this).next(".modal").css("display", "none");
+    modalShown = false;
+});
+
+$(".modal").mouseleave(function() {
+   $(this).css("display", "none");
+    modalShown = false; 
 });
 
 $(".close").click(function() {
