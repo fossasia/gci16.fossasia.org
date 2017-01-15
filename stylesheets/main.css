@@ -84,6 +84,11 @@ table {
     transition: all .2s ease-in;
 }
 #contributors-list:hover {
+    background: #e74c3c;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors h2 {
@@ -257,9 +262,23 @@ table {
     background: #009688;
 
 }
+.mentors .mentors-wrapper:hover {
+    background: #9b59b6;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
 .students-sec .students-wrapper {
     background: #2196f3;
+}
+.students-sec .students-wrapper:hover {
+    background: #f1c40f;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .projects-sec .projects-wrapper {
     background: #4caf50;
