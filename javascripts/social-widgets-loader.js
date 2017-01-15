@@ -90,10 +90,4 @@ function loadSocialMediaWidgets() {
   ytFrame.setAttribute('frameborder', 0);
   ytFrame.classList.add('embed-responsive-item');
   ytDiv.appendChild(ytFrame);
-
-  // Flickr
-  script = document.createElement('script');
-  script.setAttribute('src', '//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/fossasia&sort=0&by=user&theme=default&scale=fit&skin=default&id=5843ed99c6db7');
-  script.setAttribute('async', true);
-  document.head.appendChild(script);
 }
