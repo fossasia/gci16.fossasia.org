@@ -470,6 +470,11 @@
   lat: 7.0025129999999995
   lng: 79.9098925
 
+- name: Katrina Florendo
+  github: kflorendo
+  image: kflorendo_gci.jpg
+  bio: student, loves programming and science
+
 - name: Mehmet Cagri Ari
   github: hesapadim
   image: cagriari_avatar.jpg
@@ -980,4 +985,13 @@
   facebook: Tianle Dai
   lat: 1.29966216854198
   lng: 103.883127157012
+
+- name: Krishna Vrindavana
+  github: krishnavrindavana
+  image: vrindavana.jpg
+  bio: Student from Indonesia, 16 years old
+  facebook: krisna.vrindavana
+  lat: -8.6535631
+  lng: 115.2256706
+
 

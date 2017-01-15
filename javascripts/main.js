@@ -31,7 +31,7 @@ var getContributors = function(page) {
     data.forEach(function(contributors) {
       contributorsList.push(contributors.login);
       // Ignore LineLengthBear
-      var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
+      var html = "<div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'><div class='card'>";
       html += "<div class='avatar'>";
       html += "<img src=" + contributors.avatar_url + "><div class='contribs'><p>";
       html += contributors.contributions;

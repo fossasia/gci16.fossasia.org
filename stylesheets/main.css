@@ -56,33 +56,22 @@
     box-shadow: 1px 5px 20px #888888;
 }
 #contributors-list div span {
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     display: inline-block;
 }
 #contributors-list div img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
 }
-/*#contributors-list div a {
-    position: absolute;
-    left: 20px;
-    margin-top: 212px;
-    color: #000;
-    cursor: pointer;
-}
-#contributors-list div .gh-icon {
-    position: absolute;
-    top: -3px;
-}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
 #contributors-list .contribs p {
-    margin-top: 18px;
     color: #333;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
@@ -127,6 +116,11 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+#contributors-list .card {
+    width: 150px;
+    height: 200px;
+    border-radius: 100px;
+}
 .card-text{
     overflow: scroll;
     white-space: nowrap;
@@ -134,9 +128,8 @@
 }
 
 .blogs-sec .card {
-    width: 500px;
-    height: 400px;
-    margin: 0;
+    width: 300px;
+    height: 370px;
 }
 .stu-name{
     margin-left:-7px;
@@ -155,10 +148,15 @@
     margin-top: 4.5%;
     font-size: 15px;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+.mentors .avatar, .students-sec .avatar, .projects-sec .avatar {
     position: relative;
     width: 200px;
     height: 200px;
+}
+#contributors-list .avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
 @media (min-width: 480px) and (max-width: 960px) and (orientation: landscape), (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
     .blogs-sec .avatar {
@@ -185,8 +183,8 @@
 }
 .blogs-sec .avatar {
     position: relative;
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 150px;
     background: white;
 }
 .mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img, .blogs-sec .card .avatar .img {
@@ -205,6 +203,9 @@
     -o-transition: all 0.5s;
     transition: all 0.5s;
     padding-top: 40%;
+}
+#contributors-list .contribs {
+    border-radius: 100px;
 }
 .mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
@@ -779,4 +780,13 @@ body {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
+}
+.contribthank{
+    background-color: #e67e22;
+    margin-top: 10px;
+}
+
+.contribthank p{
+    color: white;
+    font-size: 50px;
 }
