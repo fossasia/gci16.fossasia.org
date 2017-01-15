@@ -52,14 +52,13 @@
               <a class="menu-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#stprojects">Student projects</a></li>
-                <li><a href="#blogs">Blog posts</a></li>
                 <li><a href="#designs">MBDyn Logo Designs</a></li>
                   <li><a href="#designsv2">MBDyn Logo Designs v2</a></li>
                 <li><a href="#issues">Latest Issues</a></li>
                 <li><a href="#loklak">Loklak Webtweets</a></li>
               </ul>
             </li>
-            <li><a class="menu-item" href="#social-media">Social media</a></li>
+            <li><a class="menu-item" href="#blogs">Blog Posts</a></li>
           </ul>
         </div>
       </div>
@@ -239,7 +238,7 @@
                     <!-- Stop ignoring -->
                 <!-- Start ignoring LineLengthBear, HTMLLintBear -->
                     {% for blog in site.data.blogs %}
-                    <div class="blog-holder col-xs-24 col-sm-12 col-md-8 col-lg-6">
+                    <div class="blog-holder col-xs-24 col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="avatar">
                                 {% if blog.blog_img %}
