@@ -186,7 +186,7 @@ $(".stu-card").hover(function() {
 
 $(".modal").mouseleave(function() {
    $(this).css("display", "none");
-    modalShown = false; 
+    modalShown = false;
 });
 
 $(".close").click(function() {
