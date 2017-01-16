@@ -166,7 +166,6 @@ $(".menu-item").click(function(){
 var modalShown = false;
 
 $(".card").click(function() {
-    console.log("it was clicked");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
@@ -174,7 +173,6 @@ $(".card").click(function() {
 });
 
 $(".stu-card").hover(function() {
-    console.log("it was hovered");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
