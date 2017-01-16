@@ -33,6 +33,15 @@
   facebook: T4RANG
   bio: 16, HTML , C++ BEGINNER , Technophile
 
+- name: Aneesh Chawla
+  github: aneesh987
+  image: AneeshChawla.jpg
+  twitter: aneeshchawla1
+  blog: https://immortalmuon.wordpress.com
+  bio: "17, loves Maths,Computers and physics. Love to decrypt."
+  lat: 28.650742
+  lng: 77.137907
+
 - name: Yash Kumar Verma
   image: yashkumarverma.jpg
   github: yashkumarverma

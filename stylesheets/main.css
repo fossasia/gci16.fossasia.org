@@ -641,7 +641,7 @@ figure.effect-gcihover:hover figcaption::before {
 .footer {
     width: 100%;
     height: auto;
-    padding: 10px 50px 10px 50px;
+    padding: 50px 50px 10px 50px;
     background-color:  #EEEEEE;
     color: #424242;
     margin-top: 30px;
@@ -651,7 +651,6 @@ figure.effect-gcihover:hover figcaption::before {
     margin-top: 10px;
     color: #616161;
 }
-
 .footer .row .social a, .footer img {
     display: inline-block;
     width: 46px;
@@ -676,11 +675,12 @@ figure.effect-gcihover:hover figcaption::before {
     color: #000;
     margin-right: 8px;
 }
-
+.footer .row li a i {
+    font-size: 18px;
+}
 .footer .social a {
     margin-top: -5px;
 }
-
 .footer .social a i {
     color: #424242;
     margin: 10px 0 0 11px;
@@ -711,7 +711,11 @@ figure.effect-gcihover:hover figcaption::before {
 .footer .social a:first-child i {
     margin-left: 14px;
 }
-
+.footer .row h2 {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
 .navbar-brand {
     margin-top: -7px;
 }
