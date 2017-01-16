@@ -179,6 +179,14 @@ $(".stu-card").hover(function() {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
     }
+},function () {
+    $(this).next(".modal").css("display", "none");
+    modalShown = false;
+});
+
+$(".modal").mouseleave(function() {
+   $(this).css("display", "none");
+    modalShown = false; 
 });
 
 $(".close").click(function() {
