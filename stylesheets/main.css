@@ -837,17 +837,19 @@ body {
     font-size: 50px;
 }
 
-.students-sec .card {
+.students-sec .card, .mentors .card {
     width: 150px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 100px;
 }
 
-.students-sec .avatar {
+.students-sec .avatar, .mentors .avatar {
     width: 150px;
     height: 150px;
 }
 
-.students-sec .card img{
+.students-sec .card img, .mentors .card img{
     border-radius: 100%;
+    height: 150px;
+    width: 150px;
 }
