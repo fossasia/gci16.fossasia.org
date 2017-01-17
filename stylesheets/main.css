@@ -848,8 +848,12 @@ body {
     height: 150px;
 }
 
-.students-sec .card img, .mentors .card img{
+.students-sec .card img, .mentors .card img {
     border-radius: 100%;
     height: 150px;
     width: 150px;
+}
+
+.students-sec .social, .mentors .social {
+    border-radius: 100%;
 }
