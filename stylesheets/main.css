@@ -175,8 +175,7 @@ table {
     height: 370px;
 }
 .stu-name{
-    margin-left:-7px;
-    font-size:16px;
+    font-size:15px;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -828,12 +827,33 @@ body {
     display: block;
   }
 }
-.contribthank{
+.contribthank {
     background-color: #e67e22;
     margin-top: 10px;
 }
 
-.contribthank p{
+.contribthank p {
     color: white;
     font-size: 50px;
+}
+
+.students-sec .card, .mentors .card {
+    width: 150px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.students-sec .avatar, .mentors .avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.students-sec .card img, .mentors .card img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+.students-sec .social, .mentors .social {
+    border-radius: 100%;
 }
