@@ -220,4 +220,36 @@
   lat: 4.1572639
   lng: 9.2895411
 
+- name: André Rebentisch
+  twitter: agonarch
+  facebook: andre.rebentisch
+  image: andrerebentisch.jpg
 
+- name: Arnav Gupta
+  github: championswimmer
+  twitter: championswimmer
+  facebook: championswimmer
+  image: arnavgupta.jpg
+
+- name: Scott Deng
+  github: DengYiping
+  image: dengyiping.jpg
+
+- name: Aditya Vyas
+  github: aditya1702
+  image: adityavyas.jpg
+
+- name: Adrian-Gabriel Zatreanu
+  github: Adrianzatreanu
+  image: adrianzatreanu.jpg
+  facebook: adizatreanu
+  twitter: Adrianzatreanu
+
+- name: Michael Christen
+  github: Orbiter
+  twitter: 0rb1t3r
+  image: orbiter.jpg
+
+- name: Rafał Kowalski
+  github: rafalkowalski
+  image: rafal.png
