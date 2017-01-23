@@ -138,4 +138,4 @@ You can instead participate in various chatrooms where you can ask both students
     mailing list.
 
 You can find more information about different mailing lists and chatrooms for
-different projects (here)[http://labs.fossasia.org/#projects]
+different projects [here](http://labs.fossasia.org/#projects)
