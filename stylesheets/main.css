@@ -863,3 +863,11 @@ body {
 .students-sec .social, .mentors .social {
     border-radius: 100%;
 }
+
+.code-in img {
+    margin: 0;
+    padding: 0;
+    margin-right: -15px;
+    height: 40px;
+    margin-top: 6px;
+}
