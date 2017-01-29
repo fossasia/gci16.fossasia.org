@@ -871,3 +871,21 @@ body {
     height: 40px;
     margin-top: 6px;
 }
+
+.f-page{
+    background-color: orange;
+    height: 461px !important;
+    -webkit-box-shadow: 3px 3px 5px #151515;
+    -moz-box-shadow: 3px 3px 5px #151515;
+    -o-box-shadow: 3px 3px 5px #151515;
+    box-shadow: 3px 3px 5px #151515;width: 370px;
+}
+
+.t-page{
+    background-color: greenyellow;
+    height: 461px !important;
+    -webkit-box-shadow: 3px 3px 5px #151515;
+    -moz-box-shadow: 3px 3px 5px #151515;
+    -o-box-shadow: 3px 3px 5px #151515;
+    box-shadow: 3px 3px 5px #151515;width: 370px;
+}
