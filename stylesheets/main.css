@@ -51,17 +51,13 @@ table {
 .social-media {
     text-align: center;
     /*background: #344146;*/
-    background: #212121;
+    background: #fcf8e3;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
-    height: 461px !important;
-    -webkit-box-shadow: 3px 3px 5px #151515;
-    -moz-box-shadow: 3px 3px 5px #151515;
-    -o-box-shadow: 3px 3px 5px #151515;
-    box-shadow: 3px 3px 5px #151515;
-    background-color: #E35836;
+    height: 250px !important;
+    background-color: #fcf8e3;
 }
 .g-page-embed iframe .dgd.nae {
     padding-bottom: 50px !important;
@@ -873,21 +869,16 @@ body {
     margin-top: 6px;
 }
 
-.f-page{
-    background-color: orange;
-    height: 461px !important;
-    -webkit-box-shadow: 3px 3px 5px #151515;
-    -moz-box-shadow: 3px 3px 5px #151515;
-    -o-box-shadow: 3px 3px 5px #151515;
-    box-shadow: 3px 3px 5px #151515;width: 370px;
+.social-icon{
+  padding-top: 80px;
+  max-width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  top: 0;
+  margin-top: -70px;
+  margin-bottom: 30px;
+  position: relative;
+  display: table;
+  text-align: center;
 }
 
-.t-page{
-    background-color: greenyellow;
-    height: 461px !important;
-    -webkit-box-shadow: 3px 3px 5px #151515;
-    -moz-box-shadow: 3px 3px 5px #151515;
-    -o-box-shadow: 3px 3px 5px #151515;
-    box-shadow: 3px 3px 5px #151515;
-    max-width: 370px;
-}
