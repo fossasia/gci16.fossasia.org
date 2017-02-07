@@ -51,16 +51,22 @@ table {
 .social-media {
     text-align: center;
     /*background: #344146;*/
-    background: #212121;
+    background: #fcf8e3;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
 .social-media iframe, .g-page {
+<<<<<<< HEAD
     height: 461px !important;
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+    background-color: #E35836;
+=======
+    height: 250px !important;
+    background-color: #fcf8e3;
+>>>>>>> a47b2e5bb7be39f69b5a45dd9aaf1a0327e12d45
 }
 .g-page-embed iframe .dgd.nae {
     padding-bottom: 50px !important;
@@ -585,7 +591,7 @@ figure.effect-gcihover:hover figcaption::before {
     color: #000;
     text-decoration: none;
 }
-.github-widget {
+.github-foss {
     max-width: 370px !important;
     width: 370px !important;
     height: 459px !important;
@@ -871,3 +877,17 @@ body {
     height: 40px;
     margin-top: 6px;
 }
+
+.social-icon{
+  padding-top: 80px;
+  max-width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  top: 0;
+  margin-top: -70px;
+  margin-bottom: 30px;
+  position: relative;
+  display: table;
+  text-align: center;
+}
+
