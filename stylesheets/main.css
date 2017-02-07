@@ -61,6 +61,7 @@ table {
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
+    background-color: #E35836;
 }
 .g-page-embed iframe .dgd.nae {
     padding-bottom: 50px !important;
@@ -585,7 +586,7 @@ figure.effect-gcihover:hover figcaption::before {
     color: #000;
     text-decoration: none;
 }
-.github-widget {
+.github-foss {
     max-width: 370px !important;
     width: 370px !important;
     height: 459px !important;
@@ -871,3 +872,17 @@ body {
     height: 40px;
     margin-top: 6px;
 }
+
+.social-icon{
+  padding-top: 80px;
+  max-width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  top: 0;
+  margin-top: -70px;
+  margin-bottom: 30px;
+  position: relative;
+  display: table;
+  text-align: center;
+}
+
