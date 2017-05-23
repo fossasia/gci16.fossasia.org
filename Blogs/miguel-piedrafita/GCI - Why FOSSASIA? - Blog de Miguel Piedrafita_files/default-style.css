@@ -1,0 +1,63 @@
+.tptn_posts_daily ul, .tptn_posts ul {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+.tptn_posts_daily ul li, .tptn_posts ul li {
+	clear:both;
+	list-style:none;
+	margin-bottom:15px;
+	display:block;
+	background: none;
+	padding:0 !important;
+}
+
+.tptn_posts_daily ul:after, .tptn_posts ul:after, .tptn_posts_daily ul li:after, .tptn_posts ul li:after {
+	content:'';
+	display:table;
+	clear: both;
+}
+
+.tptn_posts_daily .tptn_title, .tptn_posts .tptn_title {
+	font-weight:bold;
+	display:block;
+	padding-bottom:5px;
+	text-decoration:none;
+	line-height: 1.1em;
+}
+
+img.tptn_thumb {
+	display:block;
+	float:left;
+	clear:left;
+	margin-right:10px !important;
+	padding:3px !important;
+	border:1px #CCCCCC solid;
+	vertical-align: bottom;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4);
+	box-shadow: 0 1px 2px rgba(0,0,0,.4);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+img.tptn_thumb:after {
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	border: solid 1px #222;
+	-webkit-box-shadow: inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.4), 0 1px 2px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.4), 0 1px 2px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.4), 0 1px 2px rgba(0,0,0,.3);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.tptn_excerpt {
+	display: block;
+}

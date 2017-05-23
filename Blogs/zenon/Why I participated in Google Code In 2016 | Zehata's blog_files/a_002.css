@@ -1,0 +1,217 @@
+/* WordPress.com Widgets */
+
+/* Flickr */
+#flickr_badge_wrapper {
+	background: transparent !important;
+	border: 0 !important;
+}
+#flickr_badge_uber_wrapper {
+	margin: 0 auto;
+}
+#flickr_badge_uber_wrapper td {
+	border: 0 !important;
+}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {
+	color: #222 !important;
+}
+.widget_recent_comments td {
+	border: 0;
+	padding: 5px 5px 10px 5px;
+	vertical-align: top;
+}
+.widget_authors ul,
+.widget_author_grid ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget_authors img {
+	float: none;
+	vertical-align: middle;
+}
+.widget_authors li {
+	display: block;
+	margin-bottom: 10px;
+}
+.widget_authors li:before,
+.widget_authors li:after {
+	content: "";
+	display: table;
+}
+.widget_authors li:after {
+	clear: both;
+}
+#wpstats {
+	display: none;
+}
+h3.sd-title {
+	font-size: .778em;
+}
+.rating-msg {
+	font-size: .778em;
+}
+#respond h3 {
+	font-family: Lato, Helvetica, sans-serif;
+}.geolocation-chip .noticon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.geolocation-chip {
+  margin-bottom: 1em;
+}/**
+ * Post Reblogging not in the Reader
+ */
+
+.reblogger-note img.avatar {
+	float: left;
+	padding: 0;
+	border: 0;
+}
+
+.reblogger-note-content {
+	margin: 0 0 20px;
+}
+
+.wpcom-reblog-snapshot .reblog-from img {
+	margin: 0 .75em 0 0;
+	padding: 0;
+	border: 0;
+}
+
+.wpcom-reblog-snapshot .reblogger-note img.avatar {
+	float: left;
+	padding: 0;
+	border: 0;
+	margin: 0 .5em 0 0;
+}
+
+.wpcom-reblog-snapshot {
+	margin-bottom: 1em;
+}
+
+.wpcom-reblog-snapshot p.reblog-from {
+	margin: 0 0 1em 0;
+}
+
+.wpcom-reblog-snapshot p.reblogger-headline {
+	line-height: 32px;
+	margin: 0 0 1em 0;
+}
+
+.wpcom-reblog-snapshot .reblogged-content {
+	margin: 0 0 1em 0;
+}
+
+/* Old reblog styles */
+.reblog-post .wpcom-enhanced-excerpt-content {
+	border-left: 3px solid #eee;
+	padding-left: 15px;
+}
+
+.reblog-post ul.thumb-list {
+	display: block;
+	list-style: none;
+	margin: 2px 0;
+	padding: 0;
+	clear: both;
+}
+
+.reblog-post ul.thumb-list li {
+	display: inline;
+	margin: 0;
+	padding: 0 1px;
+	border: 0;
+}
+
+.reblog-post ul.thumb-list li a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.reblog-post ul.thumb-list li img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.reblog-post .wpcom-enhanced-excerpt {
+	clear: both;
+}
+
+.reblog-post .wpcom-enhanced-excerpt address,
+.reblog-post .wpcom-enhanced-excerpt li,
+.reblog-post .wpcom-enhanced-excerpt h1,
+.reblog-post .wpcom-enhanced-excerpt h2,
+.reblog-post .wpcom-enhanced-excerpt h3,
+.reblog-post .wpcom-enhanced-excerpt h4,
+.reblog-post .wpcom-enhanced-excerpt h5,
+.reblog-post .wpcom-enhanced-excerpt h6,
+.reblog-post .wpcom-enhanced-excerpt p {
+	font-size: 100% !important;
+}
+
+.reblog-post .wpcom-enhanced-excerpt blockquote,
+.reblog-post .wpcom-enhanced-excerpt pre,
+.reblog-post .wpcom-enhanced-excerpt code,
+.reblog-post .wpcom-enhanced-excerpt q {
+	font-size: 98% !important;
+}
+
+/* Reblogged post */
+.reblog-from img {
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+}
+
+.reblog-source {
+	margin-bottom: 0;
+	font-size: .8em;
+	line-height: 1;
+}
+
+.reblog-source .more-words {
+	color: #668eaa;
+}
+
+.wpcom-reblog-snapshot .reblog-post {
+	box-shadow: 0 0 0 1px rgba(46, 68, 83, .1) inset, 0 1px 1px rgba(46, 68, 83, .05);
+	border-radius: 4px;
+	padding: 24px;
+}
+
+/* Optional notes */
+.wpcom-reblog-snapshot .reblogger-note {
+	margin: 0 0 1em 0;
+	overflow: hidden;
+}
+
+.wpcom-reblog-snapshot p.reblogger-headline {
+	line-height: 32px;
+	margin: 0 0 1em 0;
+}
+
+.wpcom-reblog-snapshot .reblogger-note-content {
+	margin: 0;
+	padding: 0;
+}
+
+body .wpcom-reblog-snapshot .reblogger-note-content blockquote {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border: none;
+}
+
+.wpcom-reblog-snapshot .reblogger-note-content blockquote p:last-child {
+	margin-bottom: 0;
+}

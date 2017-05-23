@@ -1,0 +1,49 @@
+.arve-wrapper {
+	margin-bottom: 20px;
+	width: 100%;
+	/* Background image is applied with inline CSS */
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	behavior: url(backgroundsize.min.htc); /* IE polyfill for background size */
+}
+
+.arve-wrapper.alignright {
+	margin-left: 20px;
+}
+
+.arve-wrapper.alignleft {
+	margin-right: 20px;
+}
+
+.arve-embed-container {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0 0 56.25%; /* 16/9 ratio */
+	overflow: hidden;
+}
+
+.arve-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	overflow: hidden !important;
+}
+
+.arve-promote-link {
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+	font-family: "Open Sans", "Sagoe UI", Arial, sans-serif;
+	font-size: 9px;
+	line-height: 1;
+}
+
+.arve-hidden {
+	display: none;
+}

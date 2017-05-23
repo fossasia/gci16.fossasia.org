@@ -296,7 +296,8 @@
                                 {% endif %}
                                 <p>
                                     Blog of <a href="{{blog.article_link}}">{{blog.name}}</a><br />
-                                    {% if blog.article %}{{blog.article}}{% endif %}
+                                    {% if blog.article %}{{blog.article}}{% endif %}<br />
+                                    <a href="{{blog.saved}}">Saved Copy</a>
                                 </p>
                             </div>
                         </div>

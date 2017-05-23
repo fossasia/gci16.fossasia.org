@@ -1,0 +1,36 @@
+/*
+Theme Name: Sun by Osetin
+Theme URI: http://sun.pinsupreme.com
+Author: Tamik Soziev
+Author URI: http://soziev.com/
+Description: Personal Blog and Magazine
+Version: 1.0.0
+License:
+License URI:
+Tags: custom-background, custom-colors, custom-menu, featured-images, post-formats
+Text Domain: sun-by-osetin
+*/
+
+.wp-caption {
+  max-width: 100%;
+}
+.wp-caption-text {
+
+}
+.sticky {
+
+}
+.gallery-caption {
+
+}
+.bypostauthor {
+
+}
+
+img.alignright, figure.alignright { float: right; margin: 0 0 2em 2.5em; }
+img.alignleft, figure.alignleft { float: left; margin: 0 2.5em 2em 0; }
+img.aligncenter, figure.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.screen-reader-text { display: none; }

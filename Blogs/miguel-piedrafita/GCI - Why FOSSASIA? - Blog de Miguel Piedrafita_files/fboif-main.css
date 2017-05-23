@@ -1,0 +1,18 @@
+#optin-single{background:none repeat scroll 0 0 #F7F7F7;width:auto;border-color:#DDD;border-style:solid;border-width:1px;margin:15px 0;padding:10px 10px 15px 20px}
+#optin-single h4{font-weight:700;font-size:16px;margin:0 0 10px}
+#optin-single input[type=text]{box-shadow:0 2px 2px #DDD;-moz-box-shadow:0 2px 2px #DDD;-webkit-box-shadow:0 2px 2px #DDD;border:1px solid #CCC;font-size:13px;width:35%;color:#888;margin:0 0 10px;padding:10px}
+#optin-single input[id=name]{background:url(../images/XrHTe.png) no-repeat scroll right center #FFF;margin-right:5px;line-height: normal}
+#optin-single input[id=email]{background:url(../images/2BCD0.png) no-repeat scroll right center #FFF;margin-right:5px;line-height: normal}
+#optin-single input[type=submit]{background:#DF6001;border:1px solid #B63C00;color:#FFF;cursor:pointer;font-family:arial;font-size:15px;font-weight:700;margin-top:0;text-shadow:-1px -1px #B63C00;text-transform:capitalize;width:17%;padding:8px 0;position:absolute;line-height: normal}
+#optin-single input[type=submit]:hover{background:none repeat scroll 0 0 #B63C00}
+
+@media only screen and min-device-width 320px and max-device-width 640px {
+#optin-single{background:#DDD;border-bottom:1px dashed #CCC;text-align:center;width:auto;max-width:400px;padding:15px 0}
+#optin-single h4{font-weight:700;margin:10px 0 20px}
+#optin-single input[type=text]{border:1px solid #AAA;font-size:13px;width:80%;color:#888;margin:0 0 15px;padding:10px}
+#optin-single input{box-shadow:0 2px 2px #AAA;-moz-box-shadow:0 2px 2px #AAA;-webkit-box-shadow:0 2px 2px #AAA}
+#optin-single input[id=name]{background:url(../images/XrHTe.png) no-repeat scroll right center #FFF}
+#optin-single input[id=email]{background:url(../images/2BCD0.png) no-repeat scroll right center #FFF}
+#optin-single input[type=submit]{background:#DF6001;border:1px solid #B63C00;color:#FFF;cursor:pointer;font-family:arial;font-size:15px;font-weight:700;margin-top:0;text-shadow:-1px -1px #B63C00;text-transform:capitalize;width:auto;padding:8px 0}
+#optin-single input[type=submit]:hover{background:none repeat scroll 0 0 #B63C00}
+}
