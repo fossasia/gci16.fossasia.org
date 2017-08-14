@@ -128,7 +128,7 @@ table {
     width: 100% !important;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: black;
     text-transform: uppercase;
@@ -456,6 +456,8 @@ figure.effect-gcihover:hover figcaption::before {
 .latest-issues h2 {
     background: #eeeeee;
     width: 260px;
+
+    
     color: black;
 }
 .issues-wrapper {
@@ -488,7 +490,7 @@ figure.effect-gcihover:hover figcaption::before {
     justify-content: center;
 }
 .issues-category {
-    width: 45%;
+    width: 25%;
     margin: 1em;
     padding-top: 1em;
     background: #fff;
@@ -582,7 +584,7 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .button a {
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
     text-decoration: none;
 }
