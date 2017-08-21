@@ -1,5 +1,13 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
+- name: Avinash Yadav
+  github: lucifuturecoder
+  image: avinash.jpg
+  twitter: avinash___yadav
+  facebook: avinash.yadav698
+  bio: learning WebDev,java and Flask
+  lat: 25.435801
+  lng: 81.846311
 
 - name: Aditya Kumar
   github: adityak1121
