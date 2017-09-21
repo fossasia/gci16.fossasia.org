@@ -195,13 +195,14 @@
                                 <img src="images/mentors/member.png" alt="{{ mentor.name }}">
                                 {% endif %}
                                 <div class="social">
-                                    Show more<br>
-                                    information
+                                    <a href="http://twitter.com/hpdang" target="default"><i class="icon social_twitter"></i></a>
+                                                <a href="https://www.linkedin.com/in/hongphucdang" target="default"><i class="icon social_linkedin"></i></a>
+                                    
                                 </div>
                                 <p style="display: inline-block;">{{mentor.name}}</p>
                             </div>
                         </div>
-                        {% include popup.html person=mentor who='mentor' %}
+                        
                     </div>
                     {% endfor %}
                 </div>
