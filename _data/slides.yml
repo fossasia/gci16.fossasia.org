@@ -4,32 +4,31 @@
 # Note that action caption will be placed on the same line with exp-3
 # Try to make caption lines as equal as possible
 
-- caption: FOSSASIA
-  img: image_slider_crowd.jpg
-  exp-1: We build a new era of Technology.
-  exp-2: We connect developers together.
-  exp-3: We are an open-source community.
-
 - caption: Google Code-in 2016
   img: image_slider_fossasia.jpg
-  exp-1: Educating and inspiring students by
-  exp-2: being involved in open-source
-  exp-3: projects.
-  action: Participate now!
-  actionURL: //codein.withgoogle.com/organizations/fossasia/
+  exp-1: A contest for 13-17 year old students
+  exp-2: with Google and FOSSASIA
+  exp-3: 
+  action: Participate now in FOSSASIA Programs!
+  actionURL: //fossasia.org/apply-students
+
+- caption: FOSSASIA
+  img: image_slider_crowd.jpg
+  exp-1: We build new technologies
+  exp-2: with developers and students
+  exp-3: from around the world
 
 - caption: FOSSASIA OpenTechSummit
   img: image_slider_machine.jpg
-  exp-1: From 17th - 19th March 2017 at the
-  exp-2: Science Centre Singapore, for anyone
-  exp-3: who love code.
+  exp-1: We are organizing Asia's premier Developer Events
+  exp-2: with conferences in Singapore, India and China
   action: Join us now!
-  actionURL: //2017.fossasia.org
+  actionURL: //events.fossasia.org
 
 - caption: FOSSASIA CodeHeat
   img: image_slider_codeheat.jpg
-  exp-1: Contest is open until February 3rd, 2017.
-  exp-2: We invite coders to improve open-source
-  exp-3: projects.
+  exp-1: Apart from Code-In, FOSSASIA runs programs for university students and graduates
+  exp-2: We invite everyone to join us and to improve 
+  exp-3: Free and Open Source Software.
   action: Participate now!
   actionURL: //codeheat.org/
