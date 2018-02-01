@@ -8,7 +8,7 @@
   img: image_slider_fossasia.jpg
   exp-1: A contest for 13-17 year old students
   exp-2: with Google and FOSSASIA
-  exp-3: 
+  exp-3:
   action: Participate now in FOSSASIA Programs!
   actionURL: //fossasia.org/apply-students
 
@@ -28,7 +28,7 @@
 - caption: FOSSASIA CodeHeat
   img: image_slider_codeheat.jpg
   exp-1: Apart from Code-In, FOSSASIA runs programs for university students and graduates
-  exp-2: We invite everyone to join us and to improve 
+  exp-2: We invite everyone to join us and to improve
   exp-3: Free and Open Source Software.
   action: Participate now!
   actionURL: //codeheat.org/
