@@ -102,7 +102,7 @@
 }
 
 .ism-slider:hover .ism-pause-button {
-  display: block;
+  display: none;
 }
 
 .ism-caption {
