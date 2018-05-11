@@ -21,29 +21,29 @@ time, mark, audio, video {
 
 /*Styles for placeholder section */
 .stats {
-	padding: 96px 0;
+    padding: 96px 0;
     color: #666;
     overflow-x: hidden;
 }
 
 .stats p{
-	display: block;
-	padding-bottom: 40px;
-	line-height: 24px;
-	font-family: open sans, helvetica neue,Helvetica,Arial,sans-serif;
-	font-size: 14px;
-	font-weight: 400;
+    display: block;
+    padding-bottom: 40px;
+    line-height: 24px;
+    font-family: open sans, helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .stats a {
-	font-size: 40px;
-	font-weight: 300;
-	color: #292929;
-	text-decoration: none;
+    font-size: 40px;
+    font-weight: 300;
+    color: #292929;
+    text-decoration: none;
 }
 
 .stats h2 {
-	padding-bottom: 40px;
+    padding-bottom: 40px;
     font-family: lato,helvetica neue,Helvetica,Arial,sans-serif;
 }
 
