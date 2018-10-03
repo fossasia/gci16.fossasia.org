@@ -98,7 +98,7 @@ and place your logo in `/images/logos` folder and `your_image` should be the nam
 
 # Adding a slide
 
-The website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format *EXACTLY* (replacing values where indicated) to enter a new slide.
+This website shows an ism slider which has slides, to input another slide please go to `slides.yml` in the `_data` folder and maintain the following format *EXACTLY* (replacing values where indicated) to enter a new slide.
 
 ```yaml
 - caption: main_heading
